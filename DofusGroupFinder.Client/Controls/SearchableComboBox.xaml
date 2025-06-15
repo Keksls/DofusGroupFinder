@@ -53,9 +53,8 @@
                     Popup.GotFocus="Popup_GotFocus">
                     <ScrollViewer Margin="4" MaxHeight="300" MinHeight="32" MinWidth="{Binding ActualWidth, ElementName=Root}">
                         <ListBox x:Name="ListBox"
-                                     SelectionChanged="ListBox_SelectionChanged"
-                                     SelectedItem="{Binding SelectedItem, ElementName=Root, Mode=TwoWay}">
-                            <!-- Tu peux styliser tes items ici si besoin -->
+                             SelectionChanged="ListBox_SelectionChanged"
+                             PreviewMouseWheel="ListBox_PreviewMouseWheel">
                         </ListBox>
                     </ScrollViewer>
                 </Popup>

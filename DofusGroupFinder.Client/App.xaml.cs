@@ -10,6 +10,7 @@ namespace DofusGroupFinder.Client
         public static AuthService AuthService { get; private set; } = new AuthService();
         public static StatusService StatusService { get; private set; } = new StatusService(); 
         public static SettingsService SettingsService { get; private set; } = new SettingsService();
+        public static DataService DataService { get; private set; } = new DataService();
 
         protected override async void OnStartup(StartupEventArgs e)
         {
@@ -23,24 +24,21 @@ namespace DofusGroupFinder.Client
 
                 try
                 {
-                    // Appel d'une petite route protégée pour vérifier le token
+                    // check token
                     var account = await ApiClient.GetCharactersAsync();
 
                     if (account != null)
                     {
-                        // Token OK => on ouvre MainWindow directement
+                        // Token OK => open MainWindow
                         var mainWindow = new MainWindow();
                         mainWindow.Show();
                         return;
                     }
                 }
-                catch (Exception)
-                {
-                    // Token expiré ou invalide => on force le login
-                }
+                catch (Exception) { }
             }
 
-            // Si pas de token, ou token invalide : on montre la LoginWindow
+            // no token, or invalid token : open LoginWindow
             var loginWindow = new LoginWindow();
             loginWindow.Show();
         }

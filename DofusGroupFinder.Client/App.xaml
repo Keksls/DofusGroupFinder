@@ -169,7 +169,8 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        <!-- TabItem -->
+        
+        <!-- TabControl -->
         <Style TargetType="TabItem">
             <Setter Property="Foreground" Value="{DynamicResource ForegroundColor}" />
             <Setter Property="Background" Value="{DynamicResource InputBackgroundColor}" />
@@ -182,37 +183,38 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="TabItem">
-                        <Border Name="Border"
-                    Background="{TemplateBinding Background}"
-                    BorderBrush="{TemplateBinding BorderBrush}"
-                    BorderThickness="{TemplateBinding BorderThickness}"
-                    CornerRadius="4,4,0,0"
-                    Padding="{TemplateBinding Padding}">
+                        <Border x:Name="Border"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="4,4,0,0"
+                        Padding="{TemplateBinding Padding}">
+
                             <ContentPresenter x:Name="ContentSite"
-                                    VerticalAlignment="Center"
-                                    HorizontalAlignment="Center"
-                                    ContentSource="Header" />
+                                      VerticalAlignment="Center"
+                                      HorizontalAlignment="Center"
+                                      ContentSource="Header" />
                         </Border>
 
+                        <!-- Tous les triggers internes ici -->
                         <ControlTemplate.Triggers>
+
+                            <!-- Trigger sélection -->
                             <Trigger Property="IsSelected" Value="True">
-                                <Setter TargetName="Border" Property="Background" Value="{DynamicResource HighlightColor}"/>
-                                <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource AccentColor}"/>
-                            </Trigger>
-                            <Trigger Property="IsMouseOver" Value="True">
                                 <Setter TargetName="Border" Property="Background" Value="{DynamicResource AccentColor}"/>
                             </Trigger>
+
+                            <!-- Trigger hover limité au header -->
+                            <Trigger SourceName="Border" Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="{DynamicResource HighlightColor}"/>
+                                <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource AccentColor}"/>
+                                <Setter Property="Cursor" Value="Hand"/>
+                            </Trigger>
+
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
-
-            <Style.Triggers>
-                <!-- Hover -->
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Cursor" Value="Hand"/>
-                </Trigger>
-            </Style.Triggers>
         </Style>
 
         <!-- PasswordBox -->

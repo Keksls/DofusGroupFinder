@@ -23,7 +23,7 @@ namespace DofusGroupFinder.Client
 
         private async void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            NoGroupFooter.LoadListings(await App.ApiClient.GetMyListingsAsync());
+            await App.DataService.RetreiveStaticData();
         }
 
         private void Timer_Tick(object? sender, EventArgs e)

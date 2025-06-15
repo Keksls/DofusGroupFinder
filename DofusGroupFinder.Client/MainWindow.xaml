@@ -14,13 +14,13 @@
         <DropShadowEffect BlurRadius="15" ShadowDepth="0" Opacity="0.5" Color="Black"/>
     </Window.Effect>
 
-    <DockPanel>
-        <controls:TitleBarControl x:Name="TitleBar"
+    <DockPanel Margin="0">
+        <controls:TitleBarControl Margin="0" x:Name="TitleBar"
                                    DockPanel.Dock="Top"
                                    Background="{DynamicResource BorderColor}"
                                    Foreground="{DynamicResource ForegroundColor}"/>
 
-        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+        <Frame Margin="0" x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
 
         <!-- Le TabControl principal -->
         <TabControl x:Name="MainTabControl"
@@ -29,8 +29,8 @@
                 Margin="0"
                 Height="Auto"
                 DockPanel.Dock="Top">
-            <TabItem Header="Recherche de groupe" Width="158">
-                <controls:FindGroupControl/>
+            <TabItem Header="Recherche de groupe" Width="158" Margin="0">
+                <controls:FindGroupControl Margin="0" Padding="0" Width="320"/>
             </TabItem>
             <TabItem Header="Mes annonces" Width="158">
                 <controls:CreateListingControl/>

@@ -56,10 +56,19 @@ do
 
 Console.WriteLine($"Total dungeons fetched: {allDungeons.Count}");
 
+// distinct on name
+allDungeons = allDungeons
+    .GroupBy(d => d.Name.Fr)
+    .Select(g => g.First())
+    .ToList();
+
 // Export local JSON
 var exportJson = JsonConvert.SerializeObject(allDungeons, Formatting.Indented);
 File.WriteAllText("dungeons_export.json", exportJson);
 Console.WriteLine("Exported to dungeons_export.json ✅");
+
+// clear existing dungeons in the database
+await dbContext.Dungeons.ExecuteDeleteAsync();
 
 // Injection en base (après export)
 foreach (var dungeonApi in allDungeons)

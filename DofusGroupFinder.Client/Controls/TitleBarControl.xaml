@@ -26,7 +26,7 @@
             Click="CloseButton_Click"/>
         </Grid>
 
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="32,10,8,0" Height="24" Cursor="">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="8,10,8,0" Height="24" Cursor="">
             <TextBlock Text="Server:" 
            VerticalAlignment="Center" 
            Margin="0,0,10,0"
@@ -36,7 +36,7 @@
           Width="150" Margin="0,-4,0,0"
           Height="24" PropertyChanged="ServerComboBox_PropertyChanged" />
 
-            <Label Width="32" Background="Transparent"></Label>
+            <Label Width="48" Background="Transparent"></Label>
 
             <!-- Bouton Characters -->
             <Button Grid.Column="1"
@@ -50,6 +50,8 @@
                 <Image Source="/Icons/chars.png" Width="20" Height="20"/>
             </Button>
 
+            <Label Width="8" Background="Transparent"></Label>
+            
             <!-- Bouton settings -->
             <Button Grid.Column="3"
         HorizontalAlignment="Right"

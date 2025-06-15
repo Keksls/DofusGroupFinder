@@ -6,28 +6,29 @@ namespace DofusGroupFinder.Client.Controls
 {
     public partial class FindGroupControl : UserControl
     {
-        private List<DungeonResponse>? _dungeons;
+        private List<DungeonResponse> _dungeons;
 
         public FindGroupControl()
         {
             InitializeComponent();
+            _dungeons = new List<DungeonResponse>();
+            App.DataService.OnGetStaticData += DataService_OnGetStaticData;
             Loaded += FindGroupControl_Loaded;
         }
 
         private async void FindGroupControl_Loaded(object sender, RoutedEventArgs e)
         {
-            _dungeons = await App.ApiClient.GetAllDungeonsAsync();
+            await LoadResults();
+        }
+
+        private void DataService_OnGetStaticData()
+        {
+            _dungeons = App.DataService.Dungeons.Values.ToList();
+            _dungeons.Insert(0, new DungeonResponse { Id = new Guid(), Name = "TOUS" }); // Option to select all dungeons
             if (_dungeons != null)
             {
                 DungeonComboBox.ItemsSource = _dungeons;
             }
-
-            await LoadResults();
-        }
-
-        private async void Search_Click(object sender, RoutedEventArgs e)
-        {
-            await LoadResults();
         }
 
         private async Task LoadResults()
@@ -35,10 +36,9 @@ namespace DofusGroupFinder.Client.Controls
             ResultsPanel.Children.Clear();
 
             Guid? dungeonId = null;
-            if (DungeonComboBox.SelectedItem is DungeonResponse selectedDungeon)
+            if (DungeonComboBox.SelectedItem is DungeonResponse selectedDungeon && selectedDungeon.Name != "TOUS")
                 dungeonId = selectedDungeon.Id;
-
-            int? minSlots = OnlyWithSlotsCheckBox.IsChecked == true ? 1 : null;
+            bool? wantSuccess = WantSuccessCheckBox.IsChecked ? true : null;
 
             var server = App.SettingsService.LoadServer();
             if (server == null)
@@ -47,16 +47,28 @@ namespace DofusGroupFinder.Client.Controls
                 return;
             }
 
-            var listings = await App.ApiClient.SearchPublicListingsAsync(dungeonId, minSlots);
+            var listings = await App.ApiClient.SearchPublicListingsAsync(dungeonId, null, wantSuccess);
             if (listings == null) return;
 
             foreach (var listing in listings)
             {
                 var dungeon = _dungeons?.FirstOrDefault(d => d.Id == listing.DungeonId);
+
+                // Création et ajout dans le visuel → Dispatcher obligatoire
                 var control = new GroupCardControl();
                 control.SetData(listing, dungeon?.Name ?? "Unknown");
                 ResultsPanel.Children.Add(control);
             }
+        }
+
+        private async void DungeonComboBox_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            await LoadResults();
+        }
+
+        private async void OnlyWithSlotsCheckBox_CheckedChanged(object sender, RoutedPropertyChangedEventArgs<bool> e)
+        {
+            await LoadResults();
         }
     }
 }

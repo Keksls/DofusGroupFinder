@@ -150,13 +150,13 @@ namespace DofusGroupFinder.Application.Services
             return listings;
         }
 
-        public async Task<List<PublicListingResponse>> SearchPublicListingsAsync(string server, PublicListingSearchRequest request)
+        public async Task<List<PublicListingResponse>> SearchPublicListingsAsync(PublicListingSearchRequest request)
         {
             var query = _context.Listings
                 .Include(l => l.Account)
                 .Include(l => l.ListingCharacters)
                     .ThenInclude(lc => lc.Character)
-                .Where(l => l.IsActive && l.Server == server)
+                .Where(l => l.IsActive)
                 .AsQueryable();
 
             if (request.DungeonId.HasValue)
@@ -169,6 +169,16 @@ namespace DofusGroupFinder.Application.Services
                 query = query.Where(l => l.RemainingSlots >= request.MinRemainingSlots.Value);
             }
 
+            if (request.WantSuccess.HasValue)
+            {
+                query = query.Where(l => l.SuccessWanted == request.WantSuccess.Value);
+            }
+
+            if (!string.IsNullOrEmpty(request.Server))
+            {
+                query = query.Where(l => l.Server == request.Server);
+            }
+
             var listings = await query
                 .Select(l => new PublicListingResponse
                 {
@@ -179,6 +189,7 @@ namespace DofusGroupFinder.Application.Services
                     RemainingSlots = l.RemainingSlots,
                     Comment = l.Comment,
                     CreatedAt = l.CreatedAt,
+                    Server = l.Server,
                     CharacterNames = l.ListingCharacters.Select(lc => lc.Character.Name).ToList()
                 })
                 .ToListAsync();

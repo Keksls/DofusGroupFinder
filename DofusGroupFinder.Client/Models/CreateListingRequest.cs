@@ -7,5 +7,6 @@
         public int RemainingSlots { get; set; }
         public string? Comment { get; set; }
         public List<Guid> CharacterIds { get; set; } = new();
+        public string Server { get; set; } = null!;
     }
 }

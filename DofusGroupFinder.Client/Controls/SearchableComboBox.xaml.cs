@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace DofusGroupFinder.Client.Controls
 {
@@ -34,9 +35,9 @@ namespace DofusGroupFinder.Client.Controls
         public IEnumerable ItemsSource
         {
             get => itemsSource;
-            set {
+            set
+            {
                 itemsSource = value;
-                //SetValue(ItemsSourceProperty, value);
             }
         }
         private IEnumerable itemsSource;
@@ -131,6 +132,7 @@ namespace DofusGroupFinder.Client.Controls
             if (ListBox.SelectedItem != null)
             {
                 SelectedItem = ListBox.SelectedItem;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedItem)));
                 Popup.IsOpen = false;
             }
         }
@@ -156,6 +158,33 @@ namespace DofusGroupFinder.Client.Controls
         {
             e.Handled = true;
             Popup.IsOpen = true;
+        }
+
+        private void ListBox_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
+        {
+            ScrollViewer scrollViewer = FindParent<ScrollViewer>((DependencyObject)sender);
+
+            if (scrollViewer != null)
+            {
+                if (e.Delta > 0)
+                    scrollViewer.LineUp();
+                else
+                    scrollViewer.LineDown();
+
+                e.Handled = true;
+            }
+        }
+
+        private static T FindParent<T>(DependencyObject child) where T : DependencyObject
+        {
+            DependencyObject parentObject = VisualTreeHelper.GetParent(child);
+
+            if (parentObject == null) return null;
+
+            if (parentObject is T parent)
+                return parent;
+            else
+                return FindParent<T>(parentObject);
         }
     }
 }

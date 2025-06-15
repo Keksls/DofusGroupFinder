@@ -15,6 +15,15 @@ namespace DofusGroupFinder.Client.Controls
             DependencyProperty.Register("Icon", typeof(ImageSource), typeof(IconToggleButton),
                 new PropertyMetadata(null, OnIconChanged));
 
+        public static readonly RoutedEvent CheckedChangedEvent = EventManager.RegisterRoutedEvent(
+    "CheckedChanged", RoutingStrategy.Bubble, typeof(RoutedPropertyChangedEventHandler<bool>), typeof(IconToggleButton));
+
+        public event RoutedPropertyChangedEventHandler<bool> CheckedChanged
+        {
+            add { AddHandler(CheckedChangedEvent, value); }
+            remove { RemoveHandler(CheckedChangedEvent, value); }
+        }
+
         public bool IsChecked
         {
             get => (bool)GetValue(IsCheckedProperty);
@@ -56,7 +65,17 @@ namespace DofusGroupFinder.Client.Controls
         private static void OnIsCheckedChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             var control = d as IconToggleButton;
-            control?.UpdateVisual();
+            if (control == null)
+                return;
+
+            control.UpdateVisual();
+
+            var args = new RoutedPropertyChangedEventArgs<bool>(
+                (bool)e.OldValue,
+                (bool)e.NewValue,
+                CheckedChangedEvent);
+
+            control.RaiseEvent(args);
         }
 
         private static void OnIconChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)

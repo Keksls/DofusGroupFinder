@@ -2,12 +2,12 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              Background="{DynamicResource InputBackgroundColor}"
-             Margin="5"
-             Padding="10"
+             Margin="0,0,8,8"
+             Padding="0"
              Height="Auto" Width="Auto">
-    <Border BorderBrush="{DynamicResource BorderColor}" BorderThickness="1" CornerRadius="8" Padding="10">
+    <Border BorderBrush="{DynamicResource BorderColor}" BorderThickness="1" CornerRadius="8" Padding="8">
 
-        <StackPanel>
+        <StackPanel Margin="0">
 
             <!-- Header -->
             <TextBlock x:Name="DungeonNameText" FontSize="16" FontWeight="Bold" Margin="0,0,0,5"/>

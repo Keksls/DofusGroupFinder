@@ -6,22 +6,20 @@ namespace DofusGroupFinder.Client.Controls
 {
     public partial class CreateListingControl : UserControl
     {
-        private List<DungeonResponse>? _dungeons;
+        private List<DungeonResponse> _dungeons;
         private List<Character>? _characters;
 
         public CreateListingControl()
         {
             InitializeComponent();
-            Loaded += CreateListingControl_Loaded;
+            _dungeons = new List<DungeonResponse>();
+            App.DataService.OnGetStaticData += DataService_OnGetStaticData;
         }
 
-        private async void CreateListingControl_Loaded(object sender, RoutedEventArgs e)
+        private async void DataService_OnGetStaticData()
         {
-            _dungeons = await App.ApiClient.GetAllDungeonsAsync();
-            if (_dungeons != null)
-            {
-                DungeonComboBox.ItemsSource = _dungeons;
-            }
+            _dungeons = App.DataService.Dungeons.Values.ToList();
+            DungeonComboBox.ItemsSource = _dungeons;
 
             _characters = await App.ApiClient.GetCharactersAsync();
             if (_characters != null)
@@ -60,7 +58,8 @@ namespace DofusGroupFinder.Client.Controls
                 SuccessWanted = SuccessCheckBox.IsChecked == true,
                 RemainingSlots = (int)SlotsComboBox.SelectedItem,
                 Comment = CommentTextBox.Text,
-                CharacterIds = selectedCharacters
+                CharacterIds = selectedCharacters,
+                Server = App.SettingsService.LoadServer()
             };
 
             try

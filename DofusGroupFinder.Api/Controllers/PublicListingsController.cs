@@ -30,15 +30,17 @@ namespace DofusGroupFinder.Api.Controllers
         }
 
         [HttpGet("search")]
-        public async Task<IActionResult> SearchPublicListings([FromQuery] Guid? dungeonId, [FromQuery] int? minRemainingSlots, [FromQuery] string server)
+        public async Task<IActionResult> SearchPublicListings([FromQuery] Guid? dungeonId, [FromQuery] int? minRemainingSlots, [FromQuery] string server, [FromQuery] bool? wantSuccess = null)
         {
             var request = new PublicListingSearchRequest
             {
                 DungeonId = dungeonId,
-                MinRemainingSlots = minRemainingSlots
+                MinRemainingSlots = minRemainingSlots,
+                WantSuccess = wantSuccess,
+                Server = server
             };
 
-            var result = await _listingService.SearchPublicListingsAsync(server, request);
+            var result = await _listingService.SearchPublicListingsAsync(request);
             return Ok(result);
         }
     }

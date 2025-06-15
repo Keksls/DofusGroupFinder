@@ -7,6 +7,7 @@
             BorderThickness="2"
             BorderBrush="Transparent"
             CornerRadius="8"
+            Cursor="Hand"
             Background="{DynamicResource InputBackgroundColor}">
 
         <Image x:Name="IconImage" 

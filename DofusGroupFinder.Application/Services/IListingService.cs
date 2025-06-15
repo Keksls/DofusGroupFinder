@@ -9,6 +9,6 @@ namespace DofusGroupFinder.Application.Services
         Task<ListingResponse> UpdateListingAsync(Guid accountId, Guid listingId, UpdateListingRequest request);
         Task DeleteListingAsync(Guid accountId, Guid listingId);
         Task<List<PublicListingResponse>> GetPublicListingsAsync(string server);
-        Task<List<PublicListingResponse>> SearchPublicListingsAsync(string server, PublicListingSearchRequest request);
+        Task<List<PublicListingResponse>> SearchPublicListingsAsync(PublicListingSearchRequest request);
     }
 }

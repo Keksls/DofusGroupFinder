@@ -21,7 +21,7 @@ namespace DofusGroupFinder.Client.Services
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
         }
 
-        private async Task<T?> GetAsync<T>(string url)
+        public async Task<T?> GetAsync<T>(string url)
         {
             var response = await _httpClient.GetAsync(url);
             response.EnsureSuccessStatusCode();
@@ -107,7 +107,7 @@ namespace DofusGroupFinder.Client.Services
         public async Task<List<PublicListingResponse>?> GetPublicListingsAsync()
             => await GetAsync<List<PublicListingResponse>>("api/public/listings");
 
-        public async Task<List<PublicListingResponse>?> SearchPublicListingsAsync(Guid? dungeonId = null, int? minRemainingSlots = null)
+        public async Task<List<PublicListingResponse>?> SearchPublicListingsAsync(Guid? dungeonId = null, int? minRemainingSlots = null, bool? wantSuccess  = null)
         {
             var query = new List<string>();
 
@@ -116,6 +116,9 @@ namespace DofusGroupFinder.Client.Services
 
             if (minRemainingSlots.HasValue)
                 query.Add($"minRemainingSlots={minRemainingSlots}");
+
+            if (wantSuccess.HasValue)
+                query.Add($"wantSuccess={wantSuccess}");
 
             var server = App.SettingsService.LoadServer();
             if (server == null)
@@ -139,9 +142,6 @@ namespace DofusGroupFinder.Client.Services
 
         public async Task DeleteGroupMemberAsync(Guid listingId, Guid memberId)
             => await DeleteAsync($"api/listings/{listingId}/members/{memberId}");
-
-        public async Task<List<DungeonResponse>?> GetAllDungeonsAsync()
-            => await GetAsync<List<DungeonResponse>>("api/dungeons");
 
         public async Task UpdateCharacterAsync(Guid characterId, UpdateCharacterRequest request)
         {
