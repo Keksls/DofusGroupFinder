@@ -5,20 +5,19 @@
              Background="{DynamicResource BackgroundColor}">
 
     <DockPanel Margin="10">
-        <!-- Top: les filtres -->
-        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="0,0,0,10">
+        <StackPanel Orientation="Vertical">
+            <!-- Top: les filtres -->
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="0">
+                <TextBlock Text="DJ " VerticalAlignment="Center" Margin="0,0,8,0" Foreground="{DynamicResource ForegroundColor}" />
+                <controls:FilteredComboBox x:Name="DungeonComboBox" Width="200" Height="24" Margin="0,0,8,0"/>
+                <controls:IconToggleButton x:Name="OnlyWithSlotsCheckBox" Icon="/Icons/succes.png" VerticalAlignment="Center" Grid.Row="0" Height="32" Width="32" Margin="0,10,0,10"  HorizontalAlignment="Right" />
+            </StackPanel>            
+            <Button Content="Search" Margin="0,0,0,0" Width="128" Height="24" Click="Search_Click" HorizontalAlignment="Center"/>
 
-            <TextBlock Text="Dungeon:" VerticalAlignment="Center" Margin="0,0,5,0" Foreground="{DynamicResource ForegroundColor}" />
-            <ComboBox x:Name="DungeonComboBox" Width="200" Margin="0,0,20,0"/>
-
-            <CheckBox x:Name="OnlyWithSlotsCheckBox" Content="Only with slots" VerticalAlignment="Center" />
-
-            <Button Content="Search" Margin="20,0,0,0" Width="80" Click="Search_Click"/>
+            <!-- Main: résultats -->
+            <ScrollViewer VerticalScrollBarVisibility="Auto" MinHeight="64">
+                <StackPanel x:Name="ResultsPanel"/>
+            </ScrollViewer>
         </StackPanel>
-
-        <!-- Main: résultats -->
-        <ScrollViewer VerticalScrollBarVisibility="Auto">
-            <StackPanel x:Name="ResultsPanel"/>
-        </ScrollViewer>
     </DockPanel>
 </UserControl>

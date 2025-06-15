@@ -20,8 +20,6 @@ namespace DofusGroupFinder.Client.Controls
             if (_dungeons != null)
             {
                 DungeonComboBox.ItemsSource = _dungeons;
-                DungeonComboBox.DisplayMemberPath = "Name";
-                DungeonComboBox.SelectedIndex = -1;
             }
 
             await LoadResults();

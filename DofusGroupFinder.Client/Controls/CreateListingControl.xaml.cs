@@ -21,8 +21,6 @@ namespace DofusGroupFinder.Client.Controls
             if (_dungeons != null)
             {
                 DungeonComboBox.ItemsSource = _dungeons;
-                DungeonComboBox.DisplayMemberPath = "Name";
-                DungeonComboBox.SelectedIndex = 0;
             }
 
             _characters = await App.ApiClient.GetCharactersAsync();
