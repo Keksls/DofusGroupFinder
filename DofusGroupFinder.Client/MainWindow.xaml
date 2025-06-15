@@ -1,0 +1,46 @@
+﻿<Window x:Class="DofusGroupFinder.Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:DofusGroupFinder.Client.Controls"
+        Title="Dofus Group Finder"
+        Height="480" Width="320"
+        Background="{DynamicResource BackgroundColor}"
+        Foreground="{DynamicResource ForegroundColor}"
+        WindowStyle="None"
+        AllowsTransparency="False"
+        ResizeMode="NoResize">
+
+    <Window.Effect>
+        <DropShadowEffect BlurRadius="15" ShadowDepth="0" Opacity="0.5" Color="Black"/>
+    </Window.Effect>
+
+    <DockPanel>
+        <controls:TitleBarControl x:Name="TitleBar"
+                                   DockPanel.Dock="Top"
+                                   Background="{DynamicResource BorderColor}"
+                                   Foreground="{DynamicResource ForegroundColor}"/>
+
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+
+        <!-- Le TabControl principal -->
+        <TabControl x:Name="MainTabControl"
+                Background="{DynamicResource BackgroundColor}"
+                BorderThickness="0"
+                Margin="0"
+                Height="Auto"
+                DockPanel.Dock="Top">
+            <TabItem Header="Recherche de groupe" Width="158">
+                <controls:FindGroupControl/>
+            </TabItem>
+            <TabItem Header="Mes annonces" Width="158">
+                <controls:CreateListingControl/>
+            </TabItem>
+        </TabControl>
+        
+        <controls:NoGroupFooterControl x:Name="NoGroupFooter" 
+                                       HorizontalAlignment="Stretch" 
+                                       VerticalAlignment="Bottom" 
+                                       DockPanel.Dock="Bottom"
+                                       Background="{DynamicResource HighlightColor}"/>
+    </DockPanel>
+</Window>
