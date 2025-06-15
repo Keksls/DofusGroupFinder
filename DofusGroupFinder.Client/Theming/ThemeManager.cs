@@ -62,13 +62,19 @@ namespace DofusGroupFinder.Client.Theming
             Application.Current.Resources["ButtonForegroundColor"] = new SolidColorBrush(ParseColor(config.ButtonForegroundColor));
             Application.Current.Resources["InputBackgroundColor"] = new SolidColorBrush(ParseColor(config.InputBackgroundColor));
             Application.Current.Resources["InputForegroundColor"] = new SolidColorBrush(ParseColor(config.InputForegroundColor));
-
+            Application.Current.Resources["SubtleForegroundColor"] = new SolidColorBrush(ParseColorWithOpacity(config.ForegroundColor, 0.5));
             File.WriteAllText(SelectedThemeFilePath, themeName);
         }
 
         private static Color ParseColor(string hex)
         {
             return (Color)ColorConverter.ConvertFromString(hex);
+        }
+
+        private static Color ParseColorWithOpacity(string hex, double opacity)
+        {
+            var color = (Color)ColorConverter.ConvertFromString(hex);
+            return Color.FromArgb((byte)(opacity * 255), color.R, color.G, color.B);
         }
     }
 }

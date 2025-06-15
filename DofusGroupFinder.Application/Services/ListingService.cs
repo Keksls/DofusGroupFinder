@@ -55,7 +55,7 @@ namespace DofusGroupFinder.Application.Services
                 Comment = request.Comment,
                 IsActive = true,
                 CreatedAt = DateTime.UtcNow,
-                Server = request.Server
+                Server = request.Server,
             };
 
             _context.Listings.Add(listing);
@@ -143,7 +143,8 @@ namespace DofusGroupFinder.Application.Services
                     RemainingSlots = l.RemainingSlots,
                     Comment = l.Comment,
                     CreatedAt = l.CreatedAt,
-                    CharacterNames = l.ListingCharacters.Select(lc => lc.Character.Name).ToList()
+                    CharacterNames = l.ListingCharacters.Select(lc => lc.Character.Name).ToList(),
+                    Server = l.Server
                 })
                 .ToListAsync();
 

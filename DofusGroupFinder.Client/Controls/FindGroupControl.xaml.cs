@@ -1,4 +1,5 @@
 ﻿using DofusGroupFinder.Client.Models;
+using DofusGroupFinder.Client.Services;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -43,7 +44,7 @@ namespace DofusGroupFinder.Client.Controls
             var server = App.SettingsService.LoadServer();
             if (server == null)
             {
-                MessageBox.Show("No server selected.");
+                NotificationManager.ShowNotification("No server selected.");
                 return;
             }
 

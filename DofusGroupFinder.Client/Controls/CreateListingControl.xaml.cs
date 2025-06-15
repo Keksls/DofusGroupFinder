@@ -1,4 +1,5 @@
 ﻿using DofusGroupFinder.Client.Models;
+using DofusGroupFinder.Client.Services;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -40,7 +41,7 @@ namespace DofusGroupFinder.Client.Controls
         {
             if (DungeonComboBox.SelectedItem is not DungeonResponse selectedDungeon)
             {
-                MessageBox.Show("Please select a dungeon.");
+                NotificationManager.ShowNotification("Please select a dungeon.");
                 return;
             }
 
@@ -48,7 +49,7 @@ namespace DofusGroupFinder.Client.Controls
 
             if (selectedCharacters.Count == 0)
             {
-                MessageBox.Show("Please select at least one character.");
+                NotificationManager.ShowNotification("Please select at least one character.");
                 return;
             }
 
@@ -65,12 +66,12 @@ namespace DofusGroupFinder.Client.Controls
             try
             {
                 await App.ApiClient.CreateListingAsync(request);
-                MessageBox.Show("Listing created!");
+                NotificationManager.ShowNotification("Listing created!");
                 // Reload page or reset form if needed
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error creating listing: {ex.Message}");
+                NotificationManager.ShowNotification($"Error creating listing: {ex.Message}");
             }
         }
     }

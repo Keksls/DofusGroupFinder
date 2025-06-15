@@ -1,4 +1,5 @@
 ﻿using DofusGroupFinder.Client.Models;
+using DofusGroupFinder.Client.Services;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -84,7 +85,7 @@ namespace DofusGroupFinder.Client
             };
 
             await App.ApiClient.CreateCharacterAsync(request);
-            MessageBox.Show("Character created!");
+            NotificationManager.ShowNotification("Character created!");
             CharactersManagerWindow_Loaded(this, new RoutedEventArgs());
         }
 
@@ -101,7 +102,7 @@ namespace DofusGroupFinder.Client
             };
 
             await App.ApiClient.UpdateCharacterAsync(_selectedCharacter.Id, request);
-            MessageBox.Show("Character updated!");
+            NotificationManager.ShowNotification("Character updated!");
             CharactersManagerWindow_Loaded(this, new RoutedEventArgs());
         }
 

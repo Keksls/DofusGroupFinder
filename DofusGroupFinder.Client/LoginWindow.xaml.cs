@@ -18,7 +18,7 @@ namespace DofusGroupFinder.Client
 
             if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
             {
-                MessageBox.Show("Please enter email and password.");
+                NotificationManager.ShowNotification("Please enter email and password.");
                 return;
             }
 
@@ -40,12 +40,12 @@ namespace DofusGroupFinder.Client
                 }
                 else
                 {
-                    MessageBox.Show("Invalid credentials.");
+                    NotificationManager.ShowNotification("Invalid credentials.");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"An error occurred: {ex.Message}");
+                NotificationManager.ShowNotification($"An error occurred: {ex.Message}");
             }
         }
 

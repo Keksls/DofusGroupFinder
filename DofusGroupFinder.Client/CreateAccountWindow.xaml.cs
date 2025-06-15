@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using DofusGroupFinder.Client.Services;
+using System.Windows;
 using System.Windows.Input;
 
 namespace DofusGroupFinder.Client
@@ -34,13 +35,13 @@ namespace DofusGroupFinder.Client
 
             if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(confirmPassword))
             {
-                MessageBox.Show("Please fill all fields.");
+                NotificationManager.ShowNotification("Please fill all fields.");
                 return;
             }
 
             if (password != confirmPassword)
             {
-                MessageBox.Show("Passwords do not match.");
+                NotificationManager.ShowNotification("Passwords do not match.");
                 return;
             }
 
@@ -66,17 +67,17 @@ namespace DofusGroupFinder.Client
                     }
                     else
                     {
-                        MessageBox.Show("Login failed after account creation.");
+                        NotificationManager.ShowNotification("Login failed after account creation.");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Account creation failed.");
+                    NotificationManager.ShowNotification("Account creation failed.");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"An error occurred: {ex.Message}");
+                NotificationManager.ShowNotification($"An error occurred: {ex.Message}");
             }
         }
     }

@@ -1,4 +1,5 @@
 ﻿using DofusGroupFinder.Client.Models;
+using DofusGroupFinder.Client.Services;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -46,7 +47,7 @@ namespace DofusGroupFinder.Client.Controls
             var selectedListing = ListingsComboBox.SelectedItem as AnnonceView;
             if (selectedListing == null)
             {
-                MessageBox.Show("Sélectionnez une annonce");
+                NotificationManager.ShowNotification("Sélectionnez une annonce");
                 return;
             }
 

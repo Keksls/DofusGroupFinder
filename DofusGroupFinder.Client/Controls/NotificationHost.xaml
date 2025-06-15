@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="DofusGroupFinder.Client.Controls.NotificationHost"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:DofusGroupFinder.Client.Controls"
+             IsHitTestVisible="False">
+
+    <StackPanel x:Name="NotificationsPanel"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Right"
+                Margin="16"
+                IsHitTestVisible="False" />
+</UserControl>

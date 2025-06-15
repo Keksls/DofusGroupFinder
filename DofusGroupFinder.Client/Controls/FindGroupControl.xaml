@@ -11,7 +11,7 @@
             <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="8,0">
                 <TextBlock Text="Donjon " VerticalAlignment="Center" Margin="0,0,8,0" Foreground="{DynamicResource ForegroundColor}" />
                 <controls:FilteredComboBox x:Name="DungeonComboBox" Width="200" Height="24" Margin="0,0,8,0" PropertyChanged="DungeonComboBox_PropertyChanged"/>
-                <controls:IconToggleButton x:Name="WantSuccessCheckBox" CheckedChanged="OnlyWithSlotsCheckBox_CheckedChanged" Icon="/Icons/succes.png" VerticalAlignment="Center" Grid.Row="0" Height="32" Width="32" Margin="0,10,0,10"  HorizontalAlignment="Right" />
+                <controls:IconToggleButton x:Name="WantSuccessCheckBox" ToolTip="Afficher uniquement les annonces qui veulent faire les succès du donjon" CheckedChanged="OnlyWithSlotsCheckBox_CheckedChanged" Icon="/Icons/succes.png" VerticalAlignment="Center" Grid.Row="0" Height="32" Width="32" Margin="0,10,0,10"  HorizontalAlignment="Right" />
             </StackPanel>
 
             <!-- Main: résultats -->

@@ -15,6 +15,9 @@
     </Window.Effect>
 
     <DockPanel Margin="0">
+        
+        <controls:NotificationHost x:Name="NotificationHost"  DockPanel.Dock="Top" Visibility="Collapsed" />
+
         <controls:TitleBarControl Margin="0" x:Name="TitleBar"
                                    DockPanel.Dock="Top"
                                    Background="{DynamicResource BorderColor}"

@@ -15,6 +15,7 @@
         <SolidColorBrush x:Key="ButtonForegroundColor" Color="White"/>
         <SolidColorBrush x:Key="InputBackgroundColor" Color="#2E353E"/>
         <SolidColorBrush x:Key="InputForegroundColor" Color="White"/>
+        <SolidColorBrush x:Key="SubtleForegroundColor" Color="#3C3C3C"/>
 
         <!-- GLOBAL FONT -->
         <Style TargetType="TextBlock">
@@ -55,6 +56,18 @@
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
+        </Style>
+
+        <!-- ToolTip Style -->
+        <Style TargetType="ToolTip">
+            <Setter Property="Background" Value="{DynamicResource InputBackgroundColor}" />
+            <Setter Property="Foreground" Value="{DynamicResource InputForegroundColor}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource BorderColor}" />
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="8" />
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Placement" Value="Mouse"/>
+            <Setter Property="HasDropShadow" Value="True"/>
         </Style>
 
         <!-- TextBox -->
@@ -169,7 +182,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        
+
         <!-- TabControl -->
         <Style TargetType="TabItem">
             <Setter Property="Foreground" Value="{DynamicResource ForegroundColor}" />

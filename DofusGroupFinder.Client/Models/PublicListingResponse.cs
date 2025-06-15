@@ -3,7 +3,7 @@
     public class PublicListingResponse
     {
         public Guid Id { get; set; }
-        public string OwnerEmail { get; set; } = null!;
+        public string OwnerPseudo { get; set; } = null!;
         public Guid DungeonId { get; set; }
         public bool SuccessWanted { get; set; }
         public int RemainingSlots { get; set; }

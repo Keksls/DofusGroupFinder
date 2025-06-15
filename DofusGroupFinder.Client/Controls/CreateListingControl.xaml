@@ -19,7 +19,7 @@
         <TextBlock Text="Donjon" Grid.Row="0" VerticalAlignment="Center" Margin="0,0,0,5" Foreground="{DynamicResource ForegroundColor}" />
         <controls:FilteredComboBox x:Name="DungeonComboBox" Grid.Row="0" VerticalAlignment="Center" Margin="64,0,42,0" Height="24" Width="Auto"/>
         <!-- Success -->
-        <controls:IconToggleButton x:Name="SuccessCheckBox" Icon="/Icons/succes.png" VerticalAlignment="Center" Grid.Row="0" Height="32" Width="32" Margin="0,10,0,10"  HorizontalAlignment="Right" />
+        <controls:IconToggleButton x:Name="SuccessCheckBox" ToolTip="Demander à faire les succès du donjon" Icon="/Icons/succes.png" VerticalAlignment="Center" Grid.Row="0" Height="32" Width="32" Margin="0,10,0,10"  HorizontalAlignment="Right" />
 
         <!-- Slots restants -->
         <TextBlock Text="Taille du groupe" Grid.Row="2" Margin="0,0,0,5" Foreground="{DynamicResource ForegroundColor}" />
