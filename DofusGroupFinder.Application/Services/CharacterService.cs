@@ -1,4 +1,5 @@
-﻿using DofusGroupFinder.Domain.DTO;
+﻿using DofusGroupFinder.Domain.DTO.Requests;
+using DofusGroupFinder.Domain.DTO.Responses;
 using DofusGroupFinder.Domain.Entities;
 using DofusGroupFinder.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;

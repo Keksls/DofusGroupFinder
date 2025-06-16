@@ -29,6 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DofusGroupFinder.Domain\DofusGroupFinder.Domain.csproj" />
     <ProjectReference Include="..\DofusGroupFinder.Shared\DofusGroupFinder.Shared.csproj" />
   </ItemGroup>
 

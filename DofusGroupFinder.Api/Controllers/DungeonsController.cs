@@ -1,3 +1,4 @@
+using DofusGroupFinder.Domain.DTO;
 using DofusGroupFinder.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -22,13 +23,13 @@ namespace DofusGroupFinder.Api.Controllers
         {
             var dungeons = await _dbContext.Dungeons
                 .OrderBy(d => d.Name)
-                .Select(d => new
+                .Select(d => new DungeonResponse()
                 {
-                    d.Id,
-                    d.ExternalId,
-                    d.Name,
-                    d.MinLevel,
-                    d.MaxLevel
+                    Id = d.Id,
+                    ExternalId = d.ExternalId,
+                    Name = d.Name,
+                    MinLevel = d.MinLevel,
+                    MaxLevel = d.MaxLevel
                 })
                 .ToListAsync();
 

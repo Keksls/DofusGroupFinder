@@ -1,4 +1,4 @@
-﻿using DofusGroupFinder.Client.Models;
+﻿using DofusGroupFinder.Domain.DTO.Responses;
 
 namespace DofusGroupFinder.Client.Services
 {

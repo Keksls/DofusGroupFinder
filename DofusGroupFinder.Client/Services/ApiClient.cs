@@ -1,4 +1,7 @@
-﻿using DofusGroupFinder.Client.Models;
+﻿using DofusGroupFinder.Domain.DTO;
+using DofusGroupFinder.Domain.DTO.Requests;
+using DofusGroupFinder.Domain.DTO.Responses;
+using DofusGroupFinder.Domain.Entities;
 using Newtonsoft.Json;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -107,7 +110,7 @@ namespace DofusGroupFinder.Client.Services
         public async Task<List<PublicListingResponse>?> GetPublicListingsAsync()
             => await GetAsync<List<PublicListingResponse>>("api/public/listings");
 
-        public async Task<List<PublicListingResponse>?> SearchPublicListingsAsync(Guid? dungeonId = null, int? minRemainingSlots = null, bool? wantSuccess  = null)
+        public async Task<List<PublicListingResponse>?> SearchPublicListingsAsync(Guid? dungeonId = null, int? minRemainingSlots = null, bool? wantSuccess = null)
         {
             var query = new List<string>();
 
@@ -131,21 +134,33 @@ namespace DofusGroupFinder.Client.Services
             return await GetAsync<List<PublicListingResponse>>(url);
         }
 
-        public async Task<List<GroupMemberResponse>?> GetGroupMembersAsync(Guid listingId)
-            => await GetAsync<List<GroupMemberResponse>>($"api/listings/{listingId}/members");
-
-        public async Task<GroupMemberResponse?> AddGroupMemberAsync(Guid listingId, CreateGroupMemberRequest request)
-            => await PostAsync<GroupMemberResponse>($"api/listings/{listingId}/members", request);
-
-        public async Task<GroupMemberResponse?> UpdateGroupMemberAsync(Guid listingId, Guid memberId, UpdateGroupMemberRequest request)
-            => await PutAsync<GroupMemberResponse>($"api/listings/{listingId}/members/{memberId}", request);
-
-        public async Task DeleteGroupMemberAsync(Guid listingId, Guid memberId)
-            => await DeleteAsync($"api/listings/{listingId}/members/{memberId}");
-
         public async Task UpdateCharacterAsync(Guid characterId, UpdateCharacterRequest request)
         {
             await PutAsync($"api/characters/{characterId}", request);
+        }
+
+        #region Groups
+        public async Task<List<Character>?> GetGroupMembersAsync(Guid listingId)
+            => await GetAsync<List<Character>>($"api/group/{listingId}");
+
+        public async Task AddGroupMemberAsync(Guid listingId, GroupMemberRequest request)
+            => await PostAsync<object>($"api/group/{listingId}", request);
+
+        public async Task RemoveGroupMemberAsync(Guid listingId, Guid groupMemberId)
+            => await DeleteAsync($"api/group/{listingId}/{groupMemberId}");
+
+        public async Task<bool> IsCharacterInGroupAsync(Guid characterId)
+        {
+            var result = await GetAsync<bool>($"api/group/is-in-group/{characterId}");
+            return result;
+        }
+        #endregion
+
+        public async Task<List<PublicCharacterLite>?> SearchCharactersAsync(string server, string query)
+        {
+            // On encode proprement les query params
+            var url = $"api/characters/search?server={Uri.EscapeDataString(server)}&query={Uri.EscapeDataString(query)}";
+            return await GetAsync<List<PublicCharacterLite>>(url);
         }
     }
 }

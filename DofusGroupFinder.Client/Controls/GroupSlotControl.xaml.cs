@@ -1,4 +1,5 @@
-﻿using DofusGroupFinder.Client.Models;
+﻿using DofusGroupFinder.Domain.DTO.Responses;
+using DofusGroupFinder.Domain.Entities;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
@@ -12,27 +13,6 @@ namespace DofusGroupFinder.Client.Controls
             InitializeComponent();
         }
 
-        public void LoadSlot(GroupSlot slot)
-        {
-            if (string.IsNullOrEmpty(slot.CharacterName))
-            {
-                FilledPanel.Visibility = Visibility.Collapsed;
-                EmptyButton.Visibility = Visibility.Visible;
-                ToolTip = null;
-            }
-            else
-            {
-                FilledPanel.Visibility = Visibility.Visible;
-                EmptyButton.Visibility = Visibility.Collapsed;
-
-                string url = slot.CharacterClass.GetClassIconUrl();
-                ClassIconImage.Source = new BitmapImage(new Uri(url));
-
-                LevelText.Text = $"Lvl {slot.CharacterLevel}";
-                ToolTip = $"{slot.CharacterName} - {slot.CharacterClass} - Lvl {slot.CharacterLevel}";
-            }
-        }
-
         public void SetCharacter(Character character)
         {
             FilledPanel.Visibility = Visibility.Visible;
@@ -42,6 +22,18 @@ namespace DofusGroupFinder.Client.Controls
             ClassIconImage.Source = new BitmapImage(new Uri(url));
 
             LevelText.Text = $"Lvl {character.Level}";
+            ToolTip = $"{character.Name} - {character.Class} Lvl {character.Level}";
+        }
+
+        public void SetCharacter(PublicGroupMember character)
+        {
+            FilledPanel.Visibility = Visibility.Visible;
+            EmptyButton.Visibility = Visibility.Collapsed;
+
+            string url = character.Class.GetClassIconUrl();
+            ClassIconImage.Source = new BitmapImage(new Uri(url));
+
+            LevelText.Text = $"{character.Level}";
             ToolTip = $"{character.Name} - {character.Class} - Lvl {character.Level}";
         }
 

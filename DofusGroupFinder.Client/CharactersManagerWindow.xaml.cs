@@ -1,6 +1,7 @@
 ﻿using DofusGroupFinder.Client.Controls;
-using DofusGroupFinder.Client.Models;
 using DofusGroupFinder.Client.Services;
+using DofusGroupFinder.Domain.DTO.Requests;
+using DofusGroupFinder.Domain.Entities;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -108,10 +109,10 @@ namespace DofusGroupFinder.Client
 
             var request = new UpdateCharacterRequest
             {
-                Name = NameTextBox.Text,
+                Role = (Role)RolesComboBox.SelectedItem,
+                Comment = CommentTextBox.Text.Trim(),
                 Class = (DofusClass)ClassComboBox.SelectedItem,
-                Level = int.Parse(LevelTextBox.Text),
-                Server = (string)ServerComboBox.SelectedItem
+                Level = int.Parse(LevelTextBox.Text)
             };
 
             await App.ApiClient.UpdateCharacterAsync(_selectedCharacter.Id, request);

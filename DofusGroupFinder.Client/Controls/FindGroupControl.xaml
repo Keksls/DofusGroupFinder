@@ -31,7 +31,7 @@
             <ScrollViewer VerticalScrollBarVisibility="Auto"
                           Background="{DynamicResource InputBackgroundColor}"
                           Padding="0"
-                          Margin="0">
+                          Margin="0,0,6,0" HorizontalScrollBarVisibility="Disabled">
                 <ItemsControl x:Name="ResultsPanel">
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>
@@ -39,9 +39,7 @@
                         </ItemsPanelTemplate>
                     </ItemsControl.ItemsPanel>
                 </ItemsControl>
-
             </ScrollViewer>
         </Border>
-
     </DockPanel>
 </UserControl>

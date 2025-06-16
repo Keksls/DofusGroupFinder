@@ -1,4 +1,5 @@
-﻿using DofusGroupFinder.Domain.DTO;
+﻿using DofusGroupFinder.Domain.DTO.Requests;
+using DofusGroupFinder.Domain.DTO.Responses;
 using DofusGroupFinder.Domain.Entities;
 using DofusGroupFinder.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -8,10 +9,12 @@ namespace DofusGroupFinder.Application.Services
     public class ListingService : IListingService
     {
         private readonly ApplicationDbContext _context;
+        private readonly IPresenceService _presenceService;
 
-        public ListingService(ApplicationDbContext context)
+        public ListingService(ApplicationDbContext context, IPresenceService presenceService)
         {
             _context = context;
+            _presenceService = presenceService;
         }
 
         public async Task<List<ListingResponse>> GetMyListingsAsync(Guid accountId)
@@ -37,7 +40,6 @@ namespace DofusGroupFinder.Application.Services
 
         public async Task<ListingResponse> CreateListingAsync(Guid accountId, CreateListingRequest request)
         {
-            // Vérification que les personnages appartiennent bien au compte
             var validCharacters = await _context.Characters
                 .Where(c => c.AccountId == accountId && request.CharacterIds.Contains(c.Id))
                 .ToListAsync();
@@ -131,63 +133,69 @@ namespace DofusGroupFinder.Application.Services
         {
             var listings = await _context.Listings
                 .Include(l => l.Account)
-                .Include(l => l.ListingCharacters)
-                    .ThenInclude(lc => lc.Character)
-               .Where(l => l.IsActive && l.Server == server)
-                .Select(l => new PublicListingResponse
-                {
-                    Id = l.Id,
-                    OwnerPseudo = l.Account.Pseudo,
-                    DungeonId = l.DungeonId,
-                    SuccessWanted = l.SuccessWanted,
-                    NbSlots = l.NbSlots,
-                    Comment = l.Comment,
-                    CreatedAt = l.CreatedAt,
-                    Characters = l.ListingCharacters.Select(lc => new PublicListingCharacter()
-                    {
-                        Class = lc.Character.Class,
-                        Level = lc.Character.Level,
-                        Role = lc.Character.Role,
-                        IsLeader = lc.Character.AccountId == l.AccountId,
-                        Name = lc.Character.Name
-                    }).ToList(),
-                    Server = l.Server
-                })
+                .Include(l => l.ListingCharacters).ThenInclude(lc => lc.Character)
+                .Include(l => l.ListingGroupMembers).ThenInclude(gm => gm.Character)
+                .Where(l => l.IsActive && l.Server == server)
                 .ToListAsync();
 
-            return listings;
+            return listings.Select(l => new PublicListingResponse
+            {
+                Id = l.Id,
+                OwnerPseudo = l.Account.Pseudo,
+                DungeonId = l.DungeonId,
+                SuccessWanted = l.SuccessWanted,
+                NbSlots = l.NbSlots,
+                Comment = l.Comment,
+                CreatedAt = l.CreatedAt,
+                Server = l.Server,
+
+                Characters = l.ListingCharacters.Select(lc => new PublicGroupMember
+                {
+                    CharacterId = lc.Character.Id,
+                    Name = lc.Character.Name,
+                    Level = lc.Character.Level,
+                    Class = lc.Character.Class,
+                    Role = lc.Character.Role,
+                    IsLeader = lc.Character.AccountId == l.AccountId
+                }).ToList(),
+
+                GroupMembers = l.ListingGroupMembers.Select(gm => new PublicGroupMember
+                {
+                    CharacterId = gm.CharacterId,
+                    Name = gm.CharacterId != null ? gm.Character!.Name : gm.Name,
+                    Class = gm.CharacterId != null ? gm.Character!.Class : gm.Class,
+                    Level = gm.CharacterId != null ? gm.Character!.Level : gm.Level,
+                    Role = gm.CharacterId != null ? gm.Character!.Role : gm.Role
+                }).ToList()
+
+            }).ToList();
         }
 
         public async Task<List<PublicListingResponse>> SearchPublicListingsAsync(PublicListingSearchRequest request)
         {
             var query = _context.Listings
                 .Include(l => l.Account)
-                .Include(l => l.ListingCharacters)
-                    .ThenInclude(lc => lc.Character)
+                .Include(l => l.ListingCharacters).ThenInclude(lc => lc.Character)
+                .Include(l => l.ListingGroupMembers).ThenInclude(gm => gm.Character)
                 .Where(l => l.IsActive)
                 .AsQueryable();
 
             if (request.DungeonId.HasValue)
-            {
                 query = query.Where(l => l.DungeonId == request.DungeonId.Value);
-            }
 
             if (request.MinRemainingSlots.HasValue)
-            {
                 query = query.Where(l => l.NbSlots >= request.MinRemainingSlots.Value);
-            }
 
             if (request.WantSuccess.HasValue)
-            {
                 query = query.Where(l => l.SuccessWanted == request.WantSuccess.Value);
-            }
 
             if (!string.IsNullOrEmpty(request.Server))
-            {
                 query = query.Where(l => l.Server == request.Server);
-            }
 
-            var listings = await query
+            var listings = await query.ToListAsync();
+
+            var filtered = listings
+                .Where(l => _presenceService.IsAvailable(l.AccountId))
                 .Select(l => new PublicListingResponse
                 {
                     Id = l.Id,
@@ -197,19 +205,30 @@ namespace DofusGroupFinder.Application.Services
                     NbSlots = l.NbSlots,
                     Comment = l.Comment,
                     CreatedAt = l.CreatedAt,
-                    Characters = l.ListingCharacters.Select(lc => new PublicListingCharacter()
-                    {
-                        Class = lc.Character.Class,
-                        Level = lc.Character.Level,
-                        Role = lc.Character.Role,
-                        IsLeader = lc.Character.AccountId == l.AccountId,
-                        Name = lc.Character.Name
-                    }).ToList(),
-                    Server = l.Server
-                })
-                .ToListAsync();
+                    Server = l.Server,
 
-            return listings;
+                    Characters = l.ListingCharacters.Select(lc => new PublicGroupMember
+                    {
+                        CharacterId = lc.Character.Id,
+                        Name = lc.Character.Name,
+                        Level = lc.Character.Level,
+                        Class = lc.Character.Class,
+                        Role = lc.Character.Role,
+                        IsLeader = lc.Character.AccountId == l.AccountId
+                    }).ToList(),
+
+                    GroupMembers = l.ListingGroupMembers.Select(gm => new PublicGroupMember
+                    {
+                        CharacterId = gm.CharacterId,
+                        Name = gm.CharacterId != null ? gm.Character!.Name : gm.Name,
+                        Class = gm.CharacterId != null ? gm.Character!.Class : gm.Class,
+                        Level = gm.CharacterId != null ? gm.Character!.Level : gm.Level,
+                        Role = gm.CharacterId != null ? gm.Character!.Role : gm.Role
+                    }).ToList()
+
+                }).ToList();
+
+            return filtered;
         }
     }
 }

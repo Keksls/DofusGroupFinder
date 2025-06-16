@@ -1,5 +1,4 @@
-﻿using DofusGroupFinder.Client.Models;
-using DofusGroupFinder.Client.Services;
+﻿using DofusGroupFinder.Client.Services;
 using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;

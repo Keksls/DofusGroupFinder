@@ -1,7 +1,10 @@
 using DofusGroupFinder.Application.Services;
 using DofusGroupFinder.Domain.DTO;
+using DofusGroupFinder.Domain.DTO.Requests;
+using DofusGroupFinder.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 
 namespace DofusGroupFinder.Api.Controllers
@@ -12,10 +15,12 @@ namespace DofusGroupFinder.Api.Controllers
     public class CharactersController : ControllerBase
     {
         private readonly ICharacterService _characterService;
+        private readonly ApplicationDbContext _context;
 
-        public CharactersController(ICharacterService characterService)
+        public CharactersController(ApplicationDbContext context, ICharacterService characterService)
         {
             _characterService = characterService;
+            _context = context;
         }
 
         private Guid GetAccountId() =>
@@ -47,6 +52,26 @@ namespace DofusGroupFinder.Api.Controllers
         {
             await _characterService.DeleteCharacterAsync(GetAccountId(), characterId);
             return NoContent();
+        }
+
+        [HttpGet("search")]
+        public async Task<IActionResult> SearchCharacters([FromQuery] string server, [FromQuery] string query)
+        {
+            var results = await _context.Characters
+                .Where(c => c.Server == server && c.Name.ToLower().Contains(query.ToLower()))
+                .Select(c => new PublicCharacterLite
+                {
+                    CharacterId = c.Id,
+                    Name = c.Name,
+                    Class = c.Class,
+                    Level = c.Level,
+                    Role = c.Role
+                })
+                .OrderBy(c => c.Name)
+                .Take(20)
+                .ToListAsync();
+
+            return Ok(results);
         }
     }
 }

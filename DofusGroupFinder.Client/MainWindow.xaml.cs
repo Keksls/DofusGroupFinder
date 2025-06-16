@@ -21,6 +21,23 @@ namespace DofusGroupFinder.Client
             timer.Start();
 
             Loaded += MainWindow_Loaded;
+
+            // Disconnect presence when the window is closed
+            Closed += (s, e) =>
+            {
+                App.Presence.DisconnectAsync().Wait();
+            };
+
+            // Ping the api every 15 seconds to keep the presence active
+            Task.Run(async () =>
+            {
+                await App.Presence.ConnectAsync();
+                while (true)
+                {
+                    await App.Presence.PingAsync(App.StatusService.CurrentStatus == Services.UserStatus.Available);
+                    await Task.Delay(15000); // ping every 15 sec
+                }
+            });
         }
 
         private async void MainWindow_Loaded(object sender, RoutedEventArgs e)

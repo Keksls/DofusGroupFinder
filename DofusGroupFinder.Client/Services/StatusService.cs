@@ -12,9 +12,7 @@ namespace DofusGroupFinder.Client.Services
     public class StatusService
     {
         public UserStatus CurrentStatus { get; private set; } = UserStatus.Offline;
-
-        private readonly string _dofusProcessName = "Dofus"; // ⚠ à adapter selon le nom de ton process
-
+        private readonly string _dofusProcessName = "Dofus";
         private bool _hasGroup = false;
 
         public void SetGroupState(bool hasGroup)

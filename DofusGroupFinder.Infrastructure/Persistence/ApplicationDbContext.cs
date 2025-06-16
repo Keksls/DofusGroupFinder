@@ -72,11 +72,20 @@ namespace DofusGroupFinder.Infrastructure.Persistence
                 .HasForeignKey(lc => lc.CharacterId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            // ListingGroupMember
+            // ListingGroupMember (nouvelle config simplifiée)
+            modelBuilder.Entity<ListingGroupMember>()
+                .HasKey(lgm => new { lgm.ListingId, lgm.Id });
+
             modelBuilder.Entity<ListingGroupMember>()
                 .HasOne(lgm => lgm.Listing)
                 .WithMany(l => l.ListingGroupMembers)
                 .HasForeignKey(lgm => lgm.ListingId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<ListingGroupMember>()
+                .HasOne(lgm => lgm.Character)
+                .WithMany()
+                .HasForeignKey(lgm => lgm.Id)
                 .OnDelete(DeleteBehavior.Cascade);
         }
     }

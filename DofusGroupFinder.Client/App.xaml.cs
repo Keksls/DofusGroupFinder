@@ -11,6 +11,7 @@ namespace DofusGroupFinder.Client
         public static StatusService StatusService { get; private set; } = new StatusService(); 
         public static SettingsService SettingsService { get; private set; } = new SettingsService();
         public static DataService DataService { get; private set; } = new DataService();
+        public static PresenceClient Presence { get; private set; } = new PresenceClient();
 
         protected override async void OnStartup(StartupEventArgs e)
         {

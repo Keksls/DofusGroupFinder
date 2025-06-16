@@ -63,9 +63,7 @@
             </Grid>
 
             <!-- Characters -->
-            <StackPanel Orientation="Horizontal" Margin="0,5,0,5">
-                <TextBlock Text="Players: " FontWeight="Bold" />
-                <TextBlock x:Name="CharacterNamesText" TextWrapping="Wrap"/>
+            <StackPanel x:Name="Players" Visibility="Collapsed" Height="32" Orientation="Horizontal" Margin="0,4">
             </StackPanel>
 
             <!-- Footer : Date + Owner -->

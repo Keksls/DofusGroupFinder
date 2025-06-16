@@ -1,7 +1,9 @@
-﻿using DofusGroupFinder.Client.Models;
-using DofusGroupFinder.Client.Services;
+﻿using DofusGroupFinder.Client.Services;
+using DofusGroupFinder.Domain.Entities;
 using System.Windows;
 using System.Windows.Controls;
+using DofusGroupFinder.Domain.DTO.Responses;
+using DofusGroupFinder.Domain.DTO.Requests;
 
 namespace DofusGroupFinder.Client.Controls
 {

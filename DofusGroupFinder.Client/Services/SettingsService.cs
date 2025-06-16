@@ -1,5 +1,4 @@
-﻿using DofusGroupFinder.Client.Models;
-using System.IO;
+﻿using System.IO;
 using System.Text.Json;
 
 namespace DofusGroupFinder.Client.Services

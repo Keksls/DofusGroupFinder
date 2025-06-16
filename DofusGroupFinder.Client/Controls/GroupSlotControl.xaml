@@ -33,17 +33,17 @@
                 </Grid>
 
                 <!-- Overlay texte niveau -->
-                <Border Background="#AA333333"
+                <Border Background="#7F333333"
             HorizontalAlignment="Left"
             VerticalAlignment="Bottom"
             CornerRadius="0,8,0,0"
-            Width="42"
+            MaxWidth="42"
             Height="16"
-            Margin="0,0,0,0">
+            Margin="0,0,0,0"
+                        Padding="4,0,4,0">
                     <TextBlock x:Name="LevelText" 
                    Text="Lvl 200" 
                    Foreground="White"
-                   FontWeight="Bold"
                    FontSize="10"
                    HorizontalAlignment="Center" 
                    VerticalAlignment="Top" />

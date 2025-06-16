@@ -20,7 +20,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ICharacterService, CharacterService>();
 builder.Services.AddScoped<IListingService, ListingService>();
-builder.Services.AddScoped<IGroupMemberService, GroupMemberService>();
+builder.Services.AddScoped<IGroupService, GroupService>();
+builder.Services.AddSingleton<IPresenceService, PresenceService>();
+builder.Services.AddHostedService<PresenceCleanupHostedService>();
 
 // Add Swagger (pour tester l'API au début)
 builder.Services.AddEndpointsApiExplorer();

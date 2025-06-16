@@ -1,6 +1,5 @@
-﻿using DofusGroupFinder.Client.Models;
+﻿using DofusGroupFinder.Domain.Entities;
 using System.Windows.Controls;
-using System.Windows.Media;
 
 namespace DofusGroupFinder.Client.Controls
 {

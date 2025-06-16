@@ -1,4 +1,5 @@
-﻿using DofusGroupFinder.Domain.DTO;
+﻿using DofusGroupFinder.Domain.DTO.Requests;
+using DofusGroupFinder.Domain.DTO.Responses;
 
 namespace DofusGroupFinder.Application.Services
 {
