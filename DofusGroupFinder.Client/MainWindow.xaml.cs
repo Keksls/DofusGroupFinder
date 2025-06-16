@@ -8,6 +8,8 @@ namespace DofusGroupFinder.Client
     /// </summary>
     public partial class MainWindow : Window
     {
+        private bool _isCollapsed = false;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -31,6 +33,15 @@ namespace DofusGroupFinder.Client
             App.StatusService.CheckGameRunning();
             // Notifier les controls (on améliora avec MVVM plus tard)
             TitleBar.UpdateStatus(App.StatusService.CurrentStatus);
+        }
+
+        private void ToggleCollapseButton_Click(object sender, RoutedEventArgs e)
+        {
+            _isCollapsed = !_isCollapsed;
+
+            FullScreenContainer.Visibility = _isCollapsed ? Visibility.Collapsed : Visibility.Visible;
+            CollapsedScreenContainer.Visibility = _isCollapsed ? Visibility.Visible : Visibility.Collapsed;
+            Height = _isCollapsed ? 96 : 432;
         }
     }
 }

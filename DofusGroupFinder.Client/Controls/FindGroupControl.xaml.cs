@@ -34,7 +34,7 @@ namespace DofusGroupFinder.Client.Controls
 
         private async Task LoadResults()
         {
-            ResultsPanel.Children.Clear();
+            ResultsPanel.Items.Clear();
 
             Guid? dungeonId = null;
             if (DungeonComboBox.SelectedItem is DungeonResponse selectedDungeon && selectedDungeon.Name != "TOUS")
@@ -58,7 +58,7 @@ namespace DofusGroupFinder.Client.Controls
                 // Création et ajout dans le visuel → Dispatcher obligatoire
                 var control = new GroupCardControl();
                 control.SetData(listing, dungeon?.Name ?? "Unknown");
-                ResultsPanel.Children.Add(control);
+                ResultsPanel.Items.Add(control);
             }
         }
 
