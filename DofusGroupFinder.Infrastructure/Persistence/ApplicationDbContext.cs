@@ -23,7 +23,7 @@ namespace DofusGroupFinder.Infrastructure.Persistence
 
             // Account
             modelBuilder.Entity<Account>()
-                .HasIndex(a => a.Email)
+                .HasIndex(a => a.Pseudo)
                 .IsUnique();
 
             // Character

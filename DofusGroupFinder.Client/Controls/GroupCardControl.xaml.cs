@@ -20,8 +20,8 @@ namespace DofusGroupFinder.Client.Controls
             this.dungeonName = dungeonName;
             currentListing = listing;
             DungeonNameText.Text = dungeonName;
-            RemainingSlotsText.Text = $"{listing.CharacterNames.Count}/{listing.RemainingSlots}";
-            CharacterNamesText.Text = string.Join(", ", listing.CharacterNames);
+            RemainingSlotsText.Text = $"{listing.Characters.Count}/{listing.NbSlots}";
+            CharacterNamesText.Text = string.Join(", ", listing.Characters.Select(c => c.Name));
             CreatedAtText.Text = listing.CreatedAt.ToLocalTime().ToString("g");
             SuccessIcon.Visibility = listing.SuccessWanted ? Visibility.Visible : Visibility.Collapsed;
             OwnerText.Text = "Posté par " + listing.OwnerPseudo;

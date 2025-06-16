@@ -24,7 +24,7 @@ namespace DofusGroupFinder.Application.Services
                     Name = c.Name,
                     Class = c.Class,
                     Level = c.Level,
-                    Roles = c.Roles,
+                    Role = c.Role,
                     Comment = c.Comment,
                     Server = c.Server
                 }).ToListAsync();
@@ -41,7 +41,7 @@ namespace DofusGroupFinder.Application.Services
                 Name = request.Name,
                 Class = request.Class,
                 Level = request.Level,
-                Roles = request.Roles,
+                Role = request.Role,
                 Comment = request.Comment,
                 Server = request.Server
             };
@@ -55,7 +55,7 @@ namespace DofusGroupFinder.Application.Services
                 Name = character.Name,
                 Class = character.Class,
                 Level = character.Level,
-                Roles = character.Roles,
+                Role = character.Role,
                 Comment = character.Comment
             };
         }
@@ -68,7 +68,7 @@ namespace DofusGroupFinder.Application.Services
 
             character.Class = request.Class;
             character.Level = request.Level;
-            character.Roles = request.Roles;
+            character.Role = request.Role;
             character.Comment = request.Comment;
 
             await _context.SaveChangesAsync();
@@ -79,7 +79,7 @@ namespace DofusGroupFinder.Application.Services
                 Name = character.Name,
                 Class = character.Class,
                 Level = character.Level,
-                Roles = character.Roles,
+                Role = character.Role,
                 Comment = character.Comment
             };
         }

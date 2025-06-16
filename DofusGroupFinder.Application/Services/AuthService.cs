@@ -23,13 +23,13 @@ namespace DofusGroupFinder.Application.Services
 
         public async Task<AuthResponse> RegisterAsync(RegisterRequest request)
         {
-            if (await _context.Accounts.AnyAsync(a => a.Email == request.Email))
+            if (await _context.Accounts.AnyAsync(a => a.Pseudo == request.Pseudo))
                 throw new Exception("Email already registered.");
 
             var account = new Account
             {
                 Id = Guid.NewGuid(),
-                Email = request.Email,
+                Pseudo = request.Pseudo,
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password),
                 CreatedAt = DateTime.UtcNow
             };
@@ -42,7 +42,7 @@ namespace DofusGroupFinder.Application.Services
 
         public async Task<AuthResponse> LoginAsync(LoginRequest request)
         {
-            var account = await _context.Accounts.FirstOrDefaultAsync(a => a.Email == request.Email);
+            var account = await _context.Accounts.FirstOrDefaultAsync(a => a.Pseudo == request.Pseudo);
             if (account == null)
                 throw new Exception("Invalid credentials.");
 
@@ -59,9 +59,8 @@ namespace DofusGroupFinder.Application.Services
 
             var claims = new[]
             {
-            new Claim(JwtRegisteredClaimNames.Sub, account.Id.ToString()),
-            new Claim(JwtRegisteredClaimNames.Email, account.Email)
-        };
+                new Claim(JwtRegisteredClaimNames.Sub, account.Id.ToString())
+            };
 
             var token = new JwtSecurityToken(
                 issuer: _configuration["Jwt:Issuer"],

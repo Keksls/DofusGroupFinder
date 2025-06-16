@@ -109,7 +109,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
-
+        
         <!-- ListBox -->
         <Style TargetType="ListBox">
             <Setter Property="Background" Value="{DynamicResource InputBackgroundColor}" />

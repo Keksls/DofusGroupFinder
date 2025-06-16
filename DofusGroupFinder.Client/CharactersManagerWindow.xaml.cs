@@ -1,8 +1,10 @@
-﻿using DofusGroupFinder.Client.Models;
+﻿using DofusGroupFinder.Client.Controls;
+using DofusGroupFinder.Client.Models;
 using DofusGroupFinder.Client.Services;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace DofusGroupFinder.Client
 {
@@ -10,6 +12,7 @@ namespace DofusGroupFinder.Client
     {
         private List<Character>? _characters;
         private Character? _selectedCharacter;
+        private List<DofusClass> classes;
 
         public CharactersManagerWindow()
         {
@@ -18,6 +21,12 @@ namespace DofusGroupFinder.Client
             RolesComboBox.ItemsSource = Enum.GetValues(typeof(Role)).Cast<Role>();
             Loaded += CharactersManagerWindow_Loaded;
             PreviewKeyDown += CharactersManagerWindow_PreviewKeyDown;
+            classes = new List<DofusClass>();
+            foreach (var _class in Enum.GetValues(typeof(DofusClass)))
+            {
+                classes.Add((DofusClass)_class);
+            }
+            classes = classes.OrderBy(c => c.ToString()).ToList();
         }
 
         private void CharactersManagerWindow_PreviewKeyDown(object sender, KeyEventArgs e)
@@ -32,12 +41,11 @@ namespace DofusGroupFinder.Client
         {
             _characters = await App.ApiClient.GetCharactersAsync();
             CharactersListBox.ItemsSource = _characters;
-
-            ClassComboBox.ItemsSource = Enum.GetValues(typeof(DofusClass));
-            ClassComboBox.SelectedItem = DofusClass.Feca;
+            ClassComboBox.ItemsSource = classes;
+            ClassComboBox.SelectedItem = classes[0];
 
             ServerComboBox.ItemsSource = ServerList.Servers;
-            ServerComboBox.SelectedIndex = 0;
+            ServerComboBox.SelectedItem = ServerList.Servers[0];
 
             RolesComboBox.SelectedIndex = 0;
         }
@@ -46,12 +54,17 @@ namespace DofusGroupFinder.Client
         {
             if (CharactersListBox.SelectedItem is Character character)
             {
+                string iconHttpUrl = character.Class.GetClassIconUrl();
+                if (!string.IsNullOrEmpty(iconHttpUrl))
+                {
+                    ClassIcon.Source = new ImageSourceConverter().ConvertFromString(iconHttpUrl) as ImageSource;
+                }
                 _selectedCharacter = character;
                 NameTextBox.Text = character.Name;
                 ClassComboBox.SelectedItem = character.Class;
                 LevelTextBox.Text = character.Level.ToString();
                 ServerComboBox.SelectedItem = character.Server;
-                RolesComboBox.SelectedItem = character.Roles;
+                RolesComboBox.SelectedItem = character.Role;
                 CommentTextBox.Text = character.Comment ?? "";
 
                 CreateButton.Visibility = Visibility.Collapsed;
@@ -61,9 +74,9 @@ namespace DofusGroupFinder.Client
             {
                 _selectedCharacter = null;
                 NameTextBox.Text = "";
-                ClassComboBox.SelectedIndex = 0;
+                ClassComboBox.SelectedItem = classes[0];
                 LevelTextBox.Text = "1";
-                ServerComboBox.SelectedIndex = 0;
+                ServerComboBox.SelectedItem = ServerList.Servers[0];
                 RolesComboBox.SelectedIndex = 0;
                 CommentTextBox.Text = "";
 
@@ -80,7 +93,7 @@ namespace DofusGroupFinder.Client
                 Class = (DofusClass)ClassComboBox.SelectedItem,
                 Level = int.Parse(LevelTextBox.Text),
                 Server = (string)ServerComboBox.SelectedItem,
-                Roles = (Role)RolesComboBox.SelectedItem,
+                Role = (Role)RolesComboBox.SelectedItem,
                 Comment = CommentTextBox.Text.Trim()
             };
 
@@ -129,6 +142,14 @@ namespace DofusGroupFinder.Client
             if (e.ChangedButton == MouseButton.Left)
             {
                 this.DragMove();
+            }
+        }
+
+        private void CharacterListItemControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (sender is CharacterListItemControl control && control.DataContext is Character characater)
+            {
+                control.SetData(characater);
             }
         }
     }

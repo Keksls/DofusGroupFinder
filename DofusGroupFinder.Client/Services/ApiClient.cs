@@ -92,11 +92,11 @@ namespace DofusGroupFinder.Client.Services
         public async Task DeleteCharacterAsync(Guid characterId)
             => await DeleteAsync($"api/characters/{characterId}");
 
-        public async Task<List<Annonce>?> GetMyListingsAsync()
-            => await GetAsync<List<Annonce>>("api/listings");
+        public async Task<List<PublicListingResponse>?> GetMyListingsAsync()
+            => await GetAsync<List<PublicListingResponse>>("api/listings");
 
-        public async Task<Annonce?> CreateListingAsync(CreateListingRequest request)
-            => await PostAsync<Annonce>("api/listings", request);
+        public async Task<PublicListingResponse?> CreateListingAsync(CreateListingRequest request)
+            => await PostAsync<PublicListingResponse>("api/listings", request);
 
         public async Task UpdateListingAsync(Guid listingId, UpdateListingRequest request)
             => await PutAsync($"api/listings/{listingId}", request);

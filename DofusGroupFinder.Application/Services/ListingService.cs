@@ -24,7 +24,7 @@ namespace DofusGroupFinder.Application.Services
                     Id = l.Id,
                     DungeonId = l.DungeonId,
                     SuccessWanted = l.SuccessWanted,
-                    RemainingSlots = l.RemainingSlots,
+                    NbSlots = l.NbSlots,
                     Comment = l.Comment,
                     IsActive = l.IsActive,
                     CreatedAt = l.CreatedAt,
@@ -51,7 +51,7 @@ namespace DofusGroupFinder.Application.Services
                 AccountId = accountId,
                 DungeonId = request.DungeonId,
                 SuccessWanted = request.SuccessWanted,
-                RemainingSlots = request.RemainingSlots,
+                NbSlots = request.RemainingSlots,
                 Comment = request.Comment,
                 IsActive = true,
                 CreatedAt = DateTime.UtcNow,
@@ -78,7 +78,7 @@ namespace DofusGroupFinder.Application.Services
                 Id = listing.Id,
                 DungeonId = listing.DungeonId,
                 SuccessWanted = listing.SuccessWanted,
-                RemainingSlots = listing.RemainingSlots,
+                NbSlots = listing.NbSlots,
                 Comment = listing.Comment,
                 IsActive = listing.IsActive,
                 CreatedAt = listing.CreatedAt,
@@ -96,7 +96,7 @@ namespace DofusGroupFinder.Application.Services
                 throw new Exception("Listing not found.");
 
             listing.SuccessWanted = request.SuccessWanted;
-            listing.RemainingSlots = request.RemainingSlots;
+            listing.NbSlots = request.RemainingSlots;
             listing.Comment = request.Comment;
             listing.IsActive = request.IsActive;
 
@@ -107,7 +107,7 @@ namespace DofusGroupFinder.Application.Services
                 Id = listing.Id,
                 DungeonId = listing.DungeonId,
                 SuccessWanted = listing.SuccessWanted,
-                RemainingSlots = listing.RemainingSlots,
+                NbSlots = listing.NbSlots,
                 Comment = listing.Comment,
                 IsActive = listing.IsActive,
                 CreatedAt = listing.CreatedAt,
@@ -137,13 +137,20 @@ namespace DofusGroupFinder.Application.Services
                 .Select(l => new PublicListingResponse
                 {
                     Id = l.Id,
-                    OwnerPseudo = l.Account.Email,
+                    OwnerPseudo = l.Account.Pseudo,
                     DungeonId = l.DungeonId,
                     SuccessWanted = l.SuccessWanted,
-                    RemainingSlots = l.RemainingSlots,
+                    NbSlots = l.NbSlots,
                     Comment = l.Comment,
                     CreatedAt = l.CreatedAt,
-                    CharacterNames = l.ListingCharacters.Select(lc => lc.Character.Name).ToList(),
+                    Characters = l.ListingCharacters.Select(lc => new PublicListingCharacter()
+                    {
+                        Class = lc.Character.Class,
+                        Level = lc.Character.Level,
+                        Role = lc.Character.Role,
+                        IsLeader = lc.Character.AccountId == l.AccountId,
+                        Name = lc.Character.Name
+                    }).ToList(),
                     Server = l.Server
                 })
                 .ToListAsync();
@@ -167,7 +174,7 @@ namespace DofusGroupFinder.Application.Services
 
             if (request.MinRemainingSlots.HasValue)
             {
-                query = query.Where(l => l.RemainingSlots >= request.MinRemainingSlots.Value);
+                query = query.Where(l => l.NbSlots >= request.MinRemainingSlots.Value);
             }
 
             if (request.WantSuccess.HasValue)
@@ -184,14 +191,21 @@ namespace DofusGroupFinder.Application.Services
                 .Select(l => new PublicListingResponse
                 {
                     Id = l.Id,
-                    OwnerPseudo = l.Account.Email,
+                    OwnerPseudo = l.Account.Pseudo,
                     DungeonId = l.DungeonId,
                     SuccessWanted = l.SuccessWanted,
-                    RemainingSlots = l.RemainingSlots,
+                    NbSlots = l.NbSlots,
                     Comment = l.Comment,
                     CreatedAt = l.CreatedAt,
-                    Server = l.Server,
-                    CharacterNames = l.ListingCharacters.Select(lc => lc.Character.Name).ToList()
+                    Characters = l.ListingCharacters.Select(lc => new PublicListingCharacter()
+                    {
+                        Class = lc.Character.Class,
+                        Level = lc.Character.Level,
+                        Role = lc.Character.Role,
+                        IsLeader = lc.Character.AccountId == l.AccountId,
+                        Name = lc.Character.Name
+                    }).ToList(),
+                    Server = l.Server
                 })
                 .ToListAsync();
 

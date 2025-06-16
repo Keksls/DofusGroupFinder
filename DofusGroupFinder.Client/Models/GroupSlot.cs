@@ -4,6 +4,7 @@
     {
         public string CharacterName { get; set; } = string.Empty;
         public DofusClass CharacterClass { get; set; } = DofusClass.Unknown;
+        public Role CharacterRole { get; set; } = Role.Aucun;
         public int CharacterLevel { get; set; }
     }
 }

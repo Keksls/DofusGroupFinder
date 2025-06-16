@@ -9,7 +9,7 @@
     <DockPanel Margin="0">
 
         <!-- Top: les filtres -->
-        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="8,8,8,8">
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" VerticalAlignment="Top" Margin="8,8,8,8">
             <TextBlock Text="Donjon " VerticalAlignment="Center" Margin="0,0,8,0" Foreground="{DynamicResource ForegroundColor}" />
             <controls:FilteredComboBox x:Name="DungeonComboBox" Width="200" Height="24" Margin="0,0,8,0" PropertyChanged="DungeonComboBox_PropertyChanged"/>
             <controls:IconToggleButton x:Name="WantSuccessCheckBox"
@@ -24,17 +24,14 @@
         <!-- Main: résultats -->
         <Border Background="{DynamicResource InputBackgroundColor}" 
                 BorderBrush="{DynamicResource BorderColor}" 
-                BorderThickness="1" 
+                BorderThickness="0" 
                 CornerRadius="0" 
-                Padding="8" 
-                Margin="8,0,8,8"
+                Padding="0,8" 
                 DockPanel.Dock="Bottom">
-
             <ScrollViewer VerticalScrollBarVisibility="Auto"
                           Background="{DynamicResource InputBackgroundColor}"
                           Padding="0"
                           Margin="0">
-
                 <ItemsControl x:Name="ResultsPanel">
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>

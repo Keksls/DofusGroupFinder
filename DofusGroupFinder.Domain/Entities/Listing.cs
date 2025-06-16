@@ -10,7 +10,7 @@ public class Listing
     public Dungeon Dungeon { get; set; } = null!;
 
     public bool SuccessWanted { get; set; }
-    public int RemainingSlots { get; set; }
+    public int NbSlots { get; set; }
     public string? Comment { get; set; }
     public bool IsActive { get; set; } = true;
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;

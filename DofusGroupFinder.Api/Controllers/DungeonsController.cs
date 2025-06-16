@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 namespace DofusGroupFinder.Api.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/dungeons")]
     [Authorize]
     public class DungeonsController : ControllerBase
     {

@@ -53,6 +53,12 @@ namespace DofusGroupFinder.Client
         {
             var createAccountWindow = new CreateAccountWindow(this);
             createAccountWindow.Owner = this;
+
+            // center the window on the parent
+            createAccountWindow.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+            createAccountWindow.Left = this.Left + (this.Width - createAccountWindow.Width) / 2;
+            createAccountWindow.Top = this.Top + (this.Height - createAccountWindow.Height) / 2;
+            // Show the create account window
             createAccountWindow.ShowDialog();
         }
 

@@ -30,7 +30,7 @@ namespace DofusGroupFinder.Client.Controls
             }
         }
 
-        public void LoadListings(List<Annonce> listings)
+        public void LoadListings(List<PublicListingResponse> listings)
         {
             List<AnnonceView> list = new List<AnnonceView>();
             foreach (var annonce in listings)
@@ -57,9 +57,9 @@ namespace DofusGroupFinder.Client.Controls
 
     public class AnnonceView
     {
-        public Annonce Annonce { get; set; }
+        public PublicListingResponse Annonce { get; set; }
         public string DungeonName { get; set; }
-        public AnnonceView(Annonce annonce, Dictionary<Guid, DungeonResponse> dungeons)
+        public AnnonceView(PublicListingResponse annonce, Dictionary<Guid, DungeonResponse> dungeons)
         {
             Annonce = annonce;
             DungeonName = dungeons.TryGetValue(annonce.DungeonId, out var dungeon) ? dungeon.Name : "Inconnu";
@@ -67,7 +67,7 @@ namespace DofusGroupFinder.Client.Controls
 
         public override string ToString()
         {
-            return $"{DungeonName} - ({Annonce.RemainingSlots} places)";
+            return $"{DungeonName} - ({Annonce.Characters.Count} / {Annonce.NbSlots})";
         }
     }
 }

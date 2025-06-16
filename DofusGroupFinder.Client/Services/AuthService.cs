@@ -8,10 +8,9 @@ namespace DofusGroupFinder.Client.Services
     {
         private const string FilePath = "Config/auth.json";
 
-        public async Task<string?> LoginAsync(string email, string password)
+        public async Task<string?> LoginAsync(string pseudo, string password)
         {
-            var request = new { email = email, password = password };
-
+            var request = new { Pseudo = pseudo, Password = password };
             var response = await HttpClientFactory.Instance.PostAsJsonAsync("api/auth/login", request);
             if (response.IsSuccessStatusCode)
             {
@@ -25,9 +24,9 @@ namespace DofusGroupFinder.Client.Services
             return null;
         }
 
-        public async Task<bool> RegisterAsync(string email, string password)
+        public async Task<bool> RegisterAsync(string pseudo, string password)
         {
-            var request = new { email = email, password = password };
+            var request = new { Pseudo = pseudo, Password = password };
             var response = await HttpClientFactory.Instance.PostAsJsonAsync("api/auth/register", request);
             return response.IsSuccessStatusCode;
         }
