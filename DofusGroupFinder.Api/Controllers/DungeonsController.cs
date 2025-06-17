@@ -1,4 +1,5 @@
 using DofusGroupFinder.Domain.DTO;
+using DofusGroupFinder.Domain.DTO.Responses;
 using DofusGroupFinder.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

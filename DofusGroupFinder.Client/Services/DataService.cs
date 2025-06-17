@@ -5,7 +5,6 @@ namespace DofusGroupFinder.Client.Services
     public class DataService
     {
         public Dictionary<Guid, DungeonResponse> Dungeons = new Dictionary<Guid, DungeonResponse>();
-        public event Action? OnGetStaticData;
 
         /// <summary>
         /// Retreive static data from the API, such as dungeons.
@@ -23,7 +22,7 @@ namespace DofusGroupFinder.Client.Services
                 Dungeons[dungeon.Id] = dungeon;
             }
             // Fire the event to notify that static data has been loaded
-            OnGetStaticData?.Invoke();
+            App.Events.InvokeGetStaticData();
         }
     }
 }

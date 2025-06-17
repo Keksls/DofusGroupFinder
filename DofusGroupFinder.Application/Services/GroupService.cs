@@ -1,4 +1,5 @@
-﻿using DofusGroupFinder.Application.Services;
+﻿using DofusGroupFinder.Application;
+using DofusGroupFinder.Application.Services;
 using DofusGroupFinder.Domain.DTO.Requests;
 using DofusGroupFinder.Domain.DTO.Responses;
 using DofusGroupFinder.Domain.Entities;
@@ -31,64 +32,111 @@ public class GroupService : IGroupService
         }).ToList();
     }
 
-    public async Task AddGroupMemberAsync(Guid listingId, GroupMemberRequest request)
+    public async Task<ServiceResult> AddGroupMemberAsync(Guid listingId, GroupMemberRequest request)
     {
         // Validation du listing
         var listing = await _context.Listings.FindAsync(listingId);
         if (listing == null)
-            throw new Exception("Listing not found");
+            return ServiceResult.Fail("Listing not found");
 
         // Check du slot dispo
         var currentMembers = await _context.ListingGroupMembers
             .CountAsync(g => g.ListingId == listingId);
         if (currentMembers >= listing.NbSlots)
-            throw new Exception("No slots available in this group");
+            return ServiceResult.Fail("No slots available in this group");
 
-        // Si CharacterId fourni : validation
         Character? character = null;
         if (request.CharacterId.HasValue)
         {
+            // Validation de l'existence du character
             character = await _context.Characters.FindAsync(request.CharacterId.Value);
             if (character == null)
-                throw new Exception("CharacterId provided but not found");
-            // Check qu'il n'est pas déjà dans un autre groupe
+                return ServiceResult.Fail("CharacterId provided but not found");
+
+            // Vérifie qu'il n'est pas déjà dans un autre groupe
             var alreadyInGroup = await _context.ListingGroupMembers
                 .AnyAsync(g => g.CharacterId == request.CharacterId);
             if (alreadyInGroup)
-                throw new Exception("Character already in a group");
+                return ServiceResult.Fail("Character already in a group");
         }
 
-        // Création du membre
         var member = new ListingGroupMember
         {
             Id = Guid.NewGuid(),
             ListingId = listingId,
-            CharacterId = request.CharacterId,
-            Character = character,
-            Name = request.Name,
-            Class = request.Class,
-            Level = request.Level,
-            Role = request.Role
+            CharacterId = request.CharacterId
         };
+
+        if (character != null)
+        {
+            // On renseigne automatiquement depuis le perso existant
+            member.Name = character.Name;
+            member.Class = character.Class;
+            member.Level = character.Level;
+            member.Role = character.Role;
+        }
+        else
+        {
+            // Saisie manuelle obligatoire
+            if (string.IsNullOrWhiteSpace(request.Name))
+                return ServiceResult.Fail("Missing required fields for manual entry");
+
+            member.Name = request.Name!;
+            member.Class = request.Class;
+            member.Level = request.Level;
+            member.Role = request.Role;
+        }
 
         _context.ListingGroupMembers.Add(member);
         await _context.SaveChangesAsync();
+        return ServiceResult.Ok();
     }
 
-    public async Task RemoveGroupMemberAsync(Guid listingId, Guid groupMemberId)
+    public async Task<ServiceResult> RemoveGroupMemberAsync(Guid listingId, Guid groupMemberId)
     {
         var member = await _context.ListingGroupMembers
             .FirstOrDefaultAsync(m => m.Id == groupMemberId && m.ListingId == listingId);
         if (member == null)
-            throw new Exception("Group member not found");
+            return ServiceResult.Fail("Group member not found");
 
         _context.ListingGroupMembers.Remove(member);
         await _context.SaveChangesAsync();
+        return ServiceResult.Ok();
     }
 
     public Task<bool> IsCharacterInGroupAsync(Guid characterId)
     {
         return _context.ListingGroupMembers
             .AnyAsync(m => m.CharacterId == characterId);
+    }
+
+    public async Task<ServiceResult> DisbandGroupAsync(Guid accountId, Guid listingId, bool deleteListing = false)
+    {
+        // Vérifie ownership
+        var listing = await _context.Listings
+            .FirstOrDefaultAsync(l => l.Id == listingId && l.AccountId == accountId);
+
+        if (listing == null)
+            return ServiceResult.Fail("Listing not found or access denied");
+
+        // Supprime tous les membres du groupe
+        var members = await _context.ListingGroupMembers
+            .Where(g => g.ListingId == listingId)
+            .ToListAsync();
+
+        _context.ListingGroupMembers.RemoveRange(members);
+
+        // Optionnel : supprime aussi l’annonce si demandé
+        if (deleteListing)
+        {
+            _context.Listings.Remove(listing);
+        }
+        else
+        {
+            listing.IsActive = true;  // active l'annonce si besoin
+        }
+
+        await _context.SaveChangesAsync();
+        return ServiceResult.Ok();
     }
 }

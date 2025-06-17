@@ -1,4 +1,7 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
+using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Net.Http.Json;
 using System.Text.Json;
 
@@ -7,6 +10,9 @@ namespace DofusGroupFinder.Client.Services
     public class AuthService
     {
         private const string FilePath = "Config/auth.json";
+
+        public Guid? AccountId { get; private set; }
+        public string? Token { get; private set; }
 
         public async Task<string?> LoginAsync(string pseudo, string password)
         {
@@ -17,6 +23,7 @@ namespace DofusGroupFinder.Client.Services
                 var result = await response.Content.ReadFromJsonAsync<LoginResponse>();
                 if (result?.Token != null)
                 {
+                    SetToken(result.Token);
                     SaveToken(result.Token);
                     return result.Token;
                 }
@@ -31,13 +38,7 @@ namespace DofusGroupFinder.Client.Services
             return response.IsSuccessStatusCode;
         }
 
-        public void SaveToken(string token)
-        {
-            Directory.CreateDirectory("Config");
-            File.WriteAllText(FilePath, JsonSerializer.Serialize(new AuthObject { Token = token }));
-        }
-
-        public string? LoadToken()
+        public string LoadToken()
         {
             if (!File.Exists(FilePath))
                 return null;
@@ -45,6 +46,30 @@ namespace DofusGroupFinder.Client.Services
             var json = File.ReadAllText(FilePath);
             var obj = JsonSerializer.Deserialize<AuthObject>(json);
             return obj?.Token;
+        }
+
+        private void SetToken(string token)
+        {
+            Token = token;
+            Directory.CreateDirectory("Config");
+            DecodeAndStoreAccountId(token);
+        }
+
+        public void SaveToken(string token)
+        {
+            Directory.CreateDirectory("Config");
+            File.WriteAllText(FilePath, JsonSerializer.Serialize(new AuthObject { Token = token }));
+        }
+
+        private void DecodeAndStoreAccountId(string token)
+        {
+            var handler = new JwtSecurityTokenHandler();
+            var jwt = handler.ReadJwtToken(token);
+            var subClaim = jwt.Claims.FirstOrDefault(c => c.Type == JwtRegisteredClaimNames.Sub);
+            if (subClaim != null && Guid.TryParse(subClaim.Value, out var id))
+            {
+                AccountId = id;
+            }
         }
 
         private class LoginResponse

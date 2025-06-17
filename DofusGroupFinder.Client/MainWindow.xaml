@@ -82,8 +82,15 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            
+
             <controls:NoGroupFooterControl x:Name="NoGroupFooter" 
+                                       HorizontalAlignment="Stretch" 
+                                       VerticalAlignment="Bottom" 
+                                       DockPanel.Dock="Bottom"  
+                                       Visibility="Collapsed"
+                                       Background="{DynamicResource HighlightColor}"/>
+
+            <controls:InGroupFooterControl x:Name="InGroupFooter" 
                                        HorizontalAlignment="Stretch" 
                                        VerticalAlignment="Bottom" 
                                        DockPanel.Dock="Bottom"  

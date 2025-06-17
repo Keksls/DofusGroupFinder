@@ -72,7 +72,6 @@ namespace DofusGroupFinder.Infrastructure.Persistence
                 .HasForeignKey(lc => lc.CharacterId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            // ListingGroupMember (nouvelle config simplifiée)
             modelBuilder.Entity<ListingGroupMember>()
                 .HasKey(lgm => new { lgm.ListingId, lgm.Id });
 
@@ -85,8 +84,9 @@ namespace DofusGroupFinder.Infrastructure.Persistence
             modelBuilder.Entity<ListingGroupMember>()
                 .HasOne(lgm => lgm.Character)
                 .WithMany()
-                .HasForeignKey(lgm => lgm.Id)
-                .OnDelete(DeleteBehavior.Cascade);
+                .HasForeignKey(lgm => lgm.CharacterId)
+                .OnDelete(DeleteBehavior.Cascade)
+                .IsRequired(false);
         }
     }
 }

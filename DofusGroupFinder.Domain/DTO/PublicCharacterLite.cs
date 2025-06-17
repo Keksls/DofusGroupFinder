@@ -7,5 +7,10 @@
         public DofusClass Class { get; set; }
         public int Level { get; set; }
         public Role Role { get; set; }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

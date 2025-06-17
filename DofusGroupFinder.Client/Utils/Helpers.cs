@@ -1,6 +1,6 @@
 ﻿using System.Windows.Markup;
 
-namespace DofusGroupFinder.Client.Helpers
+namespace DofusGroupFinder.Client.Utils
 {
     public class EnumValuesExtension : MarkupExtension
     {

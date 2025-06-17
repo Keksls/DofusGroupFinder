@@ -1,4 +1,5 @@
 ﻿using DofusGroupFinder.Domain.DTO.Responses;
+using DofusGroupFinder.Domain.Entities;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -19,16 +20,31 @@ namespace DofusGroupFinder.Client.Controls
             this.dungeonName = dungeonName;
             currentListing = listing;
             DungeonNameText.Text = dungeonName;
-            RemainingSlotsText.Text = $"{listing.Characters.Count}/{listing.NbSlots}";
+            RemainingSlotsText.Text = $"{listing.GroupMembers.Count}/{listing.NbSlots}";
             Players.Children.Clear();
-            foreach (var character in listing.Characters)
+            if (listing.GroupMembers.Count > 0)
             {
-                var playerControl = new GroupSlotControl();
-                playerControl.SetCharacter(character);
-                playerControl.Height = 32;
-                playerControl.Width = 32;
-                playerControl.Margin = new Thickness(0, 0, 4, 0);
-                Players.Children.Add(playerControl);
+                foreach (var character in listing.GroupMembers)
+                {
+                    var playerControl = new GroupSlotControl();
+                    playerControl.SetCharacter(character);
+                    playerControl.Height = 32;
+                    playerControl.Width = 32;
+                    playerControl.Margin = new Thickness(0, 0, 4, 0);
+                    Players.Children.Add(playerControl);
+                }
+            }
+            else
+            {
+                foreach (var character in listing.Characters)
+                {
+                    var playerControl = new GroupSlotControl();
+                    playerControl.SetCharacter(character);
+                    playerControl.Height = 32;
+                    playerControl.Width = 32;
+                    playerControl.Margin = new Thickness(0, 0, 4, 0);
+                    Players.Children.Add(playerControl);
+                }
             }
             CreatedAtText.Text = listing.CreatedAt.ToLocalTime().ToString("g");
             SuccessIcon.Visibility = listing.SuccessWanted ? Visibility.Visible : Visibility.Collapsed;

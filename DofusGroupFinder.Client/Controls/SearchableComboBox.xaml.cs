@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using DofusGroupFinder.Client.Utils;
+using Newtonsoft.Json.Linq;
 using System.Collections;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -30,6 +31,16 @@ namespace DofusGroupFinder.Client.Controls
         public static readonly DependencyProperty SelectedItemProperty =
             DependencyProperty.Register(nameof(SelectedItem), typeof(object), typeof(FilteredComboBox),
                 new PropertyMetadata(null, OnSelectedItemChanged));
+
+        public static readonly DependencyProperty AllowCustomEntryProperty =
+    DependencyProperty.Register(nameof(AllowCustomEntry), typeof(bool), typeof(FilteredComboBox),
+        new PropertyMetadata(false));
+
+        public bool AllowCustomEntry
+        {
+            get => (bool)GetValue(AllowCustomEntryProperty);
+            set => SetValue(AllowCustomEntryProperty, value);
+        }
 
         // Public Bindings
         public IEnumerable ItemsSource
@@ -87,15 +98,28 @@ namespace DofusGroupFinder.Client.Controls
         {
             FilteredItems.Clear();
 
-            if (itemsSource == null)
-                return;
-
-            foreach (var item in itemsSource)
+            if (itemsSource != null)
             {
-                if (string.IsNullOrWhiteSpace(SearchText) ||
-                    item?.ToString()?.IndexOf(SearchText, StringComparison.InvariantCultureIgnoreCase) >= 0)
+                foreach (var item in itemsSource)
                 {
-                    FilteredItems.Add(item);
+                    if (string.IsNullOrWhiteSpace(SearchText) ||
+                        item?.ToString()?.IndexOf(SearchText, StringComparison.InvariantCultureIgnoreCase) >= 0)
+                    {
+                        FilteredItems.Add(item);
+                    }
+                }
+            }
+
+            // Ajouter la custom entry en haut si demandé
+            if (AllowCustomEntry && !string.IsNullOrWhiteSpace(SearchText))
+            {
+                bool alreadyExists = FilteredItems
+                    .OfType<object>()
+                    .Any(i => i?.ToString()?.Equals(SearchText, StringComparison.InvariantCultureIgnoreCase) == true);
+
+                if (!alreadyExists)
+                {
+                    FilteredItems.Insert(0, SearchText);  // on ajoute le texte libre tout en haut
                 }
             }
 
@@ -131,7 +155,15 @@ namespace DofusGroupFinder.Client.Controls
         {
             if (ListBox.SelectedItem != null)
             {
-                SelectedItem = ListBox.SelectedItem;
+                if (AllowCustomEntry && ListBox.SelectedItem is string freeText)
+                {
+                    SelectedItem = freeText;
+                }
+                else
+                {
+                    SelectedItem = ListBox.SelectedItem;
+                }
+
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedItem)));
                 Popup.IsOpen = false;
             }

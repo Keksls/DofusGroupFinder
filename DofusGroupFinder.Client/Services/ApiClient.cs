@@ -13,10 +13,9 @@ namespace DofusGroupFinder.Client.Services
     {
         private readonly HttpClient _httpClient;
 
-        public ApiClient(string jwtToken)
+        public ApiClient()
         {
             _httpClient = HttpClientFactory.Instance;
-            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", jwtToken);
         }
 
         public void SetJwtToken(string token)
@@ -27,7 +26,12 @@ namespace DofusGroupFinder.Client.Services
         public async Task<T?> GetAsync<T>(string url)
         {
             var response = await _httpClient.GetAsync(url);
-            response.EnsureSuccessStatusCode();
+            if (response.IsSuccessStatusCode == false)
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                NotificationManager.ShowNotification(errorContent);
+                return default(T);
+            }
 
             var json = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<T>(json);
@@ -43,8 +47,12 @@ namespace DofusGroupFinder.Client.Services
             var content = new StringContent(jsonBody, Encoding.UTF8, "application/json");
 
             var response = await _httpClient.PostAsync(url, content);
-            response.EnsureSuccessStatusCode();
-
+            if(response.IsSuccessStatusCode == false)
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                NotificationManager.ShowNotification(errorContent);
+                return default(T);
+            }
             var json = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<T>(json);
         }
@@ -59,7 +67,11 @@ namespace DofusGroupFinder.Client.Services
             var content = new StringContent(jsonBody, Encoding.UTF8, "application/json");
 
             var response = await _httpClient.PutAsync(url, content);
-            response.EnsureSuccessStatusCode();
+            if (response.IsSuccessStatusCode == false)
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                NotificationManager.ShowNotification(errorContent);
+            }
         }
 
         private async Task<T?> PutAsync<T>(string url, object body)
@@ -84,8 +96,6 @@ namespace DofusGroupFinder.Client.Services
             response.EnsureSuccessStatusCode();
         }
 
-        // Ensuite tu gardes tous tes appels spécifiques exactement comme tu les avais
-
         public async Task<List<Character>?> GetCharactersAsync()
             => await GetAsync<List<Character>>("api/characters");
 
@@ -106,9 +116,6 @@ namespace DofusGroupFinder.Client.Services
 
         public async Task DeleteListingAsync(Guid listingId)
             => await DeleteAsync($"api/listings/{listingId}");
-
-        public async Task<List<PublicListingResponse>?> GetPublicListingsAsync()
-            => await GetAsync<List<PublicListingResponse>>("api/public/listings");
 
         public async Task<List<PublicListingResponse>?> SearchPublicListingsAsync(Guid? dungeonId = null, int? minRemainingSlots = null, bool? wantSuccess = null)
         {
@@ -154,13 +161,23 @@ namespace DofusGroupFinder.Client.Services
             var result = await GetAsync<bool>($"api/group/is-in-group/{characterId}");
             return result;
         }
+
+        public async Task DisbandGroupAsync(Guid listingId, bool deleteListing = false)
+        {
+            var url = $"api/group/{listingId}/disband?deleteListing={deleteListing.ToString().ToLower()}";
+            await PostAsync<object>(url, new { });
+        }
         #endregion
 
         public async Task<List<PublicCharacterLite>?> SearchCharactersAsync(string server, string query)
         {
-            // On encode proprement les query params
             var url = $"api/characters/search?server={Uri.EscapeDataString(server)}&query={Uri.EscapeDataString(query)}";
             return await GetAsync<List<PublicCharacterLite>>(url);
+        }
+
+        public async Task<PublicListingResponse?> GetPublicListingByIdAsync(Guid listingId)
+        {
+            return await GetAsync<PublicListingResponse>($"api/listings/{listingId}");
         }
     }
 }

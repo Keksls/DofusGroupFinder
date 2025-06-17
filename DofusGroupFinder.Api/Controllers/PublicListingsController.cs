@@ -1,5 +1,6 @@
 using DofusGroupFinder.Application.Services;
 using DofusGroupFinder.Domain.DTO;
+using DofusGroupFinder.Domain.DTO.Requests;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

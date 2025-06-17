@@ -49,5 +49,16 @@ namespace DofusGroupFinder.Api.Controllers
             await _listingService.DeleteListingAsync(GetAccountId(), listingId);
             return NoContent();
         }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(Guid id)
+        {
+            var listing = await _listingService.GetPublicListingByIdAsync(id);
+            if (listing == null)
+                return NotFound();
+
+            return Ok(listing);
+        }
+
     }
 }

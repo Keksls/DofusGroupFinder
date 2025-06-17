@@ -1,17 +1,19 @@
 ﻿using DofusGroupFinder.Client.Services;
 using DofusGroupFinder.Client.Theming;
+using DofusGroupFinder.Client.Utils;
 using System.Windows;
 
 namespace DofusGroupFinder.Client
 {
     public partial class App : Application
     {
-        public static ApiClient ApiClient { get; private set; } = new ApiClient("http://localhost:5209");
+        public static ApiClient ApiClient { get; private set; } = new ApiClient();
         public static AuthService AuthService { get; private set; } = new AuthService();
-        public static StatusService StatusService { get; private set; } = new StatusService(); 
+        public static GroupManagerService GroupManagerService { get; private set; } = new GroupManagerService(); 
         public static SettingsService SettingsService { get; private set; } = new SettingsService();
         public static DataService DataService { get; private set; } = new DataService();
         public static PresenceClient Presence { get; private set; } = new PresenceClient();
+        public static Events Events { get; private set; } = new Events();
 
         protected override async void OnStartup(StartupEventArgs e)
         {

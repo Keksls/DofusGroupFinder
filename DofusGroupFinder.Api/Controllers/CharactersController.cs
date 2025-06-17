@@ -55,8 +55,9 @@ namespace DofusGroupFinder.Api.Controllers
         }
 
         [HttpGet("search")]
-        public async Task<IActionResult> SearchCharacters([FromQuery] string server, [FromQuery] string query)
+        public async Task<IActionResult> SearchCharacters([FromQuery] string server, [FromQuery] string? query = "")
         {
+            query ??= "";
             var results = await _context.Characters
                 .Where(c => c.Server == server && c.Name.ToLower().Contains(query.ToLower()))
                 .Select(c => new PublicCharacterLite
@@ -68,7 +69,6 @@ namespace DofusGroupFinder.Api.Controllers
                     Role = c.Role
                 })
                 .OrderBy(c => c.Name)
-                .Take(20)
                 .ToListAsync();
 
             return Ok(results);

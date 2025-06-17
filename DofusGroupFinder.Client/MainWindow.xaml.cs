@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using DofusGroupFinder.Client.Controls;
+using System.Windows;
 using System.Windows.Threading;
 
 namespace DofusGroupFinder.Client
@@ -25,7 +26,7 @@ namespace DofusGroupFinder.Client
             // Disconnect presence when the window is closed
             Closed += (s, e) =>
             {
-                App.Presence.DisconnectAsync().Wait();
+                _ = App.Presence.DisconnectAsync();
             };
 
             // Ping the api every 15 seconds to keep the presence active
@@ -34,7 +35,7 @@ namespace DofusGroupFinder.Client
                 await App.Presence.ConnectAsync();
                 while (true)
                 {
-                    await App.Presence.PingAsync(App.StatusService.CurrentStatus == Services.UserStatus.Available);
+                    await App.Presence.PingAsync(App.GroupManagerService.CurrentStatus == Services.UserStatus.Available);
                     await Task.Delay(15000); // ping every 15 sec
                 }
             });
@@ -42,14 +43,17 @@ namespace DofusGroupFinder.Client
 
         private async void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
+            await App.GroupManagerService.RestoreGroupAsync();
+            UpdateFooter();
+            App.Events.OnGroupStateChanged += UpdateFooter;
             await App.DataService.RetreiveStaticData();
         }
 
         private void Timer_Tick(object? sender, EventArgs e)
         {
-            App.StatusService.CheckGameRunning();
+            App.GroupManagerService.CheckGameRunning();
             // Notifier les controls (on améliora avec MVVM plus tard)
-            TitleBar.UpdateStatus(App.StatusService.CurrentStatus);
+            TitleBar.UpdateStatus(App.GroupManagerService.CurrentStatus);
         }
 
         private void ToggleCollapseButton_Click(object sender, RoutedEventArgs e)
@@ -59,6 +63,24 @@ namespace DofusGroupFinder.Client
             FullScreenContainer.Visibility = _isCollapsed ? Visibility.Collapsed : Visibility.Visible;
             CollapsedScreenContainer.Visibility = _isCollapsed ? Visibility.Visible : Visibility.Collapsed;
             Height = _isCollapsed ? 96 : 432;
+        }
+
+        private void UpdateFooter()
+        {
+            _ = Dispatcher.InvokeAsync(async () =>
+            {
+                if (App.GroupManagerService.CurrentListingId == null)
+                {
+                    NoGroupFooter.Visibility = Visibility.Visible;
+                    InGroupFooter.Visibility = Visibility.Collapsed;
+                }
+                else
+                {
+                    NoGroupFooter.Visibility = Visibility.Collapsed;
+                    await InGroupFooter.LoadGroupAsync(App.GroupManagerService.CurrentListingId.Value);
+                    InGroupFooter.Visibility = Visibility.Visible;
+                }
+            });
         }
     }
 }

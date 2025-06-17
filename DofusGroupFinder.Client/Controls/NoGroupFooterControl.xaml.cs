@@ -7,18 +7,14 @@ namespace DofusGroupFinder.Client.Controls
 {
     public partial class NoGroupFooterControl : UserControl
     {
-        public event Action<AnnonceView>? GroupCreationRequested;
         private List<AnnonceView> _listings = new();
 
         public NoGroupFooterControl()
         {
             InitializeComponent();
-            App.DataService.OnGetStaticData += DataService_OnGetStaticData;
-        }
 
-        private void DataService_OnGetStaticData()
-        {
-            LoadListingsAsync();
+            App.Events.OnGetStaticData += LoadListingsAsync;
+            App.Events.OnUserListingsUpdated += LoadListingsAsync;
         }
 
         private async void LoadListingsAsync()
@@ -42,7 +38,7 @@ namespace DofusGroupFinder.Client.Controls
             ListingsComboBox.ItemsSource = list;
         }
 
-        private void CreateGroup_Click(object sender, RoutedEventArgs e)
+        private async void CreateGroup_Click(object sender, RoutedEventArgs e)
         {
             var selectedListing = ListingsComboBox.SelectedItem as AnnonceView;
             if (selectedListing == null)
@@ -51,7 +47,15 @@ namespace DofusGroupFinder.Client.Controls
                 return;
             }
 
-            GroupCreationRequested?.Invoke(selectedListing);
+            try
+            {
+                await App.GroupManagerService.CreateGroupAsync(selectedListing.Annonce.Id);
+                NotificationManager.ShowNotification("Groupe créé avec succès !");
+            }
+            catch (Exception ex)
+            {
+                NotificationManager.ShowNotification($"Erreur : {ex.Message}");
+            }
         }
     }
 

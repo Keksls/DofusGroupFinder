@@ -13,7 +13,7 @@ namespace DofusGroupFinder.Client.Controls
         {
             InitializeComponent();
             _dungeons = new List<DungeonResponse>();
-            App.DataService.OnGetStaticData += DataService_OnGetStaticData;
+            App.Events.OnGetStaticData += DataService_OnGetStaticData;
             Loaded += FindGroupControl_Loaded;
         }
 

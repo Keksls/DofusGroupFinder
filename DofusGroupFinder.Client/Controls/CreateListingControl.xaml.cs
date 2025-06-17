@@ -16,7 +16,7 @@ namespace DofusGroupFinder.Client.Controls
         {
             InitializeComponent();
             _dungeons = new List<DungeonResponse>();
-            App.DataService.OnGetStaticData += DataService_OnGetStaticData;
+            App.Events.OnGetStaticData += DataService_OnGetStaticData;
         }
 
         private async void DataService_OnGetStaticData()
@@ -68,8 +68,8 @@ namespace DofusGroupFinder.Client.Controls
             try
             {
                 await App.ApiClient.CreateListingAsync(request);
+                App.Events.InvokeUserListingsUpdated();
                 NotificationManager.ShowNotification("Listing created!");
-                // Reload page or reset form if needed
             }
             catch (Exception ex)
             {
