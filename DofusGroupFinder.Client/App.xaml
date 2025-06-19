@@ -129,6 +129,7 @@
                     BorderThickness="{TemplateBinding BorderThickness}"
                     CornerRadius="6">
                             <ScrollViewer Margin="2" 
+                                          MaxHeight="184"
                                   Focusable="false"
                                   VerticalScrollBarVisibility="Auto"
                                   HorizontalScrollBarVisibility="Disabled">
@@ -258,7 +259,7 @@
             <Setter Property="Foreground" Value="{DynamicResource InputForegroundColor}" />
             <Setter Property="BorderBrush" Value="{DynamicResource BorderColor}" />
             <Setter Property="BorderThickness" Value="1"/>
-            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Padding" Value="4"/>
             <Setter Property="SnapsToDevicePixels" Value="True"/>
             <Setter Property="FontSize" Value="14"/>
             <Setter Property="Template">

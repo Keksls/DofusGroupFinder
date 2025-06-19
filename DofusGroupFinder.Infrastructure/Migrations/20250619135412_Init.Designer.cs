@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DofusGroupFinder.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250617164900_Allow_Null_CharacterId_In_ListingGroupMembers")]
-    partial class Allow_Null_CharacterId_In_ListingGroupMembers
+    [Migration("20250619135412_Init")]
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -92,18 +92,29 @@ namespace DofusGroupFinder.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<int>("ExternalId")
+                    b.Property<int>("BossGfxId")
                         .HasColumnType("integer");
 
-                    b.Property<int>("MaxLevel")
+                    b.Property<int>("BossId")
                         .HasColumnType("integer");
 
-                    b.Property<int>("MinLevel")
+                    b.Property<string>("BossName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("ExtId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Level")
                         .HasColumnType("integer");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.PrimitiveCollection<string[]>("Succes")
+                        .IsRequired()
+                        .HasColumnType("text[]");
 
                     b.HasKey("Id");
 
@@ -118,9 +129,6 @@ namespace DofusGroupFinder.Infrastructure.Migrations
 
                     b.Property<Guid>("AccountId")
                         .HasColumnType("uuid");
-
-                    b.Property<string>("Comment")
-                        .HasColumnType("text");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
@@ -138,8 +146,9 @@ namespace DofusGroupFinder.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<bool>("SuccessWanted")
-                        .HasColumnType("boolean");
+                    b.PrimitiveCollection<int[]>("SuccessWanted")
+                        .IsRequired()
+                        .HasColumnType("integer[]");
 
                     b.HasKey("Id");
 

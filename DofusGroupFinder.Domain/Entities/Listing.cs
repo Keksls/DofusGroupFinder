@@ -9,9 +9,8 @@ public class Listing
     public Guid DungeonId { get; set; }
     public Dungeon Dungeon { get; set; } = null!;
 
-    public bool SuccessWanted { get; set; }
+    public SuccesWantedState[] SuccessWanted { get; set; }
     public int NbSlots { get; set; }
-    public string? Comment { get; set; }
     public bool IsActive { get; set; } = true;
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
@@ -19,4 +18,11 @@ public class Listing
 
     public ICollection<ListingCharacter> ListingCharacters { get; set; } = new List<ListingCharacter>();
     public ICollection<ListingGroupMember> ListingGroupMembers { get; set; } = new List<ListingGroupMember>();
+}
+
+public enum SuccesWantedState
+{
+    Osef = 0,
+    Wanted = 1,
+    NotWanted = 2
 }

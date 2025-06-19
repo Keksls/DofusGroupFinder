@@ -8,7 +8,7 @@ namespace DofusGroupFinder.Client.Controls
     public partial class IconToggleButton : UserControl
     {
         public static readonly DependencyProperty IsCheckedProperty =
-            DependencyProperty.Register("IsChecked", typeof(bool), typeof(IconToggleButton),
+            DependencyProperty.Register("IsChecked", typeof(bool?), typeof(IconToggleButton),
                 new PropertyMetadata(false, OnIsCheckedChanged));
 
         public static readonly DependencyProperty IconProperty =
@@ -24,9 +24,9 @@ namespace DofusGroupFinder.Client.Controls
             remove { RemoveHandler(CheckedChangedEvent, value); }
         }
 
-        public bool IsChecked
+        public bool? IsChecked
         {
-            get => (bool)GetValue(IsCheckedProperty);
+            get => (bool?)GetValue(IsCheckedProperty);
             set => SetValue(IsCheckedProperty, value);
         }
 
@@ -47,18 +47,29 @@ namespace DofusGroupFinder.Client.Controls
 
         private void IconToggleButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            IsChecked = !IsChecked;
+            if(!IsChecked.HasValue)
+            {
+                IsChecked = true;
+            }
+            else if (IsChecked.Value)
+            {
+                IsChecked = false;
+            }
+            else
+            {
+                IsChecked = null;
+            }
         }
 
         private void IconToggleButton_MouseEnter(object sender, MouseEventArgs e)
         {
-            if (!IsChecked)
+            if (IsChecked.HasValue && !IsChecked.Value)
                 Border.BorderBrush = (Brush)FindResource("BorderColor");
         }
 
         private void IconToggleButton_MouseLeave(object sender, MouseEventArgs e)
         {
-            if (!IsChecked)
+            if (IsChecked.HasValue && !IsChecked.Value)
                 Border.BorderBrush = Brushes.Transparent;
         }
 
@@ -70,9 +81,12 @@ namespace DofusGroupFinder.Client.Controls
 
             control.UpdateVisual();
 
+            bool oldValue = e.OldValue as bool? ?? false;
+            bool newValue = e.NewValue as bool? ?? false;
+
             var args = new RoutedPropertyChangedEventArgs<bool>(
-                (bool)e.OldValue,
-                (bool)e.NewValue,
+                oldValue,
+                newValue,
                 CheckedChangedEvent);
 
             control.RaiseEvent(args);
@@ -86,13 +100,27 @@ namespace DofusGroupFinder.Client.Controls
 
         private void UpdateVisual()
         {
-            Border.BorderBrush = IsChecked
-                ? (Brush)FindResource("HighlightColor")
-                : Brushes.Transparent;
-            Border.Background = IsChecked
-                ? (Brush)FindResource("AccentColor")
-                : (Brush)FindResource("InputBackgroundColor");
-
+            // Osef
+            if (!IsChecked.HasValue)
+            {
+                Cross.Visibility = Visibility.Collapsed;
+                Border.BorderBrush = Brushes.Transparent;
+                Border.Background = (Brush)FindResource("InputBackgroundColor");
+            }
+            // Wanted
+            else if (IsChecked.Value)
+            {
+                Cross.Visibility = Visibility.Collapsed;
+                Border.BorderBrush = (Brush)FindResource("HighlightColor");
+                Border.Background = (Brush)FindResource("AccentColor");
+            }
+            // Not Wanted
+            else
+            {
+                Cross.Visibility = Visibility.Visible;
+                Border.BorderBrush = Brushes.Transparent;
+                Border.Background = (Brush)FindResource("InputBackgroundColor");
+            }
         }
     }
 }

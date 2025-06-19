@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace DofusGroupFinder.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class InitGroupSystem : Migration
+    public partial class Init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -30,10 +30,13 @@ namespace DofusGroupFinder.Infrastructure.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
-                    ExternalId = table.Column<int>(type: "integer", nullable: false),
+                    ExtId = table.Column<int>(type: "integer", nullable: false),
                     Name = table.Column<string>(type: "text", nullable: false),
-                    MinLevel = table.Column<int>(type: "integer", nullable: false),
-                    MaxLevel = table.Column<int>(type: "integer", nullable: false)
+                    Level = table.Column<int>(type: "integer", nullable: false),
+                    Succes = table.Column<string[]>(type: "text[]", nullable: false),
+                    BossId = table.Column<int>(type: "integer", nullable: false),
+                    BossName = table.Column<string>(type: "text", nullable: false),
+                    BossGfxId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -71,9 +74,8 @@ namespace DofusGroupFinder.Infrastructure.Migrations
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
                     AccountId = table.Column<Guid>(type: "uuid", nullable: false),
                     DungeonId = table.Column<Guid>(type: "uuid", nullable: false),
-                    SuccessWanted = table.Column<bool>(type: "boolean", nullable: false),
+                    SuccessWanted = table.Column<int[]>(type: "integer[]", nullable: false),
                     NbSlots = table.Column<int>(type: "integer", nullable: false),
-                    Comment = table.Column<string>(type: "text", nullable: true),
                     IsActive = table.Column<bool>(type: "boolean", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     Server = table.Column<string>(type: "text", nullable: false)
@@ -136,8 +138,8 @@ namespace DofusGroupFinder.Infrastructure.Migrations
                 {
                     table.PrimaryKey("PK_ListingGroupMembers", x => new { x.ListingId, x.Id });
                     table.ForeignKey(
-                        name: "FK_ListingGroupMembers_Characters_Id",
-                        column: x => x.Id,
+                        name: "FK_ListingGroupMembers_Characters_CharacterId",
+                        column: x => x.CharacterId,
                         principalTable: "Characters",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -171,9 +173,9 @@ namespace DofusGroupFinder.Infrastructure.Migrations
                 column: "ListingId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ListingGroupMembers_Id",
+                name: "IX_ListingGroupMembers_CharacterId",
                 table: "ListingGroupMembers",
-                column: "Id");
+                column: "CharacterId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Listings_AccountId",

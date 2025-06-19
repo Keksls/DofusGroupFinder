@@ -86,7 +86,6 @@ namespace DofusGroupFinder.Client.Controls
             set
             {
                 _searchText = value;
-                OnPropertyChanged(nameof(SearchText));
                 RefreshFilter();
             }
         }
@@ -217,6 +216,11 @@ namespace DofusGroupFinder.Client.Controls
                 return parent;
             else
                 return FindParent<T>(parentObject);
+        }
+
+        private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            SearchText = SearchBox.Text;
         }
     }
 }

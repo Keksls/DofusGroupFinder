@@ -1,6 +1,7 @@
 using DofusGroupFinder.Application.Services;
 using DofusGroupFinder.Domain.DTO;
 using DofusGroupFinder.Domain.DTO.Requests;
+using DofusGroupFinder.Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -31,7 +32,7 @@ namespace DofusGroupFinder.Api.Controllers
         }
 
         [HttpGet("search")]
-        public async Task<IActionResult> SearchPublicListings([FromQuery] Guid? dungeonId, [FromQuery] int? minRemainingSlots, [FromQuery] string server, [FromQuery] bool? wantSuccess = null)
+        public async Task<IActionResult> SearchPublicListings([FromQuery] Guid? dungeonId, [FromQuery] int? minRemainingSlots, [FromQuery] string server, [FromQuery] SuccesWantedState[]? wantSuccess = null)
         {
             var request = new PublicListingSearchRequest
             {

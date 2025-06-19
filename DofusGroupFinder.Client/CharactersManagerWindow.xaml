@@ -144,7 +144,7 @@
 
                 <!-- Comment -->
                 <TextBlock Text="Comment:"/>
-                <TextBox x:Name="CommentTextBox" Height="52" AcceptsReturn="True" TextWrapping="Wrap" Margin="0,0,0,20"/>
+                <TextBox x:Name="CommentTextBox" Text="1" Height="52" AcceptsReturn="True" TextWrapping="Wrap" Margin="0,0,0,20"/>
 
                 <!-- Boutons -->
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">

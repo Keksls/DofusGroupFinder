@@ -1,0 +1,13 @@
+cd ..
+cd DofusGroupFinder.Infrastructure
+dotnet ef database drop -f
+dotnet ef migrations remove
+del Migrations
+
+
+
+dotnet ef migrations add Init
+dotnet ef database update
+cd..
+cd DofusGroupFinder.Api
+dotnet run --clear

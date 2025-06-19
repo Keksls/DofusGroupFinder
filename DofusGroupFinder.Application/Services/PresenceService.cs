@@ -26,6 +26,7 @@ namespace DofusGroupFinder.Application.Services
         {
             if (_presences.TryGetValue(accountId, out var presence))
             {
+                presence.LastPing = DateTime.UtcNow;
                 if (isInGame.HasValue) presence.IsInGame = isInGame.Value;
                 if (isInGroup.HasValue) presence.IsInGroup = isInGroup.Value;
             }
@@ -54,6 +55,7 @@ namespace DofusGroupFinder.Application.Services
                 if (entry.Value.LastPing < threshold)
                 {
                     _presences.TryRemove(entry.Key, out _);
+                    Console.WriteLine("Remove client " + entry.Key);
                 }
             }
         }

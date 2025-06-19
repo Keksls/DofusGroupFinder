@@ -29,7 +29,8 @@
                          VerticalAlignment="Center"
                          HorizontalAlignment="Left"
                          Visibility="Collapsed"
-                         Text="{Binding SearchText, ElementName=Root, UpdateSourceTrigger=PropertyChanged}"
+                         TextChanged="SearchBox_TextChanged"
+                         Text="{Binding SearchText, ElementName=Root}"
                          Background="{DynamicResource InputBackgroundColor}"
                          Foreground="{DynamicResource InputForegroundColor}"
                          BorderThickness="0"/>

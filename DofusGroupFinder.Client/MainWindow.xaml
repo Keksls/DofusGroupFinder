@@ -15,7 +15,7 @@
     </Window.Effect>
 
     <Grid>
-        <DockPanel x:Name="FullScreenContainer" Margin="0" Visibility="Visible" Height="420" VerticalAlignment="Top">
+        <DockPanel x:Name="FullScreenContainer" Margin="0" Visibility="Visible" Height="464" VerticalAlignment="Top">
             <controls:TitleBarControl Margin="0" x:Name="TitleBar"
                                    DockPanel.Dock="Top"
                                    Background="{DynamicResource BorderColor}"
@@ -25,13 +25,13 @@
             <TabControl x:Name="MainTabControl"
                 Background="{DynamicResource BackgroundColor}"
                 BorderThickness="0"
-                Margin="0,0,0,42"
+                Margin="0,0,0,0"
                 VerticalAlignment="Top"
                 DockPanel.Dock="Top">
                 <TabItem Header="Recherche de groupe" Width="158" Margin="0">
                     <controls:FindGroupControl Margin="0" VerticalAlignment="Top" Padding="0" Width="320"/>
                 </TabItem>
-                <TabItem Header="Mes annonces" Width="158">
+                <TabItem Header="Poster une annonces" Width="158">
                     <controls:CreateListingControl/>
                 </TabItem>
             </TabControl>
@@ -82,19 +82,6 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-
-            <controls:NoGroupFooterControl x:Name="NoGroupFooter" 
-                                       HorizontalAlignment="Stretch" 
-                                       VerticalAlignment="Bottom" 
-                                       DockPanel.Dock="Bottom"  
-                                       Visibility="Collapsed"
-                                       Background="{DynamicResource HighlightColor}"/>
-
-            <controls:InGroupFooterControl x:Name="InGroupFooter" 
-                                       HorizontalAlignment="Stretch" 
-                                       VerticalAlignment="Bottom" 
-                                       DockPanel.Dock="Bottom"  
-                                       Background="{DynamicResource HighlightColor}"/>
 
         </DockPanel>
     </Grid>

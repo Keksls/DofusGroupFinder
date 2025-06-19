@@ -1,13 +1,14 @@
-﻿namespace DofusGroupFinder.Domain.DTO.Responses
+﻿using DofusGroupFinder.Domain.Entities;
+
+namespace DofusGroupFinder.Domain.DTO.Responses
 {
     public class PublicListingResponse
     {
         public Guid Id { get; set; }
         public string OwnerPseudo { get; set; } = null!;
         public Guid DungeonId { get; set; }
-        public bool SuccessWanted { get; set; }
+        public SuccesWantedState[] SuccessWanted { get; set; }
         public int NbSlots { get; set; }
-        public string? Comment { get; set; }
         public DateTime CreatedAt { get; set; }
         public List<PublicGroupMember> Characters { get; set; } = new();
         public List<PublicGroupMember> GroupMembers { get; set; } = new();

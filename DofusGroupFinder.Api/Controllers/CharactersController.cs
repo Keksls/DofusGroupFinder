@@ -30,27 +30,35 @@ namespace DofusGroupFinder.Api.Controllers
         public async Task<IActionResult> GetMyCharacters()
         {
             var result = await _characterService.GetMyCharactersAsync(GetAccountId());
-            return Ok(result);
+            if (!result.Success)
+                return BadRequest(result.ErrorMessage);
+            return Ok(result.Data);
         }
 
         [HttpPost]
         public async Task<IActionResult> CreateCharacter(CreateCharacterRequest request)
         {
             var result = await _characterService.CreateCharacterAsync(GetAccountId(), request);
-            return Ok(result);
+            if (!result.Success)
+                return BadRequest(result.ErrorMessage);
+            return Ok(result.Data);
         }
 
         [HttpPut("{characterId}")]
         public async Task<IActionResult> UpdateCharacter(Guid characterId, UpdateCharacterRequest request)
         {
             var result = await _characterService.UpdateCharacterAsync(GetAccountId(), characterId, request);
-            return Ok(result);
+            if (!result.Success)
+                return BadRequest(result.ErrorMessage);
+            return Ok(result.Data);
         }
 
         [HttpDelete("{characterId}")]
         public async Task<IActionResult> DeleteCharacter(Guid characterId)
         {
-            await _characterService.DeleteCharacterAsync(GetAccountId(), characterId);
+            var result = await _characterService.DeleteCharacterAsync(GetAccountId(), characterId);
+            if (!result.Success)
+                return BadRequest(result.ErrorMessage);
             return NoContent();
         }
 

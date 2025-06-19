@@ -1,4 +1,5 @@
-﻿using System.Net.Http.Json;
+﻿using DofusGroupFinder.Domain.DTO.Requests;
+using System.Net.Http.Json;
 
 namespace DofusGroupFinder.Client.Services
 {
@@ -8,7 +9,7 @@ namespace DofusGroupFinder.Client.Services
         public async Task DisconnectAsync() => await HttpClientFactory.Instance.PostAsync("api/presence/disconnect", null);
         public async Task PingAsync(bool? isInGame = null, bool? isInGroup = null)
         {
-            var request = new
+            PresenceUpdateRequest request = new PresenceUpdateRequest()
             {
                 IsInGame = isInGame,
                 IsInGroup = isInGroup

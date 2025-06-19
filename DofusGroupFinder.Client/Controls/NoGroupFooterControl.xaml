@@ -8,8 +8,8 @@
             <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
 
-        <ComboBox x:Name="ListingsComboBox" Grid.Column="0" DisplayMemberPath="DungeonName" Margin="0,0,10,0"/>
-        <Button Content="Créer un groupe" Width="128" Grid.Column="1" Click="CreateGroup_Click"/>
+        <ComboBox x:Name="ListingsComboBox" Grid.Column="0" DisplayMemberPath="DungeonName" Margin="0,4,8,4"/>
+        <Button Content="Créer un groupe" Width="128" Margin="4" Height="26" Grid.Column="1" Click="CreateGroup_Click"/>
     </Grid>
 
 </UserControl>

@@ -27,10 +27,13 @@ namespace DofusGroupFinder.Api.Controllers
                 .Select(d => new DungeonResponse()
                 {
                     Id = d.Id,
-                    ExternalId = d.ExternalId,
+                    ExtId = d.ExtId,
                     Name = d.Name,
-                    MinLevel = d.MinLevel,
-                    MaxLevel = d.MaxLevel
+                    Level = d.Level,
+                    Succes = d.Succes,
+                    BossId = d.BossId,
+                    BossName = d.BossName,
+                    BossGfxId = d.BossGfxId
                 })
                 .ToListAsync();
 

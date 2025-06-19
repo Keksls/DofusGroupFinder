@@ -4,6 +4,7 @@ using System.Windows;
 using System.Windows.Controls;
 using DofusGroupFinder.Domain.DTO.Responses;
 using DofusGroupFinder.Domain.DTO.Requests;
+using DofusGroupFinder.Shared;
 
 namespace DofusGroupFinder.Client.Controls
 {
@@ -25,11 +26,7 @@ namespace DofusGroupFinder.Client.Controls
             DungeonComboBox.ItemsSource = _dungeons;
 
             _characters = await App.ApiClient.GetCharactersAsync();
-            if (_characters != null)
-            {
-                CharactersListBox.ItemsSource = _characters;
-                CharactersListBox.DisplayMemberPath = "Name";
-            }
+            CharactersListBox.ItemsSource = _characters;
 
             // Init remaining slots (tu peux bien sûr faire plus dynamique)
             SlotsComboBox.Items.Clear();
@@ -55,12 +52,28 @@ namespace DofusGroupFinder.Client.Controls
                 return;
             }
 
+            SuccesWantedState[] succesWantedStates = null;
+            succesWantedStates = new SuccesWantedState[selectedDungeon.Succes.Length];
+            int i = 0;
+            foreach (var child in SuccessContainer.Children)
+            {
+                if (child is IconToggleButton checkBox && checkBox.IsChecked == true)
+                {
+                    SuccesWantedState state = SuccesWantedState.Osef;
+                    if (checkBox.IsChecked.HasValue)
+                    {
+                        state = checkBox.IsChecked.Value ? SuccesWantedState.Wanted : SuccesWantedState.Osef;
+                    }
+                    succesWantedStates[i] = state;
+                }
+                i++;
+            }
+
             var request = new CreateListingRequest
             {
                 DungeonId = selectedDungeon.Id,
-                SuccessWanted = SuccessCheckBox.IsChecked == true,
+                SuccessWanted = succesWantedStates,
                 RemainingSlots = (int)SlotsComboBox.SelectedItem,
-                Comment = CommentTextBox.Text,
                 CharacterIds = selectedCharacters,
                 Server = App.SettingsService.LoadServer()
             };
@@ -69,11 +82,43 @@ namespace DofusGroupFinder.Client.Controls
             {
                 await App.ApiClient.CreateListingAsync(request);
                 App.Events.InvokeUserListingsUpdated();
-                NotificationManager.ShowNotification("Listing created!");
+                NotificationManager.ShowNotification("Annonce créée pour " + selectedDungeon.Name);
             }
             catch (Exception ex)
             {
                 NotificationManager.ShowNotification($"Error creating listing: {ex.Message}");
+            }
+
+            // Clear selections after creation
+            DungeonComboBox.SelectedItem = null;
+            SlotsComboBox.SelectedIndex = 0;
+            CharactersListBox.SelectedItems.Clear();
+        }
+
+        private void CharacterListItemControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (sender is SquaredCharacterListItemControl control && control.DataContext is Character characater)
+            {
+                control.SetData(characater);
+            }
+        }
+
+        private void DungeonComboBox_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            if (DungeonComboBox.SelectedItem is DungeonResponse selectedDungeon && selectedDungeon.Name != "TOUS")
+            {
+                SuccessContainer.Children.Clear(); // Clear previous checkboxes
+                foreach (var success in selectedDungeon.Succes)
+                {
+                    ChallengeData challenge = App.DataService.GetChallenge(success);
+                    var checkBox = new IconToggleButton
+                    {
+                        Icon = App.DataService.GetIconForSuccess(success),
+                        IsChecked = null, // Default to Osef
+                        ToolTip = challenge.Name.Fr + "\n" + challenge.Description.Fr
+                    };
+                    SuccessContainer.Children.Add(checkBox);
+                }
             }
         }
     }

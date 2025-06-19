@@ -15,7 +15,7 @@ namespace DofusGroupFinder.Application.Services
             _context = context;
         }
 
-        public async Task<List<CharacterResponse>> GetMyCharactersAsync(Guid accountId)
+        public async Task<ServiceResult<List<CharacterResponse>>> GetMyCharactersAsync(Guid accountId)
         {
             var characters = await _context.Characters
                 .Where(c => c.AccountId == accountId)
@@ -30,11 +30,17 @@ namespace DofusGroupFinder.Application.Services
                     Server = c.Server
                 }).ToListAsync();
 
-            return characters;
+            return ServiceResult<List<CharacterResponse>>.Ok(characters);
         }
 
-        public async Task<CharacterResponse> CreateCharacterAsync(Guid accountId, CreateCharacterRequest request)
+        public async Task<ServiceResult<CharacterResponse>> CreateCharacterAsync(Guid accountId, CreateCharacterRequest request)
         {
+            // check if character with the same name already exists on same server
+            var existingCharacter = await _context.Characters
+                .FirstOrDefaultAsync(c => c.AccountId == accountId && c.Name == request.Name && c.Server == request.Server);
+            if (existingCharacter != null)
+                return ServiceResult<CharacterResponse>.Fail("Character with the same name already exists on this server.");
+
             var character = new Character
             {
                 Id = Guid.NewGuid(),
@@ -50,22 +56,23 @@ namespace DofusGroupFinder.Application.Services
             _context.Characters.Add(character);
             await _context.SaveChangesAsync();
 
-            return new CharacterResponse
+            return ServiceResult<CharacterResponse>.Ok(new CharacterResponse
             {
+
                 Id = character.Id,
                 Name = character.Name,
                 Class = character.Class,
                 Level = character.Level,
                 Role = character.Role,
                 Comment = character.Comment
-            };
+            });
         }
 
-        public async Task<CharacterResponse> UpdateCharacterAsync(Guid accountId, Guid characterId, UpdateCharacterRequest request)
+        public async Task<ServiceResult<CharacterResponse>> UpdateCharacterAsync(Guid accountId, Guid characterId, UpdateCharacterRequest request)
         {
             var character = await _context.Characters.FirstOrDefaultAsync(c => c.Id == characterId && c.AccountId == accountId);
             if (character == null)
-                throw new Exception("Character not found.");
+                return ServiceResult<CharacterResponse>.Fail("Character not found.");
 
             character.Class = request.Class;
             character.Level = request.Level;
@@ -74,7 +81,7 @@ namespace DofusGroupFinder.Application.Services
 
             await _context.SaveChangesAsync();
 
-            return new CharacterResponse
+            return ServiceResult<CharacterResponse>.Ok(new CharacterResponse
             {
                 Id = character.Id,
                 Name = character.Name,
@@ -82,17 +89,18 @@ namespace DofusGroupFinder.Application.Services
                 Level = character.Level,
                 Role = character.Role,
                 Comment = character.Comment
-            };
+            });
         }
 
-        public async Task DeleteCharacterAsync(Guid accountId, Guid characterId)
+        public async Task<ServiceResult> DeleteCharacterAsync(Guid accountId, Guid characterId)
         {
             var character = await _context.Characters.FirstOrDefaultAsync(c => c.Id == characterId && c.AccountId == accountId);
             if (character == null)
-                throw new Exception("Character not found.");
+                return ServiceResult.Fail("Character not found.");
 
             _context.Characters.Remove(character);
             await _context.SaveChangesAsync();
+            return ServiceResult.Ok();
         }
     }
 }

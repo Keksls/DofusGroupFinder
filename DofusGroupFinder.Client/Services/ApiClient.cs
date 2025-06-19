@@ -117,7 +117,7 @@ namespace DofusGroupFinder.Client.Services
         public async Task DeleteListingAsync(Guid listingId)
             => await DeleteAsync($"api/listings/{listingId}");
 
-        public async Task<List<PublicListingResponse>?> SearchPublicListingsAsync(Guid? dungeonId = null, int? minRemainingSlots = null, bool? wantSuccess = null)
+        public async Task<List<PublicListingResponse>?> SearchPublicListingsAsync(Guid? dungeonId = null, int? minRemainingSlots = null, SuccesWantedState[] wantSuccess = null)
         {
             var query = new List<string>();
 
@@ -127,8 +127,13 @@ namespace DofusGroupFinder.Client.Services
             if (minRemainingSlots.HasValue)
                 query.Add($"minRemainingSlots={minRemainingSlots}");
 
-            if (wantSuccess.HasValue)
-                query.Add($"wantSuccess={wantSuccess}");
+            if (wantSuccess != null)
+            {
+                foreach (var success in wantSuccess)
+                {
+                    query.Add($"wantSuccess={success}");
+                }
+            }
 
             var server = App.SettingsService.LoadServer();
             if (server == null)

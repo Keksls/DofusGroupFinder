@@ -88,6 +88,17 @@ namespace DofusGroupFinder.Client
 
         private async void CreateButton_Click(object sender, RoutedEventArgs e)
         {
+            // ensure all fields are filled
+            if (string.IsNullOrWhiteSpace(NameTextBox.Text) ||
+                ClassComboBox.SelectedItem == null ||
+                string.IsNullOrWhiteSpace(LevelTextBox.Text) ||
+                ServerComboBox.SelectedItem == null ||
+                RolesComboBox.SelectedItem == null)
+            {
+                NotificationManager.ShowNotification("Merci de renseigner tous les champs.");
+                return;
+            }
+
             var request = new CreateCharacterRequest
             {
                 Name = NameTextBox.Text,

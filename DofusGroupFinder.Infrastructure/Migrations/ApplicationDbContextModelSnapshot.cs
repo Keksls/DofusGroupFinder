@@ -89,18 +89,29 @@ namespace DofusGroupFinder.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<int>("ExternalId")
+                    b.Property<int>("BossGfxId")
                         .HasColumnType("integer");
 
-                    b.Property<int>("MaxLevel")
+                    b.Property<int>("BossId")
                         .HasColumnType("integer");
 
-                    b.Property<int>("MinLevel")
+                    b.Property<string>("BossName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("ExtId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Level")
                         .HasColumnType("integer");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.PrimitiveCollection<string[]>("Succes")
+                        .IsRequired()
+                        .HasColumnType("text[]");
 
                     b.HasKey("Id");
 
@@ -115,9 +126,6 @@ namespace DofusGroupFinder.Infrastructure.Migrations
 
                     b.Property<Guid>("AccountId")
                         .HasColumnType("uuid");
-
-                    b.Property<string>("Comment")
-                        .HasColumnType("text");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
@@ -135,8 +143,9 @@ namespace DofusGroupFinder.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<bool>("SuccessWanted")
-                        .HasColumnType("boolean");
+                    b.PrimitiveCollection<int[]>("SuccessWanted")
+                        .IsRequired()
+                        .HasColumnType("integer[]");
 
                     b.HasKey("Id");
 

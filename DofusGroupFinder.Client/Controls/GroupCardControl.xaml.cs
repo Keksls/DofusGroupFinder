@@ -47,7 +47,7 @@ namespace DofusGroupFinder.Client.Controls
                 }
             }
             CreatedAtText.Text = listing.CreatedAt.ToLocalTime().ToString("g");
-            SuccessIcon.Visibility = listing.SuccessWanted ? Visibility.Visible : Visibility.Collapsed;
+            //SuccessIcon.Visibility = listing.SuccessWanted ? Visibility.Visible : Visibility.Collapsed;
             OwnerText.Text = "Posté par " + listing.OwnerPseudo;
             ToolTip = $"{dungeonName} ({listing.Characters.Count}/{listing.NbSlots})\n"
                 + $"Posté par {listing.OwnerPseudo}\n"

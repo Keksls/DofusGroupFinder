@@ -4,7 +4,7 @@
              xmlns:controls="clr-namespace:DofusGroupFinder.Client.Controls"
              Background="{DynamicResource BackgroundColor}"
              Width="320"
-             MinHeight="200">
+             Height="322">
 
     <DockPanel Margin="0">
 
@@ -12,14 +12,24 @@
         <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" VerticalAlignment="Top" Margin="8,8,8,8">
             <TextBlock Text="Donjon " VerticalAlignment="Center" Margin="0,0,8,0" Foreground="{DynamicResource ForegroundColor}" />
             <controls:FilteredComboBox x:Name="DungeonComboBox" Width="200" Height="24" Margin="0,0,8,0" PropertyChanged="DungeonComboBox_PropertyChanged"/>
-            <controls:IconToggleButton x:Name="WantSuccessCheckBox"
-                                        ToolTip="Afficher uniquement les annonces qui veulent faire les succès du donjon"
-                                        CheckedChanged="OnlyWithSlotsCheckBox_CheckedChanged"
-                                        Icon="/Icons/succes.png"
-                                        VerticalAlignment="Center"
-                                        Height="32" Width="32" Margin="0,0,0,0"
-                                        HorizontalAlignment="Right" />
         </StackPanel>
+
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" x:Name="SuccessContainer" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,8">
+        </StackPanel>
+
+        <controls:NoGroupFooterControl x:Name="NoGroupFooter" 
+                                       HorizontalAlignment="Stretch" 
+                                       VerticalAlignment="Bottom" 
+                                       DockPanel.Dock="Bottom"  
+                                       Visibility="Visible"
+                                       Background="{DynamicResource HighlightColor}"/>
+
+        <controls:InGroupFooterControl x:Name="InGroupFooter" 
+                                       HorizontalAlignment="Stretch" 
+                                       VerticalAlignment="Bottom" 
+                                       DockPanel.Dock="Bottom"  
+                                       Visibility="Collapsed"
+                                       Background="{DynamicResource HighlightColor}"/>
 
         <!-- Main: résultats -->
         <Border Background="{DynamicResource InputBackgroundColor}" 

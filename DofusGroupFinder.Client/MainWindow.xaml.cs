@@ -44,8 +44,6 @@ namespace DofusGroupFinder.Client
         private async void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
             await App.GroupManagerService.RestoreGroupAsync();
-            UpdateFooter();
-            App.Events.OnGroupStateChanged += UpdateFooter;
             await App.DataService.RetreiveStaticData();
         }
 
@@ -63,24 +61,6 @@ namespace DofusGroupFinder.Client
             FullScreenContainer.Visibility = _isCollapsed ? Visibility.Collapsed : Visibility.Visible;
             CollapsedScreenContainer.Visibility = _isCollapsed ? Visibility.Visible : Visibility.Collapsed;
             Height = _isCollapsed ? 96 : 432;
-        }
-
-        private void UpdateFooter()
-        {
-            _ = Dispatcher.InvokeAsync(async () =>
-            {
-                if (App.GroupManagerService.CurrentListingId == null)
-                {
-                    NoGroupFooter.Visibility = Visibility.Visible;
-                    InGroupFooter.Visibility = Visibility.Collapsed;
-                }
-                else
-                {
-                    NoGroupFooter.Visibility = Visibility.Collapsed;
-                    await InGroupFooter.LoadGroupAsync(App.GroupManagerService.CurrentListingId.Value);
-                    InGroupFooter.Visibility = Visibility.Visible;
-                }
-            });
         }
     }
 }

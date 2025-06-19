@@ -1,4 +1,5 @@
 ﻿using DofusGroupFinder.Application.Services;
+using DofusGroupFinder.Domain.DTO.Requests;
 using DofusGroupFinder.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -65,10 +66,4 @@ public class PresenceController : ControllerBase
         _presenceService.Ping(GetAccountId(), request.IsInGame, request.IsInGroup);
         return Ok();
     }
-}
-
-public class PresenceUpdateRequest
-{
-    public bool? IsInGame { get; set; }
-    public bool? IsInGroup { get; set; }
 }

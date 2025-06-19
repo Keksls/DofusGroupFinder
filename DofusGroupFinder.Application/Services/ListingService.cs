@@ -3,6 +3,7 @@ using DofusGroupFinder.Domain.DTO.Responses;
 using DofusGroupFinder.Domain.Entities;
 using DofusGroupFinder.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace DofusGroupFinder.Application.Services
 {
@@ -32,7 +33,6 @@ namespace DofusGroupFinder.Application.Services
                     DungeonId = l.DungeonId,
                     SuccessWanted = l.SuccessWanted,
                     NbSlots = l.NbSlots,
-                    Comment = l.Comment,
                     CreatedAt = l.CreatedAt,
                     Server = l.Server,
 
@@ -74,7 +74,6 @@ namespace DofusGroupFinder.Application.Services
                 DungeonId = request.DungeonId,
                 SuccessWanted = request.SuccessWanted,
                 NbSlots = request.RemainingSlots,
-                Comment = request.Comment,
                 IsActive = true,
                 CreatedAt = DateTime.UtcNow,
                 Server = request.Server,
@@ -101,7 +100,6 @@ namespace DofusGroupFinder.Application.Services
                 DungeonId = listing.DungeonId,
                 SuccessWanted = listing.SuccessWanted,
                 NbSlots = listing.NbSlots,
-                Comment = listing.Comment,
                 IsActive = listing.IsActive,
                 CreatedAt = listing.CreatedAt,
                 CharacterIds = request.CharacterIds
@@ -119,7 +117,6 @@ namespace DofusGroupFinder.Application.Services
 
             listing.SuccessWanted = request.SuccessWanted;
             listing.NbSlots = request.RemainingSlots;
-            listing.Comment = request.Comment;
             listing.IsActive = request.IsActive;
 
             await _context.SaveChangesAsync();
@@ -130,7 +127,6 @@ namespace DofusGroupFinder.Application.Services
                 DungeonId = listing.DungeonId,
                 SuccessWanted = listing.SuccessWanted,
                 NbSlots = listing.NbSlots,
-                Comment = listing.Comment,
                 IsActive = listing.IsActive,
                 CreatedAt = listing.CreatedAt,
                 CharacterIds = listing.ListingCharacters.Select(lc => lc.CharacterId).ToList()
@@ -165,7 +161,6 @@ namespace DofusGroupFinder.Application.Services
                 DungeonId = l.DungeonId,
                 SuccessWanted = l.SuccessWanted,
                 NbSlots = l.NbSlots,
-                Comment = l.Comment,
                 CreatedAt = l.CreatedAt,
                 Server = l.Server,
 
@@ -206,8 +201,24 @@ namespace DofusGroupFinder.Application.Services
             if (request.MinRemainingSlots.HasValue)
                 query = query.Where(l => l.NbSlots >= request.MinRemainingSlots.Value);
 
-            if (request.WantSuccess.HasValue)
-                query = query.Where(l => l.SuccessWanted == request.WantSuccess.Value);
+            // handle SuccessWanted states
+            if (request.WantSuccess != null && request.WantSuccess.Length > 0)
+            {
+                for (int i = 0; i < request.WantSuccess.Length; i++)
+                {
+                    var state = request.WantSuccess[i];
+                    switch (state)
+                    {
+                        case SuccesWantedState.Osef:
+                            continue; // osef meaning we don't filter by this state
+
+                        case SuccesWantedState.Wanted:
+                        case SuccesWantedState.NotWanted:
+                            query = query.Where(l => l.SuccessWanted[i] == state);
+                            break;
+                    }
+                }
+            }
 
             if (!string.IsNullOrEmpty(request.Server))
                 query = query.Where(l => l.Server == request.Server);
@@ -223,7 +234,6 @@ namespace DofusGroupFinder.Application.Services
                     DungeonId = l.DungeonId,
                     SuccessWanted = l.SuccessWanted,
                     NbSlots = l.NbSlots,
-                    Comment = l.Comment,
                     CreatedAt = l.CreatedAt,
                     Server = l.Server,
 
@@ -270,7 +280,6 @@ namespace DofusGroupFinder.Application.Services
                 DungeonId = listing.DungeonId,
                 SuccessWanted = listing.SuccessWanted,
                 NbSlots = listing.NbSlots,
-                Comment = listing.Comment,
                 CreatedAt = listing.CreatedAt,
                 Server = listing.Server,
                 Characters = listing.ListingCharacters.Select(lc => new PublicGroupMember
