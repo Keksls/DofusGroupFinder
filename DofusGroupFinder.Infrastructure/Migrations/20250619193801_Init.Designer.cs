@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DofusGroupFinder.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250619135412_Init")]
+    [Migration("20250619193801_Init")]
     partial class Init
     {
         /// <inheritdoc />

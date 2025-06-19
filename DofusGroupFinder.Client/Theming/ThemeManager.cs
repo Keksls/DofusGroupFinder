@@ -63,6 +63,7 @@ namespace DofusGroupFinder.Client.Theming
             Application.Current.Resources["InputBackgroundColor"] = new SolidColorBrush(ParseColor(config.InputBackgroundColor));
             Application.Current.Resources["InputForegroundColor"] = new SolidColorBrush(ParseColor(config.InputForegroundColor));
             Application.Current.Resources["SubtleForegroundColor"] = new SolidColorBrush(ParseColorWithOpacity(config.ForegroundColor, 0.5));
+            Application.Current.Resources["SuccessBackgroudColor"] = new SolidColorBrush(ParseColor(config.SuccessBackgroudColor));
             File.WriteAllText(SelectedThemeFilePath, themeName);
         }
 

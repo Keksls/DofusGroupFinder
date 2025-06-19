@@ -18,7 +18,7 @@
             <Setter Property="Foreground" Value="{DynamicResource InputForegroundColor}" />
             <Setter Property="Padding" Value="1"/>
             <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
-            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Stretch"/>
             <Setter Property="BorderBrush" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="1"/>
             <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
@@ -30,7 +30,7 @@
                         BorderBrush="{TemplateBinding BorderBrush}"
                         BorderThickness="{TemplateBinding BorderThickness}"
                         CornerRadius="4"
-                                Margin="0,1"
+                        Margin="0,1"
                         Padding="{TemplateBinding Padding}">
                             <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
@@ -81,7 +81,7 @@
             </Grid.ColumnDefinitions>
 
             <!-- Liste des personnages -->
-            <ListBox x:Name="CharactersListBox" Grid.Column="0" Margin="2" Padding="0" SelectionChanged="CharactersListBox_SelectionChanged">
+            <ListBox x:Name="CharactersListBox" Grid.Column="0" VerticalContentAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="2" Padding="0" SelectionChanged="CharactersListBox_SelectionChanged">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <controls:CharacterListItemControl Loaded="CharacterListItemControl_Loaded"/>

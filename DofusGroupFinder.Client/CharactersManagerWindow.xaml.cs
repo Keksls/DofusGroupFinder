@@ -112,6 +112,7 @@ namespace DofusGroupFinder.Client
             await App.ApiClient.CreateCharacterAsync(request);
             NotificationManager.ShowNotification("Character created!");
             CharactersManagerWindow_Loaded(this, new RoutedEventArgs());
+            App.Events.InvokeCharactersUpdated();
         }
 
         private async void UpdateButton_Click(object sender, RoutedEventArgs e)
@@ -129,19 +130,7 @@ namespace DofusGroupFinder.Client
             await App.ApiClient.UpdateCharacterAsync(_selectedCharacter.Id, request);
             NotificationManager.ShowNotification("Character updated!");
             CharactersManagerWindow_Loaded(this, new RoutedEventArgs());
-        }
-
-        private void IncreaseLevel_Click(object sender, RoutedEventArgs e)
-        {
-            int lvl = int.Parse(LevelTextBox.Text);
-            LevelTextBox.Text = (lvl + 1).ToString();
-        }
-
-        private void DecreaseLevel_Click(object sender, RoutedEventArgs e)
-        {
-            int lvl = int.Parse(LevelTextBox.Text);
-            if (lvl > 1)
-                LevelTextBox.Text = (lvl - 1).ToString();
+            App.Events.InvokeCharactersUpdated();
         }
 
         private void CloseButton_Click(object sender, RoutedEventArgs e)

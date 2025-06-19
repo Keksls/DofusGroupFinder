@@ -1,0 +1,7400 @@
+[
+  {
+    "Id": 101,
+    "name": {
+      "Fr": "Bouftou"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 3
+  },
+  {
+    "Id": 134,
+    "name": {
+      "Fr": "Boufton Blanc"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 73
+  },
+  {
+    "Id": 147,
+    "name": {
+      "Fr": "Bouftou Royal"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 74
+  },
+  {
+    "Id": 148,
+    "name": {
+      "Fr": "Chef de Guerre Bouftou"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 75
+  },
+  {
+    "Id": 149,
+    "name": {
+      "Fr": "Boufton Noir"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 76
+  },
+  {
+    "Id": 4822,
+    "name": {
+      "Fr": "Bouftou Noir"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 946
+  },
+  {
+    "Id": 289,
+    "name": {
+      "Fr": "Maître Corbac"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 177
+  },
+  {
+    "Id": 823,
+    "name": {
+      "Fr": "Rono le Renarbo"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 458
+  },
+  {
+    "Id": 824,
+    "name": {
+      "Fr": "Horace le Corbac Apprivoisé"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 456
+  },
+  {
+    "Id": 825,
+    "name": {
+      "Fr": "Kapotie le Buveur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 457
+  },
+  {
+    "Id": 4572,
+    "name": {
+      "Fr": "Capsaaloocke"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1471
+  },
+  {
+    "Id": 4578,
+    "name": {
+      "Fr": "Buveur de Sang"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 457
+  },
+  {
+    "Id": 4579,
+    "name": {
+      "Fr": "Corbac Chef"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 170
+  },
+  {
+    "Id": 4580,
+    "name": {
+      "Fr": "Corbac Dressé"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 456
+  },
+  {
+    "Id": 121,
+    "name": {
+      "Fr": "Minotoror"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 67
+  },
+  {
+    "Id": 668,
+    "name": {
+      "Fr": "Gamino"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 357
+  },
+  {
+    "Id": 827,
+    "name": {
+      "Fr": "Minotot"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 459
+  },
+  {
+    "Id": 829,
+    "name": {
+      "Fr": "Serpiplume"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 461
+  },
+  {
+    "Id": 830,
+    "name": {
+      "Fr": "Scaratos"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 462
+  },
+  {
+    "Id": 831,
+    "name": {
+      "Fr": "Mominotor"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 463
+  },
+  {
+    "Id": 832,
+    "name": {
+      "Fr": "Déminoboule"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 464
+  },
+  {
+    "Id": 3740,
+    "name": {
+      "Fr": "Minogolem séculaire"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1155
+  },
+  {
+    "Id": 113,
+    "name": {
+      "Fr": "Dragon Cochon"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 60
+  },
+  {
+    "Id": 600,
+    "name": {
+      "Fr": "Don Duss Ang"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 332
+  },
+  {
+    "Id": 601,
+    "name": {
+      "Fr": "Don Dorgan"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 333
+  },
+  {
+    "Id": 603,
+    "name": {
+      "Fr": "Cochon de Farle"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 334
+  },
+  {
+    "Id": 3137,
+    "name": {
+      "Fr": "Gorgouille"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 871
+  },
+  {
+    "Id": 3304,
+    "name": {
+      "Fr": "Porsalu"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 68
+  },
+  {
+    "Id": 853,
+    "name": {
+      "Fr": "Dragnarok"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 478
+  },
+  {
+    "Id": 854,
+    "name": {
+      "Fr": "Crocabulia"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 479
+  },
+  {
+    "Id": 855,
+    "name": {
+      "Fr": "Dragueuse"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 480
+  },
+  {
+    "Id": 862,
+    "name": {
+      "Fr": "Draguaindrop"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 482
+  },
+  {
+    "Id": 5804,
+    "name": {
+      "Fr": "Dragacé"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 678
+  },
+  {
+    "Id": 5805,
+    "name": {
+      "Fr": "Dragmatique"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1902
+  },
+  {
+    "Id": 48,
+    "name": {
+      "Fr": "Tournesol Sauvage"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 14
+  },
+  {
+    "Id": 78,
+    "name": {
+      "Fr": "Rose Démoniaque"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 32
+  },
+  {
+    "Id": 79,
+    "name": {
+      "Fr": "Pissenlit Diabolique"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 33
+  },
+  {
+    "Id": 799,
+    "name": {
+      "Fr": "Tournesol Affamé"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 445
+  },
+  {
+    "Id": 4820,
+    "name": {
+      "Fr": "Épouvanteur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1579
+  },
+  {
+    "Id": 4821,
+    "name": {
+      "Fr": "Gardienne Champêtre"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1580
+  },
+  {
+    "Id": 173,
+    "name": {
+      "Fr": "Abraknyde Ancestral"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 97
+  },
+  {
+    "Id": 253,
+    "name": {
+      "Fr": "Abraknyde Sombre"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 144
+  },
+  {
+    "Id": 254,
+    "name": {
+      "Fr": "Abraknyde Vénérable"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 13
+  },
+  {
+    "Id": 651,
+    "name": {
+      "Fr": "Abrakne Sombre"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 346
+  },
+  {
+    "Id": 917,
+    "name": {
+      "Fr": "Araknotron"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 505
+  },
+  {
+    "Id": 257,
+    "name": {
+      "Fr": "Chêne Mou"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 147
+  },
+  {
+    "Id": 258,
+    "name": {
+      "Fr": "Branche Invocatrice"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 148
+  },
+  {
+    "Id": 260,
+    "name": {
+      "Fr": "Branche Soignante"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 150
+  },
+  {
+    "Id": 990,
+    "name": {
+      "Fr": "Araknotron Irascible"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 505
+  },
+  {
+    "Id": 991,
+    "name": {
+      "Fr": "Abraknyde Sombre Irascible"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 553
+  },
+  {
+    "Id": 992,
+    "name": {
+      "Fr": "Abrakne Sombre Irascible"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 346
+  },
+  {
+    "Id": 273,
+    "name": {
+      "Fr": "Blop Coco"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 162
+  },
+  {
+    "Id": 274,
+    "name": {
+      "Fr": "Blop Indigo"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 163
+  },
+  {
+    "Id": 275,
+    "name": {
+      "Fr": "Blop Griotte"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 164
+  },
+  {
+    "Id": 276,
+    "name": {
+      "Fr": "Blop Reinette"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 165
+  },
+  {
+    "Id": 1181,
+    "name": {
+      "Fr": "Gloutoblop"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 642
+  },
+  {
+    "Id": 1182,
+    "name": {
+      "Fr": "Blopignon"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 643
+  },
+  {
+    "Id": 1183,
+    "name": {
+      "Fr": "Tronkoblop"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 644
+  },
+  {
+    "Id": 1184,
+    "name": {
+      "Fr": "Blop Coco Royal"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 645
+  },
+  {
+    "Id": 1185,
+    "name": {
+      "Fr": "Blop Griotte Royal"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 646
+  },
+  {
+    "Id": 1186,
+    "name": {
+      "Fr": "Blop Indigo Royal"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 647
+  },
+  {
+    "Id": 1187,
+    "name": {
+      "Fr": "Blop Reinette Royal"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 648
+  },
+  {
+    "Id": 53,
+    "name": {
+      "Fr": "Bwork Mage"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 10
+  },
+  {
+    "Id": 74,
+    "name": {
+      "Fr": "Bwork Archer"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 29
+  },
+  {
+    "Id": 791,
+    "name": {
+      "Fr": "Trooll Apprivoisé"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 129
+  },
+  {
+    "Id": 792,
+    "name": {
+      "Fr": "Bworkette"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 265
+  },
+  {
+    "Id": 876,
+    "name": {
+      "Fr": "Bwork"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 489
+  },
+  {
+    "Id": 2680,
+    "name": {
+      "Fr": "Kreuvète la Bwork Ingénue"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 269
+  },
+  {
+    "Id": 478,
+    "name": {
+      "Fr": "Bworker"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 264
+  },
+  {
+    "Id": 479,
+    "name": {
+      "Fr": "Mama Bwork"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 265
+  },
+  {
+    "Id": 484,
+    "name": {
+      "Fr": "Bwork Élémental de Feu"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 269
+  },
+  {
+    "Id": 485,
+    "name": {
+      "Fr": "Bwork Élémental d'Eau"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 270
+  },
+  {
+    "Id": 486,
+    "name": {
+      "Fr": "Bwork Élémental d'Air"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 271
+  },
+  {
+    "Id": 487,
+    "name": {
+      "Fr": "Bwork Élémental de Terre"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 272
+  },
+  {
+    "Id": 488,
+    "name": {
+      "Fr": "Cybwork"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 266
+  },
+  {
+    "Id": 102,
+    "name": {
+      "Fr": "Mulou"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 52
+  },
+  {
+    "Id": 232,
+    "name": {
+      "Fr": "Meulou"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 128
+  },
+  {
+    "Id": 299,
+    "name": {
+      "Fr": "Croc Gland"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 187
+  },
+  {
+    "Id": 4866,
+    "name": {
+      "Fr": "Muloubard"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1591
+  },
+  {
+    "Id": 4867,
+    "name": {
+      "Fr": "Cocholou"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1592
+  },
+  {
+    "Id": 4868,
+    "name": {
+      "Fr": "Mulounoké"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1593
+  },
+  {
+    "Id": 4869,
+    "name": {
+      "Fr": "Mergranlou"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1594
+  },
+  {
+    "Id": 181,
+    "name": {
+      "Fr": "Wobot"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 102
+  },
+  {
+    "Id": 3460,
+    "name": {
+      "Fr": "Wa Wobot"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1006
+  },
+  {
+    "Id": 3461,
+    "name": {
+      "Fr": "Black Wo Wabbit"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1007
+  },
+  {
+    "Id": 3462,
+    "name": {
+      "Fr": "Wobot Kiafin"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1008
+  },
+  {
+    "Id": 3463,
+    "name": {
+      "Fr": "Blanc Pa Wabbit"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1009
+  },
+  {
+    "Id": 3474,
+    "name": {
+      "Fr": "Tiwobot"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1018
+  },
+  {
+    "Id": 106,
+    "name": {
+      "Fr": "Craqueleur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 4
+  },
+  {
+    "Id": 293,
+    "name": {
+      "Fr": "Craqueleur des Plaines"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 181
+  },
+  {
+    "Id": 483,
+    "name": {
+      "Fr": "Craqueboule"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 268
+  },
+  {
+    "Id": 669,
+    "name": {
+      "Fr": "Craqueleur Légendaire"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 183
+  },
+  {
+    "Id": 826,
+    "name": {
+      "Fr": "Kirboule l'Érodé"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 181
+  },
+  {
+    "Id": 4570,
+    "name": {
+      "Fr": "Élémenterre"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 138
+  },
+  {
+    "Id": 4573,
+    "name": {
+      "Fr": "Craquelope"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1472
+  },
+  {
+    "Id": 920,
+    "name": {
+      "Fr": "Pichon Orange"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 506
+  },
+  {
+    "Id": 921,
+    "name": {
+      "Fr": "Pichon Bleu"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 507
+  },
+  {
+    "Id": 922,
+    "name": {
+      "Fr": "Pichon Blanc"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 508
+  },
+  {
+    "Id": 923,
+    "name": {
+      "Fr": "Pichon Vert"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 509
+  },
+  {
+    "Id": 924,
+    "name": {
+      "Fr": "Pichon Kloune"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 510
+  },
+  {
+    "Id": 928,
+    "name": {
+      "Fr": "Mob l'Éponge"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 513
+  },
+  {
+    "Id": 118,
+    "name": {
+      "Fr": "Mineur Sombre"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 65
+  },
+  {
+    "Id": 119,
+    "name": {
+      "Fr": "Forgeron Sombre"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 66
+  },
+  {
+    "Id": 153,
+    "name": {
+      "Fr": "Boulanger Sombre"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 79
+  },
+  {
+    "Id": 155,
+    "name": {
+      "Fr": "Bandit du clan des Roublards"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 81
+  },
+  {
+    "Id": 252,
+    "name": {
+      "Fr": "Coffre des Forgerons"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 98
+  },
+  {
+    "Id": 59,
+    "name": {
+      "Fr": "Champ Champ"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 21
+  },
+  {
+    "Id": 1153,
+    "name": {
+      "Fr": "Tromperelle"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 634
+  },
+  {
+    "Id": 1154,
+    "name": {
+      "Fr": "Champaknyde"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 635
+  },
+  {
+    "Id": 1155,
+    "name": {
+      "Fr": "Champodonte"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 636
+  },
+  {
+    "Id": 1156,
+    "name": {
+      "Fr": "Champmane"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 637
+  },
+  {
+    "Id": 1157,
+    "name": {
+      "Fr": "Champbis"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 638
+  },
+  {
+    "Id": 1158,
+    "name": {
+      "Fr": "Champ à Gnons"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 639
+  },
+  {
+    "Id": 1159,
+    "name": {
+      "Fr": "Ougah"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 640
+  },
+  {
+    "Id": 1178,
+    "name": {
+      "Fr": "Champa Explosif"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 347
+  },
+  {
+    "Id": 55,
+    "name": {
+      "Fr": "Gelée Bleuet"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 17
+  },
+  {
+    "Id": 56,
+    "name": {
+      "Fr": "Gelée Menthe"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 18
+  },
+  {
+    "Id": 57,
+    "name": {
+      "Fr": "Gelée Fraise"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 19
+  },
+  {
+    "Id": 58,
+    "name": {
+      "Fr": "Gelée Royale Bleuet"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 20
+  },
+  {
+    "Id": 85,
+    "name": {
+      "Fr": "Gelée Royale Menthe"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 38
+  },
+  {
+    "Id": 86,
+    "name": {
+      "Fr": "Gelée Royale Fraise"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 39
+  },
+  {
+    "Id": 429,
+    "name": {
+      "Fr": "Gelée Citron"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 231
+  },
+  {
+    "Id": 430,
+    "name": {
+      "Fr": "Gelée Royale Citron"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 232
+  },
+  {
+    "Id": 1022,
+    "name": {
+      "Fr": "Corailleur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 560
+  },
+  {
+    "Id": 1027,
+    "name": {
+      "Fr": "Corailleur Magistral"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 563
+  },
+  {
+    "Id": 1060,
+    "name": {
+      "Fr": "Crustorail Kouraçao"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 584
+  },
+  {
+    "Id": 1061,
+    "name": {
+      "Fr": "Crustorail Malibout"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 585
+  },
+  {
+    "Id": 1062,
+    "name": {
+      "Fr": "Crustorail Passaoh"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 586
+  },
+  {
+    "Id": 1063,
+    "name": {
+      "Fr": "Crustorail Morito"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 587
+  },
+  {
+    "Id": 1064,
+    "name": {
+      "Fr": "Palmifleur Kouraçao"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 588
+  },
+  {
+    "Id": 1065,
+    "name": {
+      "Fr": "Palmifleur Malibout"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 589
+  },
+  {
+    "Id": 1066,
+    "name": {
+      "Fr": "Palmifleur Passaoh"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 590
+  },
+  {
+    "Id": 1067,
+    "name": {
+      "Fr": "Palmifleur Morito"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 591
+  },
+  {
+    "Id": 211,
+    "name": {
+      "Fr": "Kanniboul Ark"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 110
+  },
+  {
+    "Id": 212,
+    "name": {
+      "Fr": "Kanniboul Eth"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 111
+  },
+  {
+    "Id": 213,
+    "name": {
+      "Fr": "Kanniboul Jav"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 112
+  },
+  {
+    "Id": 214,
+    "name": {
+      "Fr": "Kanniboul Sarbak"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 113
+  },
+  {
+    "Id": 2960,
+    "name": {
+      "Fr": "Kanniboul Ebil"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 837
+  },
+  {
+    "Id": 4151,
+    "name": {
+      "Fr": "Kanniboul Tam"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1322
+  },
+  {
+    "Id": 1020,
+    "name": {
+      "Fr": "Bitouf Aérien"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 559
+  },
+  {
+    "Id": 1043,
+    "name": {
+      "Fr": "Poolay"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 567
+  },
+  {
+    "Id": 1044,
+    "name": {
+      "Fr": "Kaskargo"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 568
+  },
+  {
+    "Id": 1045,
+    "name": {
+      "Fr": "Kimbo"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 569
+  },
+  {
+    "Id": 1046,
+    "name": {
+      "Fr": "Meupette"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 570
+  },
+  {
+    "Id": 1047,
+    "name": {
+      "Fr": "Abrakleur Clair"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 571
+  },
+  {
+    "Id": 670,
+    "name": {
+      "Fr": "Koulosse"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 358
+  },
+  {
+    "Id": 671,
+    "name": {
+      "Fr": "Bouftou des cavernes"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 359
+  },
+  {
+    "Id": 746,
+    "name": {
+      "Fr": "Warko Marron"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 413
+  },
+  {
+    "Id": 747,
+    "name": {
+      "Fr": "Dok Alako"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 414
+  },
+  {
+    "Id": 748,
+    "name": {
+      "Fr": "Koalak Immature"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 415
+  },
+  {
+    "Id": 751,
+    "name": {
+      "Fr": "Koalak Indigo"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 417
+  },
+  {
+    "Id": 752,
+    "name": {
+      "Fr": "Koalak Coco"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 418
+  },
+  {
+    "Id": 753,
+    "name": {
+      "Fr": "Koalak Griotte"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 419
+  },
+  {
+    "Id": 754,
+    "name": {
+      "Fr": "Koalak Reinette"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 420
+  },
+  {
+    "Id": 755,
+    "name": {
+      "Fr": "Mama Koalak"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 421
+  },
+  {
+    "Id": 763,
+    "name": {
+      "Fr": "Drakoalak"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 427
+  },
+  {
+    "Id": 784,
+    "name": {
+      "Fr": "Piralak"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 434
+  },
+  {
+    "Id": 423,
+    "name": {
+      "Fr": "Kralamoure Géant"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 227
+  },
+  {
+    "Id": 1057,
+    "name": {
+      "Fr": "Roissingue"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 581
+  },
+  {
+    "Id": 1058,
+    "name": {
+      "Fr": "Tourbassingue"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 582
+  },
+  {
+    "Id": 1059,
+    "name": {
+      "Fr": "Bourbassingue"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 583
+  },
+  {
+    "Id": 1096,
+    "name": {
+      "Fr": "Le Ouassingue Entourbé"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 279
+  },
+  {
+    "Id": 81,
+    "name": {
+      "Fr": "Kwak de Vent"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 34
+  },
+  {
+    "Id": 83,
+    "name": {
+      "Fr": "Kwak de Flamme"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 36
+  },
+  {
+    "Id": 84,
+    "name": {
+      "Fr": "Kwak de Glace"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 37
+  },
+  {
+    "Id": 235,
+    "name": {
+      "Fr": "Kwak de Terre"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 130
+  },
+  {
+    "Id": 269,
+    "name": {
+      "Fr": "Kwakere de Flamme"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 158
+  },
+  {
+    "Id": 270,
+    "name": {
+      "Fr": "Kwakere de Terre"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 159
+  },
+  {
+    "Id": 271,
+    "name": {
+      "Fr": "Kwakere de Glace"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 160
+  },
+  {
+    "Id": 272,
+    "name": {
+      "Fr": "Kwakere de Vent"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 161
+  },
+  {
+    "Id": 2995,
+    "name": {
+      "Fr": "Kwakwa"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 854
+  },
+  {
+    "Id": 3281,
+    "name": {
+      "Fr": "Bwak de Vent"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 156
+  },
+  {
+    "Id": 3282,
+    "name": {
+      "Fr": "Bwak de Glace"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 157
+  },
+  {
+    "Id": 3283,
+    "name": {
+      "Fr": "Bwak de Flamme"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 154
+  },
+  {
+    "Id": 3284,
+    "name": {
+      "Fr": "Bwak de Terre"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 155
+  },
+  {
+    "Id": 412,
+    "name": {
+      "Fr": "Larve Saphir"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 217
+  },
+  {
+    "Id": 413,
+    "name": {
+      "Fr": "Larve Rubis"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 218
+  },
+  {
+    "Id": 414,
+    "name": {
+      "Fr": "Larve Émeraude"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 219
+  },
+  {
+    "Id": 456,
+    "name": {
+      "Fr": "Larve Dorée"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 216
+  },
+  {
+    "Id": 457,
+    "name": {
+      "Fr": "Shin Larve"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 248
+  },
+  {
+    "Id": 3358,
+    "name": {
+      "Fr": "Larve Verte Solitaire"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 546
+  },
+  {
+    "Id": 3359,
+    "name": {
+      "Fr": "Larve Bleue Solitaire"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 544
+  },
+  {
+    "Id": 111,
+    "name": {
+      "Fr": "Tofu Maléfique"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 58
+  },
+  {
+    "Id": 127,
+    "name": {
+      "Fr": "Vampire"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 72
+  },
+  {
+    "Id": 154,
+    "name": {
+      "Fr": "Kwoan"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 80
+  },
+  {
+    "Id": 498,
+    "name": {
+      "Fr": "Gargrouille"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 281
+  },
+  {
+    "Id": 2975,
+    "name": {
+      "Fr": "Boostache"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 846
+  },
+  {
+    "Id": 3235,
+    "name": {
+      "Fr": "Boostache Prépubère"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 353
+  },
+  {
+    "Id": 298,
+    "name": {
+      "Fr": "Scorbute"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 186
+  },
+  {
+    "Id": 299,
+    "name": {
+      "Fr": "Croc Gland"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 187
+  },
+  {
+    "Id": 300,
+    "name": {
+      "Fr": "Kolérat"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 188
+  },
+  {
+    "Id": 301,
+    "name": {
+      "Fr": "Macien"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 189
+  },
+  {
+    "Id": 3096,
+    "name": {
+      "Fr": "Crowneille"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 673
+  },
+  {
+    "Id": 3100,
+    "name": {
+      "Fr": "Nelween"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 856
+  },
+  {
+    "Id": 849,
+    "name": {
+      "Fr": "Kipik"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 476
+  },
+  {
+    "Id": 868,
+    "name": {
+      "Fr": "Tofu enneigé"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 471
+  },
+  {
+    "Id": 896,
+    "name": {
+      "Fr": "Kitsou nakwatus"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 502
+  },
+  {
+    "Id": 899,
+    "name": {
+      "Fr": "Black tiwabbitus"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 503
+  },
+  {
+    "Id": 901,
+    "name": {
+      "Fr": "Kwakus"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 504
+  },
+  {
+    "Id": 1179,
+    "name": {
+      "Fr": "Sapik"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 476
+  },
+  {
+    "Id": 840,
+    "name": {
+      "Fr": "Kanigrou hivernal"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 470
+  },
+  {
+    "Id": 845,
+    "name": {
+      "Fr": "Bonhomme de neige"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 474
+  },
+  {
+    "Id": 867,
+    "name": {
+      "Fr": "Bouboule de neige"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 484
+  },
+  {
+    "Id": 872,
+    "name": {
+      "Fr": "Papa Nowel"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 487
+  },
+  {
+    "Id": 891,
+    "name": {
+      "Fr": "Mininuit"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 501
+  },
+  {
+    "Id": 2622,
+    "name": {
+      "Fr": "Croc gland de Nowel"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 187
+  },
+  {
+    "Id": 839,
+    "name": {
+      "Fr": "Abominable yiti des neiges"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 469
+  },
+  {
+    "Id": 869,
+    "name": {
+      "Fr": "Craqueleur des glaces"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 485
+  },
+  {
+    "Id": 906,
+    "name": {
+      "Fr": "Cadob'"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 494
+  },
+  {
+    "Id": 1194,
+    "name": {
+      "Fr": "Père Fwetar"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 651
+  },
+  {
+    "Id": 3107,
+    "name": {
+      "Fr": "Peluche tofu"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 858
+  },
+  {
+    "Id": 3108,
+    "name": {
+      "Fr": "Peluche bouftou"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 859
+  },
+  {
+    "Id": 3109,
+    "name": {
+      "Fr": "Peluche wabbit"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 860
+  },
+  {
+    "Id": 228,
+    "name": {
+      "Fr": "Boomba"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 124
+  },
+  {
+    "Id": 229,
+    "name": {
+      "Fr": "Nakunbra"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 125
+  },
+  {
+    "Id": 231,
+    "name": {
+      "Fr": "Canondorf"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 127
+  },
+  {
+    "Id": 1048,
+    "name": {
+      "Fr": "Sparo"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 572
+  },
+  {
+    "Id": 1049,
+    "name": {
+      "Fr": "Barbroussa"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 573
+  },
+  {
+    "Id": 1050,
+    "name": {
+      "Fr": "Le Flib"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 574
+  },
+  {
+    "Id": 1051,
+    "name": {
+      "Fr": "Gourlo le Terrible"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 575
+  },
+  {
+    "Id": 1019,
+    "name": {
+      "Fr": "Bitouf des Plaines"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 558
+  },
+  {
+    "Id": 1025,
+    "name": {
+      "Fr": "Craqueleur Poli"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 561
+  },
+  {
+    "Id": 1026,
+    "name": {
+      "Fr": "Craqueboule Poli"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 562
+  },
+  {
+    "Id": 1068,
+    "name": {
+      "Fr": "Mufafah"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 592
+  },
+  {
+    "Id": 1069,
+    "name": {
+      "Fr": "Kido"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 593
+  },
+  {
+    "Id": 1070,
+    "name": {
+      "Fr": "Kilibriss"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 594
+  },
+  {
+    "Id": 1071,
+    "name": {
+      "Fr": "Silf le Rasboul Majeur"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 595
+  },
+  {
+    "Id": 938,
+    "name": {
+      "Fr": "Scélée Rate"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 518
+  },
+  {
+    "Id": 940,
+    "name": {
+      "Fr": "Rat Blanc"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 520
+  },
+  {
+    "Id": 941,
+    "name": {
+      "Fr": "Chak Rat"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 521
+  },
+  {
+    "Id": 942,
+    "name": {
+      "Fr": "Capoei Rat"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 522
+  },
+  {
+    "Id": 6743,
+    "name": {
+      "Fr": "Chika Rat"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2217
+  },
+  {
+    "Id": 6744,
+    "name": {
+      "Fr": "Aloevée Rate"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2218
+  },
+  {
+    "Id": 935,
+    "name": {
+      "Fr": "Rat Plapla"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 515
+  },
+  {
+    "Id": 936,
+    "name": {
+      "Fr": "Rat Li"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 516
+  },
+  {
+    "Id": 937,
+    "name": {
+      "Fr": "Rat Sio"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 517
+  },
+  {
+    "Id": 939,
+    "name": {
+      "Fr": "Rat Noir"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 519
+  },
+  {
+    "Id": 6739,
+    "name": {
+      "Fr": "Rate Atinée"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2214
+  },
+  {
+    "Id": 6742,
+    "name": {
+      "Fr": "Rate Iboisée"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2216
+  },
+  {
+    "Id": 939,
+    "name": {
+      "Fr": "Rat Noir"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 519
+  },
+  {
+    "Id": 940,
+    "name": {
+      "Fr": "Rat Blanc"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 520
+  },
+  {
+    "Id": 943,
+    "name": {
+      "Fr": "Sphincter Cell"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 523
+  },
+  {
+    "Id": 3345,
+    "name": {
+      "Fr": "Ramane"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 241
+  },
+  {
+    "Id": 3346,
+    "name": {
+      "Fr": "Rat Goûtant"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 239
+  },
+  {
+    "Id": 3347,
+    "name": {
+      "Fr": "Rat Masseur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 948
+  },
+  {
+    "Id": 3348,
+    "name": {
+      "Fr": "Rat Colleur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 949
+  },
+  {
+    "Id": 3349,
+    "name": {
+      "Fr": "Rat Pine"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 950
+  },
+  {
+    "Id": 3350,
+    "name": {
+      "Fr": "Rat Fraîchi"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 951
+  },
+  {
+    "Id": 3351,
+    "name": {
+      "Fr": "Rat Caille"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 952
+  },
+  {
+    "Id": 3352,
+    "name": {
+      "Fr": "Rat Botteur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 953
+  },
+  {
+    "Id": 194,
+    "name": {
+      "Fr": "Scarafeuille Rouge"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 104
+  },
+  {
+    "Id": 198,
+    "name": {
+      "Fr": "Scarafeuille Bleu"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 105
+  },
+  {
+    "Id": 240,
+    "name": {
+      "Fr": "Scarafeuille Vert"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 135
+  },
+  {
+    "Id": 241,
+    "name": {
+      "Fr": "Scarafeuille Blanc"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 136
+  },
+  {
+    "Id": 795,
+    "name": {
+      "Fr": "Scarafeuille Noir"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 441
+  },
+  {
+    "Id": 797,
+    "name": {
+      "Fr": "Scarabosse Doré"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 443
+  },
+  {
+    "Id": 798,
+    "name": {
+      "Fr": "Scarafeuille Immature"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 444
+  },
+  {
+    "Id": 673,
+    "name": {
+      "Fr": "Émeraude"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 361
+  },
+  {
+    "Id": 674,
+    "name": {
+      "Fr": "Poupée Émeraude"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 362
+  },
+  {
+    "Id": 675,
+    "name": {
+      "Fr": "Saphira"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 363
+  },
+  {
+    "Id": 676,
+    "name": {
+      "Fr": "Poupée Affamée"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 362
+  },
+  {
+    "Id": 677,
+    "name": {
+      "Fr": "Rubise"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 364
+  },
+  {
+    "Id": 681,
+    "name": {
+      "Fr": "Diamantine"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 368
+  },
+  {
+    "Id": 744,
+    "name": {
+      "Fr": "Koalak Sanguin"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 411
+  },
+  {
+    "Id": 745,
+    "name": {
+      "Fr": "Warko Violet"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 412
+  },
+  {
+    "Id": 749,
+    "name": {
+      "Fr": "Guerrier Koalak"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 416
+  },
+  {
+    "Id": 754,
+    "name": {
+      "Fr": "Koalak Reinette"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 420
+  },
+  {
+    "Id": 756,
+    "name": {
+      "Fr": "Koalak Farouche"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 422
+  },
+  {
+    "Id": 780,
+    "name": {
+      "Fr": "Skeunk"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 431
+  },
+  {
+    "Id": 783,
+    "name": {
+      "Fr": "Fauchalak"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 433
+  },
+  {
+    "Id": 54,
+    "name": {
+      "Fr": "Chafer"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 16
+  },
+  {
+    "Id": 108,
+    "name": {
+      "Fr": "Rib"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 56
+  },
+  {
+    "Id": 110,
+    "name": {
+      "Fr": "Chafer Invisible"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 57
+  },
+  {
+    "Id": 396,
+    "name": {
+      "Fr": "Chafer Fantassin"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 193
+  },
+  {
+    "Id": 3238,
+    "name": {
+      "Fr": "Chafer Rōnin"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 916
+  },
+  {
+    "Id": 3239,
+    "name": {
+      "Fr": "Chafer Draugr"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 697
+  },
+  {
+    "Id": 3240,
+    "name": {
+      "Fr": "Chafer Primitif"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 917
+  },
+  {
+    "Id": 98,
+    "name": {
+      "Fr": "Tofu"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 9
+  },
+  {
+    "Id": 796,
+    "name": {
+      "Fr": "Tofu Noir"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 442
+  },
+  {
+    "Id": 800,
+    "name": {
+      "Fr": "Batofu"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 446
+  },
+  {
+    "Id": 804,
+    "name": {
+      "Fr": "Tofoune"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 448
+  },
+  {
+    "Id": 806,
+    "name": {
+      "Fr": "Tofukaz"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 450
+  },
+  {
+    "Id": 808,
+    "name": {
+      "Fr": "Tofu Ventripotent"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 452
+  },
+  {
+    "Id": 4824,
+    "name": {
+      "Fr": "Tofu Mutant"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 449
+  },
+  {
+    "Id": 5222,
+    "name": {
+      "Fr": "Tofu Agressif"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 9
+  },
+  {
+    "Id": 5223,
+    "name": {
+      "Fr": "Tofu Noir Agressif"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 442
+  },
+  {
+    "Id": 5224,
+    "name": {
+      "Fr": "Tofoune Agressive"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 448
+  },
+  {
+    "Id": 1182,
+    "name": {
+      "Fr": "Blopignon"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 643
+  },
+  {
+    "Id": 1183,
+    "name": {
+      "Fr": "Tronkoblop"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 644
+  },
+  {
+    "Id": 1184,
+    "name": {
+      "Fr": "Blop Coco Royal"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 645
+  },
+  {
+    "Id": 1185,
+    "name": {
+      "Fr": "Blop Griotte Royal"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 646
+  },
+  {
+    "Id": 1186,
+    "name": {
+      "Fr": "Blop Indigo Royal"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 647
+  },
+  {
+    "Id": 1187,
+    "name": {
+      "Fr": "Blop Reinette Royal"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 648
+  },
+  {
+    "Id": 1188,
+    "name": {
+      "Fr": "Blop Multicolore Royal"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 649
+  },
+  {
+    "Id": 98,
+    "name": {
+      "Fr": "Tofu"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 9
+  },
+  {
+    "Id": 382,
+    "name": {
+      "Fr": "Tofu Royal"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 204
+  },
+  {
+    "Id": 807,
+    "name": {
+      "Fr": "Tofuzmo"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 451
+  },
+  {
+    "Id": 3299,
+    "name": {
+      "Fr": "Vilain Petit Tofu"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 932
+  },
+  {
+    "Id": 3300,
+    "name": {
+      "Fr": "Tofutoflamme"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 933
+  },
+  {
+    "Id": 3301,
+    "name": {
+      "Fr": "Tofubine"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 934
+  },
+  {
+    "Id": 3302,
+    "name": {
+      "Fr": "Tofu Dodu"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 935
+  },
+  {
+    "Id": 5220,
+    "name": {
+      "Fr": "Vilain Petit Tofu Agressif"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 932
+  },
+  {
+    "Id": 5221,
+    "name": {
+      "Fr": "Tofubine Agressive"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 934
+  },
+  {
+    "Id": 1029,
+    "name": {
+      "Fr": "Floribonde"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 564
+  },
+  {
+    "Id": 1041,
+    "name": {
+      "Fr": "Bitouf Sombre"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 566
+  },
+  {
+    "Id": 1072,
+    "name": {
+      "Fr": "Tynril Consterné"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 596
+  },
+  {
+    "Id": 1073,
+    "name": {
+      "Fr": "Brouture"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 597
+  },
+  {
+    "Id": 1074,
+    "name": {
+      "Fr": "Nerbe"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 598
+  },
+  {
+    "Id": 1075,
+    "name": {
+      "Fr": "Fécorce"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 599
+  },
+  {
+    "Id": 1076,
+    "name": {
+      "Fr": "Chiendent"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 600
+  },
+  {
+    "Id": 1077,
+    "name": {
+      "Fr": "Abrakleur Sombre"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 601
+  },
+  {
+    "Id": 1085,
+    "name": {
+      "Fr": "Tynril Déconcerté"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 596
+  },
+  {
+    "Id": 1086,
+    "name": {
+      "Fr": "Tynril Perfide"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 596
+  },
+  {
+    "Id": 1087,
+    "name": {
+      "Fr": "Tynril Ahuri"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 596
+  },
+  {
+    "Id": 64,
+    "name": {
+      "Fr": "Wabbit"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 25
+  },
+  {
+    "Id": 65,
+    "name": {
+      "Fr": "Black Wabbit"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 26
+  },
+  {
+    "Id": 68,
+    "name": {
+      "Fr": "Black Tiwabbit"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 27
+  },
+  {
+    "Id": 72,
+    "name": {
+      "Fr": "Tiwabbit Kiafin"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 28
+  },
+  {
+    "Id": 96,
+    "name": {
+      "Fr": "Tiwabbit"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 48
+  },
+  {
+    "Id": 97,
+    "name": {
+      "Fr": "Wo Wabbit"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 49
+  },
+  {
+    "Id": 99,
+    "name": {
+      "Fr": "Grand Pa Wabbit"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 50
+  },
+  {
+    "Id": 180,
+    "name": {
+      "Fr": "Wa Wabbit"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 101
+  },
+  {
+    "Id": 121,
+    "name": {
+      "Fr": "Minotoror"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 67
+  },
+  {
+    "Id": 668,
+    "name": {
+      "Fr": "Gamino"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 357
+  },
+  {
+    "Id": 827,
+    "name": {
+      "Fr": "Minotot"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 459
+  },
+  {
+    "Id": 829,
+    "name": {
+      "Fr": "Serpiplume"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 461
+  },
+  {
+    "Id": 830,
+    "name": {
+      "Fr": "Scaratos"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 462
+  },
+  {
+    "Id": 831,
+    "name": {
+      "Fr": "Mominotor"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 463
+  },
+  {
+    "Id": 832,
+    "name": {
+      "Fr": "Déminoboule"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 464
+  },
+  {
+    "Id": 3740,
+    "name": {
+      "Fr": "Minogolem séculaire"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1155
+  },
+  {
+    "Id": 2850,
+    "name": {
+      "Fr": "Boufmouth"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 771
+  },
+  {
+    "Id": 2851,
+    "name": {
+      "Fr": "Boufmouth de guerre"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 772
+  },
+  {
+    "Id": 2852,
+    "name": {
+      "Fr": "Boufmouth légendaire"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 773
+  },
+  {
+    "Id": 2853,
+    "name": {
+      "Fr": "Bouftonmouth"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 774
+  },
+  {
+    "Id": 2854,
+    "name": {
+      "Fr": "Royalmouth"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 775
+  },
+  {
+    "Id": 2848,
+    "name": {
+      "Fr": "Mansot Royal"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 769
+  },
+  {
+    "Id": 2849,
+    "name": {
+      "Fr": "Timansot"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 770
+  },
+  {
+    "Id": 2855,
+    "name": {
+      "Fr": "Shamansot"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 776
+  },
+  {
+    "Id": 2856,
+    "name": {
+      "Fr": "Mansobèse"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 777
+  },
+  {
+    "Id": 2857,
+    "name": {
+      "Fr": "Mamansot"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 778
+  },
+  {
+    "Id": 2858,
+    "name": {
+      "Fr": "Fu Mansot"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 779
+  },
+  {
+    "Id": 2874,
+    "name": {
+      "Fr": "Fancrôme"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 791
+  },
+  {
+    "Id": 2875,
+    "name": {
+      "Fr": "Fantomalamère"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 792
+  },
+  {
+    "Id": 2876,
+    "name": {
+      "Fr": "Vigie pirate"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 793
+  },
+  {
+    "Id": 2877,
+    "name": {
+      "Fr": "Ben le Ripate"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 794
+  },
+  {
+    "Id": 2878,
+    "name": {
+      "Fr": "Harpirate"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 795
+  },
+  {
+    "Id": 2880,
+    "name": {
+      "Fr": "Fantômat"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 796
+  },
+  {
+    "Id": 2881,
+    "name": {
+      "Fr": "Fantimonier"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 797
+  },
+  {
+    "Id": 2865,
+    "name": {
+      "Fr": "Crapeur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 786
+  },
+  {
+    "Id": 2866,
+    "name": {
+      "Fr": "Atomystique"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 787
+  },
+  {
+    "Id": 2867,
+    "name": {
+      "Fr": "Mofette"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 788
+  },
+  {
+    "Id": 2868,
+    "name": {
+      "Fr": "Fumrirolle"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 789
+  },
+  {
+    "Id": 2869,
+    "name": {
+      "Fr": "Solfataré"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 790
+  },
+  {
+    "Id": 2924,
+    "name": {
+      "Fr": "Obsidiantre"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 825
+  },
+  {
+    "Id": 2888,
+    "name": {
+      "Fr": "Yokaï Givrefoux"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 803
+  },
+  {
+    "Id": 2889,
+    "name": {
+      "Fr": "Maho Givrefoux"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 804
+  },
+  {
+    "Id": 2890,
+    "name": {
+      "Fr": "Soryo Givrefoux"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 805
+  },
+  {
+    "Id": 2891,
+    "name": {
+      "Fr": "Yomi Givrefoux"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 806
+  },
+  {
+    "Id": 2967,
+    "name": {
+      "Fr": "Tengu Givrefoux"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 840
+  },
+  {
+    "Id": 2982,
+    "name": {
+      "Fr": "Kami Givrefoux"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 848
+  },
+  {
+    "Id": 3234,
+    "name": {
+      "Fr": "Fuji Givrefoux Nourricière"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 843
+  },
+  {
+    "Id": 2895,
+    "name": {
+      "Fr": "Dramanite"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 809
+  },
+  {
+    "Id": 2896,
+    "name": {
+      "Fr": "Fistulor"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 810
+  },
+  {
+    "Id": 2897,
+    "name": {
+      "Fr": "Fongeur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 758
+  },
+  {
+    "Id": 2898,
+    "name": {
+      "Fr": "Abrazif"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 811
+  },
+  {
+    "Id": 2900,
+    "name": {
+      "Fr": "Mérulette"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 813
+  },
+  {
+    "Id": 2968,
+    "name": {
+      "Fr": "Korriandre"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 841
+  },
+  {
+    "Id": 2883,
+    "name": {
+      "Fr": "Blérauve"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 798
+  },
+  {
+    "Id": 2884,
+    "name": {
+      "Fr": "Blérom"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 799
+  },
+  {
+    "Id": 2885,
+    "name": {
+      "Fr": "Wolvero"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 800
+  },
+  {
+    "Id": 2886,
+    "name": {
+      "Fr": "Croleur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 801
+  },
+  {
+    "Id": 2965,
+    "name": {
+      "Fr": "Fleuro"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 839
+  },
+  {
+    "Id": 2966,
+    "name": {
+      "Fr": "Blérice"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 835
+  },
+  {
+    "Id": 2986,
+    "name": {
+      "Fr": "Kolosso"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 849
+  },
+  {
+    "Id": 2992,
+    "name": {
+      "Fr": "Professeur Xa"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 853
+  },
+  {
+    "Id": 2861,
+    "name": {
+      "Fr": "Apériglours"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 782
+  },
+  {
+    "Id": 2862,
+    "name": {
+      "Fr": "Boulglours"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 783
+  },
+  {
+    "Id": 2863,
+    "name": {
+      "Fr": "Gloursaya"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 784
+  },
+  {
+    "Id": 2864,
+    "name": {
+      "Fr": "Glourséleste"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 785
+  },
+  {
+    "Id": 2987,
+    "name": {
+      "Fr": "Glourmand"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 850
+  },
+  {
+    "Id": 2988,
+    "name": {
+      "Fr": "Glouragan"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 851
+  },
+  {
+    "Id": 2989,
+    "name": {
+      "Fr": "Meliglours"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 852
+  },
+  {
+    "Id": 2932,
+    "name": {
+      "Fr": "Gobosteur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 827
+  },
+  {
+    "Id": 2933,
+    "name": {
+      "Fr": "Sapeur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 828
+  },
+  {
+    "Id": 2934,
+    "name": {
+      "Fr": "Ouilleur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 829
+  },
+  {
+    "Id": 2935,
+    "name": {
+      "Fr": "Marôdeur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 830
+  },
+  {
+    "Id": 2936,
+    "name": {
+      "Fr": "Perkü"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 831
+  },
+  {
+    "Id": 2937,
+    "name": {
+      "Fr": "Courtilieur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 832
+  },
+  {
+    "Id": 2942,
+    "name": {
+      "Fr": "Grolloum"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 834
+  },
+  {
+    "Id": 3306,
+    "name": {
+      "Fr": "Halouine"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 937
+  },
+  {
+    "Id": 3307,
+    "name": {
+      "Fr": "Dévhorreur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 938
+  },
+  {
+    "Id": 3308,
+    "name": {
+      "Fr": "Cauchemarakne"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 939
+  },
+  {
+    "Id": 3309,
+    "name": {
+      "Fr": "Champêtrouille"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 940
+  },
+  {
+    "Id": 3310,
+    "name": {
+      "Fr": "Lanverne"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 941
+  },
+  {
+    "Id": 3311,
+    "name": {
+      "Fr": "Chauffe-Soutrille"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 942
+  },
+  {
+    "Id": 3404,
+    "name": {
+      "Fr": "Kanimate"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 981
+  },
+  {
+    "Id": 3405,
+    "name": {
+      "Fr": "Brikoglours"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 982
+  },
+  {
+    "Id": 3406,
+    "name": {
+      "Fr": "Mansordide"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 983
+  },
+  {
+    "Id": 3407,
+    "name": {
+      "Fr": "Mécanofoux"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 984
+  },
+  {
+    "Id": 3408,
+    "name": {
+      "Fr": "Mérulor"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 985
+  },
+  {
+    "Id": 3409,
+    "name": {
+      "Fr": "Sylargh"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 986
+  },
+  {
+    "Id": 3379,
+    "name": {
+      "Fr": "Harrogant"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 959
+  },
+  {
+    "Id": 3380,
+    "name": {
+      "Fr": "Grodruche"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 960
+  },
+  {
+    "Id": 3381,
+    "name": {
+      "Fr": "Peunch"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 961
+  },
+  {
+    "Id": 3382,
+    "name": {
+      "Fr": "Empaillé"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 962
+  },
+  {
+    "Id": 3383,
+    "name": {
+      "Fr": "Cuirboule"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 963
+  },
+  {
+    "Id": 3384,
+    "name": {
+      "Fr": "Klime"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 964
+  },
+  {
+    "Id": 3385,
+    "name": {
+      "Fr": "Ventrublion"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 965
+  },
+  {
+    "Id": 3386,
+    "name": {
+      "Fr": "Stalak"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 966
+  },
+  {
+    "Id": 3387,
+    "name": {
+      "Fr": "Karkanik"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 967
+  },
+  {
+    "Id": 3389,
+    "name": {
+      "Fr": "Verglasseur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 968
+  },
+  {
+    "Id": 3390,
+    "name": {
+      "Fr": "Frimar"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 969
+  },
+  {
+    "Id": 3391,
+    "name": {
+      "Fr": "Missiz Frizz"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 970
+  },
+  {
+    "Id": 3392,
+    "name": {
+      "Fr": "Nessil"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 971
+  },
+  {
+    "Id": 3393,
+    "name": {
+      "Fr": "Krakal"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 972
+  },
+  {
+    "Id": 3394,
+    "name": {
+      "Fr": "Dodox"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 973
+  },
+  {
+    "Id": 3395,
+    "name": {
+      "Fr": "Termystique"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 974
+  },
+  {
+    "Id": 3396,
+    "name": {
+      "Fr": "Drosérâle"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 975
+  },
+  {
+    "Id": 3397,
+    "name": {
+      "Fr": "Nileza"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 976
+  },
+  {
+    "Id": 3384,
+    "name": {
+      "Fr": "Klime"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 964
+  },
+  {
+    "Id": 3391,
+    "name": {
+      "Fr": "Missiz Frizz"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 970
+  },
+  {
+    "Id": 3397,
+    "name": {
+      "Fr": "Nileza"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 976
+  },
+  {
+    "Id": 3409,
+    "name": {
+      "Fr": "Sylargh"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 986
+  },
+  {
+    "Id": 3410,
+    "name": {
+      "Fr": "Granduk"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 987
+  },
+  {
+    "Id": 3411,
+    "name": {
+      "Fr": "Strigide"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 988
+  },
+  {
+    "Id": 3412,
+    "name": {
+      "Fr": "Cycloïde"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 989
+  },
+  {
+    "Id": 3414,
+    "name": {
+      "Fr": "Sinistrofu"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 991
+  },
+  {
+    "Id": 3415,
+    "name": {
+      "Fr": "Nocturlabe"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 992
+  },
+  {
+    "Id": 3416,
+    "name": {
+      "Fr": "Comte Harebourg"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 993
+  },
+  {
+    "Id": 3476,
+    "name": {
+      "Fr": "Maître des Pantins"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1019
+  },
+  {
+    "Id": 3482,
+    "name": {
+      "Fr": "Dramak"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1025
+  },
+  {
+    "Id": 3484,
+    "name": {
+      "Fr": "Rhinoféroce"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1026
+  },
+  {
+    "Id": 3485,
+    "name": {
+      "Fr": "Molette"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1027
+  },
+  {
+    "Id": 3486,
+    "name": {
+      "Fr": "Gobvious"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1028
+  },
+  {
+    "Id": 3487,
+    "name": {
+      "Fr": "Bouledogre"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1029
+  },
+  {
+    "Id": 3534,
+    "name": {
+      "Fr": "Merkator"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1054
+  },
+  {
+    "Id": 3535,
+    "name": {
+      "Fr": "Pikoleur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1055
+  },
+  {
+    "Id": 3538,
+    "name": {
+      "Fr": "Harpo"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1056
+  },
+  {
+    "Id": 3542,
+    "name": {
+      "Fr": "Krabouilleur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1060
+  },
+  {
+    "Id": 3543,
+    "name": {
+      "Fr": "Eskoglyphe"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1061
+  },
+  {
+    "Id": 3544,
+    "name": {
+      "Fr": "Cyclophandre"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1062
+  },
+  {
+    "Id": 3564,
+    "name": {
+      "Fr": "Ombre"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1002
+  },
+  {
+    "Id": 3566,
+    "name": {
+      "Fr": "Noctulule"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1069
+  },
+  {
+    "Id": 3567,
+    "name": {
+      "Fr": "Panterreur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1070
+  },
+  {
+    "Id": 3568,
+    "name": {
+      "Fr": "Brutopak"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1071
+  },
+  {
+    "Id": 3569,
+    "name": {
+      "Fr": "Caznoar"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1072
+  },
+  {
+    "Id": 3570,
+    "name": {
+      "Fr": "Sombléro"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1073
+  },
+  {
+    "Id": 3556,
+    "name": {
+      "Fr": "Kanigroula"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1066
+  },
+  {
+    "Id": 3557,
+    "name": {
+      "Fr": "Kanihilan"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1067
+  },
+  {
+    "Id": 3559,
+    "name": {
+      "Fr": "Félygiène"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 683
+  },
+  {
+    "Id": 3560,
+    "name": {
+      "Fr": "Panthègros"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 684
+  },
+  {
+    "Id": 3561,
+    "name": {
+      "Fr": "Kaniblou"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 685
+  },
+  {
+    "Id": 3562,
+    "name": {
+      "Fr": "Orfélin"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 686
+  },
+  {
+    "Id": 3648,
+    "name": {
+      "Fr": "Roi Nidas"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1106
+  },
+  {
+    "Id": 3653,
+    "name": {
+      "Fr": "Kamasterisk"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1110
+  },
+  {
+    "Id": 3654,
+    "name": {
+      "Fr": "Barbétoal"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1111
+  },
+  {
+    "Id": 3655,
+    "name": {
+      "Fr": "Lévitrof"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1112
+  },
+  {
+    "Id": 3656,
+    "name": {
+      "Fr": "Paspartou"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1113
+  },
+  {
+    "Id": 3657,
+    "name": {
+      "Fr": "Piloztère"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1114
+  },
+  {
+    "Id": 3652,
+    "name": {
+      "Fr": "Malléfisk"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1109
+  },
+  {
+    "Id": 3663,
+    "name": {
+      "Fr": "Boursoin"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1120
+  },
+  {
+    "Id": 3664,
+    "name": {
+      "Fr": "Mimikado"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1121
+  },
+  {
+    "Id": 3665,
+    "name": {
+      "Fr": "Trésantène"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1122
+  },
+  {
+    "Id": 3666,
+    "name": {
+      "Fr": "Berserkoffre"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1123
+  },
+  {
+    "Id": 3667,
+    "name": {
+      "Fr": "Précieux"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1124
+  },
+  {
+    "Id": 3651,
+    "name": {
+      "Fr": "Phossile"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1108
+  },
+  {
+    "Id": 3658,
+    "name": {
+      "Fr": "Phorrêveur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1115
+  },
+  {
+    "Id": 3659,
+    "name": {
+      "Fr": "Métaphorreur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1116
+  },
+  {
+    "Id": 3660,
+    "name": {
+      "Fr": "Père Phorreur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1117
+  },
+  {
+    "Id": 3661,
+    "name": {
+      "Fr": "Phozami"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1118
+  },
+  {
+    "Id": 3662,
+    "name": {
+      "Fr": "Mère Veilleuse"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1119
+  },
+  {
+    "Id": 3618,
+    "name": {
+      "Fr": "Haute Truche"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1096
+  },
+  {
+    "Id": 3619,
+    "name": {
+      "Fr": "Gruche"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1097
+  },
+  {
+    "Id": 3620,
+    "name": {
+      "Fr": "Truchmuche"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 617
+  },
+  {
+    "Id": 3621,
+    "name": {
+      "Fr": "Truchideur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1098
+  },
+  {
+    "Id": 3622,
+    "name": {
+      "Fr": "Truchtine"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1099
+  },
+  {
+    "Id": 3623,
+    "name": {
+      "Fr": "Truchon"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1100
+  },
+  {
+    "Id": 3730,
+    "name": {
+      "Fr": "Milimaître"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1145
+  },
+  {
+    "Id": 3731,
+    "name": {
+      "Fr": "Kartouche"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1146
+  },
+  {
+    "Id": 3732,
+    "name": {
+      "Fr": "Sramouraï"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1147
+  },
+  {
+    "Id": 3733,
+    "name": {
+      "Fr": "Tromblion"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1148
+  },
+  {
+    "Id": 3734,
+    "name": {
+      "Fr": "Elsoummo"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1149
+  },
+  {
+    "Id": 3753,
+    "name": {
+      "Fr": "Capitaine Ekarlatte"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1167
+  },
+  {
+    "Id": 3735,
+    "name": {
+      "Fr": "Scoliopode"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1150
+  },
+  {
+    "Id": 3736,
+    "name": {
+      "Fr": "Puceronde"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1151
+  },
+  {
+    "Id": 3737,
+    "name": {
+      "Fr": "Lucrane"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1152
+  },
+  {
+    "Id": 3738,
+    "name": {
+      "Fr": "Éperfide"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1153
+  },
+  {
+    "Id": 3739,
+    "name": {
+      "Fr": "Morfrelon"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1154
+  },
+  {
+    "Id": 3752,
+    "name": {
+      "Fr": "Toxoliath"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1166
+  },
+  {
+    "Id": 3726,
+    "name": {
+      "Fr": "Reine des Voleurs"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1141
+  },
+  {
+    "Id": 3746,
+    "name": {
+      "Fr": "Mâchassin"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1161
+  },
+  {
+    "Id": 3747,
+    "name": {
+      "Fr": "Terristocrate"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1162
+  },
+  {
+    "Id": 3748,
+    "name": {
+      "Fr": "Doublure"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1163
+  },
+  {
+    "Id": 3749,
+    "name": {
+      "Fr": "Bourôliste"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1164
+  },
+  {
+    "Id": 3750,
+    "name": {
+      "Fr": "Magouille"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1165
+  },
+  {
+    "Id": 3823,
+    "name": {
+      "Fr": "Tabacille"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1199
+  },
+  {
+    "Id": 3824,
+    "name": {
+      "Fr": "Verminocule"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1200
+  },
+  {
+    "Id": 3825,
+    "name": {
+      "Fr": "Bacterrib"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1201
+  },
+  {
+    "Id": 3826,
+    "name": {
+      "Fr": "Virustine"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1202
+  },
+  {
+    "Id": 3827,
+    "name": {
+      "Fr": "Pataugerme"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1203
+  },
+  {
+    "Id": 3828,
+    "name": {
+      "Fr": "Protozorreur"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1204
+  },
+  {
+    "Id": 3852,
+    "name": {
+      "Fr": "Fraktale"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1224
+  },
+  {
+    "Id": 3854,
+    "name": {
+      "Fr": "Gromorso"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1225
+  },
+  {
+    "Id": 3855,
+    "name": {
+      "Fr": "Farfacette"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1226
+  },
+  {
+    "Id": 3856,
+    "name": {
+      "Fr": "Brikablak"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1227
+  },
+  {
+    "Id": 3857,
+    "name": {
+      "Fr": "Éklatleth"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1228
+  },
+  {
+    "Id": 3858,
+    "name": {
+      "Fr": "Segmantid"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1229
+  },
+  {
+    "Id": 3840,
+    "name": {
+      "Fr": "Trezz"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1213
+  },
+  {
+    "Id": 3841,
+    "name": {
+      "Fr": "Vindeux"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1214
+  },
+  {
+    "Id": 3842,
+    "name": {
+      "Fr": "Trantroa"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1215
+  },
+  {
+    "Id": 3843,
+    "name": {
+      "Fr": "Seith"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1216
+  },
+  {
+    "Id": 3844,
+    "name": {
+      "Fr": "Soissanth"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1217
+  },
+  {
+    "Id": 3849,
+    "name": {
+      "Fr": "XLII"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1222
+  },
+  {
+    "Id": 3834,
+    "name": {
+      "Fr": "Ikargn"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1207
+  },
+  {
+    "Id": 3835,
+    "name": {
+      "Fr": "Vortex"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1208
+  },
+  {
+    "Id": 3836,
+    "name": {
+      "Fr": "Méjaire"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1209
+  },
+  {
+    "Id": 3837,
+    "name": {
+      "Fr": "Harpille"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1210
+  },
+  {
+    "Id": 3838,
+    "name": {
+      "Fr": "Buboxor"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1211
+  },
+  {
+    "Id": 3839,
+    "name": {
+      "Fr": "Brabuzar"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1212
+  },
+  {
+    "Id": 3940,
+    "name": {
+      "Fr": "Cafarcher"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1240
+  },
+  {
+    "Id": 3941,
+    "name": {
+      "Fr": "Pyrasite"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1241
+  },
+  {
+    "Id": 3942,
+    "name": {
+      "Fr": "Mirgrillon"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1242
+  },
+  {
+    "Id": 3943,
+    "name": {
+      "Fr": "Sakarien"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1243
+  },
+  {
+    "Id": 3944,
+    "name": {
+      "Fr": "Céglumen"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1244
+  },
+  {
+    "Id": 3945,
+    "name": {
+      "Fr": "Kankreblath"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1245
+  },
+  {
+    "Id": 3991,
+    "name": {
+      "Fr": "Arapex"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1262
+  },
+  {
+    "Id": 3992,
+    "name": {
+      "Fr": "Dardalaine"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1263
+  },
+  {
+    "Id": 3993,
+    "name": {
+      "Fr": "Néfileuse"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1264
+  },
+  {
+    "Id": 3994,
+    "name": {
+      "Fr": "Saltik"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1265
+  },
+  {
+    "Id": 3995,
+    "name": {
+      "Fr": "Gargantûl"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1266
+  },
+  {
+    "Id": 3996,
+    "name": {
+      "Fr": "Reine Nyée"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1267
+  },
+  {
+    "Id": 4046,
+    "name": {
+      "Fr": "Chafer Débutant"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 16
+  },
+  {
+    "Id": 4047,
+    "name": {
+      "Fr": "Chafer Furtif"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 57
+  },
+  {
+    "Id": 4048,
+    "name": {
+      "Fr": "Chafer Éclaireur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 179
+  },
+  {
+    "Id": 4049,
+    "name": {
+      "Fr": "Chafer Piquier"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 178
+  },
+  {
+    "Id": 4050,
+    "name": {
+      "Fr": "Sergent Chafer"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 180
+  },
+  {
+    "Id": 4051,
+    "name": {
+      "Fr": "Kardorim"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1287
+  },
+  {
+    "Id": 228,
+    "name": {
+      "Fr": "Boomba"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 124
+  },
+  {
+    "Id": 229,
+    "name": {
+      "Fr": "Nakunbra"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 125
+  },
+  {
+    "Id": 230,
+    "name": {
+      "Fr": "Le Chouque"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 126
+  },
+  {
+    "Id": 231,
+    "name": {
+      "Fr": "Canondorf"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 127
+  },
+  {
+    "Id": 4160,
+    "name": {
+      "Fr": "Ricanif"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1323
+  },
+  {
+    "Id": 4161,
+    "name": {
+      "Fr": "Ivremor"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1324
+  },
+  {
+    "Id": 215,
+    "name": {
+      "Fr": "Trukikol"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 114
+  },
+  {
+    "Id": 216,
+    "name": {
+      "Fr": "Gloutovore"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 115
+  },
+  {
+    "Id": 217,
+    "name": {
+      "Fr": "Fourbasse"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 116
+  },
+  {
+    "Id": 226,
+    "name": {
+      "Fr": "Moon"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 123
+  },
+  {
+    "Id": 4162,
+    "name": {
+      "Fr": "Dostrogo"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1325
+  },
+  {
+    "Id": 4163,
+    "name": {
+      "Fr": "Domoizelle"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1326
+  },
+  {
+    "Id": 4278,
+    "name": {
+      "Fr": "Pounicheur"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1351
+  },
+  {
+    "Id": 4291,
+    "name": {
+      "Fr": "Pupuce"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1362
+  },
+  {
+    "Id": 4292,
+    "name": {
+      "Fr": "Morcac"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1363
+  },
+  {
+    "Id": 4293,
+    "name": {
+      "Fr": "Pikbul"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1364
+  },
+  {
+    "Id": 4294,
+    "name": {
+      "Fr": "Gériatique"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1365
+  },
+  {
+    "Id": 4295,
+    "name": {
+      "Fr": "Grath"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1366
+  },
+  {
+    "Id": 4264,
+    "name": {
+      "Fr": "Ush Galesh"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1346
+  },
+  {
+    "Id": 4265,
+    "name": {
+      "Fr": "Ush Galesh"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1347
+  },
+  {
+    "Id": 4296,
+    "name": {
+      "Fr": "Chasquatch"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1367
+  },
+  {
+    "Id": 4297,
+    "name": {
+      "Fr": "Chacrebleu"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1368
+  },
+  {
+    "Id": 4298,
+    "name": {
+      "Fr": "Chakichan"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1369
+  },
+  {
+    "Id": 4299,
+    "name": {
+      "Fr": "Chargus"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1370
+  },
+  {
+    "Id": 4300,
+    "name": {
+      "Fr": "Chakaroze"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1371
+  },
+  {
+    "Id": 4263,
+    "name": {
+      "Fr": "Chalœil"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1345
+  },
+  {
+    "Id": 4283,
+    "name": {
+      "Fr": "Soldat de Fortune"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1356
+  },
+  {
+    "Id": 4284,
+    "name": {
+      "Fr": "Cavalier Chanceux"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1357
+  },
+  {
+    "Id": 4285,
+    "name": {
+      "Fr": "Valet Veinard"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1358
+  },
+  {
+    "Id": 4286,
+    "name": {
+      "Fr": "Dame du Hasard"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1359
+  },
+  {
+    "Id": 4287,
+    "name": {
+      "Fr": "Roi Joueur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1360
+  },
+  {
+    "Id": 1195,
+    "name": {
+      "Fr": "Qu'Tan"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 652
+  },
+  {
+    "Id": 3516,
+    "name": {
+      "Fr": "Shushu Bidou"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1041
+  },
+  {
+    "Id": 3517,
+    "name": {
+      "Fr": "Shushu Yneur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1042
+  },
+  {
+    "Id": 3518,
+    "name": {
+      "Fr": "Shushu Marreur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1043
+  },
+  {
+    "Id": 3519,
+    "name": {
+      "Fr": "Shushu Picca"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1044
+  },
+  {
+    "Id": 4455,
+    "name": {
+      "Fr": "Mol Usk"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1425
+  },
+  {
+    "Id": 4456,
+    "name": {
+      "Fr": "Crabe Yoloniste"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1426
+  },
+  {
+    "Id": 4457,
+    "name": {
+      "Fr": "Gambaf"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1427
+  },
+  {
+    "Id": 4458,
+    "name": {
+      "Fr": "Mantaze"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1428
+  },
+  {
+    "Id": 4459,
+    "name": {
+      "Fr": "Tilamproie"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1429
+  },
+  {
+    "Id": 4460,
+    "name": {
+      "Fr": "Capitaine Meno"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1430
+  },
+  {
+    "Id": 4448,
+    "name": {
+      "Fr": "Grofond"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1418
+  },
+  {
+    "Id": 4449,
+    "name": {
+      "Fr": "N'yalg"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1419
+  },
+  {
+    "Id": 4450,
+    "name": {
+      "Fr": "Shokkoth"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1420
+  },
+  {
+    "Id": 4451,
+    "name": {
+      "Fr": "Li-Fo"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1421
+  },
+  {
+    "Id": 4452,
+    "name": {
+      "Fr": "Klûtiste"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1422
+  },
+  {
+    "Id": 4453,
+    "name": {
+      "Fr": "Larve de Koutoulou"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1423
+  },
+  {
+    "Id": 4439,
+    "name": {
+      "Fr": "Tourthon"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1410
+  },
+  {
+    "Id": 4440,
+    "name": {
+      "Fr": "Poulpée"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1411
+  },
+  {
+    "Id": 4441,
+    "name": {
+      "Fr": "Tryde"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1412
+  },
+  {
+    "Id": 4442,
+    "name": {
+      "Fr": "Rilur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1413
+  },
+  {
+    "Id": 4443,
+    "name": {
+      "Fr": "Diondin"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1414
+  },
+  {
+    "Id": 4444,
+    "name": {
+      "Fr": "Dantinéa"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1321
+  },
+  {
+    "Id": 4615,
+    "name": {
+      "Fr": "Scordion Bleu"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1489
+  },
+  {
+    "Id": 4616,
+    "name": {
+      "Fr": "Fennex"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1490
+  },
+  {
+    "Id": 4617,
+    "name": {
+      "Fr": "Boulépique"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1491
+  },
+  {
+    "Id": 4619,
+    "name": {
+      "Fr": "Léolhyène"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1493
+  },
+  {
+    "Id": 4620,
+    "name": {
+      "Fr": "Ouroboulos"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1494
+  },
+  {
+    "Id": 4621,
+    "name": {
+      "Fr": "Mantiscore"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1495
+  },
+  {
+    "Id": 4604,
+    "name": {
+      "Fr": "Cactiflore"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1478
+  },
+  {
+    "Id": 4605,
+    "name": {
+      "Fr": "Cactana"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1479
+  },
+  {
+    "Id": 4606,
+    "name": {
+      "Fr": "Cactoblongo"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1480
+  },
+  {
+    "Id": 4607,
+    "name": {
+      "Fr": "Pampactus"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1481
+  },
+  {
+    "Id": 4608,
+    "name": {
+      "Fr": "Lévito"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1482
+  },
+  {
+    "Id": 4609,
+    "name": {
+      "Fr": "El Piko"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1483
+  },
+  {
+    "Id": 4726,
+    "name": {
+      "Fr": "Père Ver"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1533
+  },
+  {
+    "Id": 4727,
+    "name": {
+      "Fr": "Pikténia"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1534
+  },
+  {
+    "Id": 4728,
+    "name": {
+      "Fr": "Trémorse"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1535
+  },
+  {
+    "Id": 4729,
+    "name": {
+      "Fr": "Masticroc"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1536
+  },
+  {
+    "Id": 4730,
+    "name": {
+      "Fr": "Morsquale"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1537
+  },
+  {
+    "Id": 4731,
+    "name": {
+      "Fr": "Cycloporth"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1538
+  },
+  {
+    "Id": 4739,
+    "name": {
+      "Fr": "Chakanoubis"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1542
+  },
+  {
+    "Id": 4740,
+    "name": {
+      "Fr": "Bandleth"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1543
+  },
+  {
+    "Id": 4741,
+    "name": {
+      "Fr": "Momistik"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1544
+  },
+  {
+    "Id": 4742,
+    "name": {
+      "Fr": "Rykaon"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1545
+  },
+  {
+    "Id": 4743,
+    "name": {
+      "Fr": "Griffotep"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1546
+  },
+  {
+    "Id": 4744,
+    "name": {
+      "Fr": "Tal Kasha"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1547
+  },
+  {
+    "Id": 4803,
+    "name": {
+      "Fr": "Comte Razof"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1565
+  },
+  {
+    "Id": 4804,
+    "name": {
+      "Fr": "Viandargh"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1566
+  },
+  {
+    "Id": 4805,
+    "name": {
+      "Fr": "Chevrotine"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1567
+  },
+  {
+    "Id": 4806,
+    "name": {
+      "Fr": "Brokouillon"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1568
+  },
+  {
+    "Id": 4807,
+    "name": {
+      "Fr": "Nemroz"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1569
+  },
+  {
+    "Id": 4808,
+    "name": {
+      "Fr": "Crâmbo"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1570
+  },
+  {
+    "Id": 4860,
+    "name": {
+      "Fr": "Choudini"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1585
+  },
+  {
+    "Id": 4861,
+    "name": {
+      "Fr": "Bozoteur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1586
+  },
+  {
+    "Id": 4862,
+    "name": {
+      "Fr": "Tivelo"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1587
+  },
+  {
+    "Id": 4863,
+    "name": {
+      "Fr": "Pirolienne"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1588
+  },
+  {
+    "Id": 4864,
+    "name": {
+      "Fr": "Roukouto"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1589
+  },
+  {
+    "Id": 4865,
+    "name": {
+      "Fr": "Graboule"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1590
+  },
+  {
+    "Id": 4877,
+    "name": {
+      "Fr": "Goulafre"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1595
+  },
+  {
+    "Id": 4878,
+    "name": {
+      "Fr": "Kérigoule"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1596
+  },
+  {
+    "Id": 4879,
+    "name": {
+      "Fr": "Gouligane"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1597
+  },
+  {
+    "Id": 4880,
+    "name": {
+      "Fr": "Goultime"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1598
+  },
+  {
+    "Id": 4881,
+    "name": {
+      "Fr": "Pipisteuse"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1599
+  },
+  {
+    "Id": 4882,
+    "name": {
+      "Fr": "Anerice la Shushess"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1600
+  },
+  {
+    "Id": 4967,
+    "name": {
+      "Fr": "Ilyzaelle"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1628
+  },
+  {
+    "Id": 4968,
+    "name": {
+      "Fr": "Chause"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1629
+  },
+  {
+    "Id": 4969,
+    "name": {
+      "Fr": "Ectorche"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1630
+  },
+  {
+    "Id": 4970,
+    "name": {
+      "Fr": "Esprigné"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1631
+  },
+  {
+    "Id": 4971,
+    "name": {
+      "Fr": "Feutôme"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1632
+  },
+  {
+    "Id": 4972,
+    "name": {
+      "Fr": "Crâme"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1633
+  },
+  {
+    "Id": 5110,
+    "name": {
+      "Fr": "Bethel Akarna"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1670
+  },
+  {
+    "Id": 5111,
+    "name": {
+      "Fr": "Zombruth"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1671
+  },
+  {
+    "Id": 5112,
+    "name": {
+      "Fr": "Tournoyé"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1672
+  },
+  {
+    "Id": 5113,
+    "name": {
+      "Fr": "Funespadon"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1673
+  },
+  {
+    "Id": 5114,
+    "name": {
+      "Fr": "Crânonier"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1674
+  },
+  {
+    "Id": 5115,
+    "name": {
+      "Fr": "Macrab"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1675
+  },
+  {
+    "Id": 5100,
+    "name": {
+      "Fr": "Solar"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1661
+  },
+  {
+    "Id": 5101,
+    "name": {
+      "Fr": "Klémort"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1662
+  },
+  {
+    "Id": 5102,
+    "name": {
+      "Fr": "Trépavois"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1663
+  },
+  {
+    "Id": 5103,
+    "name": {
+      "Fr": "Hacharné"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1664
+  },
+  {
+    "Id": 5104,
+    "name": {
+      "Fr": "Moribombe"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1665
+  },
+  {
+    "Id": 5105,
+    "name": {
+      "Fr": "Halbardent"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1666
+  },
+  {
+    "Id": 5314,
+    "name": {
+      "Fr": "Tanklume"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1766
+  },
+  {
+    "Id": 5315,
+    "name": {
+      "Fr": "Boufbos"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1767
+  },
+  {
+    "Id": 5316,
+    "name": {
+      "Fr": "Barbélier"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1768
+  },
+  {
+    "Id": 5317,
+    "name": {
+      "Fr": "Kasrok"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1769
+  },
+  {
+    "Id": 5318,
+    "name": {
+      "Fr": "Vatenbière"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1770
+  },
+  {
+    "Id": 5319,
+    "name": {
+      "Fr": "Dazak Martegel"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1771
+  },
+  {
+    "Id": 5666,
+    "name": {
+      "Fr": "Prêtresse de Kao"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1846
+  },
+  {
+    "Id": 5668,
+    "name": {
+      "Fr": "Chocoligarque"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1848
+  },
+  {
+    "Id": 5669,
+    "name": {
+      "Fr": "Torréfactueur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1849
+  },
+  {
+    "Id": 5670,
+    "name": {
+      "Fr": "Pralicienne"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1850
+  },
+  {
+    "Id": 5671,
+    "name": {
+      "Fr": "Températurge"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1851
+  },
+  {
+    "Id": 5672,
+    "name": {
+      "Fr": "Cabosseur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1852
+  },
+  {
+    "Id": 5664,
+    "name": {
+      "Fr": "Croqueleur"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1844
+  },
+  {
+    "Id": 5677,
+    "name": {
+      "Fr": "Kakoalak"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1855
+  },
+  {
+    "Id": 5678,
+    "name": {
+      "Fr": "Mansocolat"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1856
+  },
+  {
+    "Id": 5679,
+    "name": {
+      "Fr": "Glourson Guimauve"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1857
+  },
+  {
+    "Id": 5680,
+    "name": {
+      "Fr": "Chocoskargo"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1858
+  },
+  {
+    "Id": 5681,
+    "name": {
+      "Fr": "Kwakao"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1859
+  },
+  {
+    "Id": 5652,
+    "name": {
+      "Fr": "Twakeuf"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1840
+  },
+  {
+    "Id": 5653,
+    "name": {
+      "Fr": "Mawabouaino"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1841
+  },
+  {
+    "Id": 5689,
+    "name": {
+      "Fr": "Wadnozéam"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1867
+  },
+  {
+    "Id": 5690,
+    "name": {
+      "Fr": "Waccro"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1868
+  },
+  {
+    "Id": 5691,
+    "name": {
+      "Fr": "Warkaïk"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1869
+  },
+  {
+    "Id": 5692,
+    "name": {
+      "Fr": "Wadulant"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1870
+  },
+  {
+    "Id": 5806,
+    "name": {
+      "Fr": "Torkélonia"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1903
+  },
+  {
+    "Id": 5807,
+    "name": {
+      "Fr": "Kashkaille"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1904
+  },
+  {
+    "Id": 5808,
+    "name": {
+      "Fr": "Voapah"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1905
+  },
+  {
+    "Id": 5809,
+    "name": {
+      "Fr": "Caïguille"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1906
+  },
+  {
+    "Id": 5810,
+    "name": {
+      "Fr": "Alashasss"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1907
+  },
+  {
+    "Id": 5811,
+    "name": {
+      "Fr": "Cronnibal"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1908
+  },
+  {
+    "Id": 858,
+    "name": {
+      "Fr": "Dragoss Charbon"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 481
+  },
+  {
+    "Id": 878,
+    "name": {
+      "Fr": "Dragoss Calcaire"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 491
+  },
+  {
+    "Id": 879,
+    "name": {
+      "Fr": "Dragoss Argile"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 492
+  },
+  {
+    "Id": 905,
+    "name": {
+      "Fr": "Dragoss Ardoise"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 490
+  },
+  {
+    "Id": 5819,
+    "name": {
+      "Fr": "Kharnozor"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1911
+  },
+  {
+    "Id": 5820,
+    "name": {
+      "Fr": "Dragoss Protéiforme"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1912
+  },
+  {
+    "Id": 76,
+    "name": {
+      "Fr": "Dragoeuf Calcaire"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 31
+  },
+  {
+    "Id": 87,
+    "name": {
+      "Fr": "Dragoeuf Argile"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 40
+  },
+  {
+    "Id": 88,
+    "name": {
+      "Fr": "Dragoeuf Ardoise"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 41
+  },
+  {
+    "Id": 89,
+    "name": {
+      "Fr": "Dragoeuf Charbon"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 42
+  },
+  {
+    "Id": 5822,
+    "name": {
+      "Fr": "Dragoeuf Albâtre"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1914
+  },
+  {
+    "Id": 5823,
+    "name": {
+      "Fr": "Draegnerys"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1915
+  },
+  {
+    "Id": 6026,
+    "name": {
+      "Fr": "Corruption"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1996
+  },
+  {
+    "Id": 6027,
+    "name": {
+      "Fr": "Pistilangue"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1997
+  },
+  {
+    "Id": 6028,
+    "name": {
+      "Fr": "Dolid"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1998
+  },
+  {
+    "Id": 6029,
+    "name": {
+      "Fr": "Nheur'Gueule"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1999
+  },
+  {
+    "Id": 6030,
+    "name": {
+      "Fr": "Tentaclaque"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2000
+  },
+  {
+    "Id": 6031,
+    "name": {
+      "Fr": "Gangredogue"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2001
+  },
+  {
+    "Id": 5955,
+    "name": {
+      "Fr": "Servitude"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1958
+  },
+  {
+    "Id": 5978,
+    "name": {
+      "Fr": "Tambourreau"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1960
+  },
+  {
+    "Id": 5979,
+    "name": {
+      "Fr": "Armécréante"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1961
+  },
+  {
+    "Id": 5980,
+    "name": {
+      "Fr": "Gentyran"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1962
+  },
+  {
+    "Id": 5983,
+    "name": {
+      "Fr": "Boularbin"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1964
+  },
+  {
+    "Id": 5989,
+    "name": {
+      "Fr": "Ecaptif"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1965
+  },
+  {
+    "Id": 5990,
+    "name": {
+      "Fr": "Misère"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1966
+  },
+  {
+    "Id": 5991,
+    "name": {
+      "Fr": "Ferrailleur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1967
+  },
+  {
+    "Id": 5992,
+    "name": {
+      "Fr": "Krèvladal"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1968
+  },
+  {
+    "Id": 5993,
+    "name": {
+      "Fr": "Désosseur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1969
+  },
+  {
+    "Id": 5994,
+    "name": {
+      "Fr": "Skentu"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1970
+  },
+  {
+    "Id": 5995,
+    "name": {
+      "Fr": "Dawaj"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1971
+  },
+  {
+    "Id": 6014,
+    "name": {
+      "Fr": "Guerre"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1985
+  },
+  {
+    "Id": 6021,
+    "name": {
+      "Fr": "Ravalame"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1987
+  },
+  {
+    "Id": 6022,
+    "name": {
+      "Fr": "Fléaunide"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1992
+  },
+  {
+    "Id": 6023,
+    "name": {
+      "Fr": "Olgoth"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1993
+  },
+  {
+    "Id": 6024,
+    "name": {
+      "Fr": "Macabrateur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1994
+  },
+  {
+    "Id": 6025,
+    "name": {
+      "Fr": "Trancharnier"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1995
+  },
+  {
+    "Id": 5955,
+    "name": {
+      "Fr": "Servitude"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1958
+  },
+  {
+    "Id": 5979,
+    "name": {
+      "Fr": "Armécréante"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1961
+  },
+  {
+    "Id": 5990,
+    "name": {
+      "Fr": "Misère"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1966
+  },
+  {
+    "Id": 5991,
+    "name": {
+      "Fr": "Ferrailleur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1967
+  },
+  {
+    "Id": 6014,
+    "name": {
+      "Fr": "Guerre"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1985
+  },
+  {
+    "Id": 6023,
+    "name": {
+      "Fr": "Olgoth"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1993
+  },
+  {
+    "Id": 6026,
+    "name": {
+      "Fr": "Corruption"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 1996
+  },
+  {
+    "Id": 6027,
+    "name": {
+      "Fr": "Pistilangue"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1997
+  },
+  {
+    "Id": 6204,
+    "name": {
+      "Fr": "Shihan"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 2036
+  },
+  {
+    "Id": 6212,
+    "name": {
+      "Fr": "Hanshi"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 2038
+  },
+  {
+    "Id": 6213,
+    "name": {
+      "Fr": "Uchiwang"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2039
+  },
+  {
+    "Id": 6214,
+    "name": {
+      "Fr": "Ino-Naru"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 690
+  },
+  {
+    "Id": 6215,
+    "name": {
+      "Fr": "Kurookin"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 667
+  },
+  {
+    "Id": 6216,
+    "name": {
+      "Fr": "Fangshu"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 691
+  },
+  {
+    "Id": 6217,
+    "name": {
+      "Fr": "Lichangoro"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 669
+  },
+  {
+    "Id": 6203,
+    "name": {
+      "Fr": "Sarkapwane"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 698
+  },
+  {
+    "Id": 6229,
+    "name": {
+      "Fr": "Kokom"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 700
+  },
+  {
+    "Id": 6230,
+    "name": {
+      "Fr": "Akakwa"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 699
+  },
+  {
+    "Id": 6231,
+    "name": {
+      "Fr": "Betto"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 689
+  },
+  {
+    "Id": 6247,
+    "name": {
+      "Fr": "Kwamouraï"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2050
+  },
+  {
+    "Id": 6256,
+    "name": {
+      "Fr": "Nagate"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 2055
+  },
+  {
+    "Id": 6249,
+    "name": {
+      "Fr": "Founoroshi"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 2052
+  },
+  {
+    "Id": 6251,
+    "name": {
+      "Fr": "Crachefoux"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 660
+  },
+  {
+    "Id": 6252,
+    "name": {
+      "Fr": "Rouquette"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 702
+  },
+  {
+    "Id": 6253,
+    "name": {
+      "Fr": "Boumbardier"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 692
+  },
+  {
+    "Id": 6254,
+    "name": {
+      "Fr": "Pétartifoux"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 659
+  },
+  {
+    "Id": 6255,
+    "name": {
+      "Fr": "Founamboul"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2054
+  },
+  {
+    "Id": 6318,
+    "name": {
+      "Fr": "Bambouto"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 695
+  },
+  {
+    "Id": 6320,
+    "name": {
+      "Fr": "Floristile"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 666
+  },
+  {
+    "Id": 6321,
+    "name": {
+      "Fr": "Bulbuisson"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 671
+  },
+  {
+    "Id": 6322,
+    "name": {
+      "Fr": "Bulbiflore"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2085
+  },
+  {
+    "Id": 6323,
+    "name": {
+      "Fr": "Grenufar"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 701
+  },
+  {
+    "Id": 6326,
+    "name": {
+      "Fr": "Damadrya"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 2088
+  },
+  {
+    "Id": 6218,
+    "name": {
+      "Fr": "Tanukouï San"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 2040
+  },
+  {
+    "Id": 6219,
+    "name": {
+      "Fr": "Shinibaru"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2041
+  },
+  {
+    "Id": 6220,
+    "name": {
+      "Fr": "Ishigro Pake"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 703
+  },
+  {
+    "Id": 6221,
+    "name": {
+      "Fr": "Tétonuki"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 670
+  },
+  {
+    "Id": 6222,
+    "name": {
+      "Fr": "Parashukouï"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 693
+  },
+  {
+    "Id": 6223,
+    "name": {
+      "Fr": "Lolojiki"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 672
+  },
+  {
+    "Id": 6389,
+    "name": {
+      "Fr": "Madura"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 696
+  },
+  {
+    "Id": 6390,
+    "name": {
+      "Fr": "Bakazako"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 688
+  },
+  {
+    "Id": 6391,
+    "name": {
+      "Fr": "Kaonashi"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 680
+  },
+  {
+    "Id": 6392,
+    "name": {
+      "Fr": "Tsume-bozu"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 687
+  },
+  {
+    "Id": 6393,
+    "name": {
+      "Fr": "Onigori"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2096
+  },
+  {
+    "Id": 6394,
+    "name": {
+      "Fr": "Koumiho"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 2097
+  },
+  {
+    "Id": 6383,
+    "name": {
+      "Fr": "Tsukinochi"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 664
+  },
+  {
+    "Id": 6384,
+    "name": {
+      "Fr": "Tambouraï"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 679
+  },
+  {
+    "Id": 6385,
+    "name": {
+      "Fr": "Onabu-Geisha"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 681
+  },
+  {
+    "Id": 6386,
+    "name": {
+      "Fr": "Jiangshi-Nobi"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 665
+  },
+  {
+    "Id": 6387,
+    "name": {
+      "Fr": "Kabushido"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2094
+  },
+  {
+    "Id": 6388,
+    "name": {
+      "Fr": "Shogun Tofugawa"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 2095
+  },
+  {
+    "Id": 6467,
+    "name": {
+      "Fr": "Imushin"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2116
+  },
+  {
+    "Id": 6468,
+    "name": {
+      "Fr": "Imorok"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2117
+  },
+  {
+    "Id": 6469,
+    "name": {
+      "Fr": "Imiyama"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2118
+  },
+  {
+    "Id": 6470,
+    "name": {
+      "Fr": "Imetsu"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2119
+  },
+  {
+    "Id": 6471,
+    "name": {
+      "Fr": "Imafugo"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2120
+  },
+  {
+    "Id": 6472,
+    "name": {
+      "Fr": "Roi Imagami"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 2121
+  },
+  {
+    "Id": 6473,
+    "name": {
+      "Fr": "Shinlam"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2122
+  },
+  {
+    "Id": 6474,
+    "name": {
+      "Fr": "Rokoram"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2123
+  },
+  {
+    "Id": 6475,
+    "name": {
+      "Fr": "Mabram"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2124
+  },
+  {
+    "Id": 6476,
+    "name": {
+      "Fr": "Tsunam"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2125
+  },
+  {
+    "Id": 6477,
+    "name": {
+      "Fr": "Fugokam"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2126
+  },
+  {
+    "Id": 6478,
+    "name": {
+      "Fr": "Reine Amirukam"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 2127
+  },
+  {
+    "Id": 6650,
+    "name": {
+      "Fr": "Krâradia"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2188
+  },
+  {
+    "Id": 6651,
+    "name": {
+      "Fr": "Belilith"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2189
+  },
+  {
+    "Id": 6652,
+    "name": {
+      "Fr": "Bwariok"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2190
+  },
+  {
+    "Id": 6653,
+    "name": {
+      "Fr": "Porkzebuth"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2191
+  },
+  {
+    "Id": 6654,
+    "name": {
+      "Fr": "Kabahal"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 2192
+  },
+  {
+    "Id": 6656,
+    "name": {
+      "Fr": "Eninferno"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2194
+  },
+  {
+    "Id": 6787,
+    "name": {
+      "Fr": "Brutasmodan"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2231
+  },
+  {
+    "Id": 6788,
+    "name": {
+      "Fr": "Diabélial"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2232
+  },
+  {
+    "Id": 6789,
+    "name": {
+      "Fr": "Typhomet"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2233
+  },
+  {
+    "Id": 6790,
+    "name": {
+      "Fr": "Démoloch"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2234
+  },
+  {
+    "Id": 6791,
+    "name": {
+      "Fr": "Maléphisto"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2235
+  },
+  {
+    "Id": 6792,
+    "name": {
+      "Fr": "L'Éternel Conflit"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 2236
+  },
+  {
+    "Id": 62,
+    "name": {
+      "Fr": "Gob-trotteur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 23
+  },
+  {
+    "Id": 178,
+    "name": {
+      "Fr": "Gobet"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 99
+  },
+  {
+    "Id": 6900,
+    "name": {
+      "Fr": "Gobichon"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 1180
+  },
+  {
+    "Id": 6901,
+    "name": {
+      "Fr": "Gobaliste"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2277
+  },
+  {
+    "Id": 6902,
+    "name": {
+      "Fr": "Gobaladée"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2278
+  },
+  {
+    "Id": 6903,
+    "name": {
+      "Fr": "Directeur Grunob"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 2279
+  },
+  {
+    "Id": 107,
+    "name": {
+      "Fr": "Hell Mina"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 55
+  },
+  {
+    "Id": 6864,
+    "name": {
+      "Fr": "Malzerb"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2258
+  },
+  {
+    "Id": 6871,
+    "name": {
+      "Fr": "Maltrio"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2260
+  },
+  {
+    "Id": 6872,
+    "name": {
+      "Fr": "Malépik"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2261
+  },
+  {
+    "Id": 6873,
+    "name": {
+      "Fr": "Malalfa"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2262
+  },
+  {
+    "Id": 6874,
+    "name": {
+      "Fr": "Malbois"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2263
+  },
+  {
+    "Id": 7205,
+    "name": {
+      "Fr": "Soldalia"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2320
+  },
+  {
+    "Id": 7206,
+    "name": {
+      "Fr": "Caméliache"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2321
+  },
+  {
+    "Id": 7207,
+    "name": {
+      "Fr": "Armuguet"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2322
+  },
+  {
+    "Id": 7208,
+    "name": {
+      "Fr": "Coquelicogne"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2323
+  },
+  {
+    "Id": 7209,
+    "name": {
+      "Fr": "Statulipe"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2324
+  },
+  {
+    "Id": 7210,
+    "name": {
+      "Fr": "Belladone"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 2325
+  },
+  {
+    "Id": 7214,
+    "name": {
+      "Fr": "Blindur"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2326
+  },
+  {
+    "Id": 7215,
+    "name": {
+      "Fr": "Marthos"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2327
+  },
+  {
+    "Id": 7216,
+    "name": {
+      "Fr": "Serpyn"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2328
+  },
+  {
+    "Id": 7217,
+    "name": {
+      "Fr": "Boufronde"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2329
+  },
+  {
+    "Id": 7218,
+    "name": {
+      "Fr": "Sanglirok"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2330
+  },
+  {
+    "Id": 7219,
+    "name": {
+      "Fr": "Barbéryl Clochecuivre"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 2331
+  },
+  {
+    "Id": 7192,
+    "name": {
+      "Fr": "Timongouste"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2314
+  },
+  {
+    "Id": 7193,
+    "name": {
+      "Fr": "Thomondor"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2315
+  },
+  {
+    "Id": 7194,
+    "name": {
+      "Fr": "Buffalourd"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2316
+  },
+  {
+    "Id": 7195,
+    "name": {
+      "Fr": "Grolours"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2317
+  },
+  {
+    "Id": 7196,
+    "name": {
+      "Fr": "Trankilou"
+    },
+    "isBoss": false,
+    "isMiniBoss": false,
+    "gfxId": 2318
+  },
+  {
+    "Id": 7197,
+    "name": {
+      "Fr": "Rakoopeur"
+    },
+    "isBoss": true,
+    "isMiniBoss": false,
+    "gfxId": 2319
+  }
+]

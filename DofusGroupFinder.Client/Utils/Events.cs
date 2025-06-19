@@ -17,7 +17,6 @@ namespace DofusGroupFinder.Client.Utils
         public event Action? OnGroupStateChanged;
 
         // Méthodes d'invocation
-
         public void InvokeGetStaticData()
         {
             OnGetStaticData?.Invoke();

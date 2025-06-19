@@ -24,6 +24,24 @@ namespace DofusGroupFinder.Client.Controls
             remove { RemoveHandler(CheckedChangedEvent, value); }
         }
 
+        public static readonly DependencyProperty CustomColorProperty =
+       DependencyProperty.Register(nameof(CustomColor), typeof(Brush), typeof(IconToggleButton),
+           new PropertyMetadata(Brushes.Transparent, OnCustomColorChanged));
+
+        public Brush CustomColor
+        {
+            get => (Brush)GetValue(CustomColorProperty);
+            set => SetValue(CustomColorProperty, value);
+        }
+
+        private static void OnCustomColorChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            if (d is IconToggleButton control && e.NewValue is Brush newBrush)
+            {
+                control.InnerBorder.Background = newBrush;
+            }
+        }
+
         public bool? IsChecked
         {
             get => (bool?)GetValue(IsCheckedProperty);
@@ -64,7 +82,9 @@ namespace DofusGroupFinder.Client.Controls
         private void IconToggleButton_MouseEnter(object sender, MouseEventArgs e)
         {
             if (IsChecked.HasValue && !IsChecked.Value)
-                Border.BorderBrush = (Brush)FindResource("BorderColor");
+            {
+                Border.SetResourceReference(Border.BorderBrushProperty, "BorderColor");
+            }
         }
 
         private void IconToggleButton_MouseLeave(object sender, MouseEventArgs e)
@@ -105,21 +125,21 @@ namespace DofusGroupFinder.Client.Controls
             {
                 Cross.Visibility = Visibility.Collapsed;
                 Border.BorderBrush = Brushes.Transparent;
-                Border.Background = (Brush)FindResource("InputBackgroundColor");
+                Border.SetResourceReference(Border.BackgroundProperty, "InputBackgroundColor");
             }
             // Wanted
             else if (IsChecked.Value)
             {
                 Cross.Visibility = Visibility.Collapsed;
-                Border.BorderBrush = (Brush)FindResource("HighlightColor");
-                Border.Background = (Brush)FindResource("AccentColor");
+                Border.SetResourceReference(Border.BorderBrushProperty, "HighlightColor");
+                Border.SetResourceReference(Border.BackgroundProperty, "AccentColor");
             }
             // Not Wanted
             else
             {
                 Cross.Visibility = Visibility.Visible;
                 Border.BorderBrush = Brushes.Transparent;
-                Border.Background = (Brush)FindResource("InputBackgroundColor");
+                Border.SetResourceReference(Border.BackgroundProperty, "InputBackgroundColor");
             }
         }
     }

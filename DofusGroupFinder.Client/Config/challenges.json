@@ -1,0 +1,942 @@
+[
+  {
+    "Id": 453,
+    "IconId": 57,
+    "Name": {
+      "Fr": "Ami des Bombombres"
+    },
+    "Description": {
+      "Fr": "Aucune Bonbombre ne doit être achevée par un allié."
+    }
+  },
+  {
+    "Id": 499,
+    "IconId": 491,
+    "Name": {
+      "Fr": "Anti-kopiage"
+    },
+    "Description": {
+      "Fr": "Les Bakaza Kopi ne doivent être achevés qu'à l'aide du sort « Lanterne des Spiritueurs »."
+    }
+  },
+  {
+    "Id": 471,
+    "IconId": 74,
+    "Name": {
+      "Fr": "Armure des vents"
+    },
+    "Description": {
+      "Fr": "Les ennemis sous les effets du sort « Armure des vents » ne doivent subir aucun dommage. Ce sort est lancé par les Kurookins uniquement."
+    }
+  },
+  {
+    "Id": 9,
+    "IconId": 9,
+    "Name": {
+      "Fr": "Barbare"
+    },
+    "Description": {
+      "Fr": "Les personnages alliés doivent achever les ennemis avec une arme."
+    }
+  },
+  {
+    "Id": 38,
+    "IconId": 38,
+    "Name": {
+      "Fr": "Blitzkrieg"
+    },
+    "Description": {
+      "Fr": "Lorsqu'un ennemi est attaqué, il doit être achevé avant le début de son tour de jeu."
+    }
+  },
+  {
+    "Id": 451,
+    "IconId": 51,
+    "Name": {
+      "Fr": "Bombombragogo"
+    },
+    "Description": {
+      "Fr": "Les Kwapas doivent être achevés par les explosions des Bombombres. Les Bombombres et Nagate la Dame des eaux ne comptent pas comme des Kwapas."
+    }
+  },
+  {
+    "Id": 481,
+    "IconId": 481,
+    "Name": {
+      "Fr": "Ça va plonger chérie"
+    },
+    "Description": {
+      "Fr": "À partir du tour 2, chaque Grenufar doit commencer son tour à une distance de 3 à 7 cases d'au moins un allié."
+    }
+  },
+  {
+    "Id": 46,
+    "IconId": 46,
+    "Name": {
+      "Fr": "Chacun son monstre"
+    },
+    "Description": {
+      "Fr": "Chaque combattant allié doit avoir achevé au moins un combattant ennemi pendant le combat.\n\nLorsqu'un combattant allié attaque un ennemi, aucun autre combattant ne doit attaquer ce dernier pendant toute la durée du combat."
+    }
+  },
+  {
+    "Id": 37,
+    "IconId": 37,
+    "Name": {
+      "Fr": "Collant"
+    },
+    "Description": {
+      "Fr": "Les combattants alliés doivent finir leur tour sur une cellule adjacente à celle d'un autre combattant allié."
+    }
+  },
+  {
+    "Id": 514,
+    "IconId": 503,
+    "Name": {
+      "Fr": "Combat à l'aveuglette"
+    },
+    "Description": {
+      "Fr": "À partir du tour 2, les Jiangshi-Nobi doivent subir au moins une attaque à distance par tour avant leur tour de jeu."
+    }
+  },
+  {
+    "Id": 485,
+    "IconId": 61,
+    "Name": {
+      "Fr": "Combat rapproché"
+    },
+    "Description": {
+      "Fr": "Les ennemis ne doivent subir aucun dommage à distance."
+    }
+  },
+  {
+    "Id": 973,
+    "IconId": 973,
+    "Name": {
+      "Fr": "Conquérant"
+    },
+    "Description": {
+      "Fr": "Lorsqu'un combattant allié tue un ou plusieurs ennemis, il doit finir son tour sur la case qu'occupait l'un de ce ou ces ennemis."
+    }
+  },
+  {
+    "Id": 478,
+    "IconId": 76,
+    "Name": {
+      "Fr": "Contre vent contraire"
+    },
+    "Description": {
+      "Fr": "Les ennemis qui maîtrisent le Souffle du Wukin ne doivent être achevés que lorsqu'ils sont sous les effets du sort « Vent contraire ». Ce sort est lancé par les Lichangoros uniquement."
+    }
+  },
+  {
+    "Id": 482,
+    "IconId": 482,
+    "Name": {
+      "Fr": "Courber l'épine"
+    },
+    "Description": {
+      "Fr": "Les Bulbuissons doivent être achevés par le biais du renvoi de dommages du sort « Bulbronce »."
+    }
+  },
+  {
+    "Id": 10,
+    "IconId": 10,
+    "Name": {
+      "Fr": "Cruel"
+    },
+    "Description": {
+      "Fr": "Les ennemis doivent être achevés dans l'ordre croissant de leur niveau."
+    }
+  },
+  {
+    "Id": 480,
+    "IconId": 71,
+    "Name": {
+      "Fr": "D'une pierre deux kouï"
+    },
+    "Description": {
+      "Fr": "Les alliés doivent achever deux tanukis durant le même tour."
+    }
+  },
+  {
+    "Id": 964,
+    "IconId": 964,
+    "Name": {
+      "Fr": "De la même lignée"
+    },
+    "Description": {
+      "Fr": "Les combattants alliés doivent finir leurs tours en étant placés en ligne d'au moins un autre combattant allié pendant toute la durée du combat."
+    }
+  },
+  {
+    "Id": 4,
+    "IconId": 4,
+    "Name": {
+      "Fr": "Dernier"
+    },
+    "Description": {
+      "Fr": "La cible désignée doit être achevée en dernier."
+    }
+  },
+  {
+    "Id": 42,
+    "IconId": 42,
+    "Name": {
+      "Fr": "Deux pour le prix d'un"
+    },
+    "Description": {
+      "Fr": "Lorsqu'un combattant allié achève un ennemi, il doit obligatoirement achever un (et un seul) deuxième ennemi pendant son tour de jeu."
+    }
+  },
+  {
+    "Id": 488,
+    "IconId": 64,
+    "Name": {
+      "Fr": "Distance de sécurité"
+    },
+    "Description": {
+      "Fr": "Les alliés doivent terminer leur tour à moins de 6 cases d'un ennemi et sans être sur une cellule adjacente à celle d'ennemi."
+    }
+  },
+  {
+    "Id": 526,
+    "IconId": 510,
+    "Name": {
+      "Fr": "Domakurobligeance"
+    },
+    "Description": {
+      "Fr": "Les ennemis doivent être achevés avant le début du tour 6."
+    }
+  },
+  {
+    "Id": 525,
+    "IconId": 509,
+    "Name": {
+      "Fr": "Domakuropitmisation"
+    },
+    "Description": {
+      "Fr": "Aucun ennemi ne doit être achevé avant le début du tour 6."
+    }
+  },
+  {
+    "Id": 527,
+    "IconId": 511,
+    "Name": {
+      "Fr": "Dorigamise à mort"
+    },
+    "Description": {
+      "Fr": "Les ennemis doivent être achevés avant le début du tour 6."
+    }
+  },
+  {
+    "Id": 528,
+    "IconId": 512,
+    "Name": {
+      "Fr": "Dorigamiséricorde"
+    },
+    "Description": {
+      "Fr": "Aucun ennemi ne doit être achevé avant le début du tour 6."
+    }
+  },
+  {
+    "Id": 974,
+    "IconId": 974,
+    "Name": {
+      "Fr": "Doume"
+    },
+    "Description": {
+      "Fr": "Tous les ennemis doivent être achevés durant le même tour global."
+    }
+  },
+  {
+    "Id": 45,
+    "IconId": 45,
+    "Name": {
+      "Fr": "Duel"
+    },
+    "Description": {
+      "Fr": "Lorsqu'un combattant allié attaque un ennemi, aucun autre combattant allié ne doit attaquer cet ennemi pendant toute la durée du combat."
+    }
+  },
+  {
+    "Id": 5,
+    "IconId": 5,
+    "Name": {
+      "Fr": "Économe"
+    },
+    "Description": {
+      "Fr": "Les combattants alliés ne doivent utiliser qu'une seule fois la même action durant toute la durée du combat."
+    }
+  },
+  {
+    "Id": 20,
+    "IconId": 20,
+    "Name": {
+      "Fr": "Élémentaire"
+    },
+    "Description": {
+      "Fr": "Lorsqu'un combattant allié inflige des dommages dans un élément, il doit utiliser uniquement cet élément d'attaque pendant toute la durée du combat"
+    }
+  },
+  {
+    "Id": 32,
+    "IconId": 32,
+    "Name": {
+      "Fr": "Élitiste"
+    },
+    "Description": {
+      "Fr": "Toutes les attaques doivent être concentrées sur la cible désignée jusqu'à ce qu'elle meure."
+    }
+  },
+  {
+    "Id": 969,
+    "IconId": 969,
+    "Name": {
+      "Fr": "En ligne de mire"
+    },
+    "Description": {
+      "Fr": "Les combattants alliés doivent terminer leurs tours en ligne de vue d'au moins un ennemi."
+    }
+  },
+  {
+    "Id": 487,
+    "IconId": 63,
+    "Name": {
+      "Fr": "Feu l'artifice"
+    },
+    "Description": {
+      "Fr": "À partir du tour 2, les combattants alliés doivent terminer leur tour dans un glyphe de Firefoux."
+    }
+  },
+  {
+    "Id": 31,
+    "IconId": 31,
+    "Name": {
+      "Fr": "Focus"
+    },
+    "Description": {
+      "Fr": "Lorsqu'un ennemi est attaqué par un allié, il doit être achevé avant qu'un autre ennemi ne soit attaqué."
+    }
+  },
+  {
+    "Id": 36,
+    "IconId": 36,
+    "Name": {
+      "Fr": "Hardi"
+    },
+    "Description": {
+      "Fr": "Les combattants alliés doivent finir leur tour sur une cellule adjacente à celle d'un ennemi."
+    }
+  },
+  {
+    "Id": 479,
+    "IconId": 70,
+    "Name": {
+      "Fr": "Images du monde flottant"
+    },
+    "Description": {
+      "Fr": "Lorsqu'une Shinibaru invoque des images miroirs, elle doit subir des dommages avant le début de son prochain tour."
+    }
+  },
+  {
+    "Id": 34,
+    "IconId": 34,
+    "Name": {
+      "Fr": "Imprévisible"
+    },
+    "Description": {
+      "Fr": "Toutes les attaques des alliés doivent être concentrées sur l'ennemi désigné à chaque début de tour global, ou lorsque l'ennemi précédent est tué."
+    }
+  },
+  {
+    "Id": 17,
+    "IconId": 17,
+    "Name": {
+      "Fr": "Intouchable"
+    },
+    "Description": {
+      "Fr": "Les combattants alliés ne doivent pas perdre de points de vie."
+    }
+  },
+  {
+    "Id": 970,
+    "IconId": 970,
+    "Name": {
+      "Fr": "J'en ai fait un pin's"
+    },
+    "Description": {
+      "Fr": "Tous les combattants ennemis doivent être achevés en étant adjacents à un obstacle. Les trous et les bords de cartes sont aussi considérés comme des obstacles."
+    }
+  },
+  {
+    "Id": 486,
+    "IconId": 62,
+    "Name": {
+      "Fr": "J'y suis, j'y reste"
+    },
+    "Description": {
+      "Fr": "Les combattants alliés ne doivent pas être déplacés."
+    }
+  },
+  {
+    "Id": 502,
+    "IconId": 494,
+    "Name": {
+      "Fr": "Kaokuriche"
+    },
+    "Description": {
+      "Fr": "Les Kaokurimono doivent être systématiquement achevés avant le début du tour de leur invocateur."
+    }
+  },
+  {
+    "Id": 461,
+    "IconId": 58,
+    "Name": {
+      "Fr": "Kwaboom 2 en 1"
+    },
+    "Description": {
+      "Fr": "Au moins deux Kwapas doivent être achevés en une seule explosion de Bombombre. Les Bombombres et Nagate la Dame des eaux ne comptent pas comme des Kwapas."
+    }
+  },
+  {
+    "Id": 474,
+    "IconId": 66,
+    "Name": {
+      "Fr": "La contre-poterie"
+    },
+    "Description": {
+      "Fr": "Les alliés doivent achever 10 Jarres dans le même combat."
+    }
+  },
+  {
+    "Id": 515,
+    "IconId": 504,
+    "Name": {
+      "Fr": "La Danse du Lion"
+    },
+    "Description": {
+      "Fr": "Les Kabushidos doivent utiliser le sort « Shishi Sonson » au moins une fois par tour."
+    }
+  },
+  {
+    "Id": 965,
+    "IconId": 965,
+    "Name": {
+      "Fr": "La diagonale du plein"
+    },
+    "Description": {
+      "Fr": "Les combattants alliés doivent finir leurs tours en étant placés en diagonale avec au moins un autre combattant allié pendant toute la durée du combat."
+    }
+  },
+  {
+    "Id": 506,
+    "IconId": 498,
+    "Name": {
+      "Fr": "Lantervalle"
+    },
+    "Description": {
+      "Fr": "Aucun allié ne doit utiliser le sort « Lanterne des Spiritueurs » pendant toute la durée du combat."
+    }
+  },
+  {
+    "Id": 476,
+    "IconId": 68,
+    "Name": {
+      "Fr": "Le jardin que pierre a bâti"
+    },
+    "Description": {
+      "Fr": "Au moins un combattant allié doit commencer son tour au centre d'un Jardin de pierres avant la fin du combat. Le sort est lancé par les Ishigros Pakes uniquement."
+    }
+  },
+  {
+    "Id": 468,
+    "IconId": 73,
+    "Name": {
+      "Fr": "Le Kang-Fu d'abord"
+    },
+    "Description": {
+      "Fr": "Les disciples du Kang-Fu doivent être achevés en premier."
+    }
+  },
+  {
+    "Id": 467,
+    "IconId": 72,
+    "Name": {
+      "Fr": "Le Kin-Fu d'abord"
+    },
+    "Description": {
+      "Fr": "Les disciples du Kin-Fu doivent être achevés en premier."
+    }
+  },
+  {
+    "Id": 477,
+    "IconId": 69,
+    "Name": {
+      "Fr": "Le Sein-Supplice"
+    },
+    "Description": {
+      "Fr": "À partir du tour 2, les combattants alliés doivent subir les effets du sort « Percussein » chaque tour jusqu'à ce que toutes les Tétonukis soient achevées."
+    }
+  },
+  {
+    "Id": 30,
+    "IconId": 30,
+    "Name": {
+      "Fr": "Les petits d'abord"
+    },
+    "Description": {
+      "Fr": "Le ou les combattant(s) avec le plus petit niveau doivent achever les ennemis."
+    }
+  },
+  {
+    "Id": 537,
+    "IconId": 514,
+    "Name": {
+      "Fr": "Liaison dangereuse"
+    },
+    "Description": {
+      "Fr": "Au moins un personnage doit prendre le contrôle d'un Bras démoniaque pendant le combat. "
+    }
+  },
+  {
+    "Id": 524,
+    "IconId": 508,
+    "Name": {
+      "Fr": "Lotus et bouche cousue"
+    },
+    "Description": {
+      "Fr": "Aucun Yokianzhi ne doit se régénérer pendant toute la durée du combat."
+    }
+  },
+  {
+    "Id": 522,
+    "IconId": 505,
+    "Name": {
+      "Fr": "Lotus pour un"
+    },
+    "Description": {
+      "Fr": "Si un Yokianzhi se transforme en Lotus, tous les autres Yokianzhis doivent être transformés en Lotus avant le début de son tour."
+    }
+  },
+  {
+    "Id": 511,
+    "IconId": 500,
+    "Name": {
+      "Fr": "Lune Vengeresse"
+    },
+    "Description": {
+      "Fr": "Les Tsukinochis doivent être achevées uniquement lorsqu'elles sont sous les effets du sort « Croissant Réflecteur »."
+    }
+  },
+  {
+    "Id": 475,
+    "IconId": 67,
+    "Name": {
+      "Fr": "M et Mme Samovar ont un fils..."
+    },
+    "Description": {
+      "Fr": "Au moins un combattant allié doit terminer son tour sur une cellule adjacente à celle d'un Parashukouï en étant transformé en Théière."
+    }
+  },
+  {
+    "Id": 497,
+    "IconId": 489,
+    "Name": {
+      "Fr": "Madurasse Masque"
+    },
+    "Description": {
+      "Fr": "Aucun dommage ne doit être infligé au Madura tant qu'il ne possède pas ses deux pupilles."
+    }
+  },
+  {
+    "Id": 19,
+    "IconId": 19,
+    "Name": {
+      "Fr": "Mains propres"
+    },
+    "Description": {
+      "Fr": "Les personnages alliés doivent achever les ennemis sans leur occasionner de dommages directs. \n\nLes pièges, les glyphes, les poisons, les dommages de poussée, les renvois de dommages ainsi que les dommages infligés par des invocations peuvent être utilisés."
+    }
+  },
+  {
+    "Id": 500,
+    "IconId": 492,
+    "Name": {
+      "Fr": "Maître kopiste"
+    },
+    "Description": {
+      "Fr": "Au moins un Bakazako doit invoquer au moins 8 Bakazas kopis."
+    }
+  },
+  {
+    "Id": 483,
+    "IconId": 483,
+    "Name": {
+      "Fr": "Mémoire d'élément"
+    },
+    "Description": {
+      "Fr": "Les combattants alliés ne peuvent occasionner des dommages dans un élément que si un monstre les a endommagés dans cet élément pendant le tour précédent."
+    }
+  },
+  {
+    "Id": 513,
+    "IconId": 502,
+    "Name": {
+      "Fr": "Mille Pétales de Cerisier"
+    },
+    "Description": {
+      "Fr": "Aucun Onabu-Geisha ne doit entrer dans l'état « Senbonzakura »."
+    }
+  },
+  {
+    "Id": 966,
+    "IconId": 966,
+    "Name": {
+      "Fr": "Miroir"
+    },
+    "Description": {
+      "Fr": "Lorsqu'un allié achève un combattant ennemi, un autre allié doit être placé en symétrie derrière ce combattant ennemi."
+    }
+  },
+  {
+    "Id": 39,
+    "IconId": 39,
+    "Name": {
+      "Fr": "Misanthrope"
+    },
+    "Description": {
+      "Fr": "Les combattants alliés ne doivent jamais finir leur tour sur une cellule adjacente à celle d'un autre combattant allié."
+    }
+  },
+  {
+    "Id": 459,
+    "IconId": 55,
+    "Name": {
+      "Fr": "Mutinerie de l'Akakwa"
+    },
+    "Description": {
+      "Fr": "Les Kwapas doivent être achevés par un Akakwa. Les Bombombres et Nagate la Dame des eaux ne comptent pas comme des Kwapas."
+    }
+  },
+  {
+    "Id": 458,
+    "IconId": 54,
+    "Name": {
+      "Fr": "Mutinerie de la Kokom"
+    },
+    "Description": {
+      "Fr": "Les Kwapas doivent être achevés par une Kokom. Les Bombombres et Nagate la Dame des eaux ne comptent pas comme des Kwapas."
+    }
+  },
+  {
+    "Id": 460,
+    "IconId": 56,
+    "Name": {
+      "Fr": "Mutinerie du Betto"
+    },
+    "Description": {
+      "Fr": "Les Kwapas doivent être achevés par un Betto. Les Bombombres et Nagate la Dame des eaux ne comptent pas comme des Kwapas."
+    }
+  },
+  {
+    "Id": 457,
+    "IconId": 53,
+    "Name": {
+      "Fr": "Mutinerie du Sarkapwane"
+    },
+    "Description": {
+      "Fr": "Les Kwapas doivent être achevés par un Sarkapwane. Les Bombombres et Nagate la Dame des eaux ne comptent pas comme des Kwapas."
+    }
+  },
+  {
+    "Id": 452,
+    "IconId": 52,
+    "Name": {
+      "Fr": "Mutinerie kwapa"
+    },
+    "Description": {
+      "Fr": "Au moins un Kwapa doit être achevé par un autre Kwapa. Les Bombombres et Nagate la Dame des eaux ne comptent pas comme des Kwapa."
+    }
+  },
+  {
+    "Id": 8,
+    "IconId": 8,
+    "Name": {
+      "Fr": "Nomade"
+    },
+    "Description": {
+      "Fr": "Les combattants alliés doivent utiliser tous leurs points de mouvement à chaque tour pendant toute la durée du combat.\n\nLa fuite partielle fait échouer le challenge."
+    }
+  },
+  {
+    "Id": 505,
+    "IconId": 497,
+    "Name": {
+      "Fr": "Onigovrille"
+    },
+    "Description": {
+      "Fr": "Changer la direction de l'Onigori au moins une fois par tour pendant toute la durée du combat."
+    }
+  },
+  {
+    "Id": 25,
+    "IconId": 25,
+    "Name": {
+      "Fr": "Ordonné"
+    },
+    "Description": {
+      "Fr": "Les ennemis doivent êtres achevés dans l'ordre décroissant de leur niveau."
+    }
+  },
+  {
+    "Id": 44,
+    "IconId": 44,
+    "Name": {
+      "Fr": "Partage"
+    },
+    "Description": {
+      "Fr": "Chaque combattant allié doit avoir achevé au moins un combattant ennemi pendant le combat."
+    }
+  },
+  {
+    "Id": 534,
+    "IconId": 513,
+    "Name": {
+      "Fr": "Pas de bras, pas de tracas"
+    },
+    "Description": {
+      "Fr": "Aucun Bras démoniaque ne doit être invoqué pendant toute la durée du combat."
+    }
+  },
+  {
+    "Id": 968,
+    "IconId": 968,
+    "Name": {
+      "Fr": "Pas vu pas pris"
+    },
+    "Description": {
+      "Fr": "Les combattants alliés ne doivent jamais finir leurs tours en ligne de vue avec un ennemi visible."
+    }
+  },
+  {
+    "Id": 3,
+    "IconId": 3,
+    "Name": {
+      "Fr": "Premier"
+    },
+    "Description": {
+      "Fr": "La cible désignée doit être achevée en premier."
+    }
+  },
+  {
+    "Id": 40,
+    "IconId": 40,
+    "Name": {
+      "Fr": "Prudent"
+    },
+    "Description": {
+      "Fr": "Les combattants alliés ne doivent jamais finir leur tour sur une cellule adjacente à celle d'un ennemi."
+    }
+  },
+  {
+    "Id": 971,
+    "IconId": 971,
+    "Name": {
+      "Fr": "Raser les murs"
+    },
+    "Description": {
+      "Fr": "Tous les combattants alliés doivent finir leurs tours en étant adjacents à un obstacle. Les trous et les bords de cartes sont aussi considérés comme des obstacles."
+    }
+  },
+  {
+    "Id": 469,
+    "IconId": 59,
+    "Name": {
+      "Fr": "Rien ne sert de se cacher"
+    },
+    "Description": {
+      "Fr": "Les Kurookins ne doivent être achevés que lorsqu'ils sont invisibles."
+    }
+  },
+  {
+    "Id": 472,
+    "IconId": 75,
+    "Name": {
+      "Fr": "Rinku meurtrier"
+    },
+    "Description": {
+      "Fr": "Les disciples du Kang-Fu doivent être achevés uniquement lorsqu'ils sont sous les effets du sort « Rinku ». Le sort est lancé par les Kurookins uniquement."
+    }
+  },
+  {
+    "Id": 507,
+    "IconId": 499,
+    "Name": {
+      "Fr": "Saïffe zaune"
+    },
+    "Description": {
+      "Fr": "Les combattants alliés doivent terminer leur tour dans le glyphe de la « Lanterne des Spiritueurs » pendant toute la durée du combat."
+    }
+  },
+  {
+    "Id": 962,
+    "IconId": 962,
+    "Name": {
+      "Fr": "Sans-cœur"
+    },
+    "Description": {
+      "Fr": "Les combattants alliés ne peuvent jamais recevoir de soin provenant d'alliés autres qu'eux-mêmes."
+    }
+  },
+  {
+    "Id": 523,
+    "IconId": 507,
+    "Name": {
+      "Fr": "Souffle du Printemps"
+    },
+    "Description": {
+      "Fr": "Chaque Yokianzhi doit se régénérer entièrement au moins une fois avant d'être achevé."
+    }
+  },
+  {
+    "Id": 2,
+    "IconId": 2,
+    "Name": {
+      "Fr": "Statue"
+    },
+    "Description": {
+      "Fr": "Les combattants alliés doivent finir leur tour sur la même case que celle où ils l'ont commencé, pendant toute la durée du combat."
+    }
+  },
+  {
+    "Id": 33,
+    "IconId": 33,
+    "Name": {
+      "Fr": "Survivant"
+    },
+    "Description": {
+      "Fr": "Aucun combattant allié ne doit mourir."
+    }
+  },
+  {
+    "Id": 512,
+    "IconId": 501,
+    "Name": {
+      "Fr": "Tambour Guignon"
+    },
+    "Description": {
+      "Fr": "À partir du second tour, les Tambouraïs ne doivent jamais être situés à 6 PO ou moins d'un allié au début de leur tour."
+    }
+  },
+  {
+    "Id": 501,
+    "IconId": 493,
+    "Name": {
+      "Fr": "Tel l'esprit qui croyait prendre"
+    },
+    "Description": {
+      "Fr": "Après avoir accepté l'offrande d'un Kaonashi (kaokurimono), le joueur doit survivre au sort « Noroi ». "
+    }
+  },
+  {
+    "Id": 498,
+    "IconId": 490,
+    "Name": {
+      "Fr": "Tête dure"
+    },
+    "Description": {
+      "Fr": "Les Maduras ne doivent être tués que lorsqu'ils n'ont aucune pupille."
+    }
+  },
+  {
+    "Id": 503,
+    "IconId": 495,
+    "Name": {
+      "Fr": "Tsume-grozu"
+    },
+    "Description": {
+      "Fr": "Les Tsume-bozu ne doivent être achevés qu'une fois leur taille maximale atteinte. "
+    }
+  },
+  {
+    "Id": 35,
+    "IconId": 35,
+    "Name": {
+      "Fr": "Tueur à gages"
+    },
+    "Description": {
+      "Fr": "Les ennemis doivent être tués dans l'ordre désigné. Un nouvel ennemi est désigné à chaque fois que l'ennemi précédent est tué."
+    }
+  },
+  {
+    "Id": 967,
+    "IconId": 967,
+    "Name": {
+      "Fr": "Tueur à vue"
+    },
+    "Description": {
+      "Fr": "Les attaques d'un combattant allié doivent être concentrées sur le combattant ennemi le plus proche de lui à chaque début de tour ou lorsque le combattant ennemi est achevé."
+    }
+  },
+  {
+    "Id": 470,
+    "IconId": 60,
+    "Name": {
+      "Fr": "Ultra instinct"
+    },
+    "Description": {
+      "Fr": "Aucun piège « Stratus » ne doit être déclenché au cours du combat. Le sort est lancé par les Ino-narus uniquement."
+    }
+  },
+  {
+    "Id": 484,
+    "IconId": 484,
+    "Name": {
+      "Fr": "Un régime équilibré"
+    },
+    "Description": {
+      "Fr": "Les ennemis doivent subir des dommages dans les éléments Feu, Terre, Air et Eau avant d'être achevés."
+    }
+  },
+  {
+    "Id": 504,
+    "IconId": 496,
+    "Name": {
+      "Fr": "Un, deux, troix, BOZU !"
+    },
+    "Description": {
+      "Fr": "Aucun Tsume-Bozu ne doit jamais commencer en ligne de vue d'un ennemi pendant toute la durée du combat."
+    }
+  },
+  {
+    "Id": 6,
+    "IconId": 6,
+    "Name": {
+      "Fr": "Versatile"
+    },
+    "Description": {
+      "Fr": "Les combattants alliés ne doivent utiliser qu'une seule fois une même action pendant leurs tours de jeu."
+    }
+  },
+  {
+    "Id": 473,
+    "IconId": 65,
+    "Name": {
+      "Fr": "Voyage en terrain kouïu"
+    },
+    "Description": {
+      "Fr": "Aucun Tanuki ne doit commencer son tour dans un Géoglyphe."
+    }
+  },
+  {
+    "Id": 1,
+    "IconId": 1,
+    "Name": {
+      "Fr": "Zombie"
+    },
+    "Description": {
+      "Fr": "Les combattants alliés doivent utiliser exactement un point de mouvement par tour de jeu.\n\nPerdre des points de mouvement en détaclant ne fait pas échouer le challenge."
+    }
+  }
+]

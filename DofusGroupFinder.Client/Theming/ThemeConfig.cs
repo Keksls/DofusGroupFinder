@@ -14,5 +14,6 @@
         public string ButtonForegroundColor { get; set; } = "#FFFFFF";
         public string InputBackgroundColor { get; set; } = "#2E2E2E";
         public string InputForegroundColor { get; set; } = "#FFFFFF";
+        public string SuccessBackgroudColor { get; set; } = "#00b3c7";
     }
 }

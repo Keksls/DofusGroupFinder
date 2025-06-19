@@ -4,6 +4,7 @@ using DofusGroupFinder.Domain.Entities;
 using DofusGroupFinder.Shared;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace DofusGroupFinder.Client.Controls
 {
@@ -95,8 +96,9 @@ namespace DofusGroupFinder.Client.Controls
                     {
                         Icon = App.DataService.GetIconForSuccess(success),
                         IsChecked = null, // Default to Osef
-                        ToolTip = challenge.Name.Fr + "\n" + challenge.Description.Fr
+                        ToolTip = challenge.Name.Fr + "\n" + challenge.Description.Fr,
                     };
+                    checkBox.SetResourceReference(IconToggleButton.CustomColorProperty, "SuccessBackgroudColor");
                     checkBox.CheckedChanged += CheckBox_CheckedChanged;
                     SuccessContainer.Children.Add(checkBox);
                 }

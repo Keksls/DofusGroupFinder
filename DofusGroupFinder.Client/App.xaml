@@ -16,6 +16,7 @@
         <SolidColorBrush x:Key="InputBackgroundColor" Color="#2E353E"/>
         <SolidColorBrush x:Key="InputForegroundColor" Color="White"/>
         <SolidColorBrush x:Key="SubtleForegroundColor" Color="#3C3C3C"/>
+        <SolidColorBrush x:Key="SuccessBackgroudColor" Color="#00b3c7"/>
 
         <!-- GLOBAL FONT -->
         <Style TargetType="TextBlock">

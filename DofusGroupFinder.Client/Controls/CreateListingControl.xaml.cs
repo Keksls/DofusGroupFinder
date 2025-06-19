@@ -1,10 +1,11 @@
 ﻿using DofusGroupFinder.Client.Services;
+using DofusGroupFinder.Domain.DTO.Requests;
+using DofusGroupFinder.Domain.DTO.Responses;
 using DofusGroupFinder.Domain.Entities;
+using DofusGroupFinder.Shared;
 using System.Windows;
 using System.Windows.Controls;
-using DofusGroupFinder.Domain.DTO.Responses;
-using DofusGroupFinder.Domain.DTO.Requests;
-using DofusGroupFinder.Shared;
+using System.Windows.Media;
 
 namespace DofusGroupFinder.Client.Controls
 {
@@ -18,6 +19,13 @@ namespace DofusGroupFinder.Client.Controls
             InitializeComponent();
             _dungeons = new List<DungeonResponse>();
             App.Events.OnGetStaticData += DataService_OnGetStaticData;
+            App.Events.OnCharactersUpdated += Events_OnCharactersUpdated;
+        }
+
+        private async void Events_OnCharactersUpdated()
+        {
+            _characters = await App.ApiClient.GetCharactersAsync();
+            CharactersListBox.ItemsSource = _characters;
         }
 
         private async void DataService_OnGetStaticData()
@@ -115,8 +123,9 @@ namespace DofusGroupFinder.Client.Controls
                     {
                         Icon = App.DataService.GetIconForSuccess(success),
                         IsChecked = null, // Default to Osef
-                        ToolTip = challenge.Name.Fr + "\n" + challenge.Description.Fr
+                        ToolTip = challenge.Name.Fr + "\n" + challenge.Description.Fr,
                     };
+                    checkBox.SetResourceReference(IconToggleButton.CustomColorProperty, "SuccessBackgroudColor");
                     SuccessContainer.Children.Add(checkBox);
                 }
             }
