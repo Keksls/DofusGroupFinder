@@ -185,8 +185,8 @@ namespace DofusGroupFinder.Client.Services
         public async Task AddGroupMemberAsync(Guid listingId, GroupMemberRequest request)
             => await PostAsync<object>($"api/group/{listingId}", request);
 
-        public async Task RemoveGroupMemberAsync(Guid listingId, Guid groupMemberId)
-            => await DeleteAsync($"api/group/{listingId}/{groupMemberId}");
+        public async Task RemoveGroupMemberAsync(Guid listingId, string groupMemberName)
+            => await DeleteAsync($"api/group/{listingId}/{groupMemberName}");
 
         public async Task<bool> IsCharacterInGroupAsync(Guid characterId)
         {

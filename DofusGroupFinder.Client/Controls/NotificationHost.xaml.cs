@@ -23,6 +23,12 @@ namespace DofusGroupFinder.Client.Controls
         /// <param name="duration"> The duration for which the notification should be visible.</param>
         public void ShowNotification(string message, TimeSpan duration)
         {
+            // check if a notification with the same message already exists
+            if (NotificationsPanel.Children.OfType<NotificationControl>().Any(n => n.MessageText.Text == message))
+            {
+                return; // Do not add duplicate notifications
+            }
+
             nbNotif++;
             var notif = new NotificationControl(message);
             NotificationsPanel.Children.Add(notif);

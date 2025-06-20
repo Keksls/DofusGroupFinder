@@ -16,5 +16,20 @@ namespace DofusGroupFinder.Client.Services
                 Host.ShowNotification(message, duration ?? TimeSpan.FromSeconds(3));
             });
         }
+
+        public static void RemoveNotification(string message)
+        {
+            if (Host == null) return;
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                var notification = Host.NotificationsPanel.Children
+                    .OfType<NotificationControl>()
+                    .FirstOrDefault(n => n.MessageText.Text == message);
+                if (notification != null)
+                {
+                    Host.NotificationsPanel.Children.Remove(notification);
+                }
+            });
+        }
     }
 }

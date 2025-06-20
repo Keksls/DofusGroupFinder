@@ -3,12 +3,14 @@ using DofusGroupFinder.Domain.DTO.Requests;
 using DofusGroupFinder.Domain.DTO.Responses;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace DofusGroupFinder.Client.Controls
 {
     public partial class InGroupFooterControl : UserControl
     {
         private PublicListingResponse? _currentListing;
+        private bool isLeader = false;
 
         public InGroupFooterControl()
         {
@@ -30,10 +32,8 @@ namespace DofusGroupFinder.Client.Controls
             SlotsTextBlock.Text = $"{nbMembers} / {nbSlots}";
 
             LoadMembers();
-
             var me = await App.ApiClient.GetCharactersAsync();
-            var isLeader = me?.Any(c => c.Id == _currentListing?.Characters.FirstOrDefault(m => m.IsLeader)?.CharacterId) == true;
-            LeaderButtonsPanel.Visibility = isLeader ? Visibility.Visible : Visibility.Collapsed;
+            isLeader = me?.Any(c => c.Id == _currentListing?.Characters.FirstOrDefault(m => m.IsLeader)?.CharacterId) == true;
         }
 
         private void LoadMembers()
@@ -44,10 +44,52 @@ namespace DofusGroupFinder.Client.Controls
             {
                 var slot = new GroupSlotControl();
                 slot.SetCharacter(member);
-                slot.Height = 46;
-                slot.Width = 46;
-                slot.Margin = new Thickness(4, 0, 4, 0);
+                slot.Height = 36;
+                slot.Width = 36;
+                slot.Margin = new Thickness(1, 0, 1, 0);
+                slot.MouseLeftButtonDown += (object sender, MouseButtonEventArgs e) => {
+                    // copy character name to clipboard
+                    if (member != null)
+                    {
+                        Clipboard.SetText("/w " + member.Name);
+                        NotificationManager.ShowNotification("/w " + member.Name + " copié");
+                    }
+                };
+                slot.ContextMenu = new ContextMenu();
+                var removeMenuItem = new MenuItem { Header = "Retirer du groupe" };
+                removeMenuItem.Click += (s, e) => {
+                    if (_currentListing != null)
+                    {
+                        App.GroupManagerService.RemoveMemberAsync(_currentListing.Id, member.Name);
+                    }
+                };
+                slot.ContextMenu.Items.Add(removeMenuItem);
+                slot.ToolTip = $"{member.Name} - {member.Class} - Lvl {member.Level}";
+                if (member.IsLeader)
+                {
+                    slot.ToolTip += " (Chef de groupe)";
+                }
+                if (member.Role != Role.Aucun)
+                {
+                    slot.ToolTip += $"\nRôle : {member.Role}";
+                }
                 MembersItemsControl.Items.Add(slot);
+            }
+
+            // Add empty slots if needed
+            if(_currentListing!.NbSlots > _currentListing.GroupMembers.Count)
+            {
+                int emptySlots = _currentListing.NbSlots - _currentListing.GroupMembers.Count;
+                for (int i = 0; i < emptySlots; i++)
+                {
+                    var slot = new Button();
+                    slot.Height = 36;
+                    slot.Width = 36;
+                    slot.Margin = new Thickness(1, 0, 1, 0);
+                    slot.Click += Add_Click;
+                    slot.Content = "+";
+                    MembersItemsControl.Items.Add(slot);
+                }
             }
         }
 
@@ -91,11 +133,8 @@ namespace DofusGroupFinder.Client.Controls
             bool deleteListing = (result == MessageBoxResult.Yes);
 
             await App.GroupManagerService.DisbandGroupAsync(deleteListing);
-
             if (deleteListing)
                 NotificationManager.ShowNotification("Annonce supprimée.");
-            else
-                NotificationManager.ShowNotification("Groupe dissous sans suppression de l’annonce.");
         }
     }
 }

@@ -31,7 +31,6 @@
             </StackPanel>
         </Grid>
 
-
         <controls:NoGroupFooterControl x:Name="NoGroupFooter" 
                                        HorizontalAlignment="Stretch" 
                                        VerticalAlignment="Bottom" 

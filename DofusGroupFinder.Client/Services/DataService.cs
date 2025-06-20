@@ -61,16 +61,21 @@ namespace DofusGroupFinder.Client.Services
 
         public ChallengeData GetChallenge(string challenge)
         {
-            if (Challenges.ContainsKey(challenge))
+            challenge = challenge.Trim().ToLowerInvariant();
+            foreach (var kvp in Challenges)
             {
-                return Challenges[challenge];
+                if (kvp.Key.Trim().ToLowerInvariant() == challenge)
+                {
+                    return kvp.Value;
+                }
             }
+
             return new ChallengeData
             {
                 Id = 0,
                 IconId = 0,
-                Name = new LocalizedText { Fr = "Inconnu (" + challenge +")" },
-                Description = new LocalizedText { Fr = "Aucun chall trouvé." }
+                Name = new LocalizedText { Fr = challenge + " (Inconnu)" },
+                Description = new LocalizedText { Fr = "" }
             };
         }
     }

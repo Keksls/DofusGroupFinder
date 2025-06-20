@@ -92,16 +92,46 @@ public class GroupService : IGroupService
         return ServiceResult.Ok();
     }
 
-    public async Task<ServiceResult> RemoveGroupMemberAsync(Guid listingId, Guid groupMemberId)
+    public async Task<ServiceResult> RemoveGroupMemberAsync(Guid listingId, string groupMemberName)
     {
+        // check if the listing exists
+        var listing = await _context.Listings.FindAsync(listingId);
+        if (listing == null)
+            return ServiceResult.Fail("Listing not found");
+
+        // check if the member exists in the group
+        if (string.IsNullOrWhiteSpace(groupMemberName))
+            return ServiceResult.Fail("Group member name is required");
+
+        // Recherche le membre du groupe par son nom
+        groupMemberName = groupMemberName.Trim();
+
+        // check if the member exists in the group
         var member = await _context.ListingGroupMembers
-            .FirstOrDefaultAsync(m => m.Id == groupMemberId && m.ListingId == listingId);
+            .FirstOrDefaultAsync(m => m.Name == groupMemberName && m.ListingId == listingId);
         if (member == null)
             return ServiceResult.Fail("Group member not found");
+
+        // check if there is at least one member left in the group
+        var remainingMembers = await _context.ListingGroupMembers
+            .CountAsync(m => m.ListingId == listingId);
+        if (remainingMembers <= 1)
+            return ServiceResult.Fail("Cannot remove the last member of the group");
 
         _context.ListingGroupMembers.Remove(member);
         await _context.SaveChangesAsync();
         return ServiceResult.Ok();
+    }
+
+    public async Task<ServiceResult<bool>> IsCharacterGroupLeaderAsync(Guid accountId, Guid listingId)
+    {
+        // Vérifie si le listing appartient à l'account
+        var listing = await _context.Listings
+            .FirstOrDefaultAsync(l => l.Id == listingId && l.AccountId == accountId);
+        if (listing == null)
+            return ServiceResult<bool>.Fail("Listing not found or access denied");
+        // Le leader est celui qui a créé le listing
+        return ServiceResult<bool>.Ok(listing.AccountId == accountId);
     }
 
     public Task<bool> IsCharacterInGroupAsync(Guid characterId)

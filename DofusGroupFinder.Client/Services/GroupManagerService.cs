@@ -95,9 +95,9 @@ namespace DofusGroupFinder.Client.Services
             await RefreshGroupAsync();
         }
 
-        public async Task RemoveMemberAsync(Guid listingId, Guid characterId)
+        public async Task RemoveMemberAsync(Guid listingId, string groupMemberName)
         {
-            await App.ApiClient.RemoveGroupMemberAsync(listingId, characterId);
+            await App.ApiClient.RemoveGroupMemberAsync(listingId, groupMemberName);
             await RefreshGroupAsync();
         }
 

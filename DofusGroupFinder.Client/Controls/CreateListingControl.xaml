@@ -38,13 +38,11 @@
         </Grid>
 
         <!-- Sélection des personnages -->
-        <TextBlock Text="Personnages" Grid.Row="3" Margin="0,0,0,5" Foreground="{DynamicResource ForegroundColor}" />
-        <ListBox x:Name="CharactersListBox"
+         <ListBox x:Name="CharactersListBox"
          Grid.Row="3"
-         Margin="4,20,4,8"
+         Margin="4,0,4,8"
          SelectionMode="Multiple"
-         MinHeight="64"
-         MaxHeight="174"
+         Height="208"
          ScrollViewer.HorizontalScrollBarVisibility="Disabled">
 
             <!-- Disposition en grille avec WrapPanel -->

@@ -1,8 +1,11 @@
-﻿using DofusGroupFinder.Domain.DTO.Responses;
+﻿using DofusGroupFinder.Client.Services;
+using DofusGroupFinder.Domain.DTO.Responses;
 using DofusGroupFinder.Domain.Entities;
 using DofusGroupFinder.Shared;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
+using System.Windows.Media;
 
 namespace DofusGroupFinder.Client.Controls
 {
@@ -28,6 +31,14 @@ namespace DofusGroupFinder.Client.Controls
                     playerControl.Height = 32;
                     playerControl.Width = 32;
                     playerControl.Margin = new Thickness(0, 0, 4, 0);
+                    playerControl.MouseLeftButtonDown += (object sender, MouseButtonEventArgs e) => {
+                        // copy character name to clipboard
+                        if (character != null)
+                        {
+                            Clipboard.SetText("/w " + character.Name);
+                            NotificationManager.ShowNotification("/w " + character.Name + " copié");                           
+                        }
+                    };
                     Players.Children.Add(playerControl);
                 }
             }
@@ -40,6 +51,14 @@ namespace DofusGroupFinder.Client.Controls
                     playerControl.Height = 32;
                     playerControl.Width = 32;
                     playerControl.Margin = new Thickness(0, 0, 4, 0);
+                    playerControl.MouseLeftButtonDown += (object sender, MouseButtonEventArgs e) => {
+                        // copy character name to clipboard
+                        if (character != null)
+                        {
+                            Clipboard.SetText("/w " + character.Name);
+                            NotificationManager.ShowNotification("/w " + character.Name + " copié");
+                        }
+                    };
                     Players.Children.Add(playerControl);
                 }
             }
@@ -65,7 +84,7 @@ namespace DofusGroupFinder.Client.Controls
                     SuccessPreviewIconControl s = new SuccessPreviewIconControl()
                     {
                         Icon = App.DataService.GetIconForSuccess(dungeon.Succes[i]),
-                        ToolTip = challenge.Name.Fr + "\n" + challenge.Description.Fr,
+                        ToolTip = challenge.Name.Fr + (!string.IsNullOrEmpty(challenge.Description.Fr) ? "\n" + challenge.Description.Fr : ""),
                     };
                     s.UpdateVisual(success == SuccesWantedState.Osef ? null : success == SuccesWantedState.Wanted);
                     s.SetResourceReference(SuccessPreviewIconControl.CustomColorProperty, "SuccessBackgroudColor");
@@ -75,8 +94,14 @@ namespace DofusGroupFinder.Client.Controls
             }
         }
 
-        private void Border_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            // ensure we DONT click on the players check if mouse is hover a GroupSlotControl somehow in hierarchy
+            if (FindParent<GroupSlotControl>(e.OriginalSource as DependencyObject) is not null)
+            {
+                return;
+            }
+
             if (Players.Visibility == Visibility.Visible)
             {
                 HidePlayers();
@@ -92,6 +117,19 @@ namespace DofusGroupFinder.Client.Controls
                 }
             }
             ShowPlayers();
+        }
+
+        private static T? FindParent<T>(DependencyObject? child) where T : DependencyObject
+        {
+            while (child != null)
+            {
+                if (child is T parent)
+                    return parent;
+
+                child = VisualTreeHelper.GetParent(child);
+            }
+
+            return null;
         }
 
         public void HidePlayers()

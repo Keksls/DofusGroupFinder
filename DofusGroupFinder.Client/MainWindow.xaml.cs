@@ -45,6 +45,7 @@ namespace DofusGroupFinder.Client
         {
             await App.GroupManagerService.RestoreGroupAsync();
             await App.DataService.RetreiveStaticData();
+            App.Events.OnGroupStateChanged += UpdateFooter;
         }
 
         private void Timer_Tick(object? sender, EventArgs e)
@@ -52,6 +53,7 @@ namespace DofusGroupFinder.Client
             App.GroupManagerService.CheckGameRunning();
             // Notifier les controls (on améliora avec MVVM plus tard)
             TitleBar.UpdateStatus(App.GroupManagerService.CurrentStatus);
+            CollapsedTitleBar.UpdateStatus(App.GroupManagerService.CurrentStatus);
         }
 
         private void ToggleCollapseButton_Click(object sender, RoutedEventArgs e)
@@ -61,6 +63,30 @@ namespace DofusGroupFinder.Client
             FullScreenContainer.Visibility = _isCollapsed ? Visibility.Collapsed : Visibility.Visible;
             CollapsedScreenContainer.Visibility = _isCollapsed ? Visibility.Visible : Visibility.Collapsed;
             Height = _isCollapsed ? 96 : 432;
+            UpdateFooter();
+        }
+
+        private void UpdateFooter()
+        {
+            if (!_isCollapsed)
+                return;
+
+            _ = Dispatcher.InvokeAsync(async () =>
+            {
+                if (App.GroupManagerService.CurrentListingId == null)
+                {
+                    NoGroupFooter.Visibility = Visibility.Visible;
+                    InGroupFooter.Visibility = Visibility.Collapsed;
+                    Height = 86;
+                }
+                else
+                {
+                    NoGroupFooter.Visibility = Visibility.Collapsed;
+                    await InGroupFooter.LoadGroupAsync(App.GroupManagerService.CurrentListingId.Value);
+                    InGroupFooter.Visibility = Visibility.Visible;
+                    Height = 116;
+                }
+            });
         }
     }
 }

@@ -20,6 +20,7 @@ namespace DofusGroupFinder.Client.Controls
 
             // Autorise le drag quand on clique sur la zone libre
             MouseLeftButtonDown += TitleBarControl_MouseLeftButtonDown;
+            UpdateStatus(UserStatus.Offline);
         }
 
         private void TitleBarControl_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -70,28 +71,24 @@ namespace DofusGroupFinder.Client.Controls
             window.Show();
         }
 
-        // Méthode publique pour pouvoir MAJ ton status de listings à l'extérieur
-        public void SetListingsCount(int count)
-        {
-            ListingsCountText.Text = $"{count} Annonces";
-        }
-
-        public void SetStatusColor(Brush color)
-        {
-            StatusEllipse.Fill = color;
-        }
         public void UpdateStatus(UserStatus status)
         {
             switch (status)
             {
                 case UserStatus.Offline:
                     StatusEllipse.Fill = (Brush)Application.Current.Resources["StatusOfflineColor"];
+                    StatusText.Text = "Hors ligne";
+                    StatusText.ToolTip = "Vous n'êtes pas connecté au jeu.";
                     break;
                 case UserStatus.Available:
                     StatusEllipse.Fill = (Brush)Application.Current.Resources["StatusAvailableColor"];
+                    StatusText.Text = "Disponible";
+                    StatusText.ToolTip = "Vous êtes connecté au jeu et disponible pour rejoindre un groupe.";
                     break;
                 case UserStatus.InGroup:
                     StatusEllipse.Fill = (Brush)Application.Current.Resources["StatusInGroupColor"];
+                    StatusText.Text = "Dans un groupe";
+                    StatusText.ToolTip = "Vous êtes connecté au jeu et actuellement dans un groupe.";
                     break;
             }
         }

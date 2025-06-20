@@ -50,7 +50,6 @@ namespace DofusGroupFinder.Client.Controls
             try
             {
                 await App.GroupManagerService.CreateGroupAsync(selectedListing.Annonce.Id);
-                NotificationManager.ShowNotification("Groupe créé avec succès !");
             }
             catch (Exception ex)
             {

@@ -13,12 +13,12 @@
 
             <!-- Zone de status -->
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="10,0,10,0" Grid.Column="0">
-                <Ellipse x:Name="StatusEllipse" Width="15" Height="15" Fill="Red" Margin="0,0,10,0"/>
-                <TextBlock x:Name="ListingsCountText" Text="0 Annonce" VerticalAlignment="Center" Foreground="{DynamicResource ForegroundColor}"/>
+                <Ellipse x:Name="StatusEllipse" Width="12" Height="12" Fill="Red" Margin="0,0,4,0"/>
+                <TextBlock x:Name="StatusText" Width="72" FontSize="10" Text="0 Annonce" VerticalAlignment="Center" Foreground="{DynamicResource ForegroundColor}"/>
             </StackPanel>
             
             <!-- Titre centré -->
-            <TextBlock Text="Dofus Group Finder" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Foreground="{DynamicResource ForegroundColor}"/>
+            <TextBlock Text="Dofus Group Finder" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" Foreground="{DynamicResource ForegroundColor}"/>
 
             <!-- Close Button -->
             <Button Content="X" Width="24" Grid.Column="2" Height="24" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,2,5,0"

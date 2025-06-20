@@ -58,11 +58,7 @@
                        HorizontalAlignment="Left" />
 
                 <StackPanel x:Name="SuccessList" Orientation="Horizontal" Grid.Column="2">
-                    <controls:SuccessPreviewIconControl Background="AliceBlue" Height="24" Width="24" Icon="/Icons/SpecialSuccesIcon.png"></controls:SuccessPreviewIconControl>
-                    <controls:SuccessPreviewIconControl Background="AliceBlue" Height="24" Width="24" Icon="/Icons/SpecialSuccesIcon.png"></controls:SuccessPreviewIconControl>
-                    <controls:SuccessPreviewIconControl Background="AliceBlue" Height="24" Width="24" Icon="/Icons/SpecialSuccesIcon.png"></controls:SuccessPreviewIconControl>
-                    <controls:SuccessPreviewIconControl Background="AliceBlue" Height="24" Width="24" Icon="/Icons/SpecialSuccesIcon.png"></controls:SuccessPreviewIconControl>
-                </StackPanel>
+                 </StackPanel>
                 <!-- Success icon -->
                 <Image x:Name="SuccessIcon"
                    Grid.Column="2"

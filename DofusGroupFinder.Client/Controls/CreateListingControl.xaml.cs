@@ -123,7 +123,7 @@ namespace DofusGroupFinder.Client.Controls
                     {
                         Icon = App.DataService.GetIconForSuccess(success),
                         IsChecked = null, // Default to Osef
-                        ToolTip = challenge.Name.Fr + "\n" + challenge.Description.Fr,
+                        ToolTip = challenge.Name.Fr + (!string.IsNullOrEmpty(challenge.Description.Fr) ? "\n" + challenge.Description.Fr : ""),
                     };
                     checkBox.SetResourceReference(IconToggleButton.CustomColorProperty, "SuccessBackgroudColor");
                     SuccessContainer.Children.Add(checkBox);

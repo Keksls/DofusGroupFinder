@@ -1,4 +1,5 @@
-﻿using System.Windows.Controls;
+﻿using DofusGroupFinder.Client.Services;
+using System.Windows.Controls;
 
 namespace DofusGroupFinder.Client.Controls
 {
@@ -11,6 +12,11 @@ namespace DofusGroupFinder.Client.Controls
         {
             InitializeComponent();
             MessageText.Text = message;
+        }
+
+        private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            NotificationManager.RemoveNotification(MessageText.Text);
         }
     }
 }

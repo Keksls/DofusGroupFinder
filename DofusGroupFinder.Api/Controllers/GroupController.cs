@@ -30,10 +30,18 @@ public class GroupController : ControllerBase
         return Ok();
     }
 
-    [HttpDelete("{listingId}/{groupMemberId}")]
-    public async Task<IActionResult> RemoveMember(Guid listingId, Guid groupMemberId)
+    [HttpDelete("{listingId}/{groupMemberName}")]
+    public async Task<IActionResult> RemoveMember(Guid listingId, string groupMemberName)
     {
-        var result = await _groupService.RemoveGroupMemberAsync(listingId, groupMemberId);
+        var accountI = GetAccountId(); // méthode helper pour récupérer l'account depuis le token
+        // check if the user is leader of the group
+        var isLeader = await _groupService.IsCharacterGroupLeaderAsync(accountI, listingId);
+        if(!isLeader.Success)
+            return BadRequest(isLeader.ErrorMessage);
+        if(!isLeader.Data)
+            return Forbid("You are not the leader of this group.");
+
+        var result = await _groupService.RemoveGroupMemberAsync(listingId, groupMemberName);
         if (!result.Success)
             return BadRequest(result.ErrorMessage);
         return Ok();

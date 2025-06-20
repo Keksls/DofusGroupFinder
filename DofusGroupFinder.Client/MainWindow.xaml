@@ -42,10 +42,26 @@
                                    DockPanel.Dock="Top"
                                    Background="{DynamicResource BorderColor}"
                                    Foreground="{DynamicResource ForegroundColor}"/>
+
+            <controls:NoGroupFooterControl x:Name="NoGroupFooter" 
+                                       HorizontalAlignment="Stretch" 
+                                       VerticalAlignment="Bottom" 
+                                       DockPanel.Dock="Bottom"  
+                                       Visibility="Visible"
+                                       Margin="0,0,0,12"
+                                       Background="{DynamicResource HighlightColor}"/>
+
+            <controls:InGroupFooterControl x:Name="InGroupFooter" 
+                                       HorizontalAlignment="Stretch" 
+                                       VerticalAlignment="Bottom" 
+                                       DockPanel.Dock="Bottom"  
+                                       Visibility="Collapsed"
+                                       Margin="0,0,0,12"
+                                       Background="{DynamicResource HighlightColor}"/>
         </DockPanel>
 
         <DockPanel x:Name="CommonPanel">
-            <controls:NotificationHost x:Name="NotificationHost" VerticalAlignment="Top" DockPanel.Dock="Top" Visibility="Visible" Margin="0,32,0,0" IsHitTestVisible="False" />
+            <controls:NotificationHost x:Name="NotificationHost" VerticalAlignment="Top" DockPanel.Dock="Top" Visibility="Visible" Margin="0,16,0,0" />
 
             <Button x:Name="ToggleCollapseButton"
             Height="12"
@@ -82,7 +98,6 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-
         </DockPanel>
     </Grid>
 </Window>

@@ -9,10 +9,24 @@
             BorderThickness="1"
             CornerRadius="6"
             Padding="10"
-            Margin="0 0 0 10"
+            Margin="0 0 0 4"
             Opacity="0.9">
-        <TextBlock x:Name="MessageText"
-                   Foreground="{DynamicResource InputForegroundColor}"
-                   TextWrapping="Wrap"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="24"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock x:Name="MessageText"
+                       Text="Notification message goes here"
+                       Grid.Column="0"
+                       Foreground="{DynamicResource InputForegroundColor}"
+                       TextWrapping="Wrap"/>
+
+            <Button Content="X"
+                    Grid.Column="1"
+                    Height="22" Width="22"
+                    Click="Button_Click"></Button>
+        </Grid>
     </Border>
 </UserControl>
