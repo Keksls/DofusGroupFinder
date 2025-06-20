@@ -52,12 +52,10 @@
                     Opened="Popup_Opened"
                     Closed="Popup_Closed"
                     Popup.GotFocus="Popup_GotFocus">
-                    <ScrollViewer Margin="4" MaxHeight="300" MinHeight="32" MinWidth="{Binding ActualWidth, ElementName=Root}">
-                        <ListBox x:Name="ListBox"
-                             SelectionChanged="ListBox_SelectionChanged"
-                             PreviewMouseWheel="ListBox_PreviewMouseWheel">
-                        </ListBox>
-                    </ScrollViewer>
+                    <ListBox x:Name="ListBox"
+                                  Margin="4" MaxHeight="300" MinHeight="32" MinWidth="{Binding ActualWidth, ElementName=Root}"
+                             PreviewMouseLeftButtonDown="ListBox_PreviewMouseLeftButtonDown">
+                    </ListBox>
                 </Popup>
             </Grid>
         </Border>

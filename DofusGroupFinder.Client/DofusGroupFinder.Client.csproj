@@ -11,11 +11,15 @@
   <ItemGroup>
     <None Remove="Icons\chars.png" />
     <None Remove="Icons\settings.png" />
+    <None Remove="Icons\SpecialSuccesIcon.png" />
     <None Remove="Icons\succes.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Icons\settings.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\SpecialSuccesIcon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Icons\succes.png">

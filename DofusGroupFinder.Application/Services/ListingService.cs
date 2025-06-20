@@ -4,6 +4,7 @@ using DofusGroupFinder.Domain.Entities;
 using DofusGroupFinder.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using System.Reflection;
 
 namespace DofusGroupFinder.Application.Services
 {
@@ -201,32 +202,35 @@ namespace DofusGroupFinder.Application.Services
             if (request.MinRemainingSlots.HasValue)
                 query = query.Where(l => l.NbSlots >= request.MinRemainingSlots.Value);
 
-            // handle SuccessWanted states
-            if (request.WantSuccess != null && request.WantSuccess.Length > 0)
-            {
-                for (int i = 0; i < request.WantSuccess.Length; i++)
-                {
-                    var state = request.WantSuccess[i];
-                    switch (state)
-                    {
-                        case SuccesWantedState.Osef:
-                            continue; // osef meaning we don't filter by this state
-
-                        case SuccesWantedState.Wanted:
-                        case SuccesWantedState.NotWanted:
-                            query = query.Where(l => l.SuccessWanted[i] == state);
-                            break;
-                    }
-                }
-            }
-
             if (!string.IsNullOrEmpty(request.Server))
                 query = query.Where(l => l.Server == request.Server);
 
             var listings = await query.ToListAsync();
 
             var filtered = listings
-                .Where(l => _presenceService.IsAvailable(l.AccountId))
+                .Where(listing => _presenceService.IsAvailable(listing.AccountId))
+                .Where(listing =>
+                {
+                    if (request.WantSuccess is { Length: > 0 })
+                    {
+                        if (listing.SuccessWanted.Length != request.WantSuccess.Length) // this should NEVER append
+                            return true;
+
+                        var success = listing.SuccessWanted;
+                        for (int i = 0; i < request.WantSuccess.Length; i++)
+                        {
+                            var reqFilter = request.WantSuccess[i];
+                            var listFilter = success[i];
+                            if (reqFilter == SuccesWantedState.Osef || listFilter == SuccesWantedState.Osef)
+                                continue;
+
+                            if (reqFilter != listFilter)
+                                return false;
+                        }
+                        return true;
+                    }
+                    return true;
+                })
                 .Select(l => new PublicListingResponse
                 {
                     Id = l.Id,

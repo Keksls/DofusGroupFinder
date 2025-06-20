@@ -2,6 +2,7 @@
 using DofusGroupFinder.Shared;
 using System.IO;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
 
 namespace DofusGroupFinder.Client.Services
 {
@@ -47,6 +48,12 @@ namespace DofusGroupFinder.Client.Services
 
         public ImageSource GetIconForSuccess(string successName)
         {
+            if(successName == "Spécial")
+            {
+                var uri = new Uri("pack://application:,,,/Icons/SpecialSuccesIcon.png");
+                return new BitmapImage(uri);
+            }
+
             int id = GetChallenge(successName).IconId;
             string url = $@"https://api.dofusdb.fr/img/challenges/{id}.png";
             return new ImageSourceConverter().ConvertFromString(url) as ImageSource;

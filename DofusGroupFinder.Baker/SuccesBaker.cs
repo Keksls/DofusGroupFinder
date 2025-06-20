@@ -22,6 +22,7 @@ namespace DofusGroupFinder.Baker
         public async Task Bake()
         {
             bool download = false;
+            bool removeDuo = true;
 
             if (download)
             {
@@ -104,6 +105,15 @@ namespace DofusGroupFinder.Baker
                 achievements = JsonConvert.DeserializeObject<List<Achievement>>(File.ReadAllText("achievements.json"));
                 monsters = JsonConvert.DeserializeObject<List<Monster>>(File.ReadAllText("monsters.json"));
                 successPerDj = JsonConvert.DeserializeObject<Dictionary<int, (string, string[])>>(File.ReadAllText("success_per_dungeon.json"));
+            }
+
+            if(removeDuo)
+            {
+                foreach(var s in successPerDj.Keys)
+                {
+                    string[] success = successPerDj[s].Item2.Where(v => v != "Duo").ToArray();
+                    successPerDj[s] = (successPerDj[s].Item1, success);
+                }
             }
 
             // DB config

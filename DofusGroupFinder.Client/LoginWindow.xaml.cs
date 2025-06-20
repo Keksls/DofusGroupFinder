@@ -13,6 +13,8 @@ namespace DofusGroupFinder.Client
 
         private async void Login_Click(object sender, RoutedEventArgs e)
         {
+            LoginButton.IsEnabled = false;
+            SignupButton.IsEnabled = false;
             string email = EmailTextBox.Text;
             string password = PasswordBox.Password;
 
@@ -41,11 +43,15 @@ namespace DofusGroupFinder.Client
                 else
                 {
                     NotificationManager.ShowNotification("Invalid credentials.");
+                    LoginButton.IsEnabled = true;
+                    SignupButton.IsEnabled = true;
                 }
             }
             catch (Exception ex)
             {
                 NotificationManager.ShowNotification($"An error occurred: {ex.Message}");
+                LoginButton.IsEnabled = true;
+                SignupButton.IsEnabled = true;
             }
         }
 

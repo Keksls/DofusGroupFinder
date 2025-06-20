@@ -149,25 +149,6 @@ namespace DofusGroupFinder.Client.Controls
             SelectedTextBlock.Visibility = Visibility.Visible;
         }
 
-        // Sélection d'un item dans la liste
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (ListBox.SelectedItem != null)
-            {
-                if (AllowCustomEntry && ListBox.SelectedItem is string freeText)
-                {
-                    SelectedItem = freeText;
-                }
-                else
-                {
-                    SelectedItem = ListBox.SelectedItem;
-                }
-
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedItem)));
-                Popup.IsOpen = false;
-            }
-        }
-
         // (optionnel) Forcer le topmost quand besoin
         private void Popup_GotFocus(object sender, RoutedEventArgs e)
         {
@@ -191,21 +172,6 @@ namespace DofusGroupFinder.Client.Controls
             Popup.IsOpen = true;
         }
 
-        private void ListBox_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
-        {
-            ScrollViewer scrollViewer = FindParent<ScrollViewer>((DependencyObject)sender);
-
-            if (scrollViewer != null)
-            {
-                if (e.Delta > 0)
-                    scrollViewer.LineUp();
-                else
-                    scrollViewer.LineDown();
-
-                e.Handled = true;
-            }
-        }
-
         private static T FindParent<T>(DependencyObject child) where T : DependencyObject
         {
             DependencyObject parentObject = VisualTreeHelper.GetParent(child);
@@ -221,6 +187,41 @@ namespace DofusGroupFinder.Client.Controls
         private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             SearchText = SearchBox.Text;
+        }
+
+        private void ListBox_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            var listBoxItem = VisualUpwardSearch<ListBoxItem>(e.OriginalSource as DependencyObject);
+
+            if (listBoxItem != null)
+            {
+                listBoxItem.IsSelected = true;
+                e.Handled = true;
+
+                if (ListBox.SelectedItem != null)
+                {
+                    if (AllowCustomEntry && ListBox.SelectedItem is string freeText)
+                    {
+                        SelectedItem = freeText;
+                    }
+                    else
+                    {
+                        SelectedItem = ListBox.SelectedItem;
+                    }
+
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedItem)));
+                    Popup.IsOpen = false;
+                }
+            }
+        }
+
+        private static T? VisualUpwardSearch<T>(DependencyObject? source) where T : DependencyObject
+        {
+            while (source != null && source is not T)
+            {
+                source = VisualTreeHelper.GetParent(source);
+            }
+            return source as T;
         }
     }
 }
