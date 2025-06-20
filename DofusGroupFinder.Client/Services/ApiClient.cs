@@ -211,5 +211,16 @@ namespace DofusGroupFinder.Client.Services
         {
             return await GetAsync<PublicListingResponse>($"api/listings/{listingId}");
         }
+
+        public async Task<UpdateInfo?> GetLatestVersionAsync()
+        {
+            return await GetAsync<UpdateInfo>("api/auth/version");
+        }
+    }
+
+    public class UpdateInfo
+    {
+        public string Version { get; set; } = "";
+        public string Url { get; set; } = "";
     }
 }

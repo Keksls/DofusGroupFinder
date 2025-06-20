@@ -1,6 +1,7 @@
 ﻿using DofusGroupFinder.Client.Services;
 using DofusGroupFinder.Client.Theming;
 using DofusGroupFinder.Client.Utils;
+using System.Reflection;
 using System.Windows;
 
 namespace DofusGroupFinder.Client
@@ -19,6 +20,15 @@ namespace DofusGroupFinder.Client
         {
             ThemeManager.LoadThemes();
             base.OnStartup(e);
+
+            var update = await App.ApiClient.GetLatestVersionAsync();
+            if (update != null && update.Version != GetCurrentVersion())
+            {
+                // new version available
+                var updateWindow = new UpdateWindow(update.Url);
+                updateWindow.ShowDialog();
+                return;
+            }
 
             var token = AuthService.LoadToken();
             if (!string.IsNullOrEmpty(token))
@@ -44,6 +54,11 @@ namespace DofusGroupFinder.Client
             // no token, or invalid token : open LoginWindow
             var loginWindow = new LoginWindow();
             loginWindow.Show();
+        }
+
+        public static string GetCurrentVersion()
+        {
+            return Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "0.0.0.0";
         }
     }
 }

@@ -1,6 +1,8 @@
 using DofusGroupFinder.Application.Services;
 using DofusGroupFinder.Domain.DTO.Requests;
 using Microsoft.AspNetCore.Mvc;
+using DofusGroupFinder.Api.Configuration;
+using Microsoft.Extensions.Options;
 
 namespace DofusGroupFinder.Api.Controllers
 {
@@ -9,10 +11,12 @@ namespace DofusGroupFinder.Api.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IAuthService _authService;
+        private readonly UpdateOptions _updateOptions;
 
-        public AuthController(IAuthService authService)
+        public AuthController(IAuthService authService, IOptions<UpdateOptions> updateOptions)
         {
             _authService = authService;
+            _updateOptions = updateOptions.Value;
         }
 
         [HttpPost("register")]
@@ -41,6 +45,16 @@ namespace DofusGroupFinder.Api.Controllers
             {
                 return BadRequest(new { message = ex.Message });
             }
+        }
+
+        [HttpGet("version")]
+        public IActionResult GetVersion()
+        {
+            return Ok(new
+            {
+                version = _updateOptions.Version,
+                url = _updateOptions.Url
+            });
         }
     }
 }

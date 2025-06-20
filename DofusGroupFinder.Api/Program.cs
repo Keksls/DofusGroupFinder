@@ -1,10 +1,11 @@
-﻿using DofusGroupFinder.Infrastructure.Persistence;
+﻿using DofusGroupFinder.Api.Configuration;
 using DofusGroupFinder.Application.Services;
-using Microsoft.EntityFrameworkCore;
+using DofusGroupFinder.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using System.Text;
 using Microsoft.OpenApi.Models;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -76,6 +77,8 @@ builder.Services.AddAuthentication(options =>
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!))
     };
 });
+
+builder.Services.Configure<UpdateOptions>(builder.Configuration.GetSection("Update"));
 
 var app = builder.Build();
 

@@ -6,6 +6,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <AssemblyName>Zaapix</AssemblyName>
+    <ApplicationIcon>favicon (1).ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,6 +15,10 @@
     <None Remove="Icons\settings.png" />
     <None Remove="Icons\SpecialSuccesIcon.png" />
     <None Remove="Icons\succes.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="favicon (1).ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,6 +36,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.6" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="squirrel.windows" Version="2.0.1" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.12.0" />
   </ItemGroup>
 
