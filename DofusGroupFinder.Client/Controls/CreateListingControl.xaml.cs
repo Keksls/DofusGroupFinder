@@ -65,12 +65,12 @@ namespace DofusGroupFinder.Client.Controls
             int i = 0;
             foreach (var child in SuccessContainer.Children)
             {
-                if (child is IconToggleButton checkBox && checkBox.IsChecked == true)
+                if (child is IconToggleButton checkBox)
                 {
                     SuccesWantedState state = SuccesWantedState.Osef;
                     if (checkBox.IsChecked.HasValue)
                     {
-                        state = checkBox.IsChecked.Value ? SuccesWantedState.Wanted : SuccesWantedState.Osef;
+                        state = checkBox.IsChecked.Value ? SuccesWantedState.Wanted : SuccesWantedState.NotWanted;
                     }
                     succesWantedStates[i] = state;
                 }

@@ -10,6 +10,9 @@ namespace DofusGroupFinder.Client.Utils
         // Listings de l'utilisateur mis à jour
         public event Action? OnUserListingsUpdated;
 
+        // Server  mis à jour
+        public event Action? OnServerUpdated;
+
         // Personnages mis à jour
         public event Action? OnCharactersUpdated;
 
@@ -20,6 +23,11 @@ namespace DofusGroupFinder.Client.Utils
         public void InvokeGetStaticData()
         {
             OnGetStaticData?.Invoke();
+        }
+
+        public void InvokeServerUpdated()
+        {
+            OnServerUpdated?.Invoke();
         }
 
         public void InvokeUserListingsUpdated()

@@ -17,6 +17,21 @@ namespace DofusGroupFinder.Client.Controls
             _dungeons = new List<DungeonResponse>();
             App.Events.OnGetStaticData += DataService_OnGetStaticData;
             Loaded += FindGroupControl_Loaded;
+            SlotsComboBox.Items.Add("0");
+            SlotsComboBox.Items.Add("2");
+            SlotsComboBox.Items.Add("3");
+            SlotsComboBox.Items.Add("4");
+            SlotsComboBox.Items.Add("5");
+            SlotsComboBox.Items.Add("6");
+            SlotsComboBox.Items.Add("7");
+            SlotsComboBox.Items.Add("8");
+            SlotsComboBox.SelectedIndex = 0;
+            App.Events.OnServerUpdated += Events_OnServerUpdated;
+        }
+
+        private async void Events_OnServerUpdated()
+        {
+            await LoadResults();
         }
 
         private void FindGroupControl_Loaded(object sender, RoutedEventArgs e)
@@ -69,7 +84,10 @@ namespace DofusGroupFinder.Client.Controls
                 return;
             }
 
-            var listings = await App.ApiClient.SearchPublicListingsAsync(dungeonId, null, succesWantedStates);
+            int nbSlots = 0;
+            int.TryParse(SlotsComboBox.SelectedItem.ToString(), out nbSlots);
+
+            var listings = await App.ApiClient.SearchPublicListingsAsync(dungeonId, nbSlots == 0 ? null : nbSlots, succesWantedStates);
             if (listings == null) return;
 
             foreach (var listing in listings)
@@ -78,16 +96,16 @@ namespace DofusGroupFinder.Client.Controls
 
                 // Création et ajout dans le visuel → Dispatcher obligatoire
                 var control = new GroupCardControl();
-                control.SetData(listing, dungeon?.Name ?? "Unknown");
+                control.SetData(listing, dungeon);
                 ResultsPanel.Items.Add(control);
             }
         }
 
         private async void DungeonComboBox_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
+            SuccessContainer.Children.Clear(); // Clear previous checkboxes
             if (DungeonComboBox.SelectedItem is DungeonResponse selectedDungeon && selectedDungeon.Name != "TOUS")
             {
-                SuccessContainer.Children.Clear(); // Clear previous checkboxes
                 foreach (var success in selectedDungeon.Succes)
                 {
                     ChallengeData challenge = App.DataService.GetChallenge(success);
@@ -101,9 +119,9 @@ namespace DofusGroupFinder.Client.Controls
                     checkBox.CheckedChanged += CheckBox_CheckedChanged;
                     SuccessContainer.Children.Add(checkBox);
                 }
-
-                await LoadResults();
             }
+
+            await LoadResults();
         }
 
         private async void CheckBox_CheckedChanged(object sender, RoutedPropertyChangedEventArgs<bool> e)
@@ -133,6 +151,11 @@ namespace DofusGroupFinder.Client.Controls
                     InGroupFooter.Visibility = Visibility.Visible;
                 }
             });
+        }
+
+        private async void SlotsComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            await LoadResults();
         }
     }
 }

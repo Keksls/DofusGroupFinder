@@ -47,7 +47,7 @@ namespace DofusGroupFinder.Client.Services
             var content = new StringContent(jsonBody, Encoding.UTF8, "application/json");
 
             var response = await _httpClient.PostAsync(url, content);
-            if(response.IsSuccessStatusCode == false)
+            if (response.IsSuccessStatusCode == false)
             {
                 var errorContent = await response.Content.ReadAsStringAsync();
                 NotificationManager.ShowNotification(errorContent);
@@ -143,7 +143,34 @@ namespace DofusGroupFinder.Client.Services
             if (query.Count > 0)
                 url += "&" + string.Join("&", query);
 
-            return await GetAsync<List<PublicListingResponse>>(url);
+            var result = await GetAsync<List<PublicListingResponse>>(url);
+
+            // order result by success filter score
+            if (wantSuccess != null)
+                result = result.OrderByDescending(l => GetSuccessFilterScore(l.SuccessWanted, wantSuccess)).ToList();
+
+            return result;
+        }
+
+        private int GetSuccessFilterScore(SuccesWantedState[] listing, SuccesWantedState[] request)
+        {
+            int score = 0;
+
+            if (listing.Length != request.Length) // this should NEVER append
+                return score;
+
+            for (int i = 0; i < request.Length; i++)
+            {
+                var reqFilter = request[i];
+                var listFilter = listing[i];
+                if (reqFilter == SuccesWantedState.Osef || listFilter == SuccesWantedState.Osef)
+                    continue;
+
+                if (reqFilter == listFilter)
+                    score++;
+            }
+
+            return score;
         }
 
         public async Task UpdateCharacterAsync(Guid characterId, UpdateCharacterRequest request)

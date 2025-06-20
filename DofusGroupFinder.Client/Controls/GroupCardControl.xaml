@@ -1,17 +1,19 @@
 ﻿<UserControl x:Class="DofusGroupFinder.Client.Controls.GroupCardControl" 
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:controls="clr-namespace:DofusGroupFinder.Client.Controls"
              xmlns:namespace="clr-namespace:DofusGroupFinder.Client.Controls"
              Background="{DynamicResource InputBackgroundColor}"
              Margin="0,0,8,8"
              Padding="0"
+             MinWidth="256"
              Height="Auto">
     <Border x:Name="MainBorder"
         BorderBrush="{DynamicResource BorderColor}"
         BorderThickness="1"
         CornerRadius="8"
-            Margin="4,0,0,0"
-        Padding="8,4"
+        Margin="4,0,0,0"
+        Padding="4,2"
         MouseLeftButtonDown="Border_MouseLeftButtonDown">
 
         <Border.Style>
@@ -30,7 +32,7 @@
 
         <StackPanel Margin="0">
             <!-- Infos -->
-            <Grid Margin="0,0,0,5">
+            <Grid Margin="0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="Auto" />
@@ -41,7 +43,7 @@
                 <TextBlock x:Name="DungeonNameText"
                        Grid.Column="0"
                        Text="Donjon"
-                       FontSize="16"
+                       FontSize="14"
                        FontWeight="Bold"
                        TextTrimming="CharacterEllipsis"
                        VerticalAlignment="Center" />
@@ -50,9 +52,17 @@
                 <TextBlock x:Name="RemainingSlotsText"
                        Grid.Column="1"
                        Text="2/8"
-                       Margin="16,0,16,0"
-                       VerticalAlignment="Center"/>
+                       Margin="4,0"
+                       FontSize="12"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left" />
 
+                <StackPanel x:Name="SuccessList" Orientation="Horizontal" Grid.Column="2">
+                    <controls:SuccessPreviewIconControl Background="AliceBlue" Height="24" Width="24" Icon="/Icons/SpecialSuccesIcon.png"></controls:SuccessPreviewIconControl>
+                    <controls:SuccessPreviewIconControl Background="AliceBlue" Height="24" Width="24" Icon="/Icons/SpecialSuccesIcon.png"></controls:SuccessPreviewIconControl>
+                    <controls:SuccessPreviewIconControl Background="AliceBlue" Height="24" Width="24" Icon="/Icons/SpecialSuccesIcon.png"></controls:SuccessPreviewIconControl>
+                    <controls:SuccessPreviewIconControl Background="AliceBlue" Height="24" Width="24" Icon="/Icons/SpecialSuccesIcon.png"></controls:SuccessPreviewIconControl>
+                </StackPanel>
                 <!-- Success icon -->
                 <Image x:Name="SuccessIcon"
                    Grid.Column="2"

@@ -11,6 +11,7 @@ namespace DofusGroupFinder.Client.Services
         {
             Directory.CreateDirectory("Config");
             File.WriteAllText(FilePath, JsonSerializer.Serialize(new SettingsObject { Server = server }));
+            App.Events.InvokeServerUpdated();
         }
 
         public string LoadServer()
