@@ -117,7 +117,7 @@ namespace DofusGroupFinder.Baker
             }
 
             // DB config
-            var connectionString = "Host=localhost;Port=5432;Database=DofusGroupFinderDb;Username=postgres;Password=DofusGroup123!";
+            var connectionString = "Host=postgres;Port=5432;Database=DofusGroupFinderDb;Username=postgres;Password=DofusGroup123!";
             var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
             optionsBuilder.UseNpgsql(connectionString);
             using var dbContext = new ApplicationDbContext(optionsBuilder.Options);
