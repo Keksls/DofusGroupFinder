@@ -1,0 +1,19 @@
+{
+  "BackgroundColor": "#253438",
+  "ForegroundColor": "#FFFFFF",
+  "AccentColor": "#56B9C3",
+  "BorderColor": "#3A4D52",
+  "HighlightColor": "#4B6268",
+
+  "StatusOfflineColor": "#FF4C4C",
+  "StatusAvailableColor": "#00FF88",
+  "StatusInGroupColor": "#FFD000",
+
+  "ButtonBackgroundColor": "#3A4D52",
+  "ButtonForegroundColor": "#FFFFFF",
+
+  "InputBackgroundColor": "#2E4044",
+  "InputForegroundColor": "#FFFFFF",
+
+  "SuccessBackgroudColor": "#d4fffc"
+}
