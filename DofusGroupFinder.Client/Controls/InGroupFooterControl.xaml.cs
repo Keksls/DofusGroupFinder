@@ -98,7 +98,6 @@ namespace DofusGroupFinder.Client.Controls
             if (_currentListing == null) return;
 
             var popup = new AddGroupMemberWindow();
-            popup.Owner = Application.Current.MainWindow;
             if (popup.ShowDialog() == true)
             {
                 if (popup.Result != null)

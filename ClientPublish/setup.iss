@@ -6,6 +6,7 @@ DisableDirPage=yes
 OutputDir=.
 OutputBaseFilename=ZaapixInstaller
 Compression=lzma
+DisableProgramGroupPage=yes
 SolidCompression=yes
 SetupIconFile=.\ico\icon.ico
 

@@ -1,6 +1,7 @@
 ﻿using DofusGroupFinder.Client.Services;
 using DofusGroupFinder.Client.Theming;
 using DofusGroupFinder.Client.Utils;
+using System.IO;
 using System.Reflection;
 using System.Windows;
 
@@ -18,6 +19,19 @@ namespace DofusGroupFinder.Client
 
         protected override async void OnStartup(StartupEventArgs e)
         {
+            AppDomain.CurrentDomain.UnhandledException += (s, ex) =>
+            {
+                File.WriteAllText("crash.log", ex.ExceptionObject.ToString());
+                MessageBox.Show(ex.ExceptionObject.ToString());
+            };
+
+            DispatcherUnhandledException += (s, ex) =>
+            {
+                File.WriteAllText("crash_ui.log", ex.Exception.ToString());
+                ex.Handled = true; // pour éviter l'arrêt brutal
+                MessageBox.Show(ex.Exception.Message);
+            };
+
             ThemeManager.LoadThemes();
             base.OnStartup(e);
 

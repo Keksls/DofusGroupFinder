@@ -8,6 +8,7 @@
     <UseWPF>true</UseWPF>
     <AssemblyName>Zaapix</AssemblyName>
     <ApplicationIcon>favicon (1).ico</ApplicationIcon>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>

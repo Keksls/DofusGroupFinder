@@ -48,8 +48,6 @@ namespace DofusGroupFinder.Client
 
                 string updaterExe = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Updater.exe");
                 Process.Start(updaterExe, $"\"{_destinationZip}\"");
-
-                Process.Start("Zaapix.Updater.exe", "update.zip");
                 Application.Current.Shutdown();
             }
             catch (Exception ex)

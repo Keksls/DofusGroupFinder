@@ -1,0 +1,25 @@
+﻿<Window x:Class="Updater.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Updater"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Title="MainWindow" Background="#FF2F2A2A" Height="128" Width="256" Foreground="#FFE2D5D5">
+    <Grid Margin="20">
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="Mise à jour en cours..." FontSize="16" Margin="0,0,0,10" HorizontalAlignment="Center"/>
+            <ProgressBar x:Name="Progress"
+             Height="25"
+             Background="#FFEEEEEE"
+             BorderBrush="Transparent">
+                <ProgressBar.Resources>
+                    <Style TargetType="Rectangle" x:Key="IndeterminateProgressBarIndicator">
+                        <Setter Property="Fill" Value="DodgerBlue"/>
+                    </Style>
+                </ProgressBar.Resources>
+            </ProgressBar>
+        </StackPanel>
+    </Grid>
+</Window>

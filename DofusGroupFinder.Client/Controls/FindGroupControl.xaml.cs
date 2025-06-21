@@ -147,8 +147,8 @@ namespace DofusGroupFinder.Client.Controls
                 else
                 {
                     NoGroupFooter.Visibility = Visibility.Collapsed;
-                    await InGroupFooter.LoadGroupAsync(App.GroupManagerService.CurrentListingId.Value);
                     InGroupFooter.Visibility = Visibility.Visible;
+                    await InGroupFooter.LoadGroupAsync(App.GroupManagerService.CurrentListingId.Value);
                 }
             });
         }
