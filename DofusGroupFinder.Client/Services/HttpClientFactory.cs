@@ -9,7 +9,7 @@ namespace DofusGroupFinder.Client.Services
         {
             var client = new HttpClient
             {
-                BaseAddress = new Uri("http://localhost:5209/") // à centraliser plus tard dans une config globale
+                BaseAddress = new Uri("http://217.160.234.203:5001/") // à centraliser plus tard dans une config globale
             };
             return client;
         });

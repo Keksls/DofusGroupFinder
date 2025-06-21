@@ -1,0 +1,1057 @@
+{
+  "1": {
+    "Item1": "Cour du Bouftou Royal",
+    "Item2": [
+      "Duo",
+      "Prudent",
+      "Blitzkrieg",
+      "Spécial"
+    ]
+  },
+  "3": {
+    "Item1": "Bibliothèque du Maître Corbac",
+    "Item2": [
+      "Duo",
+      "Collant",
+      "Premier",
+      "Spécial"
+    ]
+  },
+  "4": {
+    "Item1": "Centre du Labyrinthe du Minotoror",
+    "Item2": [
+      "Duo",
+      "Misanthrope",
+      "Mains propres",
+      "Spécial"
+    ]
+  },
+  "6": {
+    "Item1": "Antre du Dragon Cochon",
+    "Item2": [
+      "Duo",
+      "Hardi",
+      "Versatile",
+      "Spécial"
+    ]
+  },
+  "7": {
+    "Item1": "Antre de Crocabulia",
+    "Item2": [
+      "Duo",
+      "Statue",
+      "Versatile",
+      "Spécial"
+    ]
+  },
+  "8": {
+    "Item1": "Grange du Tournesol Affamé",
+    "Item2": [
+      "Duo",
+      "Collant",
+      "Premier",
+      "Spécial"
+    ]
+  },
+  "9": {
+    "Item1": "Domaine Ancestral",
+    "Item2": [
+      "Duo",
+      "Nomade",
+      "Premier",
+      "Spécial"
+    ]
+  },
+  "10": {
+    "Item1": "Clairière du Chêne Mou",
+    "Item2": [
+      "Duo",
+      "Liberté",
+      "Premier",
+      "Spécial"
+    ]
+  },
+  "11": {
+    "Item1": "Clos des Blops",
+    "Item2": []
+  },
+  "13": {
+    "Item1": "Donjon des Bworks",
+    "Item2": [
+      "Duo",
+      "Misanthrope",
+      "Premier",
+      "Spécial"
+    ]
+  },
+  "14": {
+    "Item1": "Grotte du Bworker",
+    "Item2": [
+      "Duo",
+      "Hardi",
+      "Blitzkrieg",
+      "Spécial"
+    ]
+  },
+  "15": {
+    "Item1": "Tanière du Meulou",
+    "Item2": [
+      "Duo",
+      "Premier",
+      "Hardi",
+      "Spécial"
+    ]
+  },
+  "17": {
+    "Item1": "Terrier du Wa Wabbit",
+    "Item2": [
+      "Mains Propres",
+      "Blitzkrieg",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "18": {
+    "Item1": "Pitons Rocheux des Craqueleurs",
+    "Item2": [
+      "Duo",
+      "Prudent",
+      "Premier",
+      "Spécial"
+    ]
+  },
+  "19": {
+    "Item1": "Château Ensablé",
+    "Item2": [
+      "Duo",
+      "Misanthrope",
+      "Versatile",
+      "Spécial"
+    ]
+  },
+  "21": {
+    "Item1": "Donjon des Forgerons",
+    "Item2": [
+      "Duo",
+      "Nomade",
+      "Premier",
+      "Spécial"
+    ]
+  },
+  "22": {
+    "Item1": "Temple du Grand Ougah",
+    "Item2": [
+      "Duo",
+      "Collant",
+      "Dernier",
+      "Spécial"
+    ]
+  },
+  "24": {
+    "Item1": "Gelaxième Dimension",
+    "Item2": []
+  },
+  "25": {
+    "Item1": "Grotte Hesque",
+    "Item2": [
+      "Duo",
+      "Hardi",
+      "Blitzkrieg",
+      "Spécial"
+    ]
+  },
+  "27": {
+    "Item1": "Village Kanniboul",
+    "Item2": [
+      "Duo",
+      "Zombie",
+      "Premier",
+      "Spécial"
+    ]
+  },
+  "28": {
+    "Item1": "Canopée du Kimbo",
+    "Item2": [
+      "Duo",
+      "Statue",
+      "Premier",
+      "Spécial"
+    ]
+  },
+  "30": {
+    "Item1": "Caverne du Koulosse",
+    "Item2": [
+      "Duo",
+      "Zombie",
+      "Mains propres",
+      "Spécial"
+    ]
+  },
+  "31": {
+    "Item1": "Antre du Kralamoure Géant",
+    "Item2": [
+      "Duo",
+      "Nomade",
+      "Blitzkrieg",
+      "Spécial"
+    ]
+  },
+  "32": {
+    "Item1": "Nid du Kwakwa",
+    "Item2": [
+      "Duo",
+      "Zombie",
+      "Mains propres",
+      "Spécial"
+    ]
+  },
+  "33": {
+    "Item1": "Donjon des Larves",
+    "Item2": [
+      "Duo",
+      "Prudent",
+      "Versatile",
+      "Spécial"
+    ]
+  },
+  "34": {
+    "Item1": "Maison Fantôme",
+    "Item2": [
+      "Duo",
+      "Misanthrope",
+      "Dernier",
+      "Spécial"
+    ]
+  },
+  "35": {
+    "Item1": "Laboratoire de Brumen Tinctorias",
+    "Item2": [
+      "Duo",
+      "Dernier",
+      "Misanthrope",
+      "Spécial"
+    ]
+  },
+  "36": {
+    "Item1": "Donjon de Nowel",
+    "Item2": []
+  },
+  "37": {
+    "Item1": "Caverne de Nowel",
+    "Item2": []
+  },
+  "38": {
+    "Item1": "Maison du Papa Nowel",
+    "Item2": []
+  },
+  "39": {
+    "Item1": "Cale de l'Arche d'Otomaï",
+    "Item2": [
+      "Duo",
+      "Premier",
+      "Économe",
+      "Spécial"
+    ]
+  },
+  "41": {
+    "Item1": "Goulet du Rasboul",
+    "Item2": [
+      "Duo",
+      "Premier",
+      "Temps qui court",
+      "Spécial"
+    ]
+  },
+  "42": {
+    "Item1": "Garde-manger du Rat Blanc",
+    "Item2": [
+      "Premier",
+      "Hardi",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "43": {
+    "Item1": "Sousouricière du Rat Noir",
+    "Item2": [
+      "Blitzkrieg",
+      "Hardi",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "44": {
+    "Item1": "Repaire de Sphincter Cell",
+    "Item2": [
+      "Blitzkrieg",
+      "Hardi",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "45": {
+    "Item1": "Donjon des Scarafeuilles",
+    "Item2": [
+      "Duo",
+      "Zombie",
+      "Mains propres",
+      "Spécial"
+    ]
+  },
+  "46": {
+    "Item1": "Repaire de Skeunk",
+    "Item2": [
+      "Duo",
+      "Statue",
+      "Blitzkrieg",
+      "Spécial"
+    ]
+  },
+  "47": {
+    "Item1": "Donjon des Squelettes",
+    "Item2": [
+      "Duo",
+      "Nomade",
+      "Premier",
+      "Spécial"
+    ]
+  },
+  "48": {
+    "Item1": "Donjon des Tofus",
+    "Item2": [
+      "Duo",
+      "Statue",
+      "Versatile",
+      "Spécial"
+    ]
+  },
+  "49": {
+    "Item1": "Antre du Blop Multicolore Royal",
+    "Item2": []
+  },
+  "50": {
+    "Item1": "Tofulailler Royal",
+    "Item2": [
+      "Duo",
+      "Dernier",
+      "Statue",
+      "Spécial"
+    ]
+  },
+  "51": {
+    "Item1": "Laboratoire du Tynril",
+    "Item2": []
+  },
+  "52": {
+    "Item1": "Château du Wa Wabbit",
+    "Item2": [
+      "Duo",
+      "Hardi",
+      "Blitzkrieg",
+      "Spécial"
+    ]
+  },
+  "53": {
+    "Item1": "Salle du Minotot",
+    "Item2": [
+      "Duo",
+      "Misanthrope",
+      "Mains propres",
+      "Spécial"
+    ]
+  },
+  "54": {
+    "Item1": "Serre du Royalmouth",
+    "Item2": [
+      "Duo",
+      "Mains propres",
+      "Premier",
+      "Spécial"
+    ]
+  },
+  "55": {
+    "Item1": "Excavation du Mansot Royal",
+    "Item2": [
+      "Duo",
+      "Dernier",
+      "Collant",
+      "Spécial"
+    ]
+  },
+  "56": {
+    "Item1": "Épave du Grolandais violent",
+    "Item2": [
+      "Duo",
+      "Circulez",
+      "Statue",
+      "Spécial"
+    ]
+  },
+  "57": {
+    "Item1": "Hypogée de l'Obsidiantre",
+    "Item2": [
+      "Duo",
+      "Premier",
+      "Statue",
+      "Spécial"
+    ]
+  },
+  "58": {
+    "Item1": "Tanière Givrefoux",
+    "Item2": [
+      "Duo",
+      "Premier",
+      "Statue",
+      "Spécial"
+    ]
+  },
+  "59": {
+    "Item1": "Antre du Korriandre",
+    "Item2": [
+      "Duo",
+      "Mystique",
+      "Zombie",
+      "Spécial"
+    ]
+  },
+  "60": {
+    "Item1": "Cavernes du Kolosso",
+    "Item2": [
+      "Duo",
+      "Dernier",
+      "Premier",
+      "Spécial"
+    ]
+  },
+  "61": {
+    "Item1": "Antichambre des Gloursons",
+    "Item2": [
+      "Duo",
+      "Premier",
+      "Collant",
+      "Spécial"
+    ]
+  },
+  "62": {
+    "Item1": "Donjon de la mine de Sakaï",
+    "Item2": [
+      "Duo",
+      "Versatile",
+      "Blitzkrieg",
+      "Spécial"
+    ]
+  },
+  "66": {
+    "Item1": "Potager d'Halouine",
+    "Item2": []
+  },
+  "67": {
+    "Item1": "Transporteur de Sylargh",
+    "Item2": [
+      "Misanthrope",
+      "Barbare",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "68": {
+    "Item1": "Salons privés de Klime",
+    "Item2": [
+      "Prudent",
+      "Nomade",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "69": {
+    "Item1": "Forgefroide de Missiz Frizz",
+    "Item2": [
+      "Nomade",
+      "Collant",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "70": {
+    "Item1": "Laboratoire de Nileza",
+    "Item2": [
+      "Prudent",
+      "Dernier",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "71": {
+    "Item1": "Donjon du Comte Harebourg",
+    "Item2": [
+      "Prudent",
+      "Nomade",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "72": {
+    "Item1": "Théâtre de Dramak",
+    "Item2": [
+      "Statue",
+      "Mains propres",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "73": {
+    "Item1": "Aquadôme de Merkator",
+    "Item2": [
+      "Dernier",
+      "Mystique",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "74": {
+    "Item1": "Pyramide d'Ombre",
+    "Item2": [
+      "Premier",
+      "Collant",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "75": {
+    "Item1": "Grotte de Kanigroula",
+    "Item2": [
+      "Premier",
+      "Hardi",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "76": {
+    "Item1": "Palais du roi Nidas",
+    "Item2": [
+      "Premier",
+      "Statue",
+      "Trio",
+      "Spécial"
+    ]
+  },
+  "77": {
+    "Item1": "Fabrique de Malléfisk",
+    "Item2": [
+      "Circulez",
+      "Blitzkrieg",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "79": {
+    "Item1": "Galerie du Phossile",
+    "Item2": [
+      "Hardi",
+      "Liberté",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "80": {
+    "Item1": "Volière de la Haute Truche",
+    "Item2": [
+      "Premier",
+      "Barbare",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "81": {
+    "Item1": "Ring du Capitaine Ekarlatte",
+    "Item2": [
+      "Focus",
+      "Statue",
+      "Duo"
+    ]
+  },
+  "82": {
+    "Item1": "Cave du Toxoliath",
+    "Item2": [
+      "Circulez",
+      "Misanthrope",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "83": {
+    "Item1": "Trône de la Cour Sombre",
+    "Item2": [
+      "Premier",
+      "Collant",
+      "Trio",
+      "Spécial"
+    ]
+  },
+  "84": {
+    "Item1": "Ventre de la Baleine",
+    "Item2": [
+      "Barbare",
+      "Statue",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "85": {
+    "Item1": "Mégalithe de Fraktale",
+    "Item2": [
+      "Misanthrope",
+      "Blitzkrieg",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "86": {
+    "Item1": "Horologium de XLII",
+    "Item2": [
+      "Barbare",
+      "Collant",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "87": {
+    "Item1": "Œil de Vortex",
+    "Item2": [
+      "Focus",
+      "Hardi",
+      "Trio",
+      "Spécial"
+    ]
+  },
+  "88": {
+    "Item1": "Cache de Kankreblath",
+    "Item2": [
+      "Duo",
+      "Collant",
+      "Dernier",
+      "Spécial"
+    ]
+  },
+  "89": {
+    "Item1": "Antre de la Reine Nyée",
+    "Item2": [
+      "Duo",
+      "Premier",
+      "Hardi",
+      "Spécial"
+    ]
+  },
+  "90": {
+    "Item1": "Crypte de Kardorim",
+    "Item2": [
+      "Duo",
+      "Zombie",
+      "Premier",
+      "Spécial"
+    ]
+  },
+  "91": {
+    "Item1": "Bateau du Chouque",
+    "Item2": [
+      "Duo",
+      "Dernier",
+      "Nomade",
+      "Spécial"
+    ]
+  },
+  "92": {
+    "Item1": "Arbre de Moon",
+    "Item2": [
+      "Duo",
+      "Versatile",
+      "Statue",
+      "Spécial"
+    ]
+  },
+  "93": {
+    "Item1": "Miausolée du Pounicheur",
+    "Item2": [
+      "Duo",
+      "Statue",
+      "Blitzkrieg",
+      "Spécial"
+    ]
+  },
+  "94": {
+    "Item1": "Plateau de Ush",
+    "Item2": [
+      "Duo",
+      "Zombie",
+      "Premier",
+      "Spécial"
+    ]
+  },
+  "95": {
+    "Item1": "Défi du Chalœil",
+    "Item2": [
+      "Liberté",
+      "Prudent",
+      "Trio",
+      "Spécial"
+    ]
+  },
+  "96": {
+    "Item1": "Temple Maudit d'Araknas",
+    "Item2": []
+  },
+  "97": {
+    "Item1": "Vaisseau du Capitaine Meno",
+    "Item2": [
+      "Blitzkrieg",
+      "Prudent",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "98": {
+    "Item1": "Temple de Koutoulou",
+    "Item2": [
+      "Prudent",
+      "Hardi",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "99": {
+    "Item1": "Palais de Dantinéa",
+    "Item2": [
+      "Dernier",
+      "Statue",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "100": {
+    "Item1": "Cimetière des Mastodontes",
+    "Item2": [
+      "Mains Propres",
+      "Zombie",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "101": {
+    "Item1": "Caverne d'El Piko",
+    "Item2": [
+      "Blitzkrieg",
+      "Duel",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "102": {
+    "Item1": "Boyau du Père Ver",
+    "Item2": [
+      "Premier",
+      "Zombie",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "103": {
+    "Item1": "Chambre de Tal Kasha",
+    "Item2": [
+      "Focus",
+      "Statue",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "104": {
+    "Item1": "Camp du Comte Razof",
+    "Item2": [
+      "Liberté",
+      "Premier",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "105": {
+    "Item1": "Chapiteau des Magik Riktus",
+    "Item2": [
+      "Collant",
+      "Hardi",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "106": {
+    "Item1": "Manoir des Katrepat",
+    "Item2": [
+      "Prudent",
+      "Premier",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "107": {
+    "Item1": "Belvédère d'Ilyzaelle",
+    "Item2": [
+      "Liberté",
+      "Focus",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "108": {
+    "Item1": "Tour de Bethel",
+    "Item2": [
+      "Mystique",
+      "Zombie",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "109": {
+    "Item1": "Tour de Solar",
+    "Item2": [
+      "Versatile",
+      "Focus",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "110": {
+    "Item1": "Brasserie du roi Dazak",
+    "Item2": [
+      "Premier",
+      "Liberté",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "111": {
+    "Item1": "Temple du dieu Kao",
+    "Item2": []
+  },
+  "112": {
+    "Item1": "Croquanterie",
+    "Item2": []
+  },
+  "113": {
+    "Item1": "Fonderie des Waddicts",
+    "Item2": []
+  },
+  "114": {
+    "Item1": "Sanctuaire de Torkélonia",
+    "Item2": [
+      "Dernier",
+      "Statue",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "115": {
+    "Item1": "Repaire du Kharnozor",
+    "Item2": [
+      "Dernier",
+      "Circulez",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "116": {
+    "Item1": "Épreuve de Draegnerys",
+    "Item2": [
+      "Duo",
+      "Hardi",
+      "Focus",
+      "Spécial"
+    ]
+  },
+  "117": {
+    "Item1": "Arbre de Mort",
+    "Item2": [
+      "Collant",
+      "Mains Propres",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "118": {
+    "Item1": "Fers de la Tyrannie",
+    "Item2": [
+      "Focus",
+      "Versatile",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "119": {
+    "Item1": "Sentence de la Balance",
+    "Item2": [
+      "Hardi",
+      "Mains Propres",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "120": {
+    "Item1": "Trône de Sang",
+    "Item2": [
+      "Zombie",
+      "Misanthrope",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "121": {
+    "Item1": "Tempête de l'Eliocalypse",
+    "Item2": [
+      "Focus",
+      "Versatile",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "122": {
+    "Item1": "Dojo du Vent",
+    "Item2": [
+      "Prudent",
+      "Dernier",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "123": {
+    "Item1": "Vallée de la Dame des eaux",
+    "Item2": [
+      "Nomade",
+      "Prudent",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "124": {
+    "Item1": "Fabrique de foux d'artifice",
+    "Item2": [
+      "Prudent",
+      "Collant",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "125": {
+    "Item1": "Bambusaie de Damadrya",
+    "Item2": [
+      "Premier",
+      "Hardi",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "126": {
+    "Item1": "Atelier du Tanukouï San",
+    "Item2": [
+      "Statue",
+      "Versatile",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "131": {
+    "Item1": "Demeure des Esprits",
+    "Item2": [
+      "Focus",
+      "Premier",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "132": {
+    "Item1": "Tombe du Shogun Tofugawa",
+    "Item2": [
+      "Premier",
+      "Hardi",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "133": {
+    "Item1": "Mémoire d'Orukam",
+    "Item2": [
+      "Hardi",
+      "Mains propres",
+      "Trio",
+      "Spécial"
+    ]
+  },
+  "134": {
+    "Item1": "Souvenir d'Imagiro",
+    "Item2": [
+      "Prudent",
+      "Mains propres",
+      "Trio",
+      "Spécial"
+    ]
+  },
+  "135": {
+    "Item1": "Rituel de Kabahal",
+    "Item2": [
+      "Hardi",
+      "Mains Propres",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "136": {
+    "Item1": "Bataille de l'Aurore Pourpre",
+    "Item2": [
+      "Zombie",
+      "Premier",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "138": {
+    "Item1": "Akadémie des Gobs",
+    "Item2": [
+      "Nomade",
+      "Premier",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "139": {
+    "Item1": "Tertre du long sommeil",
+    "Item2": [
+      "Dernier",
+      "Statue",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "140": {
+    "Item1": "Chambre des maléfices",
+    "Item2": [
+      "Collant",
+      "Mains Propres",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "141": {
+    "Item1": "Bastion des Marteaux-Aigris",
+    "Item2": [
+      "Dernier",
+      "Versatile",
+      "Duo",
+      "Spécial"
+    ]
+  },
+  "142": {
+    "Item1": "Refuge sylvestre",
+    "Item2": [
+      "Dernier",
+      "Prudent",
+      "Duo",
+      "Spécial"
+    ]
+  }
+}

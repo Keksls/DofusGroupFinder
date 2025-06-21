@@ -1,0 +1,3958 @@
+[
+  {
+    "Id": 1,
+    "OptimalPlayerLevel": 30,
+    "MapIds": [
+      121373185,
+      121374209,
+      121375233,
+      121373187,
+      121374211
+    ],
+    "EntranceMapId": 120063489,
+    "ExitMapId": 120063489,
+    "Name": {
+      "Fr": "Cour du Bouftou Royal"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "cour du bouftou royal bouftou royal"
+    },
+    "Monsters": [
+      101,
+      134,
+      147,
+      148,
+      149,
+      4822
+    ],
+    "Subarea": 82,
+    "Succes": []
+  },
+  {
+    "Id": 3,
+    "OptimalPlayerLevel": 110,
+    "MapIds": [
+      159125512,
+      159121666,
+      159124488
+    ],
+    "EntranceMapId": 158334976,
+    "ExitMapId": 158334976,
+    "Name": {
+      "Fr": "Bibliothèque du Maître Corbac"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "bibliotheque du maitre corbac maitre corbac"
+    },
+    "Monsters": [
+      289,
+      823,
+      824,
+      825,
+      4572,
+      4578,
+      4579,
+      4580
+    ],
+    "Subarea": 211,
+    "Succes": []
+  },
+  {
+    "Id": 4,
+    "OptimalPlayerLevel": 120,
+    "MapIds": [
+      34473476,
+      34473474
+    ],
+    "EntranceMapId": 34473220,
+    "ExitMapId": 34476294,
+    "Name": {
+      "Fr": "Centre du Labyrinthe du Minotoror"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "centre du labyrinthe du minotoror minotoror minotot"
+    },
+    "Monsters": [
+      121,
+      668,
+      827,
+      829,
+      830,
+      831,
+      832,
+      3740
+    ],
+    "Subarea": 210,
+    "Succes": []
+  },
+  {
+    "Id": 6,
+    "OptimalPlayerLevel": 100,
+    "MapIds": [
+      72352768,
+      72353792,
+      72351744,
+      72354816,
+      72355840,
+      72356864,
+      72357888,
+      72358912,
+      72359936,
+      72360960,
+      72361984,
+      72359170,
+      72358146
+    ],
+    "EntranceMapId": 72221696,
+    "ExitMapId": 72221696,
+    "Name": {
+      "Fr": "Antre du Dragon Cochon"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "antre du dragon cochon dragon cochon gorgouille"
+    },
+    "Monsters": [
+      113,
+      600,
+      601,
+      603,
+      3137,
+      3304
+    ],
+    "Subarea": 154,
+    "Succes": []
+  },
+  {
+    "Id": 7,
+    "OptimalPlayerLevel": 120,
+    "MapIds": [
+      198968320,
+      198969344,
+      198970368,
+      198971392,
+      198972416
+    ],
+    "EntranceMapId": 198967296,
+    "ExitMapId": 86248450,
+    "Name": {
+      "Fr": "Antre de Crocabulia"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "antre de crocabulia crocabulia"
+    },
+    "Monsters": [
+      853,
+      854,
+      855,
+      862,
+      5804,
+      5805
+    ],
+    "Subarea": 325,
+    "Succes": []
+  },
+  {
+    "Id": 8,
+    "OptimalPlayerLevel": 20,
+    "MapIds": [
+      190448640,
+      190317568,
+      190318592,
+      190449664,
+      190316544
+    ],
+    "EntranceMapId": 192937992,
+    "ExitMapId": 192937992,
+    "Name": {
+      "Fr": "Grange du Tournesol Affamé"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "grange du tournesol affame tournesol affame"
+    },
+    "Monsters": [
+      48,
+      78,
+      79,
+      799,
+      4820,
+      4821
+    ],
+    "Subarea": 306,
+    "Succes": []
+  },
+  {
+    "Id": 9,
+    "OptimalPlayerLevel": 90,
+    "MapIds": [
+      149684224,
+      149685248,
+      149686272,
+      149687296,
+      149688320
+    ],
+    "EntranceMapId": 147851777,
+    "ExitMapId": 147851777,
+    "Name": {
+      "Fr": "Domaine Ancestral"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "domaine ancestral abraknyde ancestral"
+    },
+    "Monsters": [
+      173,
+      253,
+      254,
+      651,
+      917
+    ],
+    "Subarea": 175,
+    "Succes": []
+  },
+  {
+    "Id": 10,
+    "OptimalPlayerLevel": 140,
+    "MapIds": [
+      149423104,
+      149424128,
+      149425152,
+      149426176,
+      149427200
+    ],
+    "EntranceMapId": 149422080,
+    "ExitMapId": 149422080,
+    "Name": {
+      "Fr": "Clairière du Chêne Mou"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "clairiere du chene mou chene mou"
+    },
+    "Monsters": [
+      257,
+      258,
+      260,
+      990,
+      991,
+      992
+    ],
+    "Subarea": 781,
+    "Succes": []
+  },
+  {
+    "Id": 11,
+    "OptimalPlayerLevel": 60,
+    "MapIds": [
+      166986754,
+      166987778,
+      166988802,
+      166989826,
+      166986752,
+      166987776,
+      166988800,
+      166989824,
+      166990848,
+      166985730
+    ],
+    "EntranceMapId": 166985728,
+    "ExitMapId": 166985728,
+    "Name": {
+      "Fr": "Clos des Blops"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "clos des blops blop coco royal blop griotte royal blop indigo royal blop reinette royal"
+    },
+    "Monsters": [
+      273,
+      274,
+      275,
+      276,
+      1181,
+      1182,
+      1183,
+      1184,
+      1185,
+      1186,
+      1187
+    ],
+    "Subarea": 493,
+    "Succes": []
+  },
+  {
+    "Id": 13,
+    "OptimalPlayerLevel": 50,
+    "MapIds": [
+      104595969,
+      104596993,
+      104598017,
+      104599041,
+      104595971,
+      104596995,
+      104599043
+    ],
+    "EntranceMapId": 104862211,
+    "ExitMapId": 104862211,
+    "Name": {
+      "Fr": "Donjon des Bworks"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "donjon des bworks bworkette"
+    },
+    "Monsters": [
+      53,
+      74,
+      791,
+      792,
+      876,
+      2680
+    ],
+    "Subarea": 284,
+    "Succes": []
+  },
+  {
+    "Id": 14,
+    "OptimalPlayerLevel": 180,
+    "MapIds": [
+      104333825,
+      104334849,
+      104335873,
+      104336897,
+      104333827
+    ],
+    "EntranceMapId": 172493057,
+    "ExitMapId": 172493057,
+    "Name": {
+      "Fr": "Grotte du Bworker"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "grotte du bworker bworker"
+    },
+    "Monsters": [
+      478,
+      479,
+      484,
+      485,
+      486,
+      487,
+      488
+    ],
+    "Subarea": 94,
+    "Succes": []
+  },
+  {
+    "Id": 15,
+    "OptimalPlayerLevel": 100,
+    "MapIds": [
+      155715584,
+      155716610,
+      155717632,
+      155719680,
+      155713536,
+      155714560,
+      155716608,
+      155718656
+    ],
+    "EntranceMapId": 171706891,
+    "ExitMapId": 171706891,
+    "Name": {
+      "Fr": "Tanière du Meulou"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "taniere du meulou meulou"
+    },
+    "Monsters": [
+      102,
+      232,
+      299,
+      4866,
+      4867,
+      4868,
+      4869
+    ],
+    "Subarea": 213,
+    "Succes": []
+  },
+  {
+    "Id": 17,
+    "OptimalPlayerLevel": 80,
+    "MapIds": [
+      116654593,
+      116655617,
+      116656641,
+      116657665,
+      116654595
+    ],
+    "EntranceMapId": 106694158,
+    "ExitMapId": 68420613,
+    "Name": {
+      "Fr": "Terrier du Wa Wabbit"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "terrier du wa wabbit wa wobot"
+    },
+    "Monsters": [
+      181,
+      3460,
+      3461,
+      3462,
+      3463,
+      3474
+    ],
+    "Subarea": 538,
+    "Succes": []
+  },
+  {
+    "Id": 18,
+    "OptimalPlayerLevel": 70,
+    "MapIds": [
+      106958848,
+      106959872,
+      106955776,
+      106956800,
+      106957824,
+      106960896,
+      106954752,
+      106959874,
+      106957826,
+      106957828
+    ],
+    "EntranceMapId": 185861634,
+    "ExitMapId": 185861634,
+    "Name": {
+      "Fr": "Pitons Rocheux des Craqueleurs"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "pitons rocheux des craqueleurs craqueleur legendaire"
+    },
+    "Monsters": [
+      106,
+      293,
+      483,
+      669,
+      826,
+      4570,
+      4573
+    ],
+    "Subarea": 243,
+    "Succes": []
+  },
+  {
+    "Id": 19,
+    "OptimalPlayerLevel": 20,
+    "MapIds": [
+      193726464,
+      193727488,
+      193728512,
+      193729536,
+      193725440,
+      193727490
+    ],
+    "EntranceMapId": 190056961,
+    "ExitMapId": 190056961,
+    "Name": {
+      "Fr": "Château Ensablé"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "chateau ensable mob l'eponge"
+    },
+    "Monsters": [
+      920,
+      921,
+      922,
+      923,
+      924,
+      928
+    ],
+    "Subarea": 336,
+    "Succes": []
+  },
+  {
+    "Id": 21,
+    "OptimalPlayerLevel": 50,
+    "MapIds": [
+      87295489,
+      87296513,
+      87297537,
+      87294467,
+      87295491,
+      87296515,
+      87294469,
+      87295493,
+      87296517,
+      87297541,
+      87294471,
+      87294465
+    ],
+    "EntranceMapId": 88086786,
+    "ExitMapId": 88086786,
+    "Name": {
+      "Fr": "Donjon des Forgerons"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "donjon des forgerons coffre des forgerons"
+    },
+    "Monsters": [
+      118,
+      119,
+      153,
+      155,
+      252
+    ],
+    "Subarea": 528,
+    "Succes": []
+  },
+  {
+    "Id": 22,
+    "OptimalPlayerLevel": 180,
+    "MapIds": [
+      182327297,
+      182326273,
+      182325249,
+      182324225,
+      182323201,
+      182323203,
+      182322177,
+      182322179,
+      182190081,
+      182191105,
+      182192129
+    ],
+    "EntranceMapId": 181146624,
+    "ExitMapId": 181146624,
+    "Name": {
+      "Fr": "Temple du Grand Ougah"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "temple du grand ougah ougah"
+    },
+    "Monsters": [
+      59,
+      1153,
+      1154,
+      1155,
+      1156,
+      1157,
+      1158,
+      1159,
+      1178
+    ],
+    "Subarea": 494,
+    "Succes": []
+  },
+  {
+    "Id": 24,
+    "OptimalPlayerLevel": 60,
+    "MapIds": [
+      98566657,
+      98567681,
+      98566659,
+      98567683,
+      98568707,
+      98566661,
+      98567685,
+      98568709,
+      98566663,
+      98567687,
+      98568705
+    ],
+    "EntranceMapId": 88084997,
+    "ExitMapId": 88084997,
+    "Name": {
+      "Fr": "Gelaxième Dimension"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "gelaxieme dimension gelee royale bleuet gelee royale menthe gelee royale fraise gelee royale citron"
+    },
+    "Monsters": [
+      55,
+      56,
+      57,
+      58,
+      85,
+      86,
+      429,
+      430
+    ],
+    "Subarea": 77,
+    "Succes": []
+  },
+  {
+    "Id": 25,
+    "OptimalPlayerLevel": 50,
+    "MapIds": [
+      5244416,
+      5242883,
+      5244419,
+      5242886,
+      5243139
+    ],
+    "EntranceMapId": 161295,
+    "ExitMapId": 161295,
+    "Name": {
+      "Fr": "Grotte Hesque"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "grotte hesque corailleur magistral"
+    },
+    "Monsters": [
+      1022,
+      1027,
+      1060,
+      1061,
+      1062,
+      1063,
+      1064,
+      1065,
+      1066,
+      1067
+    ],
+    "Subarea": 460,
+    "Succes": []
+  },
+  {
+    "Id": 27,
+    "OptimalPlayerLevel": 60,
+    "MapIds": [
+      157549568,
+      157550592,
+      157551616,
+      157552640,
+      157548544
+    ],
+    "EntranceMapId": 156499971,
+    "ExitMapId": 156499971,
+    "Name": {
+      "Fr": "Village Kanniboul"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "village kanniboul kanniboul ebil"
+    },
+    "Monsters": [
+      211,
+      212,
+      213,
+      214,
+      2960,
+      4151
+    ],
+    "Subarea": 700,
+    "Succes": []
+  },
+  {
+    "Id": 28,
+    "OptimalPlayerLevel": 160,
+    "MapIds": [
+      21497856,
+      21499904,
+      21496834,
+      21497858,
+      21495808
+    ],
+    "EntranceMapId": 25693696,
+    "ExitMapId": 25693696,
+    "Name": {
+      "Fr": "Canopée du Kimbo"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "canopee du kimbo kimbo"
+    },
+    "Monsters": [
+      1020,
+      1043,
+      1044,
+      1045,
+      1046,
+      1047
+    ],
+    "Subarea": 459,
+    "Succes": []
+  },
+  {
+    "Id": 30,
+    "OptimalPlayerLevel": 100,
+    "MapIds": [
+      107217920,
+      107218944,
+      107219968,
+      107220992,
+      107222016,
+      107223040,
+      107224064,
+      107225088,
+      107226112,
+      107227136,
+      107228160,
+      107216896
+    ],
+    "EntranceMapId": 139784,
+    "ExitMapId": 139265,
+    "Name": {
+      "Fr": "Caverne du Koulosse"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "caverne du koulosse koulosse"
+    },
+    "Monsters": [
+      670,
+      671,
+      746,
+      747,
+      748,
+      751,
+      752,
+      753,
+      754,
+      755,
+      763,
+      784
+    ],
+    "Subarea": 223,
+    "Succes": []
+  },
+  {
+    "Id": 31,
+    "OptimalPlayerLevel": 180,
+    "MapIds": [
+      26739712,
+      26740736,
+      26738688
+    ],
+    "EntranceMapId": 162056,
+    "ExitMapId": 162056,
+    "Name": {
+      "Fr": "Antre du Kralamoure Géant"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "antre du kralamoure geant kralamoure geant"
+    },
+    "Monsters": [
+      423,
+      1057,
+      1058,
+      1059,
+      1096
+    ],
+    "Subarea": 783,
+    "Succes": []
+  },
+  {
+    "Id": 32,
+    "OptimalPlayerLevel": 50,
+    "MapIds": [
+      64750592,
+      64751616,
+      64752640,
+      64753664,
+      64749568
+    ],
+    "EntranceMapId": 185861122,
+    "ExitMapId": 185861122,
+    "Name": {
+      "Fr": "Nid du Kwakwa"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "nid du kwakwa kwakwa"
+    },
+    "Monsters": [
+      81,
+      83,
+      84,
+      235,
+      269,
+      270,
+      271,
+      272,
+      2995,
+      3281,
+      3282,
+      3283,
+      3284
+    ],
+    "Subarea": 755,
+    "Succes": []
+  },
+  {
+    "Id": 33,
+    "OptimalPlayerLevel": 50,
+    "MapIds": [
+      96994817,
+      96995841,
+      96996865,
+      96997889,
+      96997891,
+      96998913,
+      96998915,
+      96993797,
+      96994821,
+      96995845,
+      96996869,
+      96996871,
+      96997893,
+      96997895,
+      96998917
+    ],
+    "EntranceMapId": 96993793,
+    "ExitMapId": 185862148,
+    "Name": {
+      "Fr": "Donjon des Larves"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "donjon des larves shin larve"
+    },
+    "Monsters": [
+      412,
+      413,
+      414,
+      456,
+      457,
+      3358,
+      3359
+    ],
+    "Subarea": 491,
+    "Succes": []
+  },
+  {
+    "Id": 34,
+    "OptimalPlayerLevel": 40,
+    "MapIds": [
+      163581440,
+      163582464,
+      163579392,
+      163580416,
+      163578368
+    ],
+    "EntranceMapId": 139723265,
+    "ExitMapId": 139723265,
+    "Name": {
+      "Fr": "Maison Fantôme"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "maison fantome boostache"
+    },
+    "Monsters": [
+      111,
+      127,
+      154,
+      498,
+      2975,
+      3235
+    ],
+    "Subarea": 702,
+    "Succes": []
+  },
+  {
+    "Id": 35,
+    "OptimalPlayerLevel": 70,
+    "MapIds": [
+      176950272,
+      176951296,
+      176948224,
+      176949248,
+      176947200
+    ],
+    "EntranceMapId": 177079296,
+    "ExitMapId": 177079296,
+    "Name": {
+      "Fr": "Laboratoire de Brumen Tinctorias"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "laboratoire de brumen tinctorias nelween"
+    },
+    "Monsters": [
+      298,
+      299,
+      300,
+      301,
+      3096,
+      3100
+    ],
+    "Subarea": 756,
+    "Succes": []
+  },
+  {
+    "Id": 36,
+    "OptimalPlayerLevel": 50,
+    "MapIds": [
+      66586112,
+      66587136,
+      66588160,
+      66589184,
+      66585088
+    ],
+    "EntranceMapId": 66061569,
+    "ExitMapId": 66061569,
+    "Name": {
+      "Fr": "Donjon de Nowel"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "donjon de nowel sapik"
+    },
+    "Monsters": [
+      849,
+      868,
+      896,
+      899,
+      901,
+      1179
+    ],
+    "Subarea": 321,
+    "Succes": []
+  },
+  {
+    "Id": 37,
+    "OptimalPlayerLevel": 110,
+    "MapIds": [
+      66847744,
+      66848768,
+      66849792,
+      66850816,
+      66846720
+    ],
+    "EntranceMapId": 66192641,
+    "ExitMapId": 66192641,
+    "Name": {
+      "Fr": "Caverne de Nowel"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "caverne de nowel papa nowel"
+    },
+    "Monsters": [
+      840,
+      845,
+      867,
+      872,
+      891,
+      2622
+    ],
+    "Subarea": 759,
+    "Succes": []
+  },
+  {
+    "Id": 38,
+    "OptimalPlayerLevel": 180,
+    "MapIds": [
+      66323456,
+      66324480,
+      66325504,
+      66326528,
+      66322432
+    ],
+    "EntranceMapId": 66060545,
+    "ExitMapId": 66060545,
+    "Name": {
+      "Fr": "Maison du Papa Nowel"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "maison du papa nowel pere fwetar"
+    },
+    "Monsters": [
+      839,
+      869,
+      906,
+      1194,
+      3107,
+      3108,
+      3109
+    ],
+    "Subarea": 760,
+    "Succes": []
+  },
+  {
+    "Id": 39,
+    "OptimalPlayerLevel": 70,
+    "MapIds": [
+      22283264,
+      22282242,
+      22283266,
+      22284290,
+      22282240
+    ],
+    "EntranceMapId": 22546944,
+    "ExitMapId": 22546944,
+    "Name": {
+      "Fr": "Cale de l'Arche d'Otomaï"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "cale de l'arche d'otomai gourlo le terrible"
+    },
+    "Monsters": [
+      228,
+      229,
+      231,
+      1048,
+      1049,
+      1050,
+      1051
+    ],
+    "Subarea": 474,
+    "Succes": []
+  },
+  {
+    "Id": 41,
+    "OptimalPlayerLevel": 110,
+    "MapIds": [
+      22806530,
+      22807554,
+      22808578,
+      22809602,
+      22808576
+    ],
+    "EntranceMapId": 89916416,
+    "ExitMapId": 89916416,
+    "Name": {
+      "Fr": "Goulet du Rasboul"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "goulet du rasboul silf le rasboul majeur"
+    },
+    "Monsters": [
+      1019,
+      1025,
+      1026,
+      1068,
+      1069,
+      1070,
+      1071
+    ],
+    "Subarea": 470,
+    "Succes": []
+  },
+  {
+    "Id": 42,
+    "OptimalPlayerLevel": 110,
+    "MapIds": [
+      218632192,
+      218631168,
+      218630144,
+      218629120,
+      218628096
+    ],
+    "EntranceMapId": 216402698,
+    "ExitMapId": 218632194,
+    "Name": {
+      "Fr": "Garde-manger du Rat Blanc"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "garde-manger du rat blanc rat blanc"
+    },
+    "Monsters": [
+      938,
+      940,
+      941,
+      942,
+      6743,
+      6744
+    ],
+    "Subarea": 1013,
+    "Succes": []
+  },
+  {
+    "Id": 43,
+    "OptimalPlayerLevel": 110,
+    "MapIds": [
+      218894336,
+      218891264,
+      218892288,
+      218893312,
+      218890240
+    ],
+    "EntranceMapId": 216927751,
+    "ExitMapId": 218894338,
+    "Name": {
+      "Fr": "Sousouricière du Rat Noir"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "sousouriciere du rat noir rat noir"
+    },
+    "Monsters": [
+      935,
+      936,
+      937,
+      939,
+      6739,
+      6742
+    ],
+    "Subarea": 1010,
+    "Succes": []
+  },
+  {
+    "Id": 44,
+    "OptimalPlayerLevel": 150,
+    "MapIds": [
+      102760961,
+      102761985,
+      102763009,
+      102764033,
+      102760963
+    ],
+    "EntranceMapId": 101714451,
+    "ExitMapId": 101714451,
+    "Name": {
+      "Fr": "Repaire de Sphincter Cell"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "repaire de sphincter cell rat noir rat blanc sphincter cell"
+    },
+    "Monsters": [
+      939,
+      940,
+      943,
+      3345,
+      3346,
+      3347,
+      3348,
+      3349,
+      3350,
+      3351,
+      3352
+    ],
+    "Subarea": 339,
+    "Succes": []
+  },
+  {
+    "Id": 45,
+    "OptimalPlayerLevel": 40,
+    "MapIds": [
+      94109696,
+      94110720,
+      94111744,
+      94111746,
+      94112768,
+      94113792,
+      94114816,
+      94115840
+    ],
+    "EntranceMapId": 88080387,
+    "ExitMapId": 88080899,
+    "Name": {
+      "Fr": "Donjon des Scarafeuilles"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "donjon des scarafeuilles scarabosse dore"
+    },
+    "Monsters": [
+      194,
+      198,
+      240,
+      241,
+      795,
+      797,
+      798
+    ],
+    "Subarea": 297,
+    "Succes": []
+  },
+  {
+    "Id": 46,
+    "OptimalPlayerLevel": 120,
+    "MapIds": [
+      107483136,
+      107486208,
+      107485184,
+      107479040,
+      107480064,
+      107481088,
+      107482112,
+      107484160
+    ],
+    "EntranceMapId": 63310595,
+    "ExitMapId": 63310595,
+    "Name": {
+      "Fr": "Repaire de Skeunk"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "repaire de skeunk skeunk"
+    },
+    "Monsters": [
+      673,
+      674,
+      675,
+      676,
+      677,
+      681,
+      744,
+      745,
+      749,
+      754,
+      756,
+      780,
+      783
+    ],
+    "Subarea": 254,
+    "Succes": []
+  },
+  {
+    "Id": 47,
+    "OptimalPlayerLevel": 40,
+    "MapIds": [
+      87034368,
+      87035392,
+      87032322,
+      87033346,
+      87035394,
+      87033344
+    ],
+    "EntranceMapId": 87032320,
+    "ExitMapId": 82314753,
+    "Name": {
+      "Fr": "Donjon des Squelettes"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "donjon des squelettes chafer ronin"
+    },
+    "Monsters": [
+      54,
+      108,
+      110,
+      396,
+      3238,
+      3239,
+      3240
+    ],
+    "Subarea": 516,
+    "Succes": []
+  },
+  {
+    "Id": 48,
+    "OptimalPlayerLevel": 40,
+    "MapIds": [
+      96338946,
+      96206850,
+      96206852,
+      96206848,
+      96207874,
+      96208898,
+      96209922
+    ],
+    "EntranceMapId": 96338944,
+    "ExitMapId": 88082705,
+    "Name": {
+      "Fr": "Donjon des Tofus"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "donjon des tofus batofu"
+    },
+    "Monsters": [
+      98,
+      796,
+      800,
+      804,
+      806,
+      808,
+      4824,
+      5222,
+      5223,
+      5224
+    ],
+    "Subarea": 201,
+    "Succes": []
+  },
+  {
+    "Id": 49,
+    "OptimalPlayerLevel": 120,
+    "MapIds": [
+      166990850
+    ],
+    "EntranceMapId": 166985728,
+    "ExitMapId": 166985728,
+    "Name": {
+      "Fr": "Antre du Blop Multicolore Royal"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "antre du blop multicolore royal blop coco royal blop griotte royal blop indigo royal blop reinette royal blop multicolore royal"
+    },
+    "Monsters": [
+      1182,
+      1183,
+      1184,
+      1185,
+      1186,
+      1187,
+      1188
+    ],
+    "Subarea": 796,
+    "Succes": []
+  },
+  {
+    "Id": 50,
+    "OptimalPlayerLevel": 120,
+    "MapIds": [
+      96209926,
+      96207876,
+      96206854,
+      96207878,
+      96208902,
+      96338948,
+      96338950
+    ],
+    "EntranceMapId": 96338944,
+    "ExitMapId": 10231814,
+    "Name": {
+      "Fr": "Tofulailler Royal"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "tofulailler royal tofu royal"
+    },
+    "Monsters": [
+      98,
+      382,
+      807,
+      3299,
+      3300,
+      3301,
+      3302,
+      5220,
+      5221
+    ],
+    "Subarea": 780,
+    "Succes": []
+  },
+  {
+    "Id": 51,
+    "OptimalPlayerLevel": 140,
+    "MapIds": [
+      89391106,
+      89394178,
+      89392130,
+      89391104,
+      89392128
+    ],
+    "EntranceMapId": 63964672,
+    "ExitMapId": 63964672,
+    "Name": {
+      "Fr": "Laboratoire du Tynril"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "laboratoire du tynril tynril consterne tynril deconcerte tynril perfide tynril ahuri"
+    },
+    "Monsters": [
+      1029,
+      1041,
+      1072,
+      1073,
+      1074,
+      1075,
+      1076,
+      1077,
+      1085,
+      1086,
+      1087
+    ],
+    "Subarea": 463,
+    "Succes": []
+  },
+  {
+    "Id": 52,
+    "OptimalPlayerLevel": 60,
+    "MapIds": [
+      116392448,
+      116393472,
+      116394496,
+      116395520,
+      116392450
+    ],
+    "EntranceMapId": 99614979,
+    "ExitMapId": 99614979,
+    "Name": {
+      "Fr": "Château du Wa Wabbit"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "chateau du wa wabbit wa wabbit"
+    },
+    "Monsters": [
+      64,
+      65,
+      68,
+      72,
+      96,
+      97,
+      99,
+      180
+    ],
+    "Subarea": 537,
+    "Succes": []
+  },
+  {
+    "Id": 53,
+    "OptimalPlayerLevel": 160,
+    "MapIds": [
+      34472450
+    ],
+    "EntranceMapId": 34473476,
+    "ExitMapId": 34476294,
+    "Name": {
+      "Fr": "Salle du Minotot"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "salle du minotot minotoror minotot"
+    },
+    "Monsters": [
+      121,
+      668,
+      827,
+      829,
+      830,
+      831,
+      832,
+      3740
+    ],
+    "Subarea": 210,
+    "Succes": []
+  },
+  {
+    "Id": 54,
+    "OptimalPlayerLevel": 120,
+    "MapIds": [
+      55050242,
+      55052290,
+      55052288,
+      55050240,
+      55053312
+    ],
+    "EntranceMapId": 54176049,
+    "ExitMapId": 54175024,
+    "Name": {
+      "Fr": "Serre du Royalmouth"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "serre du royalmouth royalmouth"
+    },
+    "Monsters": [
+      2850,
+      2851,
+      2852,
+      2853,
+      2854
+    ],
+    "Subarea": 617,
+    "Succes": []
+  },
+  {
+    "Id": 55,
+    "OptimalPlayerLevel": 140,
+    "MapIds": [
+      56099840,
+      56100864,
+      56101888,
+      56102912,
+      56098816
+    ],
+    "EntranceMapId": 55836672,
+    "ExitMapId": 55836672,
+    "Name": {
+      "Fr": "Excavation du Mansot Royal"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "excavation du mansot royal mansot royal"
+    },
+    "Monsters": [
+      2848,
+      2849,
+      2855,
+      2856,
+      2857,
+      2858
+    ],
+    "Subarea": 618,
+    "Succes": []
+  },
+  {
+    "Id": 56,
+    "OptimalPlayerLevel": 150,
+    "MapIds": [
+      56361984,
+      56363008,
+      56364032,
+      56365056,
+      56360960
+    ],
+    "EntranceMapId": 54163796,
+    "ExitMapId": 54165334,
+    "Name": {
+      "Fr": "Épave du Grolandais violent"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "epave du grolandais violent ben le ripate"
+    },
+    "Monsters": [
+      2874,
+      2875,
+      2876,
+      2877,
+      2878,
+      2880,
+      2881
+    ],
+    "Subarea": 619,
+    "Succes": []
+  },
+  {
+    "Id": 57,
+    "OptimalPlayerLevel": 160,
+    "MapIds": [
+      57149697,
+      57151233,
+      57152769,
+      57154305,
+      57155841,
+      57148161,
+      57279745
+    ],
+    "EntranceMapId": 56890883,
+    "ExitMapId": 54170450,
+    "Name": {
+      "Fr": "Hypogée de l'Obsidiantre"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "hypogee de l'obsidiantre obsidiantre"
+    },
+    "Monsters": [
+      2865,
+      2866,
+      2867,
+      2868,
+      2869,
+      2924
+    ],
+    "Subarea": 620,
+    "Succes": []
+  },
+  {
+    "Id": 58,
+    "OptimalPlayerLevel": 170,
+    "MapIds": [
+      59515138,
+      59516162,
+      59517186,
+      59512832,
+      59513856,
+      59514880,
+      59515904,
+      59516928,
+      59517952,
+      59518976,
+      59511808
+    ],
+    "EntranceMapId": 59510784,
+    "ExitMapId": 60031488,
+    "Name": {
+      "Fr": "Tanière Givrefoux"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "taniere givrefoux tengu givrefoux fuji givrefoux nourriciere"
+    },
+    "Monsters": [
+      2888,
+      2889,
+      2890,
+      2891,
+      2967,
+      2982,
+      3234
+    ],
+    "Subarea": 621,
+    "Succes": []
+  },
+  {
+    "Id": 59,
+    "OptimalPlayerLevel": 180,
+    "MapIds": [
+      62916608,
+      62917632,
+      62918656,
+      62919680,
+      62915584
+    ],
+    "EntranceMapId": 60036612,
+    "ExitMapId": 60036612,
+    "Name": {
+      "Fr": "Antre du Korriandre"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "antre du korriandre korriandre"
+    },
+    "Monsters": [
+      2895,
+      2896,
+      2897,
+      2898,
+      2900,
+      2968
+    ],
+    "Subarea": 623,
+    "Succes": []
+  },
+  {
+    "Id": 60,
+    "OptimalPlayerLevel": 190,
+    "MapIds": [
+      61867008,
+      61868032,
+      61868034,
+      61868036,
+      61998084,
+      61998082,
+      61998338,
+      61998340,
+      61865984
+    ],
+    "EntranceMapId": 54164293,
+    "ExitMapId": 54164807,
+    "Name": {
+      "Fr": "Cavernes du Kolosso"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "cavernes du kolosso kolosso professeur xa"
+    },
+    "Monsters": [
+      2883,
+      2884,
+      2885,
+      2886,
+      2965,
+      2966,
+      2986,
+      2992
+    ],
+    "Subarea": 624,
+    "Succes": []
+  },
+  {
+    "Id": 61,
+    "OptimalPlayerLevel": 190,
+    "MapIds": [
+      62131720,
+      62132744,
+      62133768,
+      62134792,
+      62135816,
+      62130696
+    ],
+    "EntranceMapId": 62129672,
+    "ExitMapId": 54165323,
+    "Name": {
+      "Fr": "Antichambre des Gloursons"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "antichambre des gloursons glourseleste"
+    },
+    "Monsters": [
+      2861,
+      2862,
+      2863,
+      2864,
+      2987,
+      2988,
+      2989
+    ],
+    "Subarea": 752,
+    "Succes": []
+  },
+  {
+    "Id": 62,
+    "OptimalPlayerLevel": 190,
+    "MapIds": [
+      57935617,
+      57936641,
+      57937665,
+      57938689,
+      57934593
+    ],
+    "EntranceMapId": 54159661,
+    "ExitMapId": 54159661,
+    "Name": {
+      "Fr": "Donjon de la mine de Sakaï"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "donjon de la mine de sakai grolloum"
+    },
+    "Monsters": [
+      2932,
+      2933,
+      2934,
+      2935,
+      2936,
+      2937,
+      2942
+    ],
+    "Subarea": 653,
+    "Succes": []
+  },
+  {
+    "Id": 66,
+    "OptimalPlayerLevel": 100,
+    "MapIds": [
+      101188608,
+      101189632,
+      101190656,
+      101191680,
+      101192704,
+      101193728
+    ],
+    "EntranceMapId": 101187584,
+    "ExitMapId": 101187584,
+    "Name": {
+      "Fr": "Potager d'Halouine"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "potager d'halouine halouine"
+    },
+    "Monsters": [
+      3306,
+      3307,
+      3308,
+      3309,
+      3310,
+      3311
+    ],
+    "Subarea": 784,
+    "Succes": []
+  },
+  {
+    "Id": 67,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      110100480,
+      110101504,
+      110102528,
+      110103552,
+      110100482,
+      110101506
+    ],
+    "EntranceMapId": 108793118,
+    "ExitMapId": 108793118,
+    "Name": {
+      "Fr": "Transporteur de Sylargh"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "transporteur de sylargh sylargh"
+    },
+    "Monsters": [
+      3404,
+      3405,
+      3406,
+      3407,
+      3408,
+      3409
+    ],
+    "Subarea": 791,
+    "Succes": []
+  },
+  {
+    "Id": 68,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      110362624,
+      110363648,
+      110364672,
+      110365696,
+      110362626,
+      110363650
+    ],
+    "EntranceMapId": 108925717,
+    "ExitMapId": 108925717,
+    "Name": {
+      "Fr": "Salons privés de Klime"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "salons prives de klime klime"
+    },
+    "Monsters": [
+      3379,
+      3380,
+      3381,
+      3382,
+      3383,
+      3384
+    ],
+    "Subarea": 792,
+    "Succes": []
+  },
+  {
+    "Id": 69,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      109838849,
+      109839873,
+      109840897,
+      109841921,
+      109840899
+    ],
+    "EntranceMapId": 108927238,
+    "ExitMapId": 108927238,
+    "Name": {
+      "Fr": "Forgefroide de Missiz Frizz"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "forgefroide de missiz frizz missiz frizz"
+    },
+    "Monsters": [
+      3385,
+      3386,
+      3387,
+      3389,
+      3390,
+      3391
+    ],
+    "Subarea": 793,
+    "Succes": []
+  },
+  {
+    "Id": 70,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      109576705,
+      109577729,
+      109578753,
+      109579777,
+      109576707
+    ],
+    "EntranceMapId": 108794630,
+    "ExitMapId": 108794630,
+    "Name": {
+      "Fr": "Laboratoire de Nileza"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "laboratoire de nileza nileza"
+    },
+    "Monsters": [
+      3392,
+      3393,
+      3394,
+      3395,
+      3396,
+      3397
+    ],
+    "Subarea": 790,
+    "Succes": []
+  },
+  {
+    "Id": 71,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      112198145,
+      112199169,
+      112200193,
+      112201217,
+      112202241,
+      112203523,
+      112203265,
+      112203269,
+      112203271,
+      112203521,
+      112204545,
+      112204289,
+      112204293,
+      112204295
+    ],
+    "EntranceMapId": 112460048,
+    "ExitMapId": 112460048,
+    "Name": {
+      "Fr": "Donjon du Comte Harebourg"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "donjon du comte harebourg klime missiz frizz nileza sylargh comte harebourg"
+    },
+    "Monsters": [
+      3384,
+      3391,
+      3397,
+      3409,
+      3410,
+      3411,
+      3412,
+      3414,
+      3415,
+      3416
+    ],
+    "Subarea": 794,
+    "Succes": []
+  },
+  {
+    "Id": 72,
+    "OptimalPlayerLevel": 100,
+    "MapIds": [
+      118226944,
+      118227968,
+      118228992,
+      118230016,
+      118231040,
+      118229250,
+      118229252
+    ],
+    "EntranceMapId": 117965057,
+    "ExitMapId": 117965057,
+    "Name": {
+      "Fr": "Théâtre de Dramak"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "theatre de dramak maitre des pantins"
+    },
+    "Monsters": [
+      3476,
+      3482,
+      3484,
+      3485,
+      3486,
+      3487
+    ],
+    "Subarea": 800,
+    "Succes": []
+  },
+  {
+    "Id": 73,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      119276033,
+      119277057,
+      119278081,
+      119276035,
+      119277059
+    ],
+    "EntranceMapId": 117706767,
+    "ExitMapId": 117706767,
+    "Name": {
+      "Fr": "Aquadôme de Merkator"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "aquadome de merkator merkator"
+    },
+    "Monsters": [
+      3534,
+      3535,
+      3538,
+      3542,
+      3543,
+      3544
+    ],
+    "Subarea": 807,
+    "Succes": []
+  },
+  {
+    "Id": 74,
+    "OptimalPlayerLevel": 190,
+    "MapIds": [
+      123207680,
+      123208704,
+      123209728,
+      123210752,
+      123211776,
+      123212800
+    ],
+    "EntranceMapId": 121636870,
+    "ExitMapId": 121636870,
+    "Name": {
+      "Fr": "Pyramide d'Ombre"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "pyramide d'ombre ombre"
+    },
+    "Monsters": [
+      3564,
+      3566,
+      3567,
+      3568,
+      3569,
+      3570
+    ],
+    "Subarea": 814,
+    "Succes": []
+  },
+  {
+    "Id": 75,
+    "OptimalPlayerLevel": 160,
+    "MapIds": [
+      125830657,
+      125831681,
+      125829635,
+      125830659,
+      125831683
+    ],
+    "EntranceMapId": 125829633,
+    "ExitMapId": 125829633,
+    "Name": {
+      "Fr": "Grotte de Kanigroula"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "grotte de kanigroula kanigroula"
+    },
+    "Monsters": [
+      3556,
+      3557,
+      3559,
+      3560,
+      3561,
+      3562
+    ],
+    "Subarea": 811,
+    "Succes": []
+  },
+  {
+    "Id": 76,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      129500160
+    ],
+    "EntranceMapId": 129499136,
+    "ExitMapId": 129236992,
+    "Name": {
+      "Fr": "Palais du roi Nidas"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "palais du roi nidas roi nidas"
+    },
+    "Monsters": [
+      3648,
+      3653,
+      3654,
+      3655,
+      3656,
+      3657
+    ],
+    "Subarea": 825,
+    "Succes": []
+  },
+  {
+    "Id": 77,
+    "OptimalPlayerLevel": 100,
+    "MapIds": [
+      130286592
+    ],
+    "EntranceMapId": 130285568,
+    "ExitMapId": 129368578,
+    "Name": {
+      "Fr": "Fabrique de Malléfisk"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "fabrique de mallefisk mallefisk"
+    },
+    "Monsters": [
+      3652,
+      3663,
+      3664,
+      3665,
+      3666,
+      3667
+    ],
+    "Subarea": 823,
+    "Succes": []
+  },
+  {
+    "Id": 79,
+    "OptimalPlayerLevel": 150,
+    "MapIds": [
+      130548736
+    ],
+    "EntranceMapId": 130547712,
+    "ExitMapId": 129238529,
+    "Name": {
+      "Fr": "Galerie du Phossile"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "galerie du phossile phossile"
+    },
+    "Monsters": [
+      3651,
+      3658,
+      3659,
+      3660,
+      3661,
+      3662
+    ],
+    "Subarea": 824,
+    "Succes": []
+  },
+  {
+    "Id": 80,
+    "OptimalPlayerLevel": 130,
+    "MapIds": [
+      132907008,
+      132908032,
+      132909056,
+      132910080,
+      132911104
+    ],
+    "EntranceMapId": 133171202,
+    "ExitMapId": 133171202,
+    "Name": {
+      "Fr": "Volière de la Haute Truche"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "voliere de la haute truche haute truche"
+    },
+    "Monsters": [
+      3618,
+      3619,
+      3620,
+      3621,
+      3622,
+      3623
+    ],
+    "Subarea": 818,
+    "Succes": []
+  },
+  {
+    "Id": 81,
+    "OptimalPlayerLevel": 130,
+    "MapIds": [
+      136578048
+    ],
+    "EntranceMapId": 136577024,
+    "ExitMapId": 134221826,
+    "Name": {
+      "Fr": "Ring du Capitaine Ekarlatte"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "ring du capitaine ekarlatte capitaine ekarlatte"
+    },
+    "Monsters": [
+      3730,
+      3731,
+      3732,
+      3733,
+      3734,
+      3753
+    ],
+    "Subarea": 830,
+    "Succes": []
+  },
+  {
+    "Id": 82,
+    "OptimalPlayerLevel": 180,
+    "MapIds": [
+      136840192
+    ],
+    "EntranceMapId": 136839168,
+    "ExitMapId": 135269891,
+    "Name": {
+      "Fr": "Cave du Toxoliath"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "cave du toxoliath toxoliath"
+    },
+    "Monsters": [
+      3735,
+      3736,
+      3737,
+      3738,
+      3739,
+      3752
+    ],
+    "Subarea": 831,
+    "Succes": []
+  },
+  {
+    "Id": 83,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      137101312,
+      137102336
+    ],
+    "EntranceMapId": 136056074,
+    "ExitMapId": 136056074,
+    "Name": {
+      "Fr": "Trône de la Cour Sombre"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "trone de la cour sombre reine des voleurs"
+    },
+    "Monsters": [
+      3726,
+      3746,
+      3747,
+      3748,
+      3749,
+      3750
+    ],
+    "Subarea": 832,
+    "Succes": []
+  },
+  {
+    "Id": 84,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      140771328,
+      140772352,
+      140773376,
+      140774400,
+      140775424,
+      140776448
+    ],
+    "EntranceMapId": 140641537,
+    "ExitMapId": 140641537,
+    "Name": {
+      "Fr": "Ventre de la Baleine"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "ventre de la baleine protozorreur"
+    },
+    "Monsters": [
+      3823,
+      3824,
+      3825,
+      3826,
+      3827,
+      3828
+    ],
+    "Subarea": 835,
+    "Succes": []
+  },
+  {
+    "Id": 85,
+    "OptimalPlayerLevel": 120,
+    "MapIds": [
+      143138823
+    ],
+    "EntranceMapId": 144969990,
+    "ExitMapId": 144969990,
+    "Name": {
+      "Fr": "Mégalithe de Fraktale"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "megalithe de fraktale fraktale"
+    },
+    "Monsters": [
+      3852,
+      3854,
+      3855,
+      3856,
+      3857,
+      3858
+    ],
+    "Subarea": 839,
+    "Succes": []
+  },
+  {
+    "Id": 86,
+    "OptimalPlayerLevel": 170,
+    "MapIds": [
+      143917569
+    ],
+    "EntranceMapId": 144707846,
+    "ExitMapId": 144707846,
+    "Name": {
+      "Fr": "Horologium de XLII"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "horologium de xlii xlii"
+    },
+    "Monsters": [
+      3840,
+      3841,
+      3842,
+      3843,
+      3844,
+      3849
+    ],
+    "Subarea": 840,
+    "Succes": []
+  },
+  {
+    "Id": 87,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      143393281
+    ],
+    "EntranceMapId": 144445702,
+    "ExitMapId": 144445702,
+    "Name": {
+      "Fr": "Œil de Vortex"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "oeil de vortex vortex"
+    },
+    "Monsters": [
+      3834,
+      3835,
+      3836,
+      3837,
+      3838,
+      3839
+    ],
+    "Subarea": 841,
+    "Succes": []
+  },
+  {
+    "Id": 88,
+    "OptimalPlayerLevel": 40,
+    "MapIds": [
+      146675712,
+      146674688,
+      146673664,
+      146671616,
+      146670592,
+      146672640,
+      146672898
+    ],
+    "EntranceMapId": 146676736,
+    "ExitMapId": 103549440,
+    "Name": {
+      "Fr": "Cache de Kankreblath"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "cache de kankreblath kankreblath"
+    },
+    "Monsters": [
+      3940,
+      3941,
+      3942,
+      3943,
+      3944,
+      3945
+    ],
+    "Subarea": 842,
+    "Succes": []
+  },
+  {
+    "Id": 89,
+    "OptimalPlayerLevel": 90,
+    "MapIds": [
+      149160960,
+      149161984,
+      149163008,
+      149164032,
+      149165056
+    ],
+    "EntranceMapId": 149159936,
+    "ExitMapId": 147853312,
+    "Name": {
+      "Fr": "Antre de la Reine Nyée"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "antre de la reine nyee reine nyee"
+    },
+    "Monsters": [
+      3991,
+      3992,
+      3993,
+      3994,
+      3995,
+      3996
+    ],
+    "Subarea": 844,
+    "Succes": []
+  },
+  {
+    "Id": 90,
+    "OptimalPlayerLevel": 10,
+    "MapIds": [
+      152829952,
+      152830976,
+      152832000,
+      152833024,
+      152834048
+    ],
+    "EntranceMapId": 153881600,
+    "ExitMapId": 153881600,
+    "Name": {
+      "Fr": "Crypte de Kardorim"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "crypte de kardorim kardorim"
+    },
+    "Monsters": [
+      4046,
+      4047,
+      4048,
+      4049,
+      4050,
+      4051
+    ],
+    "Subarea": 447,
+    "Succes": []
+  },
+  {
+    "Id": 91,
+    "OptimalPlayerLevel": 90,
+    "MapIds": [
+      157024256,
+      157025280,
+      157026304,
+      157027328,
+      157028352
+    ],
+    "EntranceMapId": 158078976,
+    "ExitMapId": 158078976,
+    "Name": {
+      "Fr": "Bateau du Chouque"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "bateau du chouque le chouque"
+    },
+    "Monsters": [
+      228,
+      229,
+      230,
+      231,
+      4160,
+      4161
+    ],
+    "Subarea": 846,
+    "Succes": []
+  },
+  {
+    "Id": 92,
+    "OptimalPlayerLevel": 100,
+    "MapIds": [
+      157286400,
+      157287424,
+      157288448,
+      157289472,
+      157290496
+    ],
+    "EntranceMapId": 156499968,
+    "ExitMapId": 156499968,
+    "Name": {
+      "Fr": "Arbre de Moon"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "arbre de moon moon"
+    },
+    "Monsters": [
+      215,
+      216,
+      217,
+      226,
+      4162,
+      4163
+    ],
+    "Subarea": 847,
+    "Succes": []
+  },
+  {
+    "Id": 93,
+    "OptimalPlayerLevel": 110,
+    "MapIds": [
+      161743872
+    ],
+    "EntranceMapId": 161742848,
+    "ExitMapId": 161744896,
+    "Name": {
+      "Fr": "Miausolée du Pounicheur"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "miausolee du pounicheur pounicheur"
+    },
+    "Monsters": [
+      4278,
+      4291,
+      4292,
+      4293,
+      4294,
+      4295
+    ],
+    "Subarea": 852,
+    "Succes": []
+  },
+  {
+    "Id": 94,
+    "OptimalPlayerLevel": 160,
+    "MapIds": [
+      162004992
+    ],
+    "EntranceMapId": 160960771,
+    "ExitMapId": 162006016,
+    "Name": {
+      "Fr": "Plateau de Ush"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "plateau de ush ush galesh"
+    },
+    "Monsters": [
+      4264,
+      4265,
+      4296,
+      4297,
+      4298,
+      4299,
+      4300
+    ],
+    "Subarea": 853,
+    "Succes": []
+  },
+  {
+    "Id": 95,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      160564224
+    ],
+    "EntranceMapId": 160565248,
+    "ExitMapId": 160432128,
+    "Name": {
+      "Fr": "Défi du Chalœil"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "defi du chaloeil chaloeil"
+    },
+    "Monsters": [
+      4263,
+      4283,
+      4284,
+      4285,
+      4286,
+      4287
+    ],
+    "Subarea": 854,
+    "Succes": []
+  },
+  {
+    "Id": 96,
+    "OptimalPlayerLevel": 186,
+    "MapIds": [
+      182453248,
+      182454272,
+      182455296,
+      182456320
+    ],
+    "EntranceMapId": 182452224,
+    "ExitMapId": 172757504,
+    "Name": {
+      "Fr": "Temple Maudit d'Araknas"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "temple maudit d'araknas qu'tan"
+    },
+    "Monsters": [
+      1195,
+      3516,
+      3517,
+      3518,
+      3519
+    ],
+    "Subarea": 803,
+    "Succes": []
+  },
+  {
+    "Id": 97,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      169869312,
+      169870336,
+      169871360,
+      169872384,
+      169873408
+    ],
+    "EntranceMapId": 169084930,
+    "ExitMapId": 169084930,
+    "Name": {
+      "Fr": "Vaisseau du Capitaine Meno"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "vaisseau du capitaine meno capitaine meno"
+    },
+    "Monsters": [
+      4455,
+      4456,
+      4457,
+      4458,
+      4459,
+      4460
+    ],
+    "Subarea": 869,
+    "Succes": []
+  },
+  {
+    "Id": 98,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      169345024,
+      169346048,
+      169347072,
+      169348096,
+      169349120
+    ],
+    "EntranceMapId": 168560640,
+    "ExitMapId": 168560640,
+    "Name": {
+      "Fr": "Temple de Koutoulou"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "temple de koutoulou larve de koutoulou"
+    },
+    "Monsters": [
+      4448,
+      4449,
+      4450,
+      4451,
+      4452,
+      4453
+    ],
+    "Subarea": 871,
+    "Succes": []
+  },
+  {
+    "Id": 99,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      169607168,
+      169608192,
+      169609216,
+      169610240,
+      169611264
+    ],
+    "EntranceMapId": 168820736,
+    "ExitMapId": 168820736,
+    "Name": {
+      "Fr": "Palais de Dantinéa"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "palais de dantinea dantinea"
+    },
+    "Monsters": [
+      4439,
+      4440,
+      4441,
+      4442,
+      4443,
+      4444
+    ],
+    "Subarea": 870,
+    "Succes": []
+  },
+  {
+    "Id": 100,
+    "OptimalPlayerLevel": 80,
+    "MapIds": [
+      174326272,
+      174327296,
+      174328320,
+      174329344,
+      174330368
+    ],
+    "EntranceMapId": 173280513,
+    "ExitMapId": 173280513,
+    "Name": {
+      "Fr": "Cimetière des Mastodontes"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "cimetiere des mastodontes mantiscore"
+    },
+    "Monsters": [
+      4615,
+      4616,
+      4617,
+      4619,
+      4620,
+      4621
+    ],
+    "Subarea": 875,
+    "Succes": []
+  },
+  {
+    "Id": 101,
+    "OptimalPlayerLevel": 130,
+    "MapIds": [
+      174067200,
+      174068736,
+      174070272,
+      174064128,
+      174065664
+    ],
+    "EntranceMapId": 173540352,
+    "ExitMapId": 173540352,
+    "Name": {
+      "Fr": "Caverne d'El Piko"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "caverne d'el piko el piko"
+    },
+    "Monsters": [
+      4604,
+      4605,
+      4606,
+      4607,
+      4608,
+      4609
+    ],
+    "Subarea": 876,
+    "Succes": []
+  },
+  {
+    "Id": 102,
+    "OptimalPlayerLevel": 170,
+    "MapIds": [
+      175902208,
+      176030208,
+      175899136,
+      175900160,
+      175901184
+    ],
+    "EntranceMapId": 174850048,
+    "ExitMapId": 174850048,
+    "Name": {
+      "Fr": "Boyau du Père Ver"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "boyau du pere ver pere ver"
+    },
+    "Monsters": [
+      4726,
+      4727,
+      4728,
+      4729,
+      4730,
+      4731
+    ],
+    "Subarea": 880,
+    "Succes": []
+  },
+  {
+    "Id": 103,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      176160768,
+      176161792,
+      176162816,
+      176163840,
+      176164864
+    ],
+    "EntranceMapId": 175637504,
+    "ExitMapId": 175637504,
+    "Name": {
+      "Fr": "Chambre de Tal Kasha"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "chambre de tal kasha tal kasha"
+    },
+    "Monsters": [
+      4739,
+      4740,
+      4741,
+      4742,
+      4743,
+      4744
+    ],
+    "Subarea": 882,
+    "Succes": []
+  },
+  {
+    "Id": 104,
+    "OptimalPlayerLevel": 190,
+    "MapIds": [
+      179568640,
+      179569664,
+      179570688,
+      179571712,
+      179572736
+    ],
+    "EntranceMapId": 179438082,
+    "ExitMapId": 179438082,
+    "Name": {
+      "Fr": "Camp du Comte Razof"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "camp du comte razof comte razof"
+    },
+    "Monsters": [
+      4803,
+      4804,
+      4805,
+      4806,
+      4807,
+      4808
+    ],
+    "Subarea": 884,
+    "Succes": []
+  },
+  {
+    "Id": 105,
+    "OptimalPlayerLevel": 90,
+    "MapIds": [
+      181665792,
+      181666816,
+      181667840,
+      181668864,
+      181669888,
+      181670912
+    ],
+    "EntranceMapId": 181797888,
+    "ExitMapId": 181797888,
+    "Name": {
+      "Fr": "Chapiteau des Magik Riktus"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "chapiteau des magik riktus choudini"
+    },
+    "Monsters": [
+      4860,
+      4861,
+      4862,
+      4863,
+      4864,
+      4865
+    ],
+    "Subarea": 888,
+    "Succes": []
+  },
+  {
+    "Id": 106,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      182714368,
+      182715392,
+      182716416,
+      182717440,
+      182718464
+    ],
+    "EntranceMapId": 179831808,
+    "ExitMapId": 179831808,
+    "Name": {
+      "Fr": "Manoir des Katrepat"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "manoir des katrepat anerice la shushess"
+    },
+    "Monsters": [
+      4877,
+      4878,
+      4879,
+      4880,
+      4881,
+      4882
+    ],
+    "Subarea": 890,
+    "Succes": []
+  },
+  {
+    "Id": 107,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      184690945,
+      184689921,
+      184688385,
+      184687361,
+      184686337
+    ],
+    "EntranceMapId": 183501836,
+    "ExitMapId": 183501836,
+    "Name": {
+      "Fr": "Belvédère d'Ilyzaelle"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "belvedere d'ilyzaelle ilyzaelle"
+    },
+    "Monsters": [
+      4967,
+      4968,
+      4969,
+      4970,
+      4971,
+      4972
+    ],
+    "Subarea": 893,
+    "Succes": []
+  },
+  {
+    "Id": 108,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      187432960,
+      187433984,
+      187435008,
+      187436032,
+      187437056
+    ],
+    "EntranceMapId": 186384896,
+    "ExitMapId": 186384896,
+    "Name": {
+      "Fr": "Tour de Bethel"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "tour de bethel bethel akarna"
+    },
+    "Monsters": [
+      5110,
+      5111,
+      5112,
+      5113,
+      5114,
+      5115
+    ],
+    "Subarea": 899,
+    "Succes": []
+  },
+  {
+    "Id": 109,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      187957506,
+      187957508,
+      187957248,
+      187957510,
+      187957512
+    ],
+    "EntranceMapId": 183108098,
+    "ExitMapId": 183108098,
+    "Name": {
+      "Fr": "Tour de Solar"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "tour de solar solar"
+    },
+    "Monsters": [
+      5100,
+      5101,
+      5102,
+      5103,
+      5104,
+      5105
+    ],
+    "Subarea": 898,
+    "Succes": []
+  },
+  {
+    "Id": 110,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      195035136,
+      195036160,
+      195037184,
+      195038208,
+      195039232
+    ],
+    "EntranceMapId": 194779138,
+    "ExitMapId": 194779138,
+    "Name": {
+      "Fr": "Brasserie du roi Dazak"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "brasserie du roi dazak dazak martegel"
+    },
+    "Monsters": [
+      5314,
+      5315,
+      5316,
+      5317,
+      5318,
+      5319
+    ],
+    "Subarea": 903,
+    "Succes": []
+  },
+  {
+    "Id": 111,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      197660672,
+      197659648,
+      197658624,
+      197657600,
+      197656576
+    ],
+    "EntranceMapId": 197133314,
+    "ExitMapId": 197133314,
+    "Name": {
+      "Fr": "Temple du dieu Kao"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "temple du dieu kao pretresse de kao"
+    },
+    "Monsters": [
+      5666,
+      5668,
+      5669,
+      5670,
+      5671,
+      5672
+    ],
+    "Subarea": 915,
+    "Succes": []
+  },
+  {
+    "Id": 112,
+    "OptimalPlayerLevel": 130,
+    "MapIds": [
+      197394432,
+      197395456,
+      197396480,
+      197397504,
+      197398528
+    ],
+    "EntranceMapId": 197526528,
+    "ExitMapId": 197526528,
+    "Name": {
+      "Fr": "Croquanterie"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "croquanterie croqueleur"
+    },
+    "Monsters": [
+      5664,
+      5677,
+      5678,
+      5679,
+      5680,
+      5681
+    ],
+    "Subarea": 914,
+    "Succes": []
+  },
+  {
+    "Id": 113,
+    "OptimalPlayerLevel": 60,
+    "MapIds": [
+      106430464,
+      106431488,
+      106432512,
+      106433536,
+      106434560
+    ],
+    "EntranceMapId": 196346371,
+    "ExitMapId": 196346371,
+    "Name": {
+      "Fr": "Fonderie des Waddicts"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "fonderie des waddicts mawabouaino"
+    },
+    "Monsters": [
+      5652,
+      5653,
+      5689,
+      5690,
+      5691,
+      5692
+    ],
+    "Subarea": 913,
+    "Succes": []
+  },
+  {
+    "Id": 114,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      198706176,
+      198707200,
+      198708224,
+      198709248,
+      198705152
+    ],
+    "EntranceMapId": 197918722,
+    "ExitMapId": 197918722,
+    "Name": {
+      "Fr": "Sanctuaire de Torkélonia"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "sanctuaire de torkelonia torkelonia"
+    },
+    "Monsters": [
+      5806,
+      5807,
+      5808,
+      5809,
+      5810,
+      5811
+    ],
+    "Subarea": 918,
+    "Succes": []
+  },
+  {
+    "Id": 115,
+    "OptimalPlayerLevel": 100,
+    "MapIds": [
+      199491584,
+      199492608,
+      199493632,
+      199494656,
+      199495680
+    ],
+    "EntranceMapId": 84411905,
+    "ExitMapId": 199495682,
+    "Name": {
+      "Fr": "Repaire du Kharnozor"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "repaire du kharnozor kharnozor"
+    },
+    "Monsters": [
+      858,
+      878,
+      879,
+      905,
+      5819,
+      5820
+    ],
+    "Subarea": 919,
+    "Succes": []
+  },
+  {
+    "Id": 116,
+    "OptimalPlayerLevel": 70,
+    "MapIds": [
+      199753728,
+      199754752,
+      199755776,
+      199756800,
+      199757824
+    ],
+    "EntranceMapId": 84411397,
+    "ExitMapId": 84411397,
+    "Name": {
+      "Fr": "Épreuve de Draegnerys"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "epreuve de draegnerys draegnerys"
+    },
+    "Monsters": [
+      76,
+      87,
+      88,
+      89,
+      5822,
+      5823
+    ],
+    "Subarea": 920,
+    "Succes": []
+  },
+  {
+    "Id": 117,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      202638336,
+      202639360,
+      202640384,
+      202641408,
+      202637312
+    ],
+    "EntranceMapId": 201328640,
+    "ExitMapId": 201328640,
+    "Name": {
+      "Fr": "Arbre de Mort"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "arbre de mort corruption"
+    },
+    "Monsters": [
+      6026,
+      6027,
+      6028,
+      6029,
+      6030,
+      6031
+    ],
+    "Subarea": 930,
+    "Succes": []
+  },
+  {
+    "Id": 118,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      203161600,
+      203162624,
+      203163648,
+      203164672,
+      203165696
+    ],
+    "EntranceMapId": 202115584,
+    "ExitMapId": 202115584,
+    "Name": {
+      "Fr": "Fers de la Tyrannie"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "fers de la tyrannie servitude"
+    },
+    "Monsters": [
+      5955,
+      5978,
+      5979,
+      5980,
+      5983,
+      5989
+    ],
+    "Subarea": 933,
+    "Succes": []
+  },
+  {
+    "Id": 119,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      203423744,
+      203424768,
+      203425792,
+      203426816,
+      203427840
+    ],
+    "EntranceMapId": 201851392,
+    "ExitMapId": 201851392,
+    "Name": {
+      "Fr": "Sentence de la Balance"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "sentence de la balance misere"
+    },
+    "Monsters": [
+      5990,
+      5991,
+      5992,
+      5993,
+      5994,
+      5995
+    ],
+    "Subarea": 932,
+    "Succes": []
+  },
+  {
+    "Id": 120,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      202375168,
+      202376192,
+      202377216,
+      202378240,
+      202379264
+    ],
+    "EntranceMapId": 201591809,
+    "ExitMapId": 201591809,
+    "Name": {
+      "Fr": "Trône de Sang"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "trone de sang guerre"
+    },
+    "Monsters": [
+      6014,
+      6021,
+      6022,
+      6023,
+      6024,
+      6025
+    ],
+    "Subarea": 931,
+    "Succes": []
+  },
+  {
+    "Id": 121,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      204472320,
+      204473344,
+      204474368,
+      204475392,
+      204476416
+    ],
+    "EntranceMapId": 204604416,
+    "ExitMapId": 204604416,
+    "Name": {
+      "Fr": "Tempête de l'Eliocalypse"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "tempete de l'eliocalypse servitude misere guerre corruption"
+    },
+    "Monsters": [
+      5955,
+      5979,
+      5990,
+      5991,
+      6014,
+      6023,
+      6026,
+      6027
+    ],
+    "Subarea": 939,
+    "Succes": []
+  },
+  {
+    "Id": 122,
+    "OptimalPlayerLevel": 140,
+    "MapIds": [
+      207880192,
+      207881216,
+      207882240,
+      207883264,
+      207884288
+    ],
+    "EntranceMapId": 209191685,
+    "ExitMapId": 209191685,
+    "Name": {
+      "Fr": "Dojo du Vent"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "dojo du vent shihan hanshi"
+    },
+    "Monsters": [
+      6204,
+      6212,
+      6213,
+      6214,
+      6215,
+      6216,
+      6217
+    ],
+    "Subarea": 950,
+    "Succes": []
+  },
+  {
+    "Id": 123,
+    "OptimalPlayerLevel": 130,
+    "MapIds": [
+      208143360,
+      208144384,
+      208145408,
+      208146432,
+      208142336
+    ],
+    "EntranceMapId": 204999425,
+    "ExitMapId": 204999425,
+    "Name": {
+      "Fr": "Vallée de la Dame des eaux"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "vallee de la dame des eaux nagate"
+    },
+    "Monsters": [
+      6203,
+      6229,
+      6230,
+      6231,
+      6247,
+      6256
+    ],
+    "Subarea": 947,
+    "Succes": []
+  },
+  {
+    "Id": 124,
+    "OptimalPlayerLevel": 140,
+    "MapIds": [
+      208404480,
+      208405504,
+      208406528,
+      208407552,
+      208408576
+    ],
+    "EntranceMapId": 206177797,
+    "ExitMapId": 206177797,
+    "Name": {
+      "Fr": "Fabrique de foux d'artifice"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "fabrique de foux d'artifice founoroshi"
+    },
+    "Monsters": [
+      6249,
+      6251,
+      6252,
+      6253,
+      6254,
+      6255
+    ],
+    "Subarea": 949,
+    "Succes": []
+  },
+  {
+    "Id": 125,
+    "OptimalPlayerLevel": 110,
+    "MapIds": [
+      208666624,
+      208667648,
+      208668672,
+      208669696,
+      208670720
+    ],
+    "EntranceMapId": 205521925,
+    "ExitMapId": 205521925,
+    "Name": {
+      "Fr": "Bambusaie de Damadrya"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "bambusaie de damadrya damadrya"
+    },
+    "Monsters": [
+      6318,
+      6320,
+      6321,
+      6322,
+      6323,
+      6326
+    ],
+    "Subarea": 946,
+    "Succes": []
+  },
+  {
+    "Id": 126,
+    "OptimalPlayerLevel": 130,
+    "MapIds": [
+      208928768,
+      208929792,
+      208930816,
+      208931840,
+      208932864
+    ],
+    "EntranceMapId": 205260802,
+    "ExitMapId": 205260802,
+    "Name": {
+      "Fr": "Atelier du Tanukouï San"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "atelier du tanukoui san tanukoui san"
+    },
+    "Monsters": [
+      6218,
+      6219,
+      6220,
+      6221,
+      6222,
+      6223
+    ],
+    "Subarea": 948,
+    "Succes": []
+  },
+  {
+    "Id": 131,
+    "OptimalPlayerLevel": 170,
+    "MapIds": [
+      210239488,
+      210240512,
+      210241536,
+      210242560,
+      210243584
+    ],
+    "EntranceMapId": 207095299,
+    "ExitMapId": 207095299,
+    "Name": {
+      "Fr": "Demeure des Esprits"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "demeure des esprits koumiho"
+    },
+    "Monsters": [
+      6389,
+      6390,
+      6391,
+      6392,
+      6393,
+      6394
+    ],
+    "Subarea": 954,
+    "Succes": []
+  },
+  {
+    "Id": 132,
+    "OptimalPlayerLevel": 160,
+    "MapIds": [
+      209977344,
+      209978368,
+      209979392,
+      209980416,
+      209981440
+    ],
+    "EntranceMapId": 206832641,
+    "ExitMapId": 206832641,
+    "Name": {
+      "Fr": "Tombe du Shogun Tofugawa"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "tombe du shogun tofugawa shogun tofugawa"
+    },
+    "Monsters": [
+      6383,
+      6384,
+      6385,
+      6386,
+      6387,
+      6388
+    ],
+    "Subarea": 953,
+    "Succes": []
+  },
+  {
+    "Id": 133,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      211551232,
+      211550208
+    ],
+    "EntranceMapId": 210633732,
+    "ExitMapId": 211552256,
+    "Name": {
+      "Fr": "Mémoire d'Orukam"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "memoire d'orukam roi imagami"
+    },
+    "Monsters": [
+      6467,
+      6468,
+      6469,
+      6470,
+      6471,
+      6472
+    ],
+    "Subarea": 958,
+    "Succes": []
+  },
+  {
+    "Id": 134,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      211813376,
+      211812352
+    ],
+    "EntranceMapId": 210765572,
+    "ExitMapId": 211552256,
+    "Name": {
+      "Fr": "Souvenir d'Imagiro"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "souvenir d'imagiro reine amirukam"
+    },
+    "Monsters": [
+      6473,
+      6474,
+      6475,
+      6476,
+      6477,
+      6478
+    ],
+    "Subarea": 959,
+    "Succes": []
+  },
+  {
+    "Id": 135,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      215482368,
+      215483392,
+      215484416,
+      215485440,
+      215486464
+    ],
+    "EntranceMapId": 214961664,
+    "ExitMapId": 214961664,
+    "Name": {
+      "Fr": "Rituel de Kabahal"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "rituel de kabahal kabahal"
+    },
+    "Monsters": [
+      6650,
+      6651,
+      6652,
+      6653,
+      6654,
+      6656
+    ],
+    "Subarea": 968,
+    "Succes": []
+  },
+  {
+    "Id": 136,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      220463104,
+      220464128,
+      220465152,
+      220466176,
+      220467200
+    ],
+    "EntranceMapId": 219939328,
+    "ExitMapId": 219939328,
+    "Name": {
+      "Fr": "Bataille de l'Aurore Pourpre"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "bataille de l'aurore pourpre l'eternel conflit"
+    },
+    "Monsters": [
+      6787,
+      6788,
+      6789,
+      6790,
+      6791,
+      6792
+    ],
+    "Subarea": 972,
+    "Succes": []
+  },
+  {
+    "Id": 138,
+    "OptimalPlayerLevel": 40,
+    "MapIds": [
+      221774336,
+      221775360,
+      221776384,
+      221777408,
+      221778432
+    ],
+    "EntranceMapId": 104071939,
+    "ExitMapId": 104071939,
+    "Name": {
+      "Fr": "Akadémie des Gobs"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "akademie des gobs directeur grunob"
+    },
+    "Monsters": [
+      62,
+      178,
+      6900,
+      6901,
+      6902,
+      6903
+    ],
+    "Subarea": 1018,
+    "Succes": []
+  },
+  {
+    "Id": 139,
+    "OptimalPlayerLevel": 150,
+    "MapIds": [
+      220725761,
+      220726785,
+      220727809,
+      220728833,
+      220729857
+    ],
+    "EntranceMapId": 221250562,
+    "ExitMapId": 221250562,
+    "Name": {
+      "Fr": "Tertre du long sommeil"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "tertre du long sommeil hell mina"
+    },
+    "Monsters": [
+      107,
+      6864,
+      6871,
+      6872,
+      6873,
+      6874
+    ],
+    "Subarea": 1016,
+    "Succes": []
+  },
+  {
+    "Id": 140,
+    "OptimalPlayerLevel": 200,
+    "MapIds": [
+      223870976,
+      223872000,
+      223873024,
+      223874048,
+      223875072
+    ],
+    "EntranceMapId": 224660233,
+    "ExitMapId": 223875074,
+    "Name": {
+      "Fr": "Chambre des maléfices"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "chambre des malefices belladone"
+    },
+    "Monsters": [
+      7205,
+      7206,
+      7207,
+      7208,
+      7209,
+      7210
+    ],
+    "Subarea": 1030,
+    "Succes": []
+  },
+  {
+    "Id": 141,
+    "OptimalPlayerLevel": 190,
+    "MapIds": [
+      225181696,
+      225182720,
+      225183744,
+      225184768,
+      225185792
+    ],
+    "EntranceMapId": 225313792,
+    "ExitMapId": 225185794,
+    "Name": {
+      "Fr": "Bastion des Marteaux-Aigris"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "bastion des marteaux-aigris barberyl clochecuivre"
+    },
+    "Monsters": [
+      7214,
+      7215,
+      7216,
+      7217,
+      7218,
+      7219
+    ],
+    "Subarea": 1028,
+    "Succes": []
+  },
+  {
+    "Id": 142,
+    "OptimalPlayerLevel": 50,
+    "MapIds": [
+      224133120,
+      224134144,
+      224135168,
+      224136192,
+      224137216
+    ],
+    "EntranceMapId": 223350028,
+    "ExitMapId": 224137218,
+    "Name": {
+      "Fr": "Refuge sylvestre"
+    },
+    "ClassName": "Dungeons",
+    "MId": 0,
+    "Slug": {
+      "Fr": "refuge sylvestre rakoopeur"
+    },
+    "Monsters": [
+      7192,
+      7193,
+      7194,
+      7195,
+      7196,
+      7197
+    ],
+    "Subarea": 1022,
+    "Succes": []
+  }
+]

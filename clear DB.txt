@@ -11,3 +11,30 @@ dotnet ef database update
 cd..
 cd DofusGroupFinder.Api
 dotnet run --clear
+
+
+
+🔄 Pour mettre à jour l’API
+Après une modif :
+
+docker compose build api
+docker compose up -d api
+
+
+
+💣 Pour reset la base de données (en dev)
+⚠️ Cela supprime toutes les données :
+
+docker compose down -v
+docker compose up --build
+
+
+
+🧼 (Optionnel) Pour vider la base proprement sans toucher les images
+
+docker volume rm zaapixapi_pgdata
+docker compose up --build
+
+
+Afficher logs :
+docker logs -f zaapix-api
