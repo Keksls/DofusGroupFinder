@@ -1,7 +1,4 @@
-﻿using System;
-using System.IO;
-using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
+﻿using System.IO;
 using System.Net.Http.Json;
 using System.Text.Json;
 
@@ -10,8 +7,6 @@ namespace DofusGroupFinder.Client.Services
     public class AuthService
     {
         private const string FilePath = "Config/auth.json";
-
-        public Guid? AccountId { get; private set; }
         public string? Token { get; private set; }
 
         public async Task<string?> LoginAsync(string pseudo, string password)
@@ -52,24 +47,12 @@ namespace DofusGroupFinder.Client.Services
         {
             Token = token;
             Directory.CreateDirectory("Config");
-            DecodeAndStoreAccountId(token);
         }
 
         public void SaveToken(string token)
         {
             Directory.CreateDirectory("Config");
             File.WriteAllText(FilePath, JsonSerializer.Serialize(new AuthObject { Token = token }));
-        }
-
-        private void DecodeAndStoreAccountId(string token)
-        {
-            var handler = new JwtSecurityTokenHandler();
-            var jwt = handler.ReadJwtToken(token);
-            var subClaim = jwt.Claims.FirstOrDefault(c => c.Type == JwtRegisteredClaimNames.Sub);
-            if (subClaim != null && Guid.TryParse(subClaim.Value, out var id))
-            {
-                AccountId = id;
-            }
         }
 
         private class LoginResponse

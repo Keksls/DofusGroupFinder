@@ -1,5 +1,0 @@
-;!@Install@!UTF-8!
-Title="Zaapix Client Installer"
-BeginPrompt="Où souhaitez-vous extraire Zaapix ?"
-RunProgram="Zaapix.exe"
-;!@InstallEnd@!

@@ -1,1 +1,0 @@
->copy /b 7z.sfx + config.txt + ZaapixClient.7z ZaapixInstaller.exe
