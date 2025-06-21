@@ -36,5 +36,24 @@ docker volume rm zaapixapi_pgdata
 docker compose up --build
 
 
+Run le baker :
+docker compose run --rm baker
+
+
 Afficher logs :
 docker logs -f zaapix-api
+
+Full migration + clear + bake
+#!/bin/bash
+echo "🧨 Suppression des volumes..."
+docker compose down -v
+echo "🧱 Rebuild et migration..."
+docker compose run --rm migrator
+echo "🍞 Préremplissage des données..."
+docker compose run --rm baker
+echo "🚀 Lancement de l'API..."
+docker compose up -d api
+
+
+
+Clear all docker volumes : docker system prune -af --volumes
