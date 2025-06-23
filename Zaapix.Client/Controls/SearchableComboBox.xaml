@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="Zaapix.Client.Controls.FilteredComboBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Name="Root"
+             MinHeight="28">
+
+    <Grid>
+        <Border x:Name="ClickableArea"
+                Background="{DynamicResource InputBackgroundColor}"
+                BorderBrush="{DynamicResource BorderColor}"
+                BorderThickness="1"
+                CornerRadius="6"
+                Padding="0"
+                Margin="0"
+                MouseLeftButtonDown="ClickableArea_MouseLeftButtonDown"
+                Cursor="Hand">
+            <Grid Margin="0">
+                <!-- Text when closed -->
+                <TextBlock x:Name="SelectedTextBlock"
+                           Margin="8,0,30,0"
+                           Padding="0"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Left"
+                           Text="{Binding SelectedItem, ElementName=Root}" />
+
+                <!-- Search box when open -->
+                <TextBox x:Name="SearchBox"
+                         Margin="5,0,30,0"
+                         VerticalAlignment="Center"
+                         HorizontalAlignment="Left"
+                         Visibility="Collapsed"
+                         TextChanged="SearchBox_TextChanged"
+                         Text="{Binding SearchText, ElementName=Root}"
+                         Background="{DynamicResource InputBackgroundColor}"
+                         Foreground="{DynamicResource InputForegroundColor}"
+                         BorderThickness="0"/>
+
+                <!-- Pure icon -->
+                <Viewbox Width="12" Height="12" HorizontalAlignment="Right" Margin="0,5,8,0" VerticalAlignment="Center" Focusable="False">
+                    <Canvas Width="10" Height="10">
+                        <Path Data="M 0 0 L 5 5 L 10 0 Z" Fill="{DynamicResource ForegroundColor}" />
+                    </Canvas>
+                </Viewbox>
+
+                <!-- Popup -->
+                <Popup x:Name="Popup"
+                    Placement="Bottom"
+                    PlacementTarget="{Binding ElementName=Root}"
+                    AllowsTransparency="True"
+                    StaysOpen="False"
+                    PopupAnimation="None"
+                    Opened="Popup_Opened"
+                    Closed="Popup_Closed"
+                    Popup.GotFocus="Popup_GotFocus">
+                    <ListBox x:Name="ListBox"
+                                  Margin="4" MaxHeight="300" MinHeight="32" MinWidth="{Binding ActualWidth, ElementName=Root}"
+                             PreviewMouseLeftButtonDown="ListBox_PreviewMouseLeftButtonDown">
+                    </ListBox>
+                </Popup>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

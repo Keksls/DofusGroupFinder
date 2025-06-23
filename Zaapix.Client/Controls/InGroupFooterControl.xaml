@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="Zaapix.Client.Controls.InGroupFooterControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Zaapix.Client.Controls"
+             Height="72" Background="{DynamicResource HighlightColor}" Width="320">
+    
+    <Grid Margin="4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <DockPanel Grid.Row="0" Margin="0,0,0,6">
+            <TextBlock x:Name="DungeonNameTextBlock" Text="Donjon" FontWeight="Bold" FontSize="14" DockPanel.Dock="Left"/>
+            <Button Content="X" Width="20" Height="20" Margin="4,0" Click="Disband_Click" HorizontalAlignment="Right" DockPanel.Dock="Right"/>
+            <TextBlock x:Name="SlotsTextBlock" Text="0/4" FontSize="12" Margin="0,2,0,0" HorizontalAlignment="Right" DockPanel.Dock="Right"/>
+        </DockPanel>
+
+        <!-- Group Members -->
+        <ItemsControl Grid.Row="1" x:Name="MembersItemsControl" Margin="0,0,0,0" Height="38">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
+    </Grid>
+</UserControl>

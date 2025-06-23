@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="Zaapix.Client.Controls.NoGroupFooterControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:controls="clr-namespace:Zaapix.Client.Controls"
+             xmlns:local="clr-namespace:Zaapix.Client"
+             xmlns:namespace="clr-namespace:Zaapix.Client"
+             Height="42" Background="LightGray">
+    
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0,10,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <controls:FilteredComboBox x:Name="ListingsComboBox" PropertyChanged="ListingsComboBox_SelectionChanged" Grid.Column="0" Margin="0,4,8,4"/>
+        <Button x:Name="CreateGroupButton" Content="Créer un groupe" Width="128" Margin="4" Height="26" Foreground="{DynamicResource SubtleForegroundColor}" IsEnabled="False" Grid.Column="1" Click="CreateGroup_Click"/>
+    </Grid>
+</UserControl>

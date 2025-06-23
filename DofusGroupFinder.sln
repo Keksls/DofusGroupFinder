@@ -3,19 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DofusGroupFinder.Api", "DofusGroupFinder.Api\DofusGroupFinder.Api.csproj", "{CB70779A-7DE7-475C-B221-9E2DD3829B73}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zaapix.Api", "Zaapix.Api\Zaapix.Api.csproj", "{CB70779A-7DE7-475C-B221-9E2DD3829B73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DofusGroupFinder.Application", "DofusGroupFinder.Application\DofusGroupFinder.Application.csproj", "{886ECD56-5251-4286-A366-8D7B35E8A46E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zaapix.Application", "Zaapix.Application\Zaapix.Application.csproj", "{886ECD56-5251-4286-A366-8D7B35E8A46E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DofusGroupFinder.Domain", "DofusGroupFinder.Domain\DofusGroupFinder.Domain.csproj", "{3515A4FA-B02F-434F-A67D-90B0561648C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zaapix.Domain", "Zaapix.Domain\Zaapix.Domain.csproj", "{3515A4FA-B02F-434F-A67D-90B0561648C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DofusGroupFinder.Infrastructure", "DofusGroupFinder.Infrastructure\DofusGroupFinder.Infrastructure.csproj", "{647CB2C9-5A32-46D3-989E-0F28BE5BBF4E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zaapix.Infrastructure", "Zaapix.Infrastructure\Zaapix.Infrastructure.csproj", "{647CB2C9-5A32-46D3-989E-0F28BE5BBF4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DofusGroupFinder.Shared", "DofusGroupFinder.Shared\DofusGroupFinder.Shared.csproj", "{3BFC7FB4-87DD-4194-B301-FE778AD605A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zaapix.Client", "Zaapix.Client\Zaapix.Client.csproj", "{21611CD7-D7C8-417D-814C-570F81AC6BA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DofusGroupFinder.Client", "DofusGroupFinder.Client\DofusGroupFinder.Client.csproj", "{21611CD7-D7C8-417D-814C-570F81AC6BA6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DofusGroupFinder.Baker", "DofusGroupFinder.Baker\DofusGroupFinder.Baker.csproj", "{8BCF9E0E-C867-41DB-803D-DA2B2029E60C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zaapix.Baker", "Zaapix.Baker\Zaapix.Baker.csproj", "{8BCF9E0E-C867-41DB-803D-DA2B2029E60C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9ABD0BC9-E509-4BD9-934B-6B23527D4FB1}"
 	ProjectSection(SolutionItems) = preProject
@@ -46,10 +44,6 @@ Global
 		{647CB2C9-5A32-46D3-989E-0F28BE5BBF4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{647CB2C9-5A32-46D3-989E-0F28BE5BBF4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{647CB2C9-5A32-46D3-989E-0F28BE5BBF4E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3BFC7FB4-87DD-4194-B301-FE778AD605A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3BFC7FB4-87DD-4194-B301-FE778AD605A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3BFC7FB4-87DD-4194-B301-FE778AD605A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3BFC7FB4-87DD-4194-B301-FE778AD605A3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{21611CD7-D7C8-417D-814C-570F81AC6BA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{21611CD7-D7C8-417D-814C-570F81AC6BA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21611CD7-D7C8-417D-814C-570F81AC6BA6}.Release|Any CPU.ActiveCfg = Release|Any CPU

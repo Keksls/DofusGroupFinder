@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="Zaapix.Client.Controls.NotificationControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Zaapix.Client.Controls"
+             Height="Auto" Width="300">
+
+    <Border Background="{DynamicResource InputBackgroundColor}"
+            BorderBrush="{DynamicResource BorderColor}"
+            BorderThickness="1"
+            CornerRadius="6"
+            Padding="10"
+            Margin="0 0 0 4"
+            Opacity="0.9">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="24"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock x:Name="MessageText"
+                       Text="Notification message goes here"
+                       Grid.Column="0"
+                       Foreground="{DynamicResource InputForegroundColor}"
+                       TextWrapping="Wrap"/>
+
+            <Button Content="X"
+                    Grid.Column="1"
+                    Height="22" Width="22"
+                    Click="Button_Click"></Button>
+        </Grid>
+    </Border>
+</UserControl>

@@ -78,7 +78,7 @@ namespace Updater
             }
 
             // Attendre que les fichiers soient déverrouillés
-            while (IsFileLocked("Zaapix.exe") || IsFileLocked("DofusGroupFinder.Shared.dll"))
+            while (IsFileLocked("Zaapix.exe") || IsFileLocked("Zaapix.Shared.dll"))
             {
                 await Task.Delay(200);
             }

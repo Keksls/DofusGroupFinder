@@ -1,0 +1,101 @@
+﻿<UserControl x:Class="Zaapix.Client.Controls.GroupCardControl" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:controls="clr-namespace:Zaapix.Client.Controls"
+             xmlns:namespace="clr-namespace:Zaapix.Client.Controls"
+             Background="{DynamicResource InputBackgroundColor}"
+             Margin="0,0,8,8"
+             Padding="0"
+             MinWidth="256"
+             Height="Auto">
+    <Border x:Name="MainBorder"
+        BorderBrush="{DynamicResource BorderColor}"
+        BorderThickness="1"
+        CornerRadius="8"
+        Margin="4,0,0,0"
+        Padding="4,2"
+        MouseLeftButtonDown="Border_MouseLeftButtonDown">
+
+        <Border.Style>
+            <Style TargetType="Border">
+                <Setter Property="Background" Value="{DynamicResource InputBackgroundColor}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource BorderColor}" />
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background" Value="{DynamicResource AccentColor}" />
+                        <Setter Property="BorderBrush" Value="{DynamicResource InputBackgroundColor}" />
+                        <Setter Property="Cursor" Value="Hand" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </Border.Style>
+
+        <StackPanel Margin="0">
+            <!-- Infos -->
+            <Grid Margin="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Donjon -->
+                <TextBlock x:Name="DungeonNameText"
+                       Grid.Column="0"
+                       Text="Donjon"
+                       FontSize="14"
+                       FontWeight="Bold"
+                       TextTrimming="CharacterEllipsis"
+                       VerticalAlignment="Center" />
+
+                <!-- Slots -->
+                <TextBlock x:Name="RemainingSlotsText"
+                       Grid.Column="1"
+                       Text="2/8"
+                       Margin="4,0"
+                       FontSize="12"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left" />
+
+                <StackPanel x:Name="SuccessList" Orientation="Horizontal" Grid.Column="2">
+                 </StackPanel>
+                <!-- Success icon -->
+                <Image x:Name="SuccessIcon"
+                   Grid.Column="2"
+                   Source="/Icons/succes.png"
+                   Width="20" Height="20"
+                   VerticalAlignment="Center"
+                   Visibility="Collapsed" ToolTip="Succès de boss demandés" />
+            </Grid>
+
+            <!-- Characters -->
+            <StackPanel x:Name="Players" Visibility="Collapsed" Height="32" Orientation="Horizontal" Margin="0,4">
+            </StackPanel>
+
+            <!-- Footer : Date + Owner -->
+            <Grid Margin="0,5,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <!-- Owner -->
+                <TextBlock x:Name="OwnerText"
+           Grid.Column="0"
+           FontSize="10"
+           VerticalAlignment="Center"
+           Text="OwnerName"
+           Foreground="{DynamicResource SubtleForegroundColor}" />
+
+                <!-- Date -->
+                <TextBlock x:Name="CreatedAtText"
+           Grid.Column="1"
+           FontSize="10"
+           VerticalAlignment="Center"
+           Text="créé le 01/01/01"
+           Foreground="{DynamicResource SubtleForegroundColor}" />
+
+            </Grid>
+
+        </StackPanel>
+    </Border>
+</UserControl>

@@ -1,0 +1,157 @@
+﻿<Window x:Class="Zaapix.Client.CharactersManagerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:Zaapix.Client.Controls"
+        Title="Manage Characters" Height="320" Width="440"
+        Background="{DynamicResource BackgroundColor}"
+        Foreground="{DynamicResource ForegroundColor}"
+        WindowStyle="None" ResizeMode="NoResize">
+
+    <Window.Resources>
+        <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}" />
+        <Style TargetType="TextBox" BasedOn="{StaticResource {x:Type TextBox}}" />
+        <Style TargetType="ComboBox" BasedOn="{StaticResource {x:Type ComboBox}}" />
+
+        <!-- ListBoxItem -->
+        <Style TargetType="ListBoxItem">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{DynamicResource InputForegroundColor}" />
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+            <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ListBoxItem">
+                        <Border x:Name="Bd"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="4"
+                        Margin="0,1"
+                        Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <!-- Hover -->
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Bd" Property="Background" Value="{DynamicResource HighlightColor}" />
+                                <Setter Property="Cursor" Value="Hand"/>
+                            </Trigger>
+
+                            <!-- Selected -->
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter TargetName="Bd" Property="Background" Value="{DynamicResource AccentColor}" />
+                                <Setter TargetName="Bd" Property="BorderBrush" Value="{DynamicResource AccentColor}" />
+                                <Setter Property="FontWeight" Value="Bold"></Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <!-- Titlebar -->
+        <Grid DockPanel.Dock="Top" Background="{DynamicResource BorderColor}" Height="24" VerticalAlignment="Top"
+      MouseDown="TitleBar_MouseDown">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="24"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Icône à gauche -->
+            <Image Source="/Icons/chars.png" Width="24" Height="24" Margin="4,0,0,0" VerticalAlignment="Center" Grid.Column="0"/>
+
+            <TextBlock Text="Gestion des Personnages" VerticalAlignment="Center" Margin="16,0" FontWeight="Bold" Grid.Column="1"/>
+
+            <Button Content="X" Width="24" Height="24" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,4,0" Padding="0"
+            Click="CloseButton_Click" BorderThickness="1" Foreground="{DynamicResource ForegroundColor}" Grid.Column="2"/>
+        </Grid>
+
+        <Grid Margin="0,24,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Liste des personnages -->
+            <ListBox x:Name="CharactersListBox" Grid.Column="0" VerticalContentAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="2" Padding="0" SelectionChanged="CharactersListBox_SelectionChanged">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <controls:CharacterListItemControl Loaded="CharacterListItemControl_Loaded"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+            <!-- Formulaire -->
+            <StackPanel Grid.Column="1" Margin="10" VerticalAlignment="Top">
+                <!-- Class Icon + ComboBox -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Grid>
+                        <Border Name="ReceiverColor"
+                        BorderBrush="#FF96B2E4"
+                        BorderThickness="0"
+                        Margin="0"
+                        Width="64"
+                        Height="64"
+                        CornerRadius="6">
+                            <Grid>
+                                <Border Name="Mask"
+                        Background="{DynamicResource BackgroundColor}"
+                        BorderBrush="{DynamicResource BorderColor}"
+                        BorderThickness="1"
+                        Margin="0"
+                        Width="64"
+                        Height="64"
+                        CornerRadius="3">
+                                </Border>
+                                <StackPanel>
+                                    <Image Name="ClassIcon"
+                        Width="64"
+                        Height="64"
+                           Source="/Icons/chars.png" Stretch="UniformToFill" />
+                                    <StackPanel.OpacityMask>
+                                        <VisualBrush Visual="{Binding ElementName=Mask}" />
+                                    </StackPanel.OpacityMask>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+                    </Grid>
+
+                    <StackPanel Orientation="Vertical" Margin="8,0,0,0" MinWidth="148">
+                        <controls:FilteredComboBox x:Name="ClassComboBox" Height="24" Margin="0,0,0,8"/>
+                        <controls:FilteredComboBox x:Name="ServerComboBox" Height="24"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <!-- Name + Level -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <TextBlock Text="Nom:" VerticalAlignment="Center" Margin="0,0,4,0"/>
+                    <TextBox x:Name="NameTextBox" Width="100"/>
+                    <TextBlock Text="Lvl:" VerticalAlignment="Center" Margin="8,0,4,0"/>
+                    <TextBox x:Name="LevelTextBox" Width="54"/>
+                </StackPanel>
+
+                <!-- Role -->
+                <TextBlock Text="Role:"/>
+                <ComboBox x:Name="RolesComboBox" Height="24" Margin="0,0,0,10"/>
+
+                <!-- Comment -->
+                <TextBlock Text="Comment:"/>
+                <TextBox x:Name="CommentTextBox" Text="1" Height="52" AcceptsReturn="True" TextWrapping="Wrap" Margin="0,0,0,20"/>
+
+                <!-- Boutons -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button x:Name="CreateButton" Content="Create" Width="100" Height="24" Click="CreateButton_Click"/>
+                    <Button x:Name="UpdateButton" Content="Update" Width="100" Height="24" Click="UpdateButton_Click" Visibility="Collapsed"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
