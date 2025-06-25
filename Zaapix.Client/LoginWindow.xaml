@@ -20,7 +20,7 @@
         <Grid Height="40" Background="{DynamicResource BorderColor}" DockPanel.Dock="Top"
               MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
 
-            <TextBlock Text="Dofus Group Finder" 
+            <TextBlock Text="Zaapix" 
                        HorizontalAlignment="Center" 
                        VerticalAlignment="Center" 
                        FontWeight="Bold"

@@ -18,7 +18,7 @@
             </StackPanel>
 
             <!-- Titre centré -->
-            <TextBlock Text="Dofus Group Finder" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" Foreground="{DynamicResource ForegroundColor}"/>
+            <TextBlock Text="Zaapix" Grid.Column="1" HorizontalAlignment="Left" Margin="32,0,0,0" VerticalAlignment="Center" FontWeight="Bold" Foreground="{DynamicResource ForegroundColor}"/>
 
             <!-- Close Button -->
             <Button Content="X" Width="24" Grid.Column="2" Height="24" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,2,5,0"
